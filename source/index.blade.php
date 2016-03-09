@@ -11,7 +11,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="{{ $asset_prefix }}/docs/installation/" class="link-brand wt-medium">
+                    <a href="{{ $asset_prefix }}/docs/installation/" class="btn btn-primary-outline">
                         Docs
                     </a>
                 </div>

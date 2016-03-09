@@ -10,14 +10,14 @@
                 </a>
             </div>
             <div>
-                <a href="{{ $asset_prefix }}/docs/installation/" class="link-brand wt-medium">
+                <a href="{{ $asset_prefix }}/docs/installation/" class="btn btn-primary-outline">
                     Docs
                 </a>
             </div>
         </div>
     </div>
 </nav>
-<div class="container">
+<div class="container m-xs-b-6">
     <div class="row">
         <div class="col-md-3">
             <nav class="nav-list">
