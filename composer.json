@@ -1,0 +1,12 @@
+{
+    "name": "tightenco/jigsaw-site",
+    "require": {
+        "jigsaw/jigsaw": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Adam Wathan",
+            "email": "adam.wathan@gmail.com"
+        }
+    ]
+}
