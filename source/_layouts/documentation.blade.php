@@ -19,7 +19,7 @@
 </nav>
 <div class="container m-xs-b-6">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 m-xs-b-6">
             <nav class="nav-list">
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/installation/">Installation</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/starting-a-new-site/">Starting a new site</a>
