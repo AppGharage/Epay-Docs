@@ -20,6 +20,14 @@ a {
     }
 }
 
+.link-tighten {
+    color: @color-tighten;
+
+    &:hover, &:focus {
+        color: darken(@color-tighten, 15%);
+    }
+}
+
 .link-plain {
     &:hover, &:focus {
         text-decoration: none;

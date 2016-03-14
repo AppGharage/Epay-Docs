@@ -7,5 +7,8 @@
     "laravel-elixir": "^4.2.0",
     "normalize.css": "^3.0.3",
     "suitcss-base": "^1.0.2"
+  },
+  "scripts": {
+    "deploy": "gulp && jigsaw build --env=production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production deploy gh-pages"
   }
 }

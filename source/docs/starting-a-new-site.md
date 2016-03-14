@@ -5,41 +5,50 @@ section: documentation_content
 
 ## Starting a new site
 
-Building a Jigsaw site is exactly like building a static HTML site, except that files ending in `.blade.php` will be rendered using Laravel's [Blade Templating Language](http://laravel.com/docs/5.0/templates).
+The fastest way to start a new Jigsaw site is to use the built-in `init` command to scaffold the default directory structure.
 
-Build out your site however you like in the `/source` directory. It might look something like this:
+If you have Jigsaw installed globally, simply run:
 
 ```
-├─ source
-│  ├─ _assets
-│  ├─ _layouts
-│  │  └─ master.blade.php
-│  ├─ img
-│  │  └─ logo.png
-│  ├─ about-us.blade.php
-│  └─ index.blade.php
-└─ config.php
+$ jigsaw init my-site
 ```
 
-When you'd like to build it, run the `build` command from within your project root:
+This will scaffold a new Jigsaw site in a new folder called `my-site` in the current directory.
+
+If you've already created a folder for your site and installed Jigsaw local to that folder with Composer, run:
+
+```
+$ jigsaw init
+```
+
+This will scaffold a new Jigsaw site in the current directory.
+
+### Directory structure
+
+By default, Jigsaw gives you the following directory structure:
+
+![Default Directory Structure](../../img/directory-structure.png)
+
+The `source` directory contains the actual contents of your site. This is where all of your sites pages, CSS, Javascript, images, etc. will be kept.
+
+At the root of the directory, Jigsaw provides `gulpfile.js` and `package.json` for compiling your assets, and a `config.php` file where you can specify variables to be made available in your templates.
+
+### Generating your site
+
+When you'd like to generate your site, run the `build` command from within your project root:
 
 `$ jigsaw build`
 
-Your site will be built and placed in the `/build_local` directory by default.
+Jigsaw will generate your static HTML and place it in the `./build_local` directory by default.
 
-Using the example structure above, you'd end up with something like this:
+Using the default site structure, `./build_local` will look like this:
 
-```
-├─ build_local
-│  ├─ about-us
-│  │  └─ index.html
-│  ├─ img
-│  │  └─ logo.png
-│  └─ index.html
-├─ source
-└─ config.php
-```
+![Default Directory Structure](../../img/build-folder.png)
 
-To quickly preview it, start a local PHP server:
+### Previewing your site
+
+To quickly preview your site, first build it using `jigsaw build`, then start a local PHP server:
 
 `$ php -S localhost:8000/ -t build_local`
+
+You can now view your site at `http://localhost:8000` in your browser.
