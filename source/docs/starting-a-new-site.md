@@ -27,7 +27,7 @@ This will scaffold a new Jigsaw site in the current directory.
 
 By default, Jigsaw gives you the following directory structure:
 
-![Default Directory Structure](../../img/directory-structure.png)
+![Default directory structure](../../img/directory-structure.png)
 
 The `source` directory contains the actual contents of your site. This is where all of your sites pages, CSS, Javascript, images, etc. will be kept.
 
@@ -43,7 +43,7 @@ Jigsaw will generate your static HTML and place it in the `./build_local` direct
 
 Using the default site structure, `./build_local` will look like this:
 
-![Default Directory Structure](../../img/build-folder.png)
+![Default build directory](../../img/build-folder.png)
 
 ### Previewing your site
 

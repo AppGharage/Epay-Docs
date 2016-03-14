@@ -5,12 +5,12 @@ section: documentation_content
 
 ## Pretty URLs
 
-Jigsaw will automatically take any Blade files _not_ named `index` and render them as `index.html` in a subfolder with the same name as the original file.
+By default, any Blade files _not_ named `index.blade.php` are rendered as `index.html` in a subfolder named after the original file.
 
 For example, if you have a file named `about-us.blade.php` in your `source` directory:
 
 ```
-├─ source
+└─ source
    ├─ _layouts
    ├─ about-us.blade.php
    └─ index.blade.php
@@ -19,10 +19,12 @@ For example, if you have a file named `about-us.blade.php` in your `source` dire
 ...it will be rendered as `index.html` in the `build/about-us` directory:
 
 ```
-├─ build_local
+└─ build_local
    ├─ about-us
    │  └─ index.html
    └─ index.html
 ```
+
+This means your "About us" page will be available at `http://example.com/about-us/` instead of `http://example.com/about-us.html`.
 
 > If you need to disable this behavior, use the `--pretty=false` option when building your site.

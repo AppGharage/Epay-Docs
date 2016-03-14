@@ -3,6 +3,6 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
-## Partials
+## Deploying your site
 
 Coming soon!
