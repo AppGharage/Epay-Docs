@@ -24,7 +24,6 @@
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/installation/">Installation</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/starting-a-new-site/">Starting a new site</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/blade-templating/">Blade templating</a>
-                <a class="nav-list-item" href="{{ $asset_prefix }}/docs/layouts/">Layouts</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/markdown/">Markdown</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/partials/">Partials</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/configuration-variables/">Configuration variables</a>
