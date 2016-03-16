@@ -3,7 +3,7 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
-## Starting a new site
+## Starting a New Site
 
 The fastest way to start a new Jigsaw site is to use the built-in `init` command to scaffold the default directory structure.
 
@@ -33,22 +33,4 @@ The `source` directory contains the actual contents of your site. This is where 
 
 At the root of the directory, Jigsaw provides `gulpfile.js` and `package.json` for compiling your assets, and a `config.php` file where you can specify variables to be made available in your templates.
 
-### Generating your site
-
-When you'd like to generate your site, run the `build` command from within your project root:
-
-`$ jigsaw build`
-
-Jigsaw will generate your static HTML and place it in the `./build_local` directory by default.
-
-Using the default site structure, `./build_local` will look like this:
-
-![Default build directory](../../img/build-folder.png)
-
-### Previewing your site
-
-To quickly preview your site, first build it using `jigsaw build`, then start a local PHP server:
-
-`$ php -S localhost:8000/ -t build_local`
-
-You can now view your site at `http://localhost:8000` in your browser.
+Next, learn about [building and previewing your site](../building-and-previewing).

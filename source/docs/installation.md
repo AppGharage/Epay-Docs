@@ -11,39 +11,32 @@ To use Jigsaw, you need to have PHP 5.5+ installed on your machine. You'll also 
 
 ### Installing Globally
 
-1. Install Jigsaw globally via Composer:
+Install Jigsaw globally via Composer:
 
-    ```
-    $ composer global require jigsaw/jigsaw
-    ```
+```
+$ composer global require jigsaw/jigsaw
+```
 
-    > Make sure `~/.composer/vendor/bin` is in your `$PATH`.
-
-
-2. Initialize a new project:
-    
-    ```
-    $ jigsaw init my-site
-    ```
+> Make sure `~/.composer/vendor/bin` is in your `$PATH`.
 
 ### Installing Locally
 
 If you run into dependency conflicts when trying to install Jigsaw globally, you can always install it locally on a per site basis.
 
-1. Create a folder for your site:
+Create a folder for your site:
 
-    ```
-    $ mkdir my-site && cd my-site
-    ```
+```
+$ mkdir my-site && cd my-site
+```
 
-2. Install Jigsaw via Composer:
+Install Jigsaw via Composer:
 
-    ```
-    $ composer require jigsaw/jigsaw
-    ```
+```
+$ composer require jigsaw/jigsaw
+```
 
-3. Initialize a new project in the current folder:
+Initialize a new project in the current folder:
 
-    ```
-    $ ./vendor/bin/jigsaw init
-    ```
+```
+$ ./vendor/bin/jigsaw init
+```
