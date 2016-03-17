@@ -6,7 +6,7 @@
         <div class="navbar-content">
             <div>
                 <a class="link-plain text-xxl flex-y-center" href="{{ $asset_prefix }}/">
-                    <strong><em>Jigsaw</em></strong>
+                    <strong>Jigsaw</strong>
                 </a>
             </div>
             <div>
