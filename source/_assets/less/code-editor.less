@@ -1,6 +1,6 @@
 .code-editor {
     text-align: left;
-    font-size: 10px;
+    font-size: (10rem/16rem);
     overflow: hidden;
 }
 
@@ -27,14 +27,20 @@
 .code-editor-max { background-color: #29ca41; }
 
 .code-editor-body {
-    padding: 2em;
-    font-size: 14px;
+    padding: 1em;
+    font-size: (11rem/14rem);
     line-height: 2.2;
     color: #cdd3de;
     background-color: #253238;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
+    @media (min-width: @screen-sm) {
+        padding: 2em;
+        font-size: (14rem/16rem);
+    }
+
+    .code-muted { color: #506e79; }
     .code-red { color: #ff5370; }
     .code-gray { color: #cdd3de; }
     .code-teal { color: #80cbc4; }
