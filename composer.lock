@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ebb11cfbf4e2809a297a4645528b6b4d",
-    "content-hash": "c804f4bbaaa298b135c40769d92fa719",
+    "hash": "8a6d33eb32839daa2c42529d50fb510a",
+    "content-hash": "78b7aae235cf6d8526961a281c688b57",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -160,16 +160,16 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.2.21",
+            "version": "v5.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "ba7a8b3c24535ab102ebe9738a0003846c372b95"
+                "reference": "1e156f8017490f5583ab161030bf839c77c95e54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/ba7a8b3c24535ab102ebe9738a0003846c372b95",
-                "reference": "ba7a8b3c24535ab102ebe9738a0003846c372b95",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/1e156f8017490f5583ab161030bf839c77c95e54",
+                "reference": "1e156f8017490f5583ab161030bf839c77c95e54",
                 "shasum": ""
             },
             "require": {
@@ -199,20 +199,20 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-22 06:42:06"
+            "time": "2016-03-16 17:19:17"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.2.21",
+            "version": "v5.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "eea3cf7ce90651e067a914d16383b019da45fcb5"
+                "reference": "411b851962c211078ade7664a6976e77a78cd2a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/eea3cf7ce90651e067a914d16383b019da45fcb5",
-                "reference": "eea3cf7ce90651e067a914d16383b019da45fcb5",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/411b851962c211078ade7664a6976e77a78cd2a5",
+                "reference": "411b851962c211078ade7664a6976e77a78cd2a5",
                 "shasum": ""
             },
             "require": {
@@ -241,20 +241,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-22 09:18:57"
+            "time": "2016-03-07 20:37:17"
         },
         {
             "name": "illuminate/events",
-            "version": "v5.2.21",
+            "version": "v5.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
-                "reference": "aeebcd54a61ce3bddddcb0273b532256201cd9d1"
+                "reference": "5a5e5d72bf3a2d01d8b15e89440026a60bc4a81b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/events/zipball/aeebcd54a61ce3bddddcb0273b532256201cd9d1",
-                "reference": "aeebcd54a61ce3bddddcb0273b532256201cd9d1",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/5a5e5d72bf3a2d01d8b15e89440026a60bc4a81b",
+                "reference": "5a5e5d72bf3a2d01d8b15e89440026a60bc4a81b",
                 "shasum": ""
             },
             "require": {
@@ -290,16 +290,16 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v5.2.21",
+            "version": "v5.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "ec2df9bb97fbc08776ed1df399a323440e6db563"
+                "reference": "e197f38660beab95743d9d5565d0f11d956288ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/ec2df9bb97fbc08776ed1df399a323440e6db563",
-                "reference": "ec2df9bb97fbc08776ed1df399a323440e6db563",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/e197f38660beab95743d9d5565d0f11d956288ea",
+                "reference": "e197f38660beab95743d9d5565d0f11d956288ea",
                 "shasum": ""
             },
             "require": {
@@ -336,32 +336,32 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-24 03:13:07"
+            "time": "2016-03-21 14:55:26"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.2.21",
+            "version": "v5.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "6749fab3f3d38d8b15427536a8e7bbdc57497c9e"
+                "reference": "f990b9c154b92bfa08dd83e4d792bc807213ab0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/6749fab3f3d38d8b15427536a8e7bbdc57497c9e",
-                "reference": "6749fab3f3d38d8b15427536a8e7bbdc57497c9e",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/f990b9c154b92bfa08dd83e4d792bc807213ab0c",
+                "reference": "f990b9c154b92bfa08dd83e4d792bc807213ab0c",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "~1.0",
                 "ext-mbstring": "*",
                 "illuminate/contracts": "5.2.*",
+                "paragonie/random_compat": "~1.4",
                 "php": ">=5.5.9"
             },
             "suggest": {
                 "illuminate/filesystem": "Required to use the composer class (5.2.*).",
                 "jeremeamia/superclosure": "Required to be able to serialize closures (~2.2).",
-                "paragonie/random_compat": "Provides a compatible interface like PHP7's random_bytes() in PHP 5 projects (~1.1).",
                 "symfony/polyfill-php56": "Required to use the hash_equals function on PHP 5.5 (~1.0).",
                 "symfony/process": "Required to use the composer class (2.8.*|3.0.*).",
                 "symfony/var-dumper": "Improves the dd function (2.8.*|3.0.*)."
@@ -392,20 +392,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-22 20:29:02"
+            "time": "2016-03-18 20:30:25"
         },
         {
             "name": "illuminate/view",
-            "version": "v5.2.21",
+            "version": "v5.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "ba8f02a40e8e66fa4b913df42a57f058ed7faf7d"
+                "reference": "7c248fdf27e14f3a0b5da059ba33e19b1d6fcb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/ba8f02a40e8e66fa4b913df42a57f058ed7faf7d",
-                "reference": "ba8f02a40e8e66fa4b913df42a57f058ed7faf7d",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/7c248fdf27e14f3a0b5da059ba33e19b1d6fcb5e",
+                "reference": "7c248fdf27e14f3a0b5da059ba33e19b1d6fcb5e",
                 "shasum": ""
             },
             "require": {
@@ -439,61 +439,7 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-02 16:45:07"
-        },
-        {
-            "name": "jigsaw/jigsaw",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tightenco/jigsaw.git",
-                "reference": "b2f14a7bda5b4322578e97de58725d7da6db1354"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/b2f14a7bda5b4322578e97de58725d7da6db1354",
-                "reference": "b2f14a7bda5b4322578e97de58725d7da6db1354",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/container": "^5.2",
-                "illuminate/support": "^5.2",
-                "illuminate/view": "^5.2",
-                "mnapoli/front-yaml": "^1.5",
-                "mockery/mockery": "^0.9.4",
-                "symfony/console": "^2.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.1"
-            },
-            "bin": [
-                "jigsaw"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jigsaw\\Jigsaw\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Wathan",
-                    "email": "adam.wathan@gmail.com"
-                }
-            ],
-            "description": "Simple static sites with Laravel's Blade.",
-            "keywords": [
-                "blade",
-                "generator",
-                "laravel",
-                "site",
-                "static"
-            ],
-            "time": "2016-01-29 18:16:27"
+            "time": "2016-03-21 20:08:53"
         },
         {
             "name": "mnapoli/front-yaml",
@@ -593,6 +539,54 @@
                 "testing"
             ],
             "time": "2015-04-02 19:54:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/c7e26a21ba357863de030f0b9e701c7d04593774",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "pseudorandom",
+                "random"
+            ],
+            "time": "2016-03-18 20:34:03"
         },
         {
             "name": "symfony/console",
@@ -810,14 +804,66 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2016-02-23 07:41:20"
+        },
+        {
+            "name": "tightenco/jigsaw",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tightenco/jigsaw.git",
+                "reference": "8b8c48ef68e7539d7ec9300af44c2335e49a78d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/8b8c48ef68e7539d7ec9300af44c2335e49a78d6",
+                "reference": "8b8c48ef68e7539d7ec9300af44c2335e49a78d6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "^5.2",
+                "illuminate/support": "^5.2",
+                "illuminate/view": "^5.2",
+                "mnapoli/front-yaml": "^1.5",
+                "mockery/mockery": "^0.9.4",
+                "symfony/console": "^2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.1"
+            },
+            "bin": [
+                "jigsaw"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TightenCo\\Jigsaw\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "Simple static sites with Laravel's Blade.",
+            "keywords": [
+                "blade",
+                "generator",
+                "laravel",
+                "site",
+                "static"
+            ],
+            "time": "2016-03-25 15:57:21"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "jigsaw/jigsaw": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

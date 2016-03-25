@@ -14,7 +14,7 @@ To use Jigsaw, you need to have PHP 5.5+ installed on your machine. You'll also 
 Install Jigsaw globally via Composer:
 
 ```
-$ composer global require jigsaw/jigsaw
+$ composer global require tightenco/jigsaw
 ```
 
 > Make sure `~/.composer/vendor/bin` is in your `$PATH`.
@@ -32,7 +32,7 @@ $ mkdir my-site && cd my-site
 Install Jigsaw via Composer:
 
 ```
-$ composer require jigsaw/jigsaw
+$ composer require tightenco/jigsaw
 ```
 
 Initialize a new project in the current folder:
