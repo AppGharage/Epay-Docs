@@ -5,7 +5,7 @@ section: documentation_content
 
 ## Compiling Assets
 
-Jigsaw sites are configured with support for [Laravel Elixir](http://laravel.com/docs/elixir) out of the box. If you've ever used Elixir in Laravel project, you already know how to use Elixir with Jigsaw.
+Jigsaw sites are configured with support for [Laravel Elixir](http://laravel.com/docs/elixir) out of the box. If you've ever used Elixir in a Laravel project, you already know how to use Elixir with Jigsaw.
 
 ### Setup
 
