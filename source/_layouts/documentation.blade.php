@@ -10,6 +10,9 @@
                 </a>
             </div>
             <div>
+                <a href="https://github.com/tightenco/jigsaw" class="link-brand m-xs-r-6">
+                    Contribute
+                </a>
                 <a href="{{ $asset_prefix }}/docs/installation/" class="btn btn-primary-outline">
                     Docs
                 </a>
