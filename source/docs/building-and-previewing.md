@@ -17,11 +17,17 @@ Using the default site structure, `./build_local` will look like this:
 
 ### Previewing with PHP
 
-To quickly preview your site, start a local PHP server pointed at your `build_local` directory:
+To quickly preview your site, use the `jigsaw serve` command:
 
-`$ php -S localhost:8000/ -t build_local`
+`$ jigsaw serve`
 
 You can now view your site at `http://localhost:8000` in your browser.
+
+You can also optionally specify the environment and port to serve like so:
+
+`$ jigsaw serve production --port=8080`
+
+This will serve your `build_production` folder at `http://localhost:8080`.
 
 ### Previewing with Browsersync
 

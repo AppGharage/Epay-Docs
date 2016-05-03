@@ -10,7 +10,7 @@
                         <strong>Jigsaw</strong>
                     </a>
                 </div>
-                <div>
+                <div class="navbar-buttons">
                     <a href="https://github.com/tightenco/jigsaw" class="link-brand m-xs-r-6">
                         Contribute
                     </a>
