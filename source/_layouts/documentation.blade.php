@@ -9,17 +9,14 @@
                     <strong>Jigsaw</strong>
                 </a>
             </div>
-            <div>
-                <a href="https://github.com/tightenco/jigsaw" class="link-brand m-xs-r-6">
-                    Contribute
-                </a>
-                <a href="{{ $asset_prefix }}/docs/installation/" class="btn btn-primary-outline">
-                    Docs
-                </a>
+            <div class="docsearch navbar-buttons">
+                <input id="docsearch" class="docsearch__input" type="text" name="docsearch" value=""/>
+                <span class="docsearch__icon"></span>
             </div>
         </div>
     </div>
 </nav>
+
 <div class="container m-xs-b-6">
     <div class="row">
         <div class="col-md-3 m-xs-b-6">
