@@ -34,10 +34,10 @@ This file is _merged_ on top of `config.php`, so you only need to specify the va
 
 ### Building a specific environment
 
-To build a specific environment, just include the `--env={environment}` flag when running `jigsaw build`:
+To build a specific environment, just pass the environment name as an argument when running `jigsaw build`:
 
 ```
-$ jigsaw build --env=production
+$ jigsaw build production
 ```
 
 This will generate your site into a new folder called `build_production`, leaving your `build_local` folder untouched.

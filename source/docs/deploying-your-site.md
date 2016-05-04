@@ -16,7 +16,7 @@ The approach we use at Tighten Co. for deploying Jigsaw sites to GitHub pages lo
 1. Build your site for production
     
     ```
-    $ gulp && jigsaw build --env=production
+    $ gulp && jigsaw build production
     ```
 
 2. Commit the `build_production` folder to your repository
@@ -42,7 +42,7 @@ What you might not have known is that Amazon S3 also has first class support for
 To deploy a site to S3, first build your site for production:
 
 ```
-$ jigsaw build --env=production
+$ jigsaw build production
 ```
 
 Then simply follow the steps in [Amazon's static site documentation](http://docs.aws.amazon.com/gettingstarted/latest/swh/website-hosting-intro.html) to deploy your `build_production` folder to your S3 bucket.

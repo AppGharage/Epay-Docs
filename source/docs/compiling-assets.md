@@ -106,3 +106,9 @@ $ gulp watch
 Any time any file changes in your project, your assets will be recompiled and Jigsaw will regenerate your static HTML pages.
 
 Using `gulp watch` also enables [Browsersync](https://www.browsersync.io/), so your browser will automatically reload any time you make a change. It also manages serving your site locally for you, so you don't need to start your own local PHP server.
+
+You can also watch a specific environment by passing the `--env` flag to gulp:
+
+```
+$ gulp watch --env=staging
+```
