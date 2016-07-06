@@ -16,7 +16,7 @@ The approach we use at Tighten Co. for deploying Jigsaw sites to GitHub pages lo
 1. Build your site for production
     
     ```
-    $ gulp && jigsaw build production
+    $ gulp --production && jigsaw build production
     ```
 
 2. Commit the `build_production` folder to your repository
