@@ -40,3 +40,11 @@ Initialize a new project in the current folder:
 ```
 $ ./vendor/bin/jigsaw init
 ```
+
+When Jigsaw is installed locally, you'll run the following command (instead of `jigsaw build`) to build your site:
+
+```
+$ ./vendor/bin/jigsaw build
+```
+
+> If you are using [Elixir to compile assets](/docs/compiling-assets/), you should update the `exec` command in `gulpfile.js` so that Elixir will run the correct `build` command: `.exec('./vendor/bin/jigsaw build', ['./source/**/*', '!./source/_assets/**/*'])`
