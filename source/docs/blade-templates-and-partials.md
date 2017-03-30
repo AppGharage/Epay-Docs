@@ -3,9 +3,9 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
-## Layouts & Partials
+## Blade Templates & Partials
 
-One of the biggest benefits of a templating language is the ability to create reusable layouts and partials.
+One of the biggest benefits of a templating language is the ability to create reusable layouts and partials. Jigsaw gives you access to all the templating features and control structures of Blade that are available in Laravel 5.4 (learn more about Blade layouts in the [official Blade documentation](https://laravel.com/docs/5.4/blade)).
 
 ### Defining a Layout
 
@@ -52,8 +52,6 @@ To extend a layout, create a template that specifies which layout to extend in a
 ```
 
 Layouts and partials are referenced relative to the `source` directory using _dot notation_, where each dot represents a directory separator in the file name and the `.blade.php` extension omitted.
-
-Learn more about Blade layouts in the [official Blade documentation](https://laravel.com/docs/5.2/blade#template-inheritance).
 
 ### Partials
 

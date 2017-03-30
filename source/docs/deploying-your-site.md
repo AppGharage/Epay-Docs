@@ -14,7 +14,7 @@ Since Jigsaw sites are just static HTML and Javascript, they are simple and chea
 The approach we use at Tighten Co. for deploying Jigsaw sites to GitHub pages looks like this:
 
 1. Build your site for production
-    
+
     ```
     $ gulp --production && jigsaw build production
     ```
@@ -51,4 +51,52 @@ Then simply follow the steps in [Amazon's static site documentation](http://docs
 
 If you have an existing server that you'd like to use to host your Jigsaw site, all you need to do is get the contents `build_production` into a public folder that's pointed at by the URL you'd like to use.
 
-We plan to add specific documentation for manually serving a Jigsaw site with nginx soon!
+### Changing the Source and Destination Directories
+
+Jigsaw will look for your source files in a `source` directory, and will output your files to a directory named `build_` followed by the environment you specified in the `jigsaw build` command (`build_local` by default, or `build_staging`, `build_production`, etc.). You can, however, customize these locations by adding a `build` key to the array in `config.php`, and specifying your own source and/or destination paths.
+
+> _config.php_
+
+```
+<?php
+
+return [
+    'build' => [
+        'source' => 'src',
+        'destination' => 'my_desination',
+    ],
+    ...
+```
+
+Source and destination paths are relative to your project root, i.e where your config.php file is located.
+
+> _config.php_
+
+```
+<?php
+
+return [
+    'build' => [
+        'destination' => '../build-one-level-up',
+    ],
+    ...
+```
+
+To include the environment name in your destination path, use the `{env}` token in your path name. `{env}` will be replaced by the environment specified when running jigsaw build, and defaults to `local`.
+
+> _config.php_
+
+```
+<?php
+
+return [
+    'build' => [
+        'destination' => '../../{env}/public',
+    ],
+    ...
+```
+
+In this example, running `jigsaw build staging` would output your built files to staging/public, two levels up from your project root. Jigsaw will create any directories that do not already exist.
+
+You can also assign different source and build paths for different environments by using multiple [environment-specific `config.php` files](/docs/environments/). Source and destination paths in `config.production.php`, for example, will get merged with any build paths that have been defined in `config.php` when running `jigsaw build production`.
+

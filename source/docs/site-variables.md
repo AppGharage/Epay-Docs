@@ -5,9 +5,11 @@ section: documentation_content
 
 ## Site Variables
 
-Anything you add to the array in `config.php` will be made available as a variable in your templates.
+Anything you add to the array in `config.php` will be made available in all of your templates, as a property of the `$page` object.
 
-For example, if your config looks like this:
+> NOTE: Earlier versions of Jigsaw allowed access to site variables directly by their name. Version 1.0, however, uses the `$page` object as a means for accessing all site variables.
+
+For example, if your `config.php` looks like this:
 
 ```php
 <?php
@@ -17,14 +19,21 @@ return [
 ];
 ```
 
-...you can use that variable in your templates like so:
+...you can use that variable in any of your templates like so:
 
 ```
 @extends('_layouts.master')
 
 @section('content')
-    <p>Contact us at {{ $contact_email }}</p>
+    <p>Contact us at {{ $page->contact_email }}</p>
 @stop
 ```
 
+If you prefer, site variables can also be accessed as arrays:
+
+```
+<p>Contact us at {{ $page['contact_email'] }}</p>
+```
+
 Jigsaw also supports environment-specific site variables, which you can learn more about [here](../environments/).
+
