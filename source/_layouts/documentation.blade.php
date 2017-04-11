@@ -22,6 +22,7 @@
         <div class="col-md-3 m-xs-b-6">
             <nav class="nav-list">
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/installation/">Installation</a>
+                <a class="nav-list-item nav-list-item--sub" href="{{ $asset_prefix }}/docs/upgrading/">Upgrading</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/starting-a-new-site/">Starting a New Site</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/building-and-previewing/">Building &amp; Previewing</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/site-variables/">Site Variables</a>
