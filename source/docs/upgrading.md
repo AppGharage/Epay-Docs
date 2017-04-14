@@ -45,6 +45,8 @@ If you used the collections feature from a pre-1.0 development version of Jigsaw
 
 * The file `collections.php` is no longer used to define your collections. Instead, a `collections` key in the `config.php` array should be added to the array in `config.php`.
 
-* As mentioned above, all variables are now referenced using the `$page->` object. This includes collection items, which previously had been referenced using an `$item->` object. Update all variable references in your templates to use the `$page` object.
+* As mentioned above, all variables are now referenced using the `$page->` object:
+    - Variables in `config.php` had previously been referenced using a `$config->` object. `$config->` should be changed to `$page->`.
+    - Collection items had previously been referenced using an `$item->` object. `$item->` should be changed to `$page->`.
 
 * Collection metadata like `path`, `url`, and `collection` are now accessed using getters, e.g. `$item->path` has been changed to `$page->getPath()`.
