@@ -104,7 +104,7 @@ For example, to create a list of the titles for all your blog posts, you can ite
 
 In addition to the [metadata](/docs/page-metadata/) available for every page, such as `getPath()`, `getUrl()`, and `getFilename()`, collection items have access to a few additional functions:
 
-- `getContent()` returns the main content of the collection item (currently, for Markdown files only)
+- `getContent()` returns the main content of the collection item, i.e. the body of the Markdown file (currently, `getContent()` is available for Markdown files only)
 - `getCollection()` returns the name of the collection
 - `getPrevious()` and `getNext()` give you the adjacent items in the collection, based on the collection's default [sort order](/docs/collections-sorting)
 - `getFirst()` returns the first item of a collection (as does the Laravel collection method `first()`)

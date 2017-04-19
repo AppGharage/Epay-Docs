@@ -26,7 +26,7 @@
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/starting-a-new-site/">Starting a New Site</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/building-and-previewing/">Building &amp; Previewing</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/site-variables/">Site Variables</a>
-                <a class="nav-list-item" href="{{ $asset_prefix }}/docs/helper-functions/">Helper Functions</a>
+                <a class="nav-list-item" href="{{ $asset_prefix }}/docs/helper-methods/">Helper Methods</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/page-metadata/">Page Metadata</a>
                 <a class="nav-list-item" href="{{ $asset_prefix }}/docs/environments/">Environments</a>
 
