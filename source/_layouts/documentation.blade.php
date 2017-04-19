@@ -6,7 +6,7 @@
         <div class="navbar-content">
             <div>
                 <a class="link-plain text-xxl flex-y-center" href="{{ $asset_prefix }}/">
-                    <strong>Jigsaw</strong>
+                    <img class="logo" src="{{ $asset_prefix }}/img/jigsaw-logo-440.png" width="220">
                 </a>
             </div>
             <div class="docsearch navbar-buttons">

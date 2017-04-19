@@ -7,7 +7,7 @@
             <div class="navbar-content">
                 <div>
                     <a class="link-plain text-xxl flex-y-center" href="{{ $asset_prefix }}/">
-                        <strong>Jigsaw</strong>
+                        <img class="logo" src="{{ $asset_prefix }}/img/jigsaw-logo-440.png" width="220">
                     </a>
                 </div>
                 <div class="navbar-buttons">
@@ -83,7 +83,7 @@
         </div>
     </div>
 </section>
-<section class="p-xs-y-8 border-b bg-soft">
+<section class="p-xs-y-8 border-b bg-light">
     <div class="container">
         <h3 class="constrain text-xl text-center m-xs-b-6">
             Use Markdown for<br class="visible-xs-inline"> content-driven pages.
@@ -148,7 +148,7 @@ Welcome to the future.</code></pre>
         </div>
     </div>
 </section>
-<section class="p-xs-y-8 border-b bg-soft">
+<section class="p-xs-y-8 border-b bg-light">
     <div class="container text-center">
         <h3 class="text-xl m-xs-b-6">
             Ready to get started?
