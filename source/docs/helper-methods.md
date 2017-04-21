@@ -20,7 +20,7 @@ For instance, you can add a method that identifies if the current page belongs t
 return [
     'company' => 'Tighten Co',
     'selected' => function ($page, $section) {
-        return str_contains($data->getPath(), $section) ? 'selected' : '';
+        return str_contains($page->getPath(), $section) ? 'selected' : '';
     },
 ];
 ```
