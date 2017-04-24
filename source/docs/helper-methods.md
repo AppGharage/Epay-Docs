@@ -7,9 +7,9 @@ section: documentation_content
 
 In addition to storing variables in `config.php`, you can also define helper methods by adding a key with the name of the function and returning a closure. Helper methods are called by referencing the method name from the `$page` object in any Blade template.
 
-The method's closure automatically recieves the current `$page` as its first parameter. Additional parameters can be specified as well, and passed to the method when it is called in your template.
+The method's closure automatically receives the current `$page` as its first parameter. Additional parameters can be specified as well, and passed to the method when it is called in your template.
 
-For instance, you can add a method that identifies if the current page belongs to a particular section, for highlighting the currenct section in a menu template:
+For instance, you can add a method that identifies if the current page belongs to a particular section, for highlighting the current section in a menu template:
 
 
 > _config.php_
