@@ -35,7 +35,7 @@
         <div class="navbar-content">
             <div>
                 <a class="link-plain text-xxl flex-y-center" href="/">
-                    <strong>Jigsaw</strong>
+                    <img class="logo" src="/img/jigsaw-logo-440.png" width="220">
                 </a>
             </div>
             <div class="docsearch navbar-buttons">
@@ -55,7 +55,7 @@
                 <a class="nav-list-item" href="/docs/starting-a-new-site/">Starting a New Site</a>
                 <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
                 <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
-                <a class="nav-list-item" href="/docs/helper-functions/">Helper Functions</a>
+                <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
                 <a class="nav-list-item" href="/docs/page-metadata/">Page Metadata</a>
                 <a class="nav-list-item" href="/docs/environments/">Environments</a>
 
@@ -135,8 +135,7 @@ pagination:
     &lt;h3&gt;&lt;a href="{{ $post-&gt;getUrl() }}"&gt;{{ $post-&gt;title }}&lt;/a&gt;&lt;/h3&gt;
     &lt;p class="text-sm"&gt;by {{ $post-&gt;author }} • {{ $post-&gt;date }}&lt;/p&gt;
     &lt;div&gt;{!! $post-&gt;getContent() !!}&lt;/div&gt;
-@endforeach</code></pre>
-        </div>
+@endforeach</code></pre>        </div>
     </div>
 </div>
         </div>

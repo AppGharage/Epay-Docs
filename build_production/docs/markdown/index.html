@@ -35,7 +35,7 @@
         <div class="navbar-content">
             <div>
                 <a class="link-plain text-xxl flex-y-center" href="/">
-                    <strong>Jigsaw</strong>
+                    <img class="logo" src="/img/jigsaw-logo-440.png" width="220">
                 </a>
             </div>
             <div class="docsearch navbar-buttons">
@@ -55,7 +55,7 @@
                 <a class="nav-list-item" href="/docs/starting-a-new-site/">Starting a New Site</a>
                 <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
                 <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
-                <a class="nav-list-item" href="/docs/helper-functions/">Helper Functions</a>
+                <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
                 <a class="nav-list-item" href="/docs/page-metadata/">Page Metadata</a>
                 <a class="nav-list-item" href="/docs/environments/">Environments</a>
 
@@ -112,8 +112,8 @@ My awesome content!</code></pre>
 <pre><code class="language-html">@extends('_layouts.master')
 
 @section('content')
-    &lt;h1&gt;{{ $title }}&lt;/h1&gt;
-    &lt;h2&gt;by {{ $author }}&lt;/h2&gt;
+    &lt;h1&gt;{{ $page-&gt;title }}&lt;/h1&gt;
+    &lt;h2&gt;by {{ $page-&gt;author }}&lt;/h2&gt;
 
     @yield('postContent')
 @endsection</code></pre>
@@ -137,8 +137,7 @@ Jigsaw is one of the greatest static site generators of all time.</code></pre>
             Jigsaw is one of the greatest static site generators of all time.
         &lt;/p&gt;
     &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-        </div>
+&lt;/html&gt;</code></pre>        </div>
     </div>
 </div>
         </div>
