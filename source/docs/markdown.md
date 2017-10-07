@@ -53,8 +53,8 @@ Imagine you have a layout named `post.blade.php` in your `_layouts` folder that 
 @extends('_layouts.master')
 
 @section('content')
-    <h1>{{ $title }}</h1>
-    <h2>by {{ $author }}</h2>
+    <h1>{{ $page->title }}</h1>
+    <h2>by {{ $page->author }}</h2>
 
     @yield('postContent')
 @endsection
