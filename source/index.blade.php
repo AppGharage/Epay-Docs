@@ -6,15 +6,15 @@
         <div class="container">
             <div class="navbar-content">
                 <div>
-                    <a class="link-plain text-xxl flex-y-center" href="{{ $asset_prefix }}/">
-                        <img class="logo" src="{{ $asset_prefix }}/img/jigsaw-logo-440.png" width="220">
+                    <a class="link-plain text-xxl flex-y-center" href="{{ $page->asset_prefix }}/">
+                        <img class="logo" src="{{ $page->asset_prefix }}/img/jigsaw-logo-440.png" width="220">
                     </a>
                 </div>
                 <div class="navbar-buttons">
                     <a href="https://github.com/tightenco/jigsaw" class="link-brand m-xs-r-6">
                         Contribute
                     </a>
-                    <a href="{{ $asset_prefix }}/docs/installation/" class="btn btn-primary-outline">
+                    <a href="{{ $page->asset_prefix }}/docs/installation/" class="btn btn-primary-outline">
                         Docs
                     </a>
                 </div>
@@ -98,7 +98,7 @@
                         Jigsaw makes it painless to create a layout in Blade, and fill it with content written in Markdown.
                     </p>
                     <p>
-                        <a href="{{ $asset_prefix }}/docs/markdown/" class="link-brand">
+                        <a href="{{ $page->asset_prefix }}/docs/markdown/" class="link-brand">
                             Learn more in the docs.
                         </a>
                     </p>
@@ -143,7 +143,7 @@ Welcome to the future.</code></pre>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="{{ $asset_prefix }}/img/elixir-preprocessors.png" alt="Blade Code Sample" class="img-fit">
+                <img src="{{ $page->asset_prefix }}/img/elixir-preprocessors.png" alt="Blade Code Sample" class="img-fit">
             </div>
         </div>
     </div>
@@ -157,7 +157,7 @@ Welcome to the future.</code></pre>
             Check out our installation instructions and you'll be up and running in no time.
         </p>
         <div>
-            <a href="{{ $asset_prefix }}/docs/installation/" class="btn btn-lg btn-primary">
+            <a href="{{ $page->asset_prefix }}/docs/installation/" class="btn btn-lg btn-primary">
                 Build your site
             </a>
         </div>

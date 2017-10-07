@@ -1,7 +1,7 @@
 {
     "name": "tightenco/jigsaw-site",
     "require": {
-        "tightenco/jigsaw": "^0.5.0"
+        "tightenco/jigsaw": "^1.0"
     },
     "authors": [
         {
