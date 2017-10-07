@@ -9,6 +9,6 @@
     "suitcss-base": "^1.0.2"
   },
   "scripts": {
-    "deploy": "gulp && jigsaw build --env=production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production deploy gh-pages"
+    "deploy": "gulp && ./vendor/bin/jigsaw build production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production deploy gh-pages"
   }
 }
