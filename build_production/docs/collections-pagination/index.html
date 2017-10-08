@@ -93,6 +93,9 @@ pagination:
 ---
 @extends('_layouts.master')
 ...</code></pre>
+<blockquote>
+<p>If you don't provide a <code>perPage</code> value, the default value will be 10. The default value can also be set globally by adding a <code>perPage</code> key to <code>config.php</code>.</p>
+</blockquote>
 <p>Once the <code>pagination</code> has been defined in the header, the template will have access to a special <code>$pagination</code> variable, which has several attributes:</p>
 <ul>
 <li><code>$pagination-&gt;items</code> contains an array of collection items for the current page</li>
