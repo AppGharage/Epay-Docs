@@ -40,4 +40,10 @@ To build a specific environment, just pass the environment name as an argument w
 $ jigsaw build production
 ```
 
+And for `gulp`:
+
+```
+$ gulp --e=production
+```
+
 This will generate your site into a new folder called `build_production`, leaving your `build_local` folder untouched.
