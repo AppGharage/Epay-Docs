@@ -49,6 +49,8 @@ The end result would be a generated page that looked like this:
 
 Imagine you have a layout named `post.blade.php` in your `_layouts` folder that looks like this:
 
+> __layouts/post.blade.php_
+
 ```html
 @extends('_layouts.master')
 
@@ -60,8 +62,9 @@ Imagine you have a layout named `post.blade.php` in your `_layouts` folder that 
 @endsection
 ```
 
-You can populate the `$title` and `$author` variables by adding custom keys to the YAML front matter:
+You can populate the `title` and `author` variables by adding custom keys to the YAML front matter:
 
+> _my-post.md_
 
 ```markdown
 ---
@@ -88,4 +91,27 @@ Jigsaw is one of the greatest static site generators of all time.
         </p>
     </body>
 </html>
+```
+
+<br>
+
+**Formatting dates**
+
+The YAML processor converts any dates that it finds in a Markdown file's front matter into integer timestamps. When outputting a date variable in your Blade template, you can use PHP's `date()` function to specify a date format. For example:
+
+
+> _my-post.md_
+
+```markdown
+---
+extends: _layouts.post
+section: postContent
+date: 2018-02-16
+---
+```
+
+> __layouts/post.blade.php_
+
+```html
+<p>The formatted date is {{ date('F j, Y', $post->date) }}</p>
 ```

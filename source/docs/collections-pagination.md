@@ -71,7 +71,7 @@ To display the items on each page, iterate over the `$pagination->items` collect
 ```
 @foreach ($pagination->items as $post)
     <h3><a href="{{ $post->getUrl() }}">{{ $post->title }}</a></h3>
-    <p class="text-sm">by {{ $post->author }} • {{ $post->date }}</p>
+    <p class="text-sm">by {{ $post->author }} • {{ date('F j, Y', $post->date) }}</p>
     <div>{!! $post->getContent() !!}</div>
 @endforeach
 ```

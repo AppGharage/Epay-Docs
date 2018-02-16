@@ -135,7 +135,7 @@ This post is *profoundly* interesting.</code></pre>
 <pre><code>@extends('_layouts.master')
 
 &lt;h1&gt;{{ $page-&gt;title }}&lt;/h1&gt;
-&lt;p&gt;By {{ $page-&gt;author }} • {{ $page-&gt;date }}&lt;/p&gt;
+&lt;p&gt;By {{ $page-&gt;author }} • {{ date('F j, Y', $page-&gt;date) }}&lt;/p&gt;
 
 @yield('content')</code></pre>
 <h3>Accessing Collection Items</h3>

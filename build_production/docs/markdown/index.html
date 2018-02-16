@@ -109,6 +109,9 @@ My awesome content!</code></pre>
 &lt;/html&gt;</code></pre>
 <h3>Custom front matter variables</h3>
 <p>Imagine you have a layout named <code>post.blade.php</code> in your <code>_layouts</code> folder that looks like this:</p>
+<blockquote>
+<p>_<em>layouts/post.blade.php</em></p>
+</blockquote>
 <pre><code class="language-html">@extends('_layouts.master')
 
 @section('content')
@@ -117,7 +120,10 @@ My awesome content!</code></pre>
 
     @yield('postContent')
 @endsection</code></pre>
-<p>You can populate the <code>$title</code> and <code>$author</code> variables by adding custom keys to the YAML front matter:</p>
+<p>You can populate the <code>title</code> and <code>author</code> variables by adding custom keys to the YAML front matter:</p>
+<blockquote>
+<p><em>my-post.md</em></p>
+</blockquote>
 <pre><code class="language-markdown">---
 extends: _layouts.post
 section: postContent
@@ -137,7 +143,22 @@ Jigsaw is one of the greatest static site generators of all time.</code></pre>
             Jigsaw is one of the greatest static site generators of all time.
         &lt;/p&gt;
     &lt;/body&gt;
-&lt;/html&gt;</code></pre>        </div>
+&lt;/html&gt;</code></pre>
+<p><br></p>
+<p><strong>Formatting dates</strong></p>
+<p>The YAML processor converts any dates that it finds in a Markdown file's front matter into integer timestamps. When outputting a date variable in your Blade template, you can use PHP's <code>date()</code> function to specify a date format. For example:</p>
+<blockquote>
+<p><em>my-post.md</em></p>
+</blockquote>
+<pre><code class="language-markdown">---
+extends: _layouts.post
+section: postContent
+date: 2018-02-16
+---</code></pre>
+<blockquote>
+<p>_<em>layouts/post.blade.php</em></p>
+</blockquote>
+<pre><code class="language-html">&lt;p&gt;The formatted date is {{ date('F j, Y', $post-&gt;date) }}&lt;/p&gt;</code></pre>        </div>
     </div>
 </div>
         </div>

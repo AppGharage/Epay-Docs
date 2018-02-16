@@ -136,7 +136,7 @@ pagination:
 <p>To display the items on each page, iterate over the <code>$pagination-&gt;items</code> collection:</p>
 <pre><code>@foreach ($pagination-&gt;items as $post)
     &lt;h3&gt;&lt;a href="{{ $post-&gt;getUrl() }}"&gt;{{ $post-&gt;title }}&lt;/a&gt;&lt;/h3&gt;
-    &lt;p class="text-sm"&gt;by {{ $post-&gt;author }} • {{ $post-&gt;date }}&lt;/p&gt;
+    &lt;p class="text-sm"&gt;by {{ $post-&gt;author }} • {{ date('F j, Y', $post-&gt;date) }}&lt;/p&gt;
     &lt;div&gt;{!! $post-&gt;getContent() !!}&lt;/div&gt;
 @endforeach</code></pre>        </div>
     </div>
