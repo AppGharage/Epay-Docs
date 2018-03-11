@@ -140,7 +140,7 @@ This post is *profoundly* interesting.</code></pre>
 @yield('content')</code></pre>
 <h3>Accessing Collection Items</h3>
 <p>In any Blade template, you have access to each of your collections using a variable with the collection's name. This variable references an object that contains all the elements in your collection, and can be iterated over to
-access individual collection items. The collection variable also behaves as if it were an <a href="https://laravel.com/docs/5.4/collections">Illuminate Collection</a> in Laravel, meaning you have access to all of Laravel's standard collection methods like <code>count()</code>, <code>filter()</code>, and <code>where()</code>.</p>
+access individual collection items. The collection variable also behaves as if it were an <a href="https://laravel.com/docs/5.6/collections">Illuminate Collection</a> in Laravel, meaning you have access to all of Laravel's standard collection methods like <code>count()</code>, <code>filter()</code>, and <code>where()</code>.</p>
 <p>For example, to create a list of the titles for all your blog posts, you can iterate over the <code>$posts</code> object in a Blade <code>@foreach</code> loop, and display the <code>title</code> property that you defined in the YAML front matter of each post:</p>
 <blockquote>
 <p><em>posts.blade.php</em></p>
