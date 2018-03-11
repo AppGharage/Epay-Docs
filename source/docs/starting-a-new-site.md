@@ -31,6 +31,6 @@ By default, Jigsaw gives you the following directory structure:
 
 The `source` directory contains the actual contents of your site. This is where all of your sites pages, CSS, Javascript, images, etc. will be kept.
 
-At the root of the directory, Jigsaw provides `gulpfile.js` and `package.json` for compiling your assets, and a `config.php` file where you can specify variables to be made available in your templates.
+At the root of the directory, Jigsaw provides `webpack.mix.js` and `package.json` for compiling your assets, and a `config.php` file where you can specify variables to be made available in your templates.
 
 Next, learn about [building and previewing your site](../building-and-previewing).
