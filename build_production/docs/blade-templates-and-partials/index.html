@@ -156,7 +156,11 @@
 <p>Jigsaw gives you a <code>_layouts</code> folder by default, but as long as you prefix with an underscore, you can create any files or folders you need.</p>
 <p>For example, if you wanted a place to store all of your partials, you could create a directory called <code>_partials</code>:</p>
 <p><img src="../../img/partials-directory.png" alt="Partials folder" /></p>
-<p>Since the <code>_partials</code> folder starts with an underscore, those files won't be rendered when you generate your site, but will still be available to <code>@include</code> in your other templates.</p>        </div>
+<p>Since the <code>_partials</code> folder starts with an underscore, those files won't be rendered when you generate your site, but will still be available to <code>@include</code> in your other templates.</p>
+<h3>Laravel Mix Versioning</h3>
+<p>If you are using Laravel Mix's versioning feature, which is enabled in the default Jigsaw configuration, you can now use the global <code>mix()</code> helper function to load the appropriate asset into your views. Simply pass it a path to one of your assets (with the normal filename) and the <code>mix()</code> function will automatically determine the current versioned name of the file.</p>
+<p>For example, in the head of your master layout file:</p>
+<pre><code>&lt;link rel="stylesheet" href="{{ mix('/css/main.css') }}"&gt;</code></pre>        </div>
     </div>
 </div>
         </div>
