@@ -115,3 +115,13 @@ For example, if you wanted a place to store all of your partials, you could crea
 ![Partials folder](../../img/partials-directory.png)
 
 Since the `_partials` folder starts with an underscore, those files won't be rendered when you generate your site, but will still be available to `@include` in your other templates.
+
+### Laravel Mix Versioning
+
+If you are using Laravel Mix's versioning feature, which is enabled in the default Jigsaw configuration, you can now use the global `mix()` helper function to load the appropriate asset into your views. Simply pass it a path to one of your assets (with the normal filename) and the `mix()` function will automatically determine the current versioned name of the file.
+
+For example, in the head of your master layout file:
+
+```
+<link rel="stylesheet" href="{{ mix('/css/main.css') }}">
+```
