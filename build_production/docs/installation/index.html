@@ -52,7 +52,6 @@
             <nav class="nav-list">
                 <a class="nav-list-item" href="/docs/installation/">Installation</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/upgrading/">Upgrading</a>
-                <a class="nav-list-item" href="/docs/starting-a-new-site/">Starting a New Site</a>
                 <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
                 <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
                 <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
@@ -82,23 +81,28 @@
         <div class="col-md-9 documentation-page">
             <h2>Installation</h2>
 <h3>System Requirements</h3>
-<p>To use Jigsaw, you need to have PHP 7 installed on your machine. You'll also optionally need Node.js and NPM installed if you want to use <a href="https://laravel.com/docs/5.2/elixir">Elixir</a> to compile your CSS and Javascript.</p>
-<h3>Installing Globally</h3>
-<p>Install Jigsaw globally via Composer:</p>
-<pre><code>$ composer global require tightenco/jigsaw</code></pre>
+<p>To use Jigsaw, you need to have PHP 7 and <a href="https://getcomposer.org/">Composer</a> installed on your machine. You'll also optionally need Node.js and NPM installed if you want to use <a href="https://laravel.com/docs/5.2/elixir">Elixir</a> to compile your CSS and Javascript.</p>
+<hr />
+<h3>1. Create the Project Directory</h3>
+<p>First, create a new directory for your site:</p>
+<pre><code>$ mkdir my-site</code></pre>
+<h3>2. Install Jigsaw via Composer:</h3>
+<p>Next, navigate to your new project directory and install Jigsaw using Composer:</p>
+<pre><code>$ cd my-site
+$ composer require tightenco/jigsaw</code></pre>
 <blockquote>
 <p>Make sure <code>~/.composer/vendor/bin</code> is in your <code>$PATH</code>.</p>
 </blockquote>
-<h3>Installing Locally</h3>
-<p>If you run into dependency conflicts when trying to install Jigsaw globally, you can always install it locally on a per site basis.</p>
-<p>Create a folder for your site:</p>
-<pre><code>$ mkdir my-site &amp;&amp; cd my-site</code></pre>
-<p>Install Jigsaw via Composer:</p>
-<pre><code>$ composer require tightenco/jigsaw</code></pre>
-<p>Initialize a new project in the current folder:</p>
+<h3>3. Initialize your Project</h3>
+<p>Finally, from your project directory, run Jigsaw's <code>init</code> command to scaffold the default directory structure:</p>
 <pre><code>$ ./vendor/bin/jigsaw init</code></pre>
-<p>When Jigsaw is installed locally, you'll run the following command (instead of <code>jigsaw build</code>) to build your site:</p>
-<pre><code>$ ./vendor/bin/jigsaw build</code></pre>        </div>
+<hr />
+<h3>Directory structure</h3>
+<p>By default, Jigsaw gives you the following directory structure:</p>
+<p><img src="../../img/directory-structure.png" alt="Default directory structure" /></p>
+<p>The <code>source</code> directory contains the actual contents of your site. This is where all of your site's pages, CSS, Javascript, images, etc. will be kept.</p>
+<p>At the root of the directory, Jigsaw provides <code>webpack.mix.js</code> and <code>package.json</code> for compiling your assets, and a <code>config.php</code> file where you can specify variables to be made available in your templates.</p>
+<p>Next, learn about <a href="../building-and-previewing">building and previewing your site</a>.</p>        </div>
     </div>
 </div>
         </div>

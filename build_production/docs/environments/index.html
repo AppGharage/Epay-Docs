@@ -52,7 +52,6 @@
             <nav class="nav-list">
                 <a class="nav-list-item" href="/docs/installation/">Installation</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/upgrading/">Upgrading</a>
-                <a class="nav-list-item" href="/docs/starting-a-new-site/">Starting a New Site</a>
                 <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
                 <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
                 <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
@@ -98,8 +97,10 @@ return [
 ];</code></pre>
 <p>This file is <em>merged</em> on top of <code>config.php</code>, so you only need to specify the variables that you are changing.</p>
 <h3>Building a specific environment</h3>
-<p>To build a specific environment, just pass the environment name as an argument when running <code>jigsaw build</code>:</p>
-<pre><code>$ jigsaw build production</code></pre>
+<p>To build a specific environment, just pass the environment name as an argument when running the <code>build</code> command:</p>
+<pre><code>$ ./vendor/bin/jigsaw build production</code></pre>
+<p>And for <code>gulp</code>:</p>
+<pre><code>$ gulp --e=production</code></pre>
 <p>This will generate your site into a new folder called <code>build_production</code>, leaving your <code>build_local</code> folder untouched.</p>        </div>
     </div>
 </div>
