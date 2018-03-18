@@ -6,7 +6,7 @@ section: documentation_content
 #### [Collections](/docs/collections)
 ## Variables & Helper Functions
 
-Each collection can have its own set of variables and helper functions defined in the collection array in `config.php`. These follow the same format as the site-wide [variables](/docs/site-variables) and [helper functions](/docs/helper-functions) that are defined at the top level of the `config.php` array.
+Each collection can have its own set of variables and helper functions defined in the collection array in `config.php`. These follow the same format as the site-wide [variables](/docs/site-variables) and [helper functions](/docs/helper-methods) that are defined at the top level of the `config.php` array.
 
 ### Variables
 
