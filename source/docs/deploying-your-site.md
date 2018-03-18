@@ -42,7 +42,7 @@ What you might not have known is that Amazon S3 also has first class support for
 To deploy a site to S3, first build your site for production:
 
 ```
-$ jigsaw build production
+$ ./vendor/bin/jigsaw build production
 ```
 
 Then simply follow the steps in [Amazon's static site documentation](http://docs.aws.amazon.com/gettingstarted/latest/swh/website-hosting-intro.html) to deploy your `build_production` folder to your S3 bucket.
@@ -53,7 +53,7 @@ If you have an existing server that you'd like to use to host your Jigsaw site, 
 
 ### Changing the Source and Destination Directories
 
-Jigsaw will look for your source files in a `source` directory, and will output your files to a directory named `build_` followed by the environment you specified in the `jigsaw build` command (`build_local` by default, or `build_staging`, `build_production`, etc.). You can, however, customize these locations by adding a `build` key to the array in `config.php`, and specifying your own source and/or destination paths.
+Jigsaw will look for your source files in a `source` directory, and will output your files to a directory named `build_` followed by the environment you specified in the `build` command (`build_local` by default, or `build_staging`, `build_production`, etc.). You can, however, customize these locations by adding a `build` key to the array in `config.php`, and specifying your own source and/or destination paths.
 
 > _config.php_
 
@@ -82,7 +82,7 @@ return [
     ...
 ```
 
-To include the environment name in your destination path, use the `{env}` token in your path name. `{env}` will be replaced by the environment specified when running jigsaw build, and defaults to `local`.
+To include the environment name in your destination path, use the `{env}` token in your path name. `{env}` will be replaced by the environment specified when running the `build` command, and defaults to `local`.
 
 > _config.php_
 
@@ -96,7 +96,7 @@ return [
     ...
 ```
 
-In this example, running `jigsaw build staging` would output your built files to staging/public, two levels up from your project root. Jigsaw will create any directories that do not already exist.
+In this example, running `./vendor/bin/jigsaw build staging` would output your built files to staging/public, two levels up from your project root. Jigsaw will create any directories that do not already exist.
 
-You can also assign different source and build paths for different environments by using multiple [environment-specific `config.php` files](/docs/environments/). Source and destination paths in `config.production.php`, for example, will get merged with any build paths that have been defined in `config.php` when running `jigsaw build production`.
+You can also assign different source and build paths for different environments by using multiple [environment-specific `config.php` files](/docs/environments/). Source and destination paths in `config.production.php`, for example, will get merged with any build paths that have been defined in `config.php` when running `./vendor/bin/jigsaw build production`.
 

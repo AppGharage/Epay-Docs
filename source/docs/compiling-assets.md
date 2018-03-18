@@ -122,7 +122,7 @@ To compile your assets, run:
 $ npm run dev
 ```
 
-Once the assets have been compiled, `jigsaw build` will be run again automatically, so you can preview your changes in the browser.
+Once the assets have been compiled, the `build` command will be run again automatically, so you can preview your changes in the browser.
 
 ### Watching for changes
 

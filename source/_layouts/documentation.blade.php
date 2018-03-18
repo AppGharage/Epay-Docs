@@ -23,7 +23,6 @@
             <nav class="nav-list">
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/installation/">Installation</a>
                 <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/upgrading/">Upgrading</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/starting-a-new-site/">Starting a New Site</a>
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/building-and-previewing/">Building &amp; Previewing</a>
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/site-variables/">Site Variables</a>
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/helper-methods/">Helper Methods</a>

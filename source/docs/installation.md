@@ -7,42 +7,47 @@ section: documentation_content
 
 ### System Requirements
 
-To use Jigsaw, you need to have PHP 7 installed on your machine. You'll also optionally need Node.js and NPM installed if you want to use [Elixir](https://laravel.com/docs/5.2/elixir) to compile your CSS and Javascript.
+To use Jigsaw, you need to have PHP 7 and [Composer](https://getcomposer.org/) installed on your machine. You'll also optionally need Node.js and NPM installed if you want to use [Elixir](https://laravel.com/docs/5.2/elixir) to compile your CSS and Javascript.
 
-### Installing Globally
+---
 
-Install Jigsaw globally via Composer:
+### 1. Create the Project Directory
+
+First, create a new directory for your site:
 
 ```
-$ composer global require tightenco/jigsaw
+$ mkdir my-site
+```
+
+### 2. Install Jigsaw via Composer:
+
+Next, navigate to your new project directory and install Jigsaw using Composer:
+
+```
+$ cd my-site
+$ composer require tightenco/jigsaw
 ```
 
 > Make sure `~/.composer/vendor/bin` is in your `$PATH`.
 
-### Installing Locally
+### 3. Initialize your Project
 
-If you run into dependency conflicts when trying to install Jigsaw globally, you can always install it locally on a per site basis.
-
-Create a folder for your site:
-
-```
-$ mkdir my-site && cd my-site
-```
-
-Install Jigsaw via Composer:
-
-```
-$ composer require tightenco/jigsaw
-```
-
-Initialize a new project in the current folder:
+Finally, from your project directory, run Jigsaw's `init` command to scaffold the default directory structure:
 
 ```
 $ ./vendor/bin/jigsaw init
 ```
 
-When Jigsaw is installed locally, you'll run the following command (instead of `jigsaw build`) to build your site:
+---
 
-```
-$ ./vendor/bin/jigsaw build
-```
+### Directory structure
+
+By default, Jigsaw gives you the following directory structure:
+
+![Default directory structure](../../img/directory-structure.png)
+
+The `source` directory contains the actual contents of your site. This is where all of your site's pages, CSS, Javascript, images, etc. will be kept.
+
+At the root of the directory, Jigsaw provides `webpack.mix.js` and `package.json` for compiling your assets, and a `config.php` file where you can specify variables to be made available in your templates.
+
+Next, learn about [building and previewing your site](../building-and-previewing).

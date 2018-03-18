@@ -7,7 +7,7 @@ section: documentation_content
 
 When you'd like to generate your site, run the `build` command from within your project root:
 
-`$ jigsaw build`
+`$ ./vendor/bin/jigsaw build`
 
 Jigsaw will generate your static HTML and place it in the `./build_local` directory by default.
 
@@ -17,15 +17,15 @@ Using the default site structure, `./build_local` will look like this:
 
 ### Previewing with PHP
 
-To quickly preview your site, use the `jigsaw serve` command:
+To quickly preview your site, use the `serve` command:
 
-`$ jigsaw serve`
+`$ ./vendor/bin/jigsaw serve`
 
 You can now view your site at `http://localhost:8000` in your browser.
 
 You can also optionally specify the environment and port to serve like so:
 
-`$ jigsaw serve production --port=8080`
+`$ ./vendor/bin/jigsaw serve production --port=8080`
 
 This will serve your `build_production` folder at `http://localhost:8080`.
 
