@@ -32,18 +32,18 @@ return [
 
 This file is _merged_ on top of `config.php`, so you only need to specify the variables that you are changing.
 
-### Building a specific environment
+### Building files for a specific environment
 
-To build a specific environment, just pass the environment name as an argument when running the `build` command:
+To build files for a specific environment, just pass the environment name as an argument when running the `build` command:
 
 ```
 $ ./vendor/bin/jigsaw build production
 ```
 
-And for `gulp`:
+Alternatively, if you are [using Laravel Mix to compile your assets](../compiling-assets), you can run the `production` script found in `package.json`:
 
 ```
-$ gulp --e=production
+$ npm run production
 ```
 
 This will generate your site into a new folder called `build_production`, leaving your `build_local` folder untouched.
