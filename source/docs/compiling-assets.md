@@ -5,7 +5,7 @@ section: documentation_content
 
 ## Compiling Assets
 
-Jigsaw sites are configured with support for [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) out of the box. If you've ever used Mix in a Laravel project, you already know how to use Mix with Jigsaw.
+Jigsaw sites are configured with support for [Laravel Mix](https://laravel.com/docs/5.6/mix) out of the box. If you've ever used Mix in a Laravel project, you already know how to use Mix with Jigsaw.
 
 ### Setup
 
@@ -17,7 +17,7 @@ Once you have Node.js and NPM installed, pull in the dependencies needed to comp
 $ npm install
 ```
 
-For more detailed installation instructions, check out the [full Laravel Mix documentation](https://github.com/JeffreyWay/laravel-mix).
+For more detailed installation instructions, check out the [full Laravel Mix documentation](https://laravel.com/docs/5.6/mix).
 
 ### Organizing your assets
 
