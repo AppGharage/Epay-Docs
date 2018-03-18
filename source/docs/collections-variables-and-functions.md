@@ -86,7 +86,7 @@ For this regular (non-collection) page, author will be *Default Site Author*, th
 
 ### Helper Functions
 
-Helper functions can be included in the collection setitngs array in `config.php`, and will be available to all of that collection's items. The same cascading rules that apply to variables also apply to functions, i.e. functions defined for a collection will override a function of the same name defined at the top level. For example:
+Helper functions can be included in the collection settings array in `config.php`, and will be available to all of that collection's items. The same cascading rules that apply to variables also apply to functions, i.e. functions defined for a collection will override a function of the same name defined at the top level. For example:
 
 > _config.php_
 
