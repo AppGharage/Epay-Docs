@@ -37,7 +37,7 @@ If you'd like to change the source and destination folders for your assets, edit
 mix.setPublicPath('source/assets/');
 
 mix.js('source/_assets/js/main.js', 'js/')
-    .sass('source/_assets/sass/main.scss', 'css/')
+    .sass('source/_assets/sass/main.scss', 'css/main.css')
 ```
 
 ### Enabling different preprocessors
@@ -45,58 +45,21 @@ mix.js('source/_assets/js/main.js', 'js/')
 Jigsaw ships with the following `webpack.mix.js` and is configured to use Sass out of the box:
 
 ```js
-let argv = require('yargs').argv;
-let command = require('node-cmd');
-let jigsaw = require('./tasks/bin');
 let mix = require('laravel-mix');
+let build = require('./tasks/build.js');
 
-let AfterBuild = require('on-build-webpack');
-let BrowserSync = require('browser-sync');
-let BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-let Watch = require('webpack-watch');
-
-const env = argv.e || argv.env || 'local';
-const port = argv.p || argv.port || 3000;
-const buildPath = 'build_' + env + '/';
-
-let browserSyncInstance;
-
-let plugins = [
-    new AfterBuild(() => {
-        command.get(jigsaw.path() + ' build ' + env, (error, stdout, stderr) => {
-            console.log(error ? stderr : stdout);
-
-            if (browserSyncInstance) {
-                browserSyncInstance.reload();
-            }
-        });
-    }),
-
-    new BrowserSyncPlugin({
-        proxy: null,
-        port: port,
-        server: { baseDir: buildPath },
-        notify: false,
-    },
-    {
-        reload: false,
-        callback: function() {
-            browserSyncInstance = BrowserSync.get('bs-webpack-plugin');
-        },
-    }),
-
-    new Watch({
-        paths: ['source/**/*.md', 'source/**/*.php'],
-        options: { ignoreInitial: true }
-    }),
-];
-
-mix.webpackConfig({ plugins });
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/');
+mix.webpackConfig({
+    plugins: [
+        build.jigsaw,
+        build.browserSync(),
+        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss']),
+    ]
+});
 
-mix.js('source/_assets/js/main.js', 'js/')
-    .sass('source/_assets/sass/main.scss', 'css/')
+mix.js('source/_assets/js/main.js', 'js')
+    .sass('source/_assets/sass/main.scss', 'css/main.css')
     .version();
 ```
 
@@ -105,12 +68,8 @@ If you'd like to switch to Less, use Coffeescript, or take advantage of any othe
 Here's an example of what it might look like to use Less and React:
 
 ```js
-mix.webpackConfig({ plugins });
-mix.disableSuccessNotifications();
-mix.setPublicPath('source/assets/');
-
-mix.react('source/_assets/js/main.js', 'js/')
-    .less('source/_assets/sass/main.scss', 'css/')
+mix.react('source/_assets/js/main.js', 'js')
+    .less('source/_assets/sass/main.less', 'css/main.css')
     .version();
 ```
 
