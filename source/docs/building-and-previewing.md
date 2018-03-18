@@ -31,10 +31,10 @@ This will serve your `build_production` folder at `http://localhost:8080`.
 
 ### Previewing with Browsersync
 
-If you are [using Elixir to compile your assets](../compiling-assets), you can preview your site with Browsersync by simply running:
+If you are [using Laravel Mix to compile your assets](../compiling-assets), you can preview your site with Browsersync by simply running:
 
 ```
-$ gulp watch
+$ npm run watch
 ```
 
 Browsersync will automatically open a new browser tab and reload the page every time you make a change. Very helpful for previewing your changes quickly!
