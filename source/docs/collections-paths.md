@@ -38,7 +38,7 @@ If you included a date as a variable in your collection items (in YYYY-MM-DD for
 
 ```
 'path' => '{collection}/{published|Y-m-d}/{-title}'  // 'posts/2017-03-27/title-of-first-post'
-'path' => '{collection}/{published|Y/m}/{-title}'    // 'posts/2017/03/27/title-of-first-post'
+'path' => '{collection}/{published|Y/m}/{-title}'    // 'posts/2017/03/title-of-first-post'
 'path' => 'blog-{published|F-Y}/{-title}'            // 'blog-March-2017/title-of-first-post'
 ```
 
