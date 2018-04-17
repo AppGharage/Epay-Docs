@@ -94,7 +94,7 @@
 'path' =&gt; '{collection}/{_filename}'                 // 'posts/my_first_blog_post'</code></pre>
 <p>If you included a date as a variable in your collection items (in YYYY-MM-DD format), you can control the formatting of that date in your path by following the variable name with a pipe and using PHP date formatting codes. For any <code>/</code>s in your date formatting code, Jigsaw will create subdirectories as needed:</p>
 <pre><code>'path' =&gt; '{collection}/{published|Y-m-d}/{-title}'  // 'posts/2017-03-27/title-of-first-post'
-'path' =&gt; '{collection}/{published|Y/m}/{-title}'    // 'posts/2017/03/27/title-of-first-post'
+'path' =&gt; '{collection}/{published|Y/m}/{-title}'    // 'posts/2017/03/title-of-first-post'
 'path' =&gt; 'blog-{published|F-Y}/{-title}'            // 'blog-March-2017/title-of-first-post'</code></pre>
 <h3>Custom Path Closure</h3>
 <p>Though the path shorthand allows you to easily create the most common permalink formats, you can also return a closure from <code>path</code> if you require more control. The closure will receive the contents of the current collection item as its first parameter. For example:</p>
