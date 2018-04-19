@@ -115,3 +115,23 @@ date: 2018-02-16
 ```html
 <p>The formatted date is {{ date('F j, Y', $post->date) }}</p>
 ```
+
+
+<br>
+
+**Specifying a permalink**
+
+You can specify a `permalink` in the YAML front matter to override the default path of a file when your site is built. This can be used, for example, to create a [custom 404](/docs/custom-404-page) page that is output to `404.html` (instead of the default `404/index.html`):
+
+> _source/404.md_
+
+```
+---
+extends: _layouts.master
+section: content
+permalink: 404.html
+---
+
+### Sorry, that page does not exist.
+```
+
