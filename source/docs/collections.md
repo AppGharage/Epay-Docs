@@ -121,7 +121,7 @@ In addition to the [metadata](/docs/page-metadata/) available for every page, su
 
 @if ($page->getNext())
     <p>Read my next post:
-        <a href="{{ $page->getNext()->path }}">{{ $page->getNext()->title }}</a>
+        <a href="{{ $page->getNext()->getPath() }}">{{ $page->getNext()->title }}</a>
     </p>
 @endif
 ```
