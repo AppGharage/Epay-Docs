@@ -19,7 +19,7 @@ To define a collection, add an array named `collections` to `config.php`. Each c
 <?php
 
 return [
-    'company' => 'Tighten Co',
+    'company' => 'Tighten',
     'contact_email' => 'support@tighten.co',
     'collections' => [
         'people' => [
@@ -28,7 +28,7 @@ return [
         ],
         'posts' => [
             'path' => 'blog/{date|Y-m-d}/{filename}',
-            'author' => 'Tighten Co.',
+            'author' => 'Tighten',
         ],
     ],
 ];

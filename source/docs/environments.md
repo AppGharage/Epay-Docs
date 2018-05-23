@@ -16,7 +16,7 @@ Say your base `config.php` file looks like this:
 
 return [
     'staging' => true,
-    'company' => 'Tighten Co',
+    'company' => 'Tighten',
 ];
 ```
 

@@ -11,7 +11,7 @@ Since Jigsaw sites are just static HTML and Javascript, they are simple and chea
 
 [GitHub Pages](https://pages.github.com/) is a free service for hosting static sites offered by GitHub. To get started, first read through [the documentation](https://help.github.com/categories/github-pages-basics/) to get an understanding of how the service works.
 
-The approach we use at Tighten Co. for deploying Jigsaw sites to GitHub pages looks like this:
+The approach we use at Tighten for deploying Jigsaw sites to GitHub pages looks like this:
 
 1. Build your site for production
 
