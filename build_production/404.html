@@ -46,46 +46,15 @@
     </div>
 </nav>
 
-<div class="container m-xs-b-6">
+<div class="container m-xs-b-6 documentation-page">
     <div class="row">
-        <div class="col-md-3 m-xs-b-6">
-            <nav class="nav-list">
-                <a class="nav-list-item" href="/docs/installation/">Installation</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/upgrading/">Upgrading</a>
-                <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
-                <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
-                <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
-                <a class="nav-list-item" href="/docs/page-metadata/">Page Metadata</a>
-                <a class="nav-list-item" href="/docs/environments/">Environments</a>
-
-                <a class="nav-list-item" href="/docs/blade-templates-and-partials/">Supported File Types</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/blade-templates-and-partials/">Blade Templates &amp; Partials</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/markdown/">Markdown</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/other-file-types/">Other File Types</a>
-
-                <a class="nav-list-item" href="/docs/collections/">Collections</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-extending-parent-templates/">Extending Parent Templates</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-paths/">Paths</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-sorting/">Sorting</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-pagination/">Pagination</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-variables-and-functions/">Variables &amp; Helper Functions</a>
-
-                <a class="nav-list-item" href="/docs/pretty-urls/">Pretty URLs</a>
-                <a class="nav-list-item" href="/docs/custom-404-page/">Custom 404 Page</a>
-                <a class="nav-list-item" href="/docs/compiling-assets/">Compiling Assets</a>
-                <a class="nav-list-item" href="/docs/deploying-your-site/">Deploying Your Site</a>
-            </nav>
-            <p class="p-xs-x-1 p-xs-y-4 text-dark-soft">
-                <small>Brought to you by <a href="https://tighten.co" class="link-tighten">Tighten</a></small>
-            </p>
+        <div class="col-xs-12 p-xs-y-8 text-center">
+            <h2>Something went wrong...</h2>
+            <h4 class="m-xs-y-2">
+                We couldn't find the page you were looking for.<br/>
+                Try using the search box above.
+            </h4>
         </div>
-        <div class="col-md-9 documentation-page">
-            <h2>Page Metadata</h2>
-<p>For each page, Jigsaw provides you with certain metadata values through <code>get</code> functions accessed on the <code>$page</code> object:</p>
-<p><code>$page-&gt;getPath()</code> returns the path to the current page, relative to the site root</p>
-<p><code>$page-&gt;getUrl()</code> returns the full URL to the item, if <code>baseUrl</code> was defined in <code>config.php</code></p>
-<p><code>$page-&gt;getFilename()</code> returns the filename of the page, without extension (e.g. <code>my-first-page</code>)</p>
-<p><code>$page-&gt;getExtension()</code> returns the file extension (e.g. <code>md</code>)</p>        </div>
     </div>
 </div>
         </div>

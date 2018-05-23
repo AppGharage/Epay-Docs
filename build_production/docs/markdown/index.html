@@ -71,11 +71,12 @@
                 <a class="nav-list-item nav-list-item--sub" href="/docs/collections-variables-and-functions/">Variables &amp; Helper Functions</a>
 
                 <a class="nav-list-item" href="/docs/pretty-urls/">Pretty URLs</a>
+                <a class="nav-list-item" href="/docs/custom-404-page/">Custom 404 Page</a>
                 <a class="nav-list-item" href="/docs/compiling-assets/">Compiling Assets</a>
                 <a class="nav-list-item" href="/docs/deploying-your-site/">Deploying Your Site</a>
             </nav>
             <p class="p-xs-x-1 p-xs-y-4 text-dark-soft">
-                <small>Brought to you by <a href="http://tighten.co" class="link-tighten">Tighten Co.</a></small>
+                <small>Brought to you by <a href="https://tighten.co" class="link-tighten">Tighten</a></small>
             </p>
         </div>
         <div class="col-md-9 documentation-page">
@@ -157,7 +158,20 @@ date: 2018-02-16
 <blockquote>
 <p>_<em>layouts/post.blade.php</em></p>
 </blockquote>
-<pre><code class="language-html">&lt;p&gt;The formatted date is {{ date('F j, Y', $post-&gt;date) }}&lt;/p&gt;</code></pre>        </div>
+<pre><code class="language-html">&lt;p&gt;The formatted date is {{ date('F j, Y', $post-&gt;date) }}&lt;/p&gt;</code></pre>
+<p><br></p>
+<p><strong>Specifying a permalink</strong></p>
+<p>You can specify a <code>permalink</code> in the YAML front matter to override the default path of a file when your site is built. This can be used, for example, to create a <a href="/docs/custom-404-page">custom 404</a> page that is output to <code>404.html</code> (instead of the default <code>404/index.html</code>):</p>
+<blockquote>
+<p><em>source/404.md</em></p>
+</blockquote>
+<pre><code>---
+extends: _layouts.master
+section: content
+permalink: 404.html
+---
+
+### Sorry, that page does not exist.</code></pre>        </div>
     </div>
 </div>
         </div>
