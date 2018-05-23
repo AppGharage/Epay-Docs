@@ -47,7 +47,7 @@
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/deploying-your-site/">Deploying Your Site</a>
             </nav>
             <p class="p-xs-x-1 p-xs-y-4 text-dark-soft">
-                <small>Brought to you by <a href="http://tighten.co" class="link-tighten">Tighten Co.</a></small>
+                <small>Brought to you by <a href="https://tighten.co" class="link-tighten">Tighten</a></small>
             </p>
         </div>
         <div class="col-md-9 documentation-page">
