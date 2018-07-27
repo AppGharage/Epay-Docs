@@ -43,6 +43,7 @@
 
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/pretty-urls/">Pretty URLs</a>
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/custom-404-page/">Custom 404 Page</a>
+                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/event-listeners/">Event Listeners</a>
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/compiling-assets/">Compiling Assets</a>
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/deploying-your-site/">Deploying Your Site</a>
             </nav>
