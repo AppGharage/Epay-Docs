@@ -83,12 +83,129 @@
             </p>
         </div>
         <div class="col-md-9 documentation-page">
-            <h2>Page Metadata</h2>
-<p>For each page, Jigsaw provides you with certain metadata values through <code>get</code> functions accessed on the <code>$page</code> object:</p>
-<p><code>$page-&gt;getPath()</code> returns the path to the current page, relative to the site root</p>
-<p><code>$page-&gt;getUrl()</code> returns the full URL to the item, if <code>baseUrl</code> was defined in <code>config.php</code></p>
-<p><code>$page-&gt;getFilename()</code> returns the filename of the page, without extension (e.g. <code>my-first-page</code>)</p>
-<p><code>$page-&gt;getExtension()</code> returns the file extension (e.g. <code>md</code>)</p>        </div>
+            <h4><a href="/docs/content">Creating Your Site's Content</a></h4>
+<h2>Blade Templates &amp; Partials</h2>
+<p>One of the biggest benefits of a templating language is the ability to create reusable layouts and partials. Jigsaw gives you access to all the templating features and control structures of Blade that are available in Laravel 5.6 (learn more about Blade layouts in the <a href="https://laravel.com/docs/5.6/blade">official Blade documentation</a>).</p>
+<h3>Defining a Layout</h3>
+<p>Layouts themselves are just basic Blade templates that have one or more <code>@yield</code> calls where child templates can render their contents.</p>
+<p>A basic master layout could look like this:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;The Amazing Web&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            My Amazing Site
+        &lt;/header&gt;
+
+        @yield('contents')
+
+        &lt;footer&gt;
+            &lt;p&gt;©2016 Awesome Co&lt;/p&gt;
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>Jigsaw provides a <code>source/_layouts</code> directory out of the box with a basic master layout.</p>
+<h3>Extending a Layout</h3>
+<p>To extend a layout, create a template that specifies which layout to extend in an <code>@extends</code> directive, and which section(s) to populate using the <code>@section</code> directive:</p>
+<pre><code>@extends('_layouts.master')
+
+@section('contents')
+
+&lt;div&gt;
+    &lt;p&gt;The contents of my amazing homepage.&lt;/p&gt;
+&lt;/div&gt;
+
+@endsection</code></pre>
+<p>Layouts and partials are referenced relative to the <code>source</code> directory using <em>dot notation</em>, where each dot represents a directory separator in the file name and the <code>.blade.php</code> extension omitted.</p>
+<h3>Partials</h3>
+<p>To include a template inside of another template, use the <code>@include</code> directive:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;The Amazing Web&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        @include('_partials.header')
+
+        @yield('contents')
+
+        @include('_partials.footer')
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>You can pass data to a partial by passing an associative array as a second parameter:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;The Amazing Web&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        @include('_partials.header', ['page_title' =&gt; 'My Amazing Site'])
+
+        @yield('contents')
+
+        @include('_partials.footer')
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>That data is then available in your partial as a normal variable:</p>
+<pre><code>&lt;!-- _partials/header.blade.php --&gt;
+&lt;header&gt;
+    {{ $page_title }}
+&lt;/header&gt;</code></pre>
+<h3>Preventing layouts &amp; partials from rendering</h3>
+<p>Since it's important that layouts and partials are never rendered on their own, you need to be able to tell Jigsaw when a file shouldn't be rendered.</p>
+<p>To prevent a file or folder from being rendered, simply prefix it with an underscore:</p>
+<p><img src="../../img/layouts-directory.png" alt="Layouts folder" /></p>
+<p>Jigsaw gives you a <code>_layouts</code> folder by default, but as long as you prefix with an underscore, you can create any files or folders you need.</p>
+<p>For example, if you wanted a place to store all of your partials, you could create a directory called <code>_partials</code>:</p>
+<p><img src="../../img/partials-directory.png" alt="Partials folder" /></p>
+<p>Since the <code>_partials</code> folder starts with an underscore, those files won't be rendered when you generate your site, but will still be available to <code>@include</code> in your other templates.</p>
+<hr />
+<h3>Extending Blade with custom directives</h3>
+<p>Jigsaw gives you the ability to extend Blade with <a href="https://laravel.com/docs/5.6/blade#extending-blade">custom directives</a>, just as you can with Laravel. To do this, create a <code>blade.php</code> file at the root level of your Jigsaw project (at the same level as <code>config.php</code>), and return an array of directives keyed by the directive name, each returning a closure.</p>
+<p>For example, you can create a custom <code>@datetime($timestamp)</code> directive to format a given integer timestamp as a date in your Blade templates:</p>
+<blockquote>
+<p><em>blade.php</em></p>
+</blockquote>
+<pre><code>return [
+    'datetime' =&gt; function ($timestamp) {
+        return '&lt;?php echo date("l, F j, Y", ' . $expression . '); ?&gt;';
+    }
+];</code></pre>
+<p>Alternatively, the <code>blade.php</code> file receives a variable named <code>$bladeCompiler</code>, which exposes an instance of <code>\Illuminate\View\Compilers\BladeCompiler</code>. With this, you can create custom Blade directives, <a href="https://laravel.com/docs/5.6/blade#components-and-slots">aliased components</a>, named <code>@include</code> statements, or other extended Blade control structures:</p>
+<blockquote>
+<p><em>blade.php</em></p>
+</blockquote>
+<pre><code class="language-php">&lt;?php
+
+/** @var \Illuminate\View\Compilers\BladeCompiler $bladeCompiler */
+
+$bladeCompiler-&gt;directive('datetime', function ($timestamp) {
+    return '&lt;?php echo date("l, F j, Y", ' . $expression . '); ?&gt;';
+});
+
+$bladeCompiler-&gt;component('_components.alert');
+
+$bladeCompiler-&gt;include('includes.copyright');</code></pre>
+<blockquote>
+<p><em>page.blade.php</em></p>
+</blockquote>
+<pre><code class="language-php">/** before */
+
+@component('_components.alert')
+    Pay attention to this!
+@endcomponent
+
+@include('_partials.meta.copyright', ['year' =&gt; '2018'])
+
+/** after */
+
+@alert
+    Pay attention to this!
+@endalert
+
+@copyright(['year' =&gt; '2018'])</code></pre>        </div>
     </div>
 </div>
         </div>

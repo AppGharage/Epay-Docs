@@ -53,15 +53,17 @@
                 <a class="nav-list-item" href="/docs/installation/">Installation</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/upgrading/">Upgrading</a>
                 <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
+                <a class="nav-list-item" href="/docs/compiling-assets/">Compiling Assets</a>
+
+                <a class="nav-list-item" href="/docs/content/">Creating Your Site's Content</a>
+                <a class="nav-list-item nav-list-item--sub" href="/docs/content-blade/">Blade Templates &amp; Partials</a>
+                <a class="nav-list-item nav-list-item--sub" href="/docs/content-markdown/">Markdown</a>
+                <a class="nav-list-item nav-list-item--sub" href="/docs/content-other-file-types/">Other File Types</a>
+
                 <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
                 <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
                 <a class="nav-list-item" href="/docs/page-metadata/">Page Metadata</a>
                 <a class="nav-list-item" href="/docs/environments/">Environments</a>
-
-                <a class="nav-list-item" href="/docs/blade-templates-and-partials/">Supported File Types</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/blade-templates-and-partials/">Blade Templates &amp; Partials</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/markdown/">Markdown</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/other-file-types/">Other File Types</a>
 
                 <a class="nav-list-item" href="/docs/collections/">Collections</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/collections-extending-parent-templates/">Extending Parent Templates</a>
@@ -74,7 +76,6 @@
                 <a class="nav-list-item" href="/docs/pretty-urls/">Pretty URLs</a>
                 <a class="nav-list-item" href="/docs/custom-404-page/">Custom 404 Page</a>
                 <a class="nav-list-item" href="/docs/event-listeners/">Event Listeners</a>
-                <a class="nav-list-item" href="/docs/compiling-assets/">Compiling Assets</a>
                 <a class="nav-list-item" href="/docs/deploying-your-site/">Deploying Your Site</a>
             </nav>
             <p class="p-xs-x-1 p-xs-y-4 text-dark-soft">
@@ -82,8 +83,9 @@
             </p>
         </div>
         <div class="col-md-9 documentation-page">
-            <h2>Compiling Assets</h2>
+            <h2>Compiling Assets with Laravel Mix</h2>
 <p>Jigsaw sites are configured with support for <a href="https://laravel.com/docs/5.6/mix">Laravel Mix</a> out of the box. If you've ever used Mix in a Laravel project, you already know how to use Mix with Jigsaw.</p>
+<hr />
 <h3>Setup</h3>
 <p>To get started, first make sure you have Node.js and NPM installed in your environment.</p>
 <p>Once you have Node.js and NPM installed, pull in the dependencies needed to compile your assets:</p>
@@ -93,25 +95,30 @@
 <p>By default, any assets you want to process with Mix should live in <code>source/_assets</code>:</p>
 <p><img src="../../img/asset-directory-structure.png" alt="Asset directory structure" /></p>
 <p>Mix looks for each asset type <em>(like Sass, Less, or Coffeescript)</em> in a subfolder named after that asset type. We recommend following this convention to avoid additional configuration.</p>
-<p>By default, once your assets are compiled, they will be placed in their corresponding directories, directly under the <code>source</code> folder:</p>
+<p>By default, once Webpack compiles your assets, they will be placed in their corresponding directories in the <code>source/assets/build</code> folder:</p>
 <p><img src="../../img/compiled-assets-directory-structure.png" alt="Compiled assets directory structure" /></p>
+<p>Then, when Jigsaw builds your site, the <code>assets</code> folder containing your <code>build</code> files (and any other directories containing static assets, such as <code>fonts</code> or <code>images</code>, that you choose to store there) will be copied to <code>build_local</code> or <code>build_production</code>.</p>
+<p>In your template, you can reference them using the <code>mix</code> Blade directive. If you are using the default setup, your built assets will be copied to the <code>assets/build</code> directory, which should be specified as the 2nd parameter of the <code>mix</code> directive:</p>
+<pre><code class="language-php">&lt;link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}"&gt;</code></pre>
+<hr />
 <p>If you'd like to change the source and destination folders for your assets, edit the following lines in <code>webpack.mix.js</code>:</p>
-<pre><code class="language-js">mix.setPublicPath('source/assets/');
+<pre><code class="language-js">mix.setPublicPath('source/assets/build');
 
 mix.js('source/_assets/js/main.js', 'js/')
     .sass('source/_assets/sass/main.scss', 'css/main.css')</code></pre>
+<hr />
 <h3>Enabling different preprocessors</h3>
 <p>Jigsaw ships with the following <code>webpack.mix.js</code> and is configured to use Sass out of the box:</p>
 <pre><code class="language-js">let mix = require('laravel-mix');
 let build = require('./tasks/build.js');
 
 mix.disableSuccessNotifications();
-mix.setPublicPath('source/assets/');
+mix.setPublicPath('source/assets/build');
 mix.webpackConfig({
     plugins: [
         build.jigsaw,
         build.browserSync(),
-        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss']),
+        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
     ]
 });
 
@@ -126,12 +133,12 @@ mix.js('source/_assets/js/main.js', 'js')
 <h3>Compiling your assets</h3>
 <p>To compile your assets, run:</p>
 <pre><code>$ npm run dev</code></pre>
-<p>Once the assets have been compiled, the <code>build</code> command will be run again automatically, so you can preview your changes in the browser.</p>
+<p>Once Webpack has compiled your assets, Jigsaw's <code>build</code> command will be run automatically to build your site to <code>build_local</code>. You can then preview your changes in the browser.</p>
 <h3>Watching for changes</h3>
 <p>Manually running <code>npm run dev</code> every time you make a change gets old pretty fast.</p>
 <p>Instead, you can run the following command to watch your project for changes:</p>
 <pre><code>$ npm run watch</code></pre>
-<p>Any time any file changes in your project, your assets will be recompiled and Jigsaw will regenerate your static HTML pages.</p>
+<p>Any time any file changes in your project, Webpack will recompile your assets, and Jigsaw will regenerate your static HTML pages to <code>build_local</code>.</p>
 <p>Using <code>npm run watch</code> also enables <a href="https://www.browsersync.io/">Browsersync</a>, so your browser will automatically reload any time you make a change. It also manages serving your site locally for you, so you don't need to start your own local PHP server.</p>
 <p>You can also watch a specific environment by running <code>npm run local</code>, <code>npm run staging</code>, or <code>npm run production</code>.</p>        </div>
     </div>

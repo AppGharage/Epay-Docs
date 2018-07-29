@@ -53,15 +53,17 @@
                 <a class="nav-list-item" href="/docs/installation/">Installation</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/upgrading/">Upgrading</a>
                 <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
+                <a class="nav-list-item" href="/docs/compiling-assets/">Compiling Assets</a>
+
+                <a class="nav-list-item" href="/docs/content/">Creating Your Site's Content</a>
+                <a class="nav-list-item nav-list-item--sub" href="/docs/content-blade/">Blade Templates &amp; Partials</a>
+                <a class="nav-list-item nav-list-item--sub" href="/docs/content-markdown/">Markdown</a>
+                <a class="nav-list-item nav-list-item--sub" href="/docs/content-other-file-types/">Other File Types</a>
+
                 <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
                 <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
                 <a class="nav-list-item" href="/docs/page-metadata/">Page Metadata</a>
                 <a class="nav-list-item" href="/docs/environments/">Environments</a>
-
-                <a class="nav-list-item" href="/docs/blade-templates-and-partials/">Supported File Types</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/blade-templates-and-partials/">Blade Templates &amp; Partials</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/markdown/">Markdown</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/other-file-types/">Other File Types</a>
 
                 <a class="nav-list-item" href="/docs/collections/">Collections</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/collections-extending-parent-templates/">Extending Parent Templates</a>
@@ -74,7 +76,6 @@
                 <a class="nav-list-item" href="/docs/pretty-urls/">Pretty URLs</a>
                 <a class="nav-list-item" href="/docs/custom-404-page/">Custom 404 Page</a>
                 <a class="nav-list-item" href="/docs/event-listeners/">Event Listeners</a>
-                <a class="nav-list-item" href="/docs/compiling-assets/">Compiling Assets</a>
                 <a class="nav-list-item" href="/docs/deploying-your-site/">Deploying Your Site</a>
             </nav>
             <p class="p-xs-x-1 p-xs-y-4 text-dark-soft">
@@ -82,7 +83,8 @@
             </p>
         </div>
         <div class="col-md-9 documentation-page">
-            <h2>Markdown</h2>
+            <h4><a href="/docs/content">Creating Your Site's Content</a></h4>
+<h2>Markdown</h2>
 <p>Have some pages you'd rather write in Markdown than Blade? <a href="https://github.com/tightenco/jigsaw-site/tree/master/source/docs">We know the feeling</a>.</p>
 <p>Using Markdown in Jigsaw is as simple as using a <code>.markdown</code> or <code>.md</code> extension, and specifying a few details in YAML front matter.</p>
 <p>For example, say you have this layout and you'd like to populate the <code>content</code> section using Markdown:</p>
@@ -147,7 +149,7 @@ Jigsaw is one of the greatest static site generators of all time.</code></pre>
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <p><br></p>
-<p><strong>Formatting dates</strong></p>
+<h3>Formatting dates</h3>
 <p>The YAML processor converts any dates that it finds in a Markdown file's front matter into integer timestamps. When outputting a date variable in your Blade template, you can use PHP's <code>date()</code> function to specify a date format. For example:</p>
 <blockquote>
 <p><em>my-post.md</em></p>
@@ -162,7 +164,7 @@ date: 2018-02-16
 </blockquote>
 <pre><code class="language-html">&lt;p&gt;The formatted date is {{ date('F j, Y', $post-&gt;date) }}&lt;/p&gt;</code></pre>
 <p><br></p>
-<p><strong>Specifying a permalink</strong></p>
+<h3>Specifying a permalink</h3>
 <p>You can specify a <code>permalink</code> in the YAML front matter to override the default path of a file when your site is built. This can be used, for example, to create a <a href="/docs/custom-404-page">custom 404</a> page that is output to <code>404.html</code> (instead of the default <code>404/index.html</code>):</p>
 <blockquote>
 <p><em>source/404.md</em></p>
