@@ -3,6 +3,7 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
+#### [Creating Your Site's Content](/docs/content)
 ## Markdown
 
 Have some pages you'd rather write in Markdown than Blade? [We know the feeling](https://github.com/tightenco/jigsaw-site/tree/master/source/docs).
@@ -95,7 +96,7 @@ Jigsaw is one of the greatest static site generators of all time.
 
 <br>
 
-**Formatting dates**
+### Formatting dates
 
 The YAML processor converts any dates that it finds in a Markdown file's front matter into integer timestamps. When outputting a date variable in your Blade template, you can use PHP's `date()` function to specify a date format. For example:
 
@@ -119,7 +120,7 @@ date: 2018-02-16
 
 <br>
 
-**Specifying a permalink**
+### Specifying a permalink
 
 You can specify a `permalink` in the YAML front matter to override the default path of a file when your site is built. This can be used, for example, to create a [custom 404](/docs/custom-404-page) page that is output to `404.html` (instead of the default `404/index.html`):
 

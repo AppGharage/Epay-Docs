@@ -3,6 +3,7 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
+#### [Creating Your Site's Content](/docs/content)
 ## Blade Templates & Partials
 
 One of the biggest benefits of a templating language is the ability to create reusable layouts and partials. Jigsaw gives you access to all the templating features and control structures of Blade that are available in Laravel 5.6 (learn more about Blade layouts in the [official Blade documentation](https://laravel.com/docs/5.6/blade)).
@@ -100,7 +101,7 @@ That data is then available in your partial as a normal variable:
 </header>
 ```
 
-### Preventing Layouts & Partials from Rendering
+### Preventing layouts & partials from rendering
 
 Since it's important that layouts and partials are never rendered on their own, you need to be able to tell Jigsaw when a file shouldn't be rendered.
 
@@ -116,12 +117,59 @@ For example, if you wanted a place to store all of your partials, you could crea
 
 Since the `_partials` folder starts with an underscore, those files won't be rendered when you generate your site, but will still be available to `@include` in your other templates.
 
-### Laravel Mix Versioning
+---
 
-If you are using Laravel Mix's versioning feature, which is enabled in the default Jigsaw configuration, you can now use the global `mix()` helper function to load the appropriate asset into your views. Simply pass it a path to one of your assets (with the normal filename) and the `mix()` function will automatically determine the current versioned name of the file.
+### Extending Blade with custom directives
 
-For example, in the head of your master layout file:
+Jigsaw gives you the ability to extend Blade with [custom directives](https://laravel.com/docs/5.6/blade#extending-blade), just as you can with Laravel. To do this, create a `blade.php` file at the root level of your Jigsaw project (at the same level as `config.php`), and return an array of directives keyed by the directive name, each returning a closure.
+
+For example, you can create a custom `@datetime($timestamp)` directive to format a given integer timestamp as a date in your Blade templates:
+
+> _blade.php_
 
 ```
-<link rel="stylesheet" href="{{ mix('/css/main.css') }}">
+return [
+    'datetime' => function ($timestamp) {
+        return '<?php echo date("l, F j, Y", ' . $expression . '); ?>';
+    }
+];
+```
+
+Alternatively, the `blade.php` file receives a variable named `$bladeCompiler`, which exposes an instance of `\Illuminate\View\Compilers\BladeCompiler`. With this, you can create custom Blade directives, [aliased components](https://laravel.com/docs/5.6/blade#components-and-slots), named `@include` statements, or other extended Blade control structures:
+
+> _blade.php_
+
+```php
+<?php
+
+/** @var \Illuminate\View\Compilers\BladeCompiler $bladeCompiler */
+
+$bladeCompiler->directive('datetime', function ($timestamp) {
+    return '<?php echo date("l, F j, Y", ' . $expression . '); ?>';
+});
+
+$bladeCompiler->component('_components.alert');
+
+$bladeCompiler->include('includes.copyright');
+```
+
+> _page.blade.php_
+
+```php
+/** before */
+
+@component('_components.alert')
+    Pay attention to this!
+@endcomponent
+
+@include('_partials.meta.copyright', ['year' => '2018'])
+
+
+/** after */
+
+@alert
+    Pay attention to this!
+@endalert
+
+@copyright(['year' => '2018'])
 ```

@@ -3,6 +3,7 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
+#### [Collections](/docs/collections)
 ## Remote Collections
 
 In addition to using Markdown or Blade files for your collection items, you can return collection items directly from the `collections` array in `config.php`. This allows you to generate items programmatically—for example, you can [fetch items from a remote source](#remoteItems) such as an external API or API-based content management systems like Contentful, GraphCMS, or DatoCMS.

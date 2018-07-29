@@ -50,4 +50,4 @@ The `source` directory contains the actual contents of your site. This is where 
 
 At the root of the directory, Jigsaw provides `webpack.mix.js` and `package.json` for compiling your assets, and a `config.php` file where you can specify variables to be made available in your templates.
 
-Next, learn about [building and previewing your site](../building-and-previewing).
+Next, learn about [building and previewing your site](./building-and-previewing).

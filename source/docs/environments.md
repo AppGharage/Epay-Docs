@@ -40,7 +40,7 @@ To build files for a specific environment, just pass the environment name as an 
 $ ./vendor/bin/jigsaw build production
 ```
 
-Alternatively, if you are [using Laravel Mix to compile your assets](../compiling-assets), you can run the `production` script found in `package.json`:
+Alternatively, if you are [using Laravel Mix to compile your assets](/docs/compiling-assets), you can run the `production` script found in `package.json`:
 
 ```
 $ npm run production
