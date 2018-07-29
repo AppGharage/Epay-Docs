@@ -40,6 +40,7 @@
                 <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-sorting/">Sorting</a>
                 <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-pagination/">Pagination</a>
                 <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-variables-and-functions/">Variables &amp; Helper Functions</a>
+                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-remote-collections/">Remote Collections</a>
 
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/pretty-urls/">Pretty URLs</a>
                 <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/custom-404-page/">Custom 404 Page</a>
