@@ -69,6 +69,7 @@
                 <a class="nav-list-item nav-list-item--sub" href="/docs/collections-sorting/">Sorting</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/collections-pagination/">Pagination</a>
                 <a class="nav-list-item nav-list-item--sub" href="/docs/collections-variables-and-functions/">Variables &amp; Helper Functions</a>
+                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-remote-collections/">Remote Collections</a>
 
                 <a class="nav-list-item" href="/docs/pretty-urls/">Pretty URLs</a>
                 <a class="nav-list-item" href="/docs/custom-404-page/">Custom 404 Page</a>
@@ -173,7 +174,7 @@ access individual collection items. The collection variable also behaves as if i
 
 @if ($page-&gt;getNext())
     &lt;p&gt;Read my next post:
-        &lt;a href="{{ $page-&gt;getNext()-&gt;path }}"&gt;{{ $page-&gt;getNext()-&gt;title }}&lt;/a&gt;
+        &lt;a href="{{ $page-&gt;getNext()-&gt;getPath() }}"&gt;{{ $page-&gt;getNext()-&gt;title }}&lt;/a&gt;
     &lt;/p&gt;
 @endif</code></pre>        </div>
     </div>
