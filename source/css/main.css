@@ -455,10 +455,6 @@ body {
 textarea {
   resize: vertical;
 }
-.logo {
-  margin-left: -4px;
-  width: 215px;
-}
 small {
   font-size: 0.875rem;
 }
@@ -1882,8 +1878,8 @@ a.list-group-item:hover,
   content: "";
 }
 .navbar {
-  margin-bottom: 1rem;
-  padding-top: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
 .navbar-content {
@@ -2335,6 +2331,15 @@ a.list-group-item:hover,
   padding-left: 53px;
   padding-top: 8px;
 }
+.logo-icon {
+  border-radius: 12px;
+  box-shadow: 1px 1px 8px -2px rgba(0, 0, 0, 0.5);
+  width: 65px;
+}
+.logo-type {
+  margin-left: 15px;
+  width: 130px;
+}
 .bg-light {
   background-color: #fff;
 }
@@ -2352,11 +2357,6 @@ a.list-group-item:hover,
 }
 .bg-brand-muted {
   background-color: rgba(143, 77, 191, 0.15);
-}
-.bg-hero {
-  background-image: url("/img/hero-bg.png");
-  background-size: 800px;
-  background-position: center;
 }
 .constrain {
   margin-right: auto;

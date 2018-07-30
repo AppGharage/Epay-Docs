@@ -1,13 +1,14 @@
 @extends('_layouts.master')
 
 @section('body')
-<header class="bg-hero p-xs-b-4">
+<header class="p-xs-b-4">
     <nav class="navbar navbar-brand">
         <div class="container">
             <div class="navbar-content">
                 <div>
                     <a class="link-plain text-xxl flex-y-center" href="{{ $page->asset_prefix }}/">
-                        <img class="logo" src="{{ $page->asset_prefix }}/img/jigsaw-logo-430.png" width="215">
+                        <img src="{{ $page->asset_prefix }}/img/jigsaw-logo.svg" alt="Jigsaw logo" class="logo-icon" width="65">
+                        <img src="{{ $page->asset_prefix }}/img/jigsaw-type.svg" alt="Jigsaw logo" class="logo-type" width="130">
                     </a>
                 </div>
                 <div class="navbar-buttons">
