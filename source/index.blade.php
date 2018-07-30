@@ -99,7 +99,7 @@
                         Jigsaw makes it painless to create a layout in Blade, and fill it with content written in Markdown.
                     </p>
                     <p>
-                        <a href="{{ $page->asset_prefix }}/docs/markdown/" class="link-brand">
+                        <a href="{{ $page->asset_prefix }}/docs/content-markdown/" class="link-brand">
                             Learn more in the docs.
                         </a>
                     </p>
