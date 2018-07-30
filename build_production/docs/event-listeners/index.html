@@ -195,10 +195,10 @@ class GenerateSitemap
 <p>Returns the settings array from <code>config.php</code></p>
 <hr />
 <p><code>getConfig($key)</code></p>
-<p>Returns a specific setting from <code>config.php</code></p>
+<p>Returns a specific setting from <code>config.php</code>. <br>Dot notation (e.g. <code>getConfig('collections.posts.items')</code> can be used to get nested items.</p>
 <hr />
 <p><code>setConfig($key, $value)</code></p>
-<p>Adds or modifies a setting in <code>config.php</code></p>
+<p>Adds or modifies a setting in <code>config.php</code>. <br>Dot notation can be used to set nested items.</p>
 <hr />
 <p><code>getSourcePath()</code></p>
 <p>Returns the absolute path to the <code>source</code> directory</p>

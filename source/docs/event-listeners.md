@@ -150,13 +150,13 @@ Returns the settings array from `config.php`
 
 `getConfig($key)`
 
-Returns a specific setting from `config.php`
+Returns a specific setting from `config.php`. <br>Dot notation (e.g. `getConfig('collections.posts.items')` can be used to get nested items.
 
 ---
 
 `setConfig($key, $value)`
 
-Adds or modifies a setting in `config.php`
+Adds or modifies a setting in `config.php`. <br>Dot notation can be used to set nested items.
 
 ---
 
