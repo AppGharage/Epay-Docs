@@ -86,16 +86,38 @@
             <h2>Building &amp; Previewing</h2>
 <p>When you'd like to generate your site, run the <code>build</code> command from within your project root:</p>
 <p><code>$ ./vendor/bin/jigsaw build</code></p>
-<p>Jigsaw will generate your static HTML and place it in the <code>./build_local</code> directory by default.</p>
-<p>Using the default site structure, <code>./build_local</code> will look like this:</p>
-<p><img src="../../img/build-folder.png" alt="Default build directory" /></p>
+<p>Jigsaw will generate your static HTML and place it in the <code>/build_local</code> directory by default.</p>
+<p>Using the default site structure, <code>/build_local</code> will look like this:</p>
+<div class="files">
+    <div class="folder folder--open focus">build_local
+        <div class="folder folder--open focus">assets
+            <div class="folder folder--open">build
+                <div class="folder folder--open">css
+                    <div class="file">main.css</div>
+                </div>
+                <div class="folder folder--open">js
+                    <div class="file">main.js</div>
+                </div>
+                <div class="file">mix-manifest.json</div>
+            </div>
+            <div class="folder folder--open">images
+                <div class="file">jigsaw.png</div>
+            </div>
+        </div>
+        <div class="file">index.html</div>
+    </div>
+    <div class="folder">source</div>
+    <div class="folder">tasks</div>
+    <div class="folder">vendor</div>
+    <div class="ellipsis">...</div>
+</div>
 <h3>Previewing with PHP</h3>
 <p>To quickly preview your site, use the <code>serve</code> command:</p>
 <p><code>$ ./vendor/bin/jigsaw serve</code></p>
 <p>You can now view your site at <code>http://localhost:8000</code> in your browser.</p>
 <p>You can also optionally specify the environment and port to serve like so:</p>
 <p><code>$ ./vendor/bin/jigsaw serve production --port=8080</code></p>
-<p>This will serve your <code>build_production</code> folder at <code>http://localhost:8080</code>.</p>
+<p>This will serve your <code>build_production</code> directory at <code>http://localhost:8080</code>.</p>
 <h3>Previewing with Browsersync</h3>
 <p>If you are <a href="/docs/compiling-assets">using Laravel Mix to compile your assets</a> (which is included in the default Jigsaw setup), you can preview your site with Browsersync by simply running:</p>
 <pre><code>$ npm run watch</code></pre>

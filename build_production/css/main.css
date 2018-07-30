@@ -2265,6 +2265,67 @@ a.list-group-item:hover,
     cursor: pointer;
   }
 }
+.files {
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #d3d0d6;
+  box-shadow: 2px 3px 8px -2px #e6e6e6;
+  margin: 40px 80px;
+  padding: 10px 20px 22px 44px;
+  font-size: 15px;
+}
+.files .ellipsis {
+  color: #6b6085;
+  line-height: 1;
+  padding: 12px 0 0 5px;
+  letter-spacing: .1em;
+}
+.files .file {
+  color: #6b6085;
+  line-height: 1;
+  padding: 12px 0 0 28px;
+}
+.files .file:before {
+  background-size: 40px 18px;
+  content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 224.16 86.11'><path stroke='#9a5bc8' fill='#ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='6px' d='M173.53,1.5l-27,.09s-7.42,0-7.42,7.42V77.07s0,7.42,7.42,7.42h49.21s7.42,0,7.42-7.42l-.07-48.21Z'/><polygon fill='#9a5bc8' stroke='none' points='172.9 1.94 172.9 29.46 202.6 29.46 172.9 1.94'/></svg>");
+  display: block;
+  height: 18px;
+  margin-left: -46px;
+  position: absolute;
+  width: 40px;
+}
+.files .folder {
+  color: #8f47c2;
+  line-height: 1;
+  padding: 12px 0 0 28px;
+}
+.files .folder:before {
+  background-size: 40px 18px;
+  content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 224.16 85.9'><path fill='#d3d0d6' d='M63.39,46.77s4.49-3.61,0-7.21L38.29,19.41S33.8,15.8,33.8,21.56V64.77s0,5.76,4.49,2.15Z'/><path fill='#9a5bc8' d='M220.75,74.77V25s0-8-8-8H176.41c-5.25,0-5.8-2.33-5.8-6.33,0-2.17-1.68-7-7.93-7H129.57s-8,0-8,8V74.77s0,8,8,8h83.17s8,0,8-8'/></svg>");
+  display: block;
+  height: 18px;
+  margin-left: -46px;
+  position: absolute;
+  width: 40px;
+}
+.files .folder--open:before {
+  background-size: 40px 18px;
+  content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 224.16 85.9'><path fill='#d3d0d6' d='M46,58.8s3.61,4.49,7.21,0L73.38,33.7s3.61-4.5-2.15-4.5H28s-5.76,0-2.16,4.5Z'/><path fill='#9a5bc8' d='M220.75,74.77V25s0-8-8-8H176.41c-5.25,0-5.8-2.33-5.8-6.33,0-2.17-1.68-7-7.93-7H129.57s-8,0-8,8V74.77s0,8,8,8h83.17s8,0,8-8'/></svg>");
+  display: block;
+  height: 18px;
+  margin-left: -46px;
+  position: absolute;
+  width: 40px;
+}
+.files .folder.focus {
+  background: #f2f0f5;
+  border-radius: 4px;
+  margin-left: -25px;
+  margin-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-top: 8px;
+}
 .bg-light {
   background-color: #fff;
 }
