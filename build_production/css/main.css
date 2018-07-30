@@ -456,8 +456,8 @@ textarea {
   resize: vertical;
 }
 .logo {
-  margin-left: -10px;
-  width: 220px;
+  margin-left: -4px;
+  width: 215px;
 }
 small {
   font-size: 0.875rem;
@@ -2270,9 +2270,9 @@ a.list-group-item:hover,
   border-radius: 6px;
   border: 1px solid #d3d0d6;
   box-shadow: 2px 3px 8px -2px #e6e6e6;
+  font-size: 15px;
   margin: 40px 80px;
   padding: 10px 20px 22px 44px;
-  font-size: 15px;
 }
 .files .ellipsis {
   color: #6b6085;
@@ -2293,6 +2293,15 @@ a.list-group-item:hover,
   margin-left: -46px;
   position: absolute;
   width: 40px;
+}
+.files .file.focus {
+  background: #f2f0f5;
+  border-radius: 4px;
+  margin-left: -25px;
+  margin-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 53px;
+  padding-top: 8px;
 }
 .files .folder {
   color: #8f47c2;
@@ -2323,7 +2332,7 @@ a.list-group-item:hover,
   margin-left: -25px;
   margin-top: 8px;
   padding-bottom: 10px;
-  padding-left: 50px;
+  padding-left: 53px;
   padding-top: 8px;
 }
 .bg-light {

@@ -35,7 +35,7 @@
         <div class="navbar-content">
             <div>
                 <a class="link-plain text-xxl flex-y-center" href="/">
-                    <img class="logo" src="/img/jigsaw-logo-440.png" width="220">
+                    <img class="logo" src="/img/jigsaw-logo-430.png" width="215">
                 </a>
             </div>
             <div class="docsearch navbar-buttons">
@@ -108,7 +108,37 @@ return [
     ],
 ];</code></pre>
 <p>Jigsaw will look for collection items in a directory with the same name as your collection, preceded by an underscore: in this example, <code>_people</code> and <code>_posts</code>. Collection items can be Markdown or Blade files, or even <a href="/docs/other-file-types">Blade/Markdown hybrid</a> files.</p>
-<p><img src="../../img/collections-directory-structure.png" alt="Collections directory structure" /></p>
+<div class="files">
+    <div class="folder folder--open">source
+        <div class="folder">_assets</div>
+        <div class="folder folder--open">_layouts
+            <div class="file">master.blade.php</div>
+            <div class="file">post.blade.php</div>
+        </div>
+        <div class="folder folder--open">_people
+            <div class="file">george-michael-bluth.blade.php</div>
+            <div class="file">j-walter-weatherman.blade.php</div>
+            <div class="file">steve-holt.blade.php</div>
+        </div>
+        <div class="folder folder--open focus">_posts
+            <div class="file">1-my-first-post.md</div>
+            <div class="file">2-my-second-post.md</div>
+            <div class="file">3-my-third-post.md</div>
+        </div>
+        <div class="folder">assets</div>
+        <div class="file">about-us.blade.php</div>
+        <div class="file">blog.blade.php</div>
+        <div class="file">index.blade.php</div>
+    </div>
+    <div class="folder">tasks</div>
+    <div class="folder">vendor</div>
+    <div class="file">bootstrap.php</div>
+    <div class="file">composer.json</div>
+    <div class="file">composer.lock</div>
+    <div class="file">config.php</div>
+    <div class="file">package.json</div>
+    <div class="file">webpack.mix.js</div>
+</div>
 <p>In <code>config.php</code>, the array where you define your collection can contain <a href="/docs/collections-paths">path</a> and <a href="/docs/collections-sorting">sort</a> settings for the collection, as well as <a href="/docs/collections-variables-and-functions/">variables and helper functions</a>. None of these elements are required, however; if omitted, default path and sort settings will be used. In fact, for the simplest configuration using default settings and no variables or functions, you can define a collection with simply its name:</p>
 <blockquote>
 <p><em>config.php</em></p>
