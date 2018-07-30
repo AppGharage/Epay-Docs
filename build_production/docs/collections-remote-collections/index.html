@@ -167,7 +167,8 @@
             },
         ],
     ],
-];</code></pre>        </div>
+];</code></pre>
+<p>If you want the remote API to only be called when building for particular environments, you can place the <code>items</code> closure in the appropriate <code>config.{environment}.php</code> file. For example, to only access your remote API when running <code>build production</code>, create a <code>config.production.php</code> file and include your <code>items</code> closure there. This will prevent potentially long build times while running <code>build local</code> in development.</p>        </div>
     </div>
 </div>
         </div>
