@@ -44,10 +44,53 @@ $ ./vendor/bin/jigsaw init
 
 By default, Jigsaw gives you the following directory structure:
 
-![Default directory structure](../../img/directory-structure.png)
+<div class="files">
+    <div class="folder folder--open">source
+        <div class="folder folder--open">_assets
+            <div class="folder folder--open">js
+                <div class="file">main.js</div>
+            </div>
+            <div class="folder folder--open">sass
+                <div class="file">main.scss</div>
+            </div>
+        </div>
+        <div class="folder folder--open">_layouts
+            <div class="file">master.blade.php</div>
+        </div>
+        <div class="folder folder--open">assets
+            <div class="folder folder--open">build
+                <div class="folder folder--open">js
+                    <div class="file">main.js</div>
+                </div>
+                <div class="folder folder--open">sass
+                    <div class="file">main.css</div>
+                </div>
+                <div class="file">mix-manifest.json</div>
+            </div>
+            <div class="folder folder--open">images
+                <div class="file">jigsaw.png</div>
+            </div>
+        </div>
+        <div class="file">index.blade.php</div>
+    </div>
+    <div class="folder">tasks</div>
+    <div class="folder">vendor</div>
+    <div class="file">bootstrap.php</div>
+    <div class="file">composer.json</div>
+    <div class="file">composer.lock</div>
+    <div class="file">config.php</div>
+    <div class="file">package.json</div>
+    <div class="file">webpack.mix.js</div>
+</div>
 
 The `source` directory contains the actual contents of your site. This is where all of your site's pages, CSS, Javascript, images, etc. will be kept.
 
-At the root of the directory, Jigsaw provides `webpack.mix.js` and `package.json` for compiling your assets, and a `config.php` file where you can specify variables to be made available in your templates.
+At the root of the directory, Jigsaw provides a `config.php` file where you can specify configuration settings for your site, along with `webpack.mix.js` for settings related to compiling your assets.
 
-Next, learn about [building and previewing your site](./building-and-previewing).
+Next, learn about [building and previewing your site](/docs/building-and-previewing).
+
+---
+
+> Why are there two `assets` directories in `/source`, one prefixed with an underscore? <br>Find out in the [Compiling Assets](/docs/compiling-assets) section.
+
+---

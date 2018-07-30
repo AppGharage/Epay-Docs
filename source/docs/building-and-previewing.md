@@ -9,11 +9,33 @@ When you'd like to generate your site, run the `build` command from within your 
 
 `$ ./vendor/bin/jigsaw build`
 
-Jigsaw will generate your static HTML and place it in the `./build_local` directory by default.
+Jigsaw will generate your static HTML and place it in the `/build_local` directory by default.
 
-Using the default site structure, `./build_local` will look like this:
+Using the default site structure, `/build_local` will look like this:
 
-![Default build directory](../../img/build-folder.png)
+<div class="files">
+    <div class="folder folder--open focus">build_local
+        <div class="folder folder--open focus">assets
+            <div class="folder folder--open">build
+                <div class="folder folder--open">css
+                    <div class="file">main.css</div>
+                </div>
+                <div class="folder folder--open">js
+                    <div class="file">main.js</div>
+                </div>
+                <div class="file">mix-manifest.json</div>
+            </div>
+            <div class="folder folder--open">images
+                <div class="file">jigsaw.png</div>
+            </div>
+        </div>
+        <div class="file">index.html</div>
+    </div>
+    <div class="folder">source</div>
+    <div class="folder">tasks</div>
+    <div class="folder">vendor</div>
+    <div class="ellipsis">...</div>
+</div>
 
 ### Previewing with PHP
 
@@ -27,7 +49,7 @@ You can also optionally specify the environment and port to serve like so:
 
 `$ ./vendor/bin/jigsaw serve production --port=8080`
 
-This will serve your `build_production` folder at `http://localhost:8080`.
+This will serve your `build_production` directory at `http://localhost:8080`.
 
 ### Previewing with Browsersync
 
