@@ -34,7 +34,7 @@ return [
 ];
 ```
 
-Jigsaw will look for collection items in a directory with the same name as your collection, preceded by an underscore: in this example, `_people` and `_posts`. Collection items can be Markdown or Blade files, or even [Blade/Markdown hybrid](/docs/other-file-types) files.
+Jigsaw will look for collection items in a directory with the same name as your collection, preceded by an underscore: in this example, `_people` and `_posts`. Collection items can be Markdown or Blade files, or even [Blade/Markdown hybrid](/docs/content-other-file-types) files.
 
 <div class="files">
     <div class="folder folder--open">source
