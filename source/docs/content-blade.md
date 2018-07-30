@@ -34,7 +34,7 @@ A basic master layout could look like this:
 </html>
 ```
 
-Jigsaw provides a `source/_layouts` directory out of the box with a basic master layout.
+Jigsaw provides a `/source/_layouts` directory out of the box with a basic master layout.
 
 ### Extending a Layout
 
@@ -107,15 +107,37 @@ Since it's important that layouts and partials are never rendered on their own, 
 
 To prevent a file or folder from being rendered, simply prefix it with an underscore:
 
-![Layouts folder](../../img/layouts-directory.png)
+<div class="files">
+    <div class="folder folder--open">source
+        <div class="folder">_assets</div>
+        <div class="folder folder--open focus">_layouts
+            <div class="file">master.blade.php</div>
+        </div>
+        <div class="folder">assets</div>
+        <div class="file">index.blade.php</div>
+    </div>
+    <div class="ellipsis">...</div>
+</div>
 
-Jigsaw gives you a `_layouts` folder by default, but as long as you prefix with an underscore, you can create any files or folders you need.
+Jigsaw gives you a `/_layouts` directory by default, but you can create any files or directories you need; anything prefixed with an underscore will not be rendered directly to `/build_local`.
 
 For example, if you wanted a place to store all of your partials, you could create a directory called `_partials`:
 
-![Partials folder](../../img/partials-directory.png)
+<div class="files">
+    <div class="folder folder--open">source
+        <div class="folder">_assets</div>
+        <div class="folder">_layouts</div>
+        <div class="folder folder--open focus">_partials
+            <div class="file">footer.blade.php</div>
+            <div class="file">header.blade.php</div>
+        </div>
+        <div class="folder">assets</div>
+        <div class="file">index.blade.php</div>
+    </div>
+    <div class="ellipsis">...</div>
+</div>
 
-Since the `_partials` folder starts with an underscore, those files won't be rendered when you generate your site, but will still be available to `@include` in your other templates.
+Since the `_partials` directory starts with an underscore, those files won't be rendered when you generate your site, but will still be available to `@include` in your other templates.
 
 ---
 

@@ -36,9 +36,37 @@ return [
 
 Jigsaw will look for collection items in a directory with the same name as your collection, preceded by an underscore: in this example, `_people` and `_posts`. Collection items can be Markdown or Blade files, or even [Blade/Markdown hybrid](/docs/other-file-types) files.
 
-
-![Collections directory structure](../../img/collections-directory-structure.png)
-
+<div class="files">
+    <div class="folder folder--open">source
+        <div class="folder">_assets</div>
+        <div class="folder folder--open">_layouts
+            <div class="file">master.blade.php</div>
+            <div class="file">post.blade.php</div>
+        </div>
+        <div class="folder folder--open">_people
+            <div class="file">george-michael-bluth.blade.php</div>
+            <div class="file">j-walter-weatherman.blade.php</div>
+            <div class="file">steve-holt.blade.php</div>
+        </div>
+        <div class="folder folder--open focus">_posts
+            <div class="file">1-my-first-post.md</div>
+            <div class="file">2-my-second-post.md</div>
+            <div class="file">3-my-third-post.md</div>
+        </div>
+        <div class="folder">assets</div>
+        <div class="file">about-us.blade.php</div>
+        <div class="file">blog.blade.php</div>
+        <div class="file">index.blade.php</div>
+    </div>
+    <div class="folder">tasks</div>
+    <div class="folder">vendor</div>
+    <div class="file">bootstrap.php</div>
+    <div class="file">composer.json</div>
+    <div class="file">composer.lock</div>
+    <div class="file">config.php</div>
+    <div class="file">package.json</div>
+    <div class="file">webpack.mix.js</div>
+</div>
 
 In `config.php`, the array where you define your collection can contain [path](/docs/collections-paths) and [sort](/docs/collections-sorting) settings for the collection, as well as [variables and helper functions](/docs/collections-variables-and-functions/). None of these elements are required, however; if omitted, default path and sort settings will be used. In fact, for the simplest configuration using default settings and no variables or functions, you can define a collection with simply its name:
 

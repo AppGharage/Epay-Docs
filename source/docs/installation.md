@@ -83,7 +83,7 @@ By default, Jigsaw gives you the following directory structure:
     <div class="file">webpack.mix.js</div>
 </div>
 
-The `source` directory contains the actual contents of your site. This is where all of your site's pages, CSS, Javascript, images, etc. will be kept.
+The `/source` directory contains the actual contents of your site. This is where all of your site's pages, CSS, Javascript, images, etc. will be kept.
 
 At the root of the directory, Jigsaw provides a `config.php` file where you can specify configuration settings for your site, along with `webpack.mix.js` for settings related to compiling your assets.
 

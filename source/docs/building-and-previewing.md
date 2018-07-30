@@ -49,7 +49,7 @@ You can also optionally specify the environment and port to serve like so:
 
 `$ ./vendor/bin/jigsaw serve production --port=8080`
 
-This will serve your `build_production` directory at `http://localhost:8080`.
+This will serve your `/build_production` directory at `http://localhost:8080`.
 
 ### Previewing with Browsersync
 
