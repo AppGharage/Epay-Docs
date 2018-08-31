@@ -33,6 +33,29 @@ The approach we use at Tighten for deploying Jigsaw sites to GitHub pages looks 
 
 > Check out the NPM script we use to deploy this site [here](https://github.com/tightenco/jigsaw-site/blob/master/package.json#L12).
 
+### Using Netlify
+
+[Netlify](https://www.netlify.com/) is a service that provides free static site hosting and continuous deployment that can be configured to play nice with any static site generator.
+
+To deploy a site to Netlify, first create a `netlify.toml` file with the following configuration:
+
+```toml
+[build]
+
+command = "npm run production"
+publish = "build_production"
+
+[build.environment]
+
+PHP_VERSION = "7.2"
+```
+
+Push this file to your repository.
+
+Then [connect your repository to the Netlify app](https://app.netlify.com/start) to setup continuous deployment.
+
+You can skip the build and deploy settings because Netlify will read the `netlify.toml` file we created earlier.
+
 ### Using Amazon S3
 
 [Amazon S3](https://aws.amazon.com/s3/) is a very affordable service for hosting static assets. You might have used it in the past for hosting things like images, user uploads, or PDFs in your web applications.
