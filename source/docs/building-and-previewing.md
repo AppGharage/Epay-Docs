@@ -59,4 +59,6 @@ If you are [using Laravel Mix to compile your assets](/docs/compiling-assets) (w
 $ npm run watch
 ```
 
+_(If you haven't already, you'll need to run `npm install` before running `npm run watch`.)_
+
 Browsersync will automatically open a new browser tab and reload the page every time you make a change. Very helpful for previewing your changes quickly!
