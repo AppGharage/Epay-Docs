@@ -586,11 +586,11 @@ button,
 @tailwind components;
 
 .bg-gradient-purple {
-  background: #854891;
+  background: #64387d;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#2d0f34), to(#45051e));
-  background: linear-gradient(to right, #2d0f34, #45051e);
+  background: -webkit-gradient(linear, left top, right top, from(#64387d), to(#6a3b81));
+  background: linear-gradient(to right, #64387d, #6a3b81);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -1049,7 +1049,7 @@ button,
 
 .text-purple-lighter,
 .hover\:text-purple-lighter:hover {
-  color: #854891;
+  color: #d6bbfc;
 }
 
 .text-purple-lightest,
@@ -1084,7 +1084,7 @@ button,
 
 .text-pink-lighter,
 .hover\:text-pink-lighter:hover {
-  color: #ffd8d8;
+  color: #ffbbca;
 }
 
 .text-pink-lightest,
@@ -1573,7 +1573,7 @@ button,
 
 .bg-purple-lighter,
 .hover\:bg-purple-lighter:hover {
-  background-color: #854891;
+  background-color: #d6bbfc;
 }
 
 .bg-purple-lightest,
@@ -1608,7 +1608,7 @@ button,
 
 .bg-pink-lighter,
 .hover\:bg-pink-lighter:hover {
-  background-color: #ffd8d8;
+  background-color: #ffbbca;
 }
 
 .bg-pink-lightest,
@@ -2090,7 +2090,7 @@ button,
 
 .border-purple-lighter,
 .hover\:border-purple-lighter:hover {
-  border-color: #854891;
+  border-color: #d6bbfc;
 }
 
 .border-purple-lightest,
@@ -2125,7 +2125,7 @@ button,
 
 .border-pink-lighter,
 .hover\:border-pink-lighter:hover {
-  border-color: #ffd8d8;
+  border-color: #ffbbca;
 }
 
 .border-pink-lightest,
@@ -4079,7 +4079,7 @@ button,
 
   .sm\:text-purple-lighter,
   .sm\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: #d6bbfc;
   }
 
   .sm\:text-purple-lightest,
@@ -4114,7 +4114,7 @@ button,
 
   .sm\:text-pink-lighter,
   .sm\:hover\:text-pink-lighter:hover {
-    color: #ffd8d8;
+    color: #ffbbca;
   }
 
   .sm\:text-pink-lightest,
@@ -4603,7 +4603,7 @@ button,
 
   .sm\:bg-purple-lighter,
   .sm\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: #d6bbfc;
   }
 
   .sm\:bg-purple-lightest,
@@ -4638,7 +4638,7 @@ button,
 
   .sm\:bg-pink-lighter,
   .sm\:hover\:bg-pink-lighter:hover {
-    background-color: #ffd8d8;
+    background-color: #ffbbca;
   }
 
   .sm\:bg-pink-lightest,
@@ -5120,7 +5120,7 @@ button,
 
   .sm\:border-purple-lighter,
   .sm\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: #d6bbfc;
   }
 
   .sm\:border-purple-lightest,
@@ -5155,7 +5155,7 @@ button,
 
   .sm\:border-pink-lighter,
   .sm\:hover\:border-pink-lighter:hover {
-    border-color: #ffd8d8;
+    border-color: #ffbbca;
   }
 
   .sm\:border-pink-lightest,
@@ -7110,7 +7110,7 @@ button,
 
   .md\:text-purple-lighter,
   .md\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: #d6bbfc;
   }
 
   .md\:text-purple-lightest,
@@ -7145,7 +7145,7 @@ button,
 
   .md\:text-pink-lighter,
   .md\:hover\:text-pink-lighter:hover {
-    color: #ffd8d8;
+    color: #ffbbca;
   }
 
   .md\:text-pink-lightest,
@@ -7634,7 +7634,7 @@ button,
 
   .md\:bg-purple-lighter,
   .md\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: #d6bbfc;
   }
 
   .md\:bg-purple-lightest,
@@ -7669,7 +7669,7 @@ button,
 
   .md\:bg-pink-lighter,
   .md\:hover\:bg-pink-lighter:hover {
-    background-color: #ffd8d8;
+    background-color: #ffbbca;
   }
 
   .md\:bg-pink-lightest,
@@ -8151,7 +8151,7 @@ button,
 
   .md\:border-purple-lighter,
   .md\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: #d6bbfc;
   }
 
   .md\:border-purple-lightest,
@@ -8186,7 +8186,7 @@ button,
 
   .md\:border-pink-lighter,
   .md\:hover\:border-pink-lighter:hover {
-    border-color: #ffd8d8;
+    border-color: #ffbbca;
   }
 
   .md\:border-pink-lightest,
@@ -10141,7 +10141,7 @@ button,
 
   .lg\:text-purple-lighter,
   .lg\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: #d6bbfc;
   }
 
   .lg\:text-purple-lightest,
@@ -10176,7 +10176,7 @@ button,
 
   .lg\:text-pink-lighter,
   .lg\:hover\:text-pink-lighter:hover {
-    color: #ffd8d8;
+    color: #ffbbca;
   }
 
   .lg\:text-pink-lightest,
@@ -10665,7 +10665,7 @@ button,
 
   .lg\:bg-purple-lighter,
   .lg\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: #d6bbfc;
   }
 
   .lg\:bg-purple-lightest,
@@ -10700,7 +10700,7 @@ button,
 
   .lg\:bg-pink-lighter,
   .lg\:hover\:bg-pink-lighter:hover {
-    background-color: #ffd8d8;
+    background-color: #ffbbca;
   }
 
   .lg\:bg-pink-lightest,
@@ -11182,7 +11182,7 @@ button,
 
   .lg\:border-purple-lighter,
   .lg\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: #d6bbfc;
   }
 
   .lg\:border-purple-lightest,
@@ -11217,7 +11217,7 @@ button,
 
   .lg\:border-pink-lighter,
   .lg\:hover\:border-pink-lighter:hover {
-    border-color: #ffd8d8;
+    border-color: #ffbbca;
   }
 
   .lg\:border-pink-lightest,
@@ -13172,7 +13172,7 @@ button,
 
   .xl\:text-purple-lighter,
   .xl\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: #d6bbfc;
   }
 
   .xl\:text-purple-lightest,
@@ -13207,7 +13207,7 @@ button,
 
   .xl\:text-pink-lighter,
   .xl\:hover\:text-pink-lighter:hover {
-    color: #ffd8d8;
+    color: #ffbbca;
   }
 
   .xl\:text-pink-lightest,
@@ -13696,7 +13696,7 @@ button,
 
   .xl\:bg-purple-lighter,
   .xl\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: #d6bbfc;
   }
 
   .xl\:bg-purple-lightest,
@@ -13731,7 +13731,7 @@ button,
 
   .xl\:bg-pink-lighter,
   .xl\:hover\:bg-pink-lighter:hover {
-    background-color: #ffd8d8;
+    background-color: #ffbbca;
   }
 
   .xl\:bg-pink-lightest,
@@ -14213,7 +14213,7 @@ button,
 
   .xl\:border-purple-lighter,
   .xl\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: #d6bbfc;
   }
 
   .xl\:border-purple-lightest,
@@ -14248,7 +14248,7 @@ button,
 
   .xl\:border-pink-lighter,
   .xl\:hover\:border-pink-lighter:hover {
-    border-color: #ffd8d8;
+    border-color: #ffbbca;
   }
 
   .xl\:border-pink-lightest,

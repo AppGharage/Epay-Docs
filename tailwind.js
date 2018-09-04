@@ -50,7 +50,7 @@ var colors = {
   'grey-darkest': '#364349',
   'grey-darker': '#596a73',
   'grey-dark': '#70818a',
-  'grey': '#9babb4',
+  'grey': '#687584',
   'grey-light': '#dae4e9',
   'grey-lighter': '#f3f7f9',
   'grey-lightest': '#fafcfc',
@@ -117,7 +117,7 @@ var colors = {
   'purple-dark': '#794acf',
   'purple': '#64387D',
   'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
+  'purple-lighter': '#854891',
   'purple-lightest': '#f3ebff',
 
   'pink-darkest': '#45051e',
@@ -125,7 +125,7 @@ var colors = {
   'pink-dark': '#eb5286',
   'pink': '#f66d9b',
   'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
+  'pink-lighter': '#FFD8D8',
   'pink-lightest': '#ffebef',
 }
 
@@ -194,6 +194,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Helvetica',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',

@@ -25,10 +25,10 @@
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="{{ $page->asset_prefix }}/css/main.css">
+        <link rel="stylesheet" href="{{ $page->asset_prefix }}/assets/css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     </head>
-    <body class="border-t-3 border-primary full-height flex-col">
+    <body class="border-t-4 border-purple min-h-screen pt-6 font-sans font-normal text-xl">
         <div class="flex-fit">
             @yield('body')
         </div>

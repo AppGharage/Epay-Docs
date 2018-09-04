@@ -1,27 +1,39 @@
 @extends('_layouts.master')
 
 @section('body')
-<header class="p-xs-b-4">
-    <nav class="navbar navbar-brand">
-        <div class="container">
-            <div class="navbar-content">
-                <div>
-                    <a class="link-plain text-xxl flex-y-center" href="{{ $page->asset_prefix }}/">
-                        <img src="{{ $page->asset_prefix }}/img/jigsaw-logo.svg" alt="Jigsaw logo" class="logo-icon" width="65">
-                        <img src="{{ $page->asset_prefix }}/img/jigsaw-type.svg" alt="Jigsaw logo" class="logo-type" width="130">
-                    </a>
-                </div>
-                <div class="navbar-buttons">
-                    <a href="https://github.com/tightenco/jigsaw" class="link-brand m-xs-r-6">
-                        Contribute
-                    </a>
-                    <a href="{{ $page->asset_prefix }}/docs/installation/" class="btn btn-primary-outline">
-                        Docs
-                    </a>
-                </div>
-            </div>
+<header class="max-w-xl mx-auto">
+    <div class="flex justify-between items-center mb-8">
+        <div class="flex flex-row items-center">
+            <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
+                class="logo-icon rounded-lg shadow-lg mr-2 md:mr-4 w-8 sm:w-16" />
+
+            <h1 class="font-normal text-xl md:text-3xl uppercase tracking-wide text-blue-darker">Jigsaw</h1>
         </div>
-    </nav>
+        <div class="text-sm">
+            <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
+                class="mr-4 text-blue-darker uppercase font-light no-underline">Contribute</a>
+            <a href="/docs" title="Read the Jigsaw documentation"
+                class="py-2 px-4 bg-purple rounded text-white uppercase font-light no-underline shadow-md">Docs</a>
+        </div>
+    </div>
+</header>
+
+<div class="max-w-xl mx-auto">
+    <div class="flex-col pt-4 mb-8 pb-4">
+        <h1 class="text-4xl font-normal text-blue-darker leading-none">
+            Static sites for <br />
+            modern developers
+        </h1>
+        <p class="text-xl text-grey max-w-md mt-4 font-normal leading-normal">Jigsaw is a framework for rapidly building static sites using the same modern tooling that powers your web applications.</p>
+    </div>
+</div>
+
+<div class="pt-8 pb-4 bg-gradient-purple flex flex-col items-center">
+    <h2 class="text-white font-normal text-2xl mb-2">Getting started is easy</h2>
+    <p class="text-pink-lighter">Just make new project directory and install Jigsaw using Composer</p>
+</div>
+
+
     <div class="container text-center">
         <div class="constrain constrain-lg">
             <div class="m-xs-y-8">
