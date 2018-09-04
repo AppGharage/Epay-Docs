@@ -28,10 +28,10 @@
         <link rel="stylesheet" href="{{ $page->asset_prefix }}/assets/css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     </head>
-    <body class="border-t-4 border-purple min-h-screen pt-6 font-sans font-normal text-xl">
-        <div class="flex-fit">
-            @yield('body')
-        </div>
+    <body class="min-h-screenfont-sans">
+
+        @yield('body')
+
         <footer class="bg-dark text-center p-xs-y-6 p-xs-x-4 text-light-muted text-sm">
             <p>&copy; {{ date('Y') }} <a href="https://tighten.co" class="link-light-muted">Tighten</a></p>
         </footer>
