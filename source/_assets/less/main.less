@@ -2,11 +2,35 @@
 @tailwind components;
 
 .bg-gradient-purple {
-    background: #854891;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2d0f34, #45051e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2d0f34, #45051e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #884992;
+    background: -webkit-linear-gradient(to right, #703e84, #884992);
+    background: linear-gradient(to right, #703e84, #884992);
 }
 
+h1,
+h2,
+h3,
+h4 {
+    @apply .font-normal;
+}
+
+h2.title-2 {
+    @apply .text-3xl;
+}
+
+h3.title-3 {
+    @apply .text-2xl;
+}
+
+h4.title-4 {
+    @apply .text-xl;
+}
+
+p {
+    @apply .mb-4;
+    @apply .text-blue-dark;
+    @apply .text-base;
+}
 
 // @import 'base';
 // @import 'colors';

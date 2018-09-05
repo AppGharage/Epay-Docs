@@ -586,12 +586,34 @@ button,
 @tailwind components;
 
 .bg-gradient-purple {
-  background: #854891;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#2d0f34), to(#45051e));
-  background: linear-gradient(to right, #2d0f34, #45051e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #884992;
+  background: -webkit-gradient(linear, left top, right top, from(#703e84), to(#884992));
+  background: linear-gradient(to right, #703e84, #884992);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h2.title-2 {
+  font-size: 1.875rem;
+}
+
+h3.title-3 {
+  font-size: 1.5rem;
+}
+
+h4.title-4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #143154;
+  font-size: 1rem;
 }
 
 .container {
@@ -944,7 +966,7 @@ button,
 
 .text-teal-light,
 .hover\:text-teal-light:hover {
-  color: #64d5ca;
+  color: #aef2fd;
 }
 
 .text-teal-lighter,
@@ -1473,7 +1495,7 @@ button,
 
 .bg-teal-light,
 .hover\:bg-teal-light:hover {
-  background-color: #64d5ca;
+  background-color: #aef2fd;
 }
 
 .bg-teal-lighter,
@@ -1995,7 +2017,7 @@ button,
 
 .border-teal-light,
 .hover\:border-teal-light:hover {
-  border-color: #64d5ca;
+  border-color: #aef2fd;
 }
 
 .border-teal-lighter,
@@ -3989,7 +4011,7 @@ button,
 
   .sm\:text-teal-light,
   .sm\:hover\:text-teal-light:hover {
-    color: #64d5ca;
+    color: #aef2fd;
   }
 
   .sm\:text-teal-lighter,
@@ -4518,7 +4540,7 @@ button,
 
   .sm\:bg-teal-light,
   .sm\:hover\:bg-teal-light:hover {
-    background-color: #64d5ca;
+    background-color: #aef2fd;
   }
 
   .sm\:bg-teal-lighter,
@@ -5040,7 +5062,7 @@ button,
 
   .sm\:border-teal-light,
   .sm\:hover\:border-teal-light:hover {
-    border-color: #64d5ca;
+    border-color: #aef2fd;
   }
 
   .sm\:border-teal-lighter,
@@ -7035,7 +7057,7 @@ button,
 
   .md\:text-teal-light,
   .md\:hover\:text-teal-light:hover {
-    color: #64d5ca;
+    color: #aef2fd;
   }
 
   .md\:text-teal-lighter,
@@ -7564,7 +7586,7 @@ button,
 
   .md\:bg-teal-light,
   .md\:hover\:bg-teal-light:hover {
-    background-color: #64d5ca;
+    background-color: #aef2fd;
   }
 
   .md\:bg-teal-lighter,
@@ -8086,7 +8108,7 @@ button,
 
   .md\:border-teal-light,
   .md\:hover\:border-teal-light:hover {
-    border-color: #64d5ca;
+    border-color: #aef2fd;
   }
 
   .md\:border-teal-lighter,
@@ -10081,7 +10103,7 @@ button,
 
   .lg\:text-teal-light,
   .lg\:hover\:text-teal-light:hover {
-    color: #64d5ca;
+    color: #aef2fd;
   }
 
   .lg\:text-teal-lighter,
@@ -10610,7 +10632,7 @@ button,
 
   .lg\:bg-teal-light,
   .lg\:hover\:bg-teal-light:hover {
-    background-color: #64d5ca;
+    background-color: #aef2fd;
   }
 
   .lg\:bg-teal-lighter,
@@ -11132,7 +11154,7 @@ button,
 
   .lg\:border-teal-light,
   .lg\:hover\:border-teal-light:hover {
-    border-color: #64d5ca;
+    border-color: #aef2fd;
   }
 
   .lg\:border-teal-lighter,
@@ -13127,7 +13149,7 @@ button,
 
   .xl\:text-teal-light,
   .xl\:hover\:text-teal-light:hover {
-    color: #64d5ca;
+    color: #aef2fd;
   }
 
   .xl\:text-teal-lighter,
@@ -13656,7 +13678,7 @@ button,
 
   .xl\:bg-teal-light,
   .xl\:hover\:bg-teal-light:hover {
-    background-color: #64d5ca;
+    background-color: #aef2fd;
   }
 
   .xl\:bg-teal-lighter,
@@ -14178,7 +14200,7 @@ button,
 
   .xl\:border-teal-light,
   .xl\:hover\:border-teal-light:hover {
-    border-color: #64d5ca;
+    border-color: #aef2fd;
   }
 
   .xl\:border-teal-lighter,

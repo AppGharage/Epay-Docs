@@ -94,7 +94,7 @@ var colors = {
   'teal-darker': '#174e4b',
   'teal-dark': '#38a89d',
   'teal': '#0F2F53',
-  'teal-light': '#64d5ca',
+  'teal-light': '#AEF2FD',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
