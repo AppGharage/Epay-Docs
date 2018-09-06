@@ -1,6 +1,6 @@
 @tailwind preflight;
 @tailwind components;
-
+@tailwind utilities;
 
 // @import 'base';
 // @import 'colors';
@@ -35,14 +35,13 @@
 // @import 'animations';
 
 .container-content {
-    @apply .max-w-lg;
+    @apply .max-w-xl;
     @apply .mx-auto;
-    @apply .px-4;
+    @apply .px-6;
 
-    @include breakpoint(lg) {
+    @screen lg {
         @apply .px-0;
     }
 }
 
-@tailwind utilities;
 //

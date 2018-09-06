@@ -13,8 +13,12 @@ p {
     @apply .text-blue-dark;
     @apply .text-sm;
 
-    @include breakpoint(sm) {
-        @apply .text-base;
+    @screen sm {
+        @apply .text-lg;
+    }
+
+    @screen md {
+        @apply .text-xl;
     }
 }
 
@@ -22,7 +26,7 @@ p {
 h1.title-1 {
     @apply .text-3xl;
 
-    @include breakpoint(md) {
+    @screen md {
         @apply .text-4xl;
     }
 }
@@ -30,7 +34,7 @@ h1.title-1 {
 h2.title-2 {
     @apply .text-2xl;
 
-    @include breakpoint(md) {
+    @screen sm {
         @apply .text-3xl;
     }
 }
@@ -38,7 +42,7 @@ h2.title-2 {
 h3.title-3 {
     @apply .text-xl;
 
-    @include breakpoint(md) {
+    @screen sm {
         @apply .text-2xl;
     }
 }
@@ -46,7 +50,7 @@ h3.title-3 {
 h4.title-4 {
     @apply .text-lg;
 
-    @include breakpoint(md) {
+    @screen md {
         @apply .text-xl;
     }
 }
@@ -56,7 +60,7 @@ h4.title-4 {
     @apply .text-lg;
     @apply .leading-normal;
 
-    @include breakpoint(md) {
+    @screen md {
         @apply .text-xl;
     }
 }
