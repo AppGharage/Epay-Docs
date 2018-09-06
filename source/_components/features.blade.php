@@ -70,17 +70,32 @@
 
                 <div class="editor-row">
                     <p class="line-number">2</p>
-                    <div class="line-code">@@extends: layouts.post</div>
+                    <div class="line-code">extends: layouts.post</div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">3</p>
-                    <div class="line-code ml-4"><span class="text-pink">&lt;h1&gt;</span>Hello World<span class="text-pink">&lt;/h1&gt;</span></div>
+                    <div class="line-code ml-4">section: content</div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">4</p>
-                    <div class="line-code">@@endsection</div>
+                    <div class="line-code">---</div>
+                </div>
+
+                <div class="editor-row">
+                    <p class="line-number">5</p>
+                    <div class="line-code"></div>
+                </div>
+
+                <div class="editor-row">
+                    <p class="line-number">6</p>
+                    <div class="line-code"># Hellow World!</div>
+                </div>
+
+                <div class="editor-row">
+                    <p class="line-number">7</p>
+                    <div class="line-code">Welcome to the future.</div>
                 </div>
             @endcomponent
         </div>
