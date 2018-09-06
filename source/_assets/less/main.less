@@ -40,14 +40,17 @@
     @apply .px-6;
 }
 
-@screen lg {
-    .container-content {
-        @apply .px-0;
-    }
-}
 
 .bg-opaque-purple {
     background: rgba(45, 15, 52, 0.5);
+}
+
+.example-row {
+    @apply .flex;
+    @apply .flex-col;
+    @apply .items-center;
+    @apply .mb-12;
+    @apply .pt-8;
 }
 
 .editor-row {
@@ -61,13 +64,27 @@
     @apply .font-mono;
     @apply .mb-0;
     @apply .mr-6;
-    @apply .text-sm;
+    @apply .text-xs;
     @apply .text-white;
 }
 
 .line-code {
     @apply .font-light;
     @apply .font-mono;
-    @apply .text-sm;
+    @apply .text-xs;
     @apply .text-white;
+}
+
+@screen md {
+    .example-row {
+        @apply .flex-row;
+        @apply .mb-24;
+        @apply .pt-0;
+    }
+}
+
+@screen lg {
+    .container-content {
+        @apply .px-0;
+    }
 }
