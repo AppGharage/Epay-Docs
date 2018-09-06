@@ -12,55 +12,63 @@ p {
     @apply .mb-2;
     @apply .text-blue-dark;
     @apply .text-sm;
+}
 
-    @screen sm {
-        @apply .text-lg;
-    }
-
-    @screen md {
-        @apply .text-xl;
-    }
+a {
+    @apply .no-underline;
 }
 
 // headings
 h1.title-1 {
     @apply .text-3xl;
-
-    @screen md {
-        @apply .text-4xl;
-    }
 }
 
 h2.title-2 {
     @apply .text-2xl;
-
-    @screen sm {
-        @apply .text-3xl;
-    }
 }
 
 h3.title-3 {
     @apply .text-xl;
-
-    @screen sm {
-        @apply .text-2xl;
-    }
 }
 
 h4.title-4 {
     @apply .text-lg;
-
-    @screen md {
-        @apply .text-xl;
-    }
 }
 
 // utilities
 .lead {
     @apply .text-lg;
     @apply .leading-normal;
+}
 
-    @screen md {
+@screen sm {
+    p {
+        @apply .text-base;
+    }
+}
+
+@screen md {
+    h1.title-1 {
+        @apply .text-4xl;
+    }
+
+    h2.title-2 {
+        @apply .text-3xl;
+    }
+
+    h3.title-3 {
+        @apply .text-2xl;
+    }
+
+    h4.title-4 {
+        @apply .text-xl;
+    }
+
+    p {
+        @apply .text-lg;
+    }
+
+    .lead {
         @apply .text-xl;
     }
 }

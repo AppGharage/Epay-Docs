@@ -41,11 +41,6 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
-    @screen sm {
-        padding: 2em;
-        font-size: (14rem/16rem);
-    }
-
     .code-muted {
         color: #506e79;
     }
@@ -70,5 +65,12 @@
 
     code {
         font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    }
+}
+
+@screen sm {
+    .code-editor-body {
+        padding: 2em;
+        font-size: (14rem/16rem);
     }
 }
