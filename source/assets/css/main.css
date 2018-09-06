@@ -897,7 +897,7 @@ table {
 }
 
 .bg-indigo-darker {
-  background-color: #2f365f;
+  background-color: #3e6389;
 }
 
 .bg-indigo-dark {
@@ -1193,7 +1193,7 @@ table {
 }
 
 .hover\:bg-indigo-darker:hover {
-  background-color: #2f365f;
+  background-color: #3e6389;
 }
 
 .hover\:bg-indigo-dark:hover {
@@ -1489,7 +1489,7 @@ table {
 }
 
 .focus\:bg-indigo-darker:focus {
-  background-color: #2f365f;
+  background-color: #3e6389;
 }
 
 .focus\:bg-indigo-dark:focus {
@@ -1857,7 +1857,7 @@ table {
 }
 
 .border-indigo-darker {
-  border-color: #2f365f;
+  border-color: #3e6389;
 }
 
 .border-indigo-dark {
@@ -2153,7 +2153,7 @@ table {
 }
 
 .hover\:border-indigo-darker:hover {
-  border-color: #2f365f;
+  border-color: #3e6389;
 }
 
 .hover\:border-indigo-dark:hover {
@@ -2449,7 +2449,7 @@ table {
 }
 
 .focus\:border-indigo-darker:focus {
-  border-color: #2f365f;
+  border-color: #3e6389;
 }
 
 .focus\:border-indigo-dark:focus {
@@ -5288,7 +5288,7 @@ table {
 }
 
 .text-indigo-darker {
-  color: #2f365f;
+  color: #3e6389;
 }
 
 .text-indigo-dark {
@@ -5584,7 +5584,7 @@ table {
 }
 
 .hover\:text-indigo-darker:hover {
-  color: #2f365f;
+  color: #3e6389;
 }
 
 .hover\:text-indigo-dark:hover {
@@ -5880,7 +5880,7 @@ table {
 }
 
 .focus\:text-indigo-darker:focus {
-  color: #2f365f;
+  color: #3e6389;
 }
 
 .focus\:text-indigo-dark:focus {
@@ -6628,6 +6628,36 @@ h4.title-4 {
   }
 }
 
+.bg-opaque-purple {
+  background: rgba(45, 15, 52, .5);
+}
+
+.editor-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.line-number {
+  font-weight: 300;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  margin-bottom: 0;
+  margin-right: 1.5rem;
+  font-size: .875rem;
+  color: #fff;
+}
+
+.line-code {
+  font-weight: 300;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-size: .875rem;
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
@@ -6869,7 +6899,7 @@ h4.title-4 {
   }
 
   .sm\:bg-indigo-darker {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .sm\:bg-indigo-dark {
@@ -7165,7 +7195,7 @@ h4.title-4 {
   }
 
   .sm\:hover\:bg-indigo-darker:hover {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .sm\:hover\:bg-indigo-dark:hover {
@@ -7461,7 +7491,7 @@ h4.title-4 {
   }
 
   .sm\:focus\:bg-indigo-darker:focus {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .sm\:focus\:bg-indigo-dark:focus {
@@ -7821,7 +7851,7 @@ h4.title-4 {
   }
 
   .sm\:border-indigo-darker {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .sm\:border-indigo-dark {
@@ -8117,7 +8147,7 @@ h4.title-4 {
   }
 
   .sm\:hover\:border-indigo-darker:hover {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .sm\:hover\:border-indigo-dark:hover {
@@ -8413,7 +8443,7 @@ h4.title-4 {
   }
 
   .sm\:focus\:border-indigo-darker:focus {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .sm\:focus\:border-indigo-dark:focus {
@@ -11236,7 +11266,7 @@ h4.title-4 {
   }
 
   .sm\:text-indigo-darker {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .sm\:text-indigo-dark {
@@ -11532,7 +11562,7 @@ h4.title-4 {
   }
 
   .sm\:hover\:text-indigo-darker:hover {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .sm\:hover\:text-indigo-dark:hover {
@@ -11828,7 +11858,7 @@ h4.title-4 {
   }
 
   .sm\:focus\:text-indigo-darker:focus {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .sm\:focus\:text-indigo-dark:focus {
@@ -12559,7 +12589,7 @@ h4.title-4 {
   }
 
   .md\:bg-indigo-darker {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .md\:bg-indigo-dark {
@@ -12855,7 +12885,7 @@ h4.title-4 {
   }
 
   .md\:hover\:bg-indigo-darker:hover {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .md\:hover\:bg-indigo-dark:hover {
@@ -13151,7 +13181,7 @@ h4.title-4 {
   }
 
   .md\:focus\:bg-indigo-darker:focus {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .md\:focus\:bg-indigo-dark:focus {
@@ -13511,7 +13541,7 @@ h4.title-4 {
   }
 
   .md\:border-indigo-darker {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .md\:border-indigo-dark {
@@ -13807,7 +13837,7 @@ h4.title-4 {
   }
 
   .md\:hover\:border-indigo-darker:hover {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .md\:hover\:border-indigo-dark:hover {
@@ -14103,7 +14133,7 @@ h4.title-4 {
   }
 
   .md\:focus\:border-indigo-darker:focus {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .md\:focus\:border-indigo-dark:focus {
@@ -16926,7 +16956,7 @@ h4.title-4 {
   }
 
   .md\:text-indigo-darker {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .md\:text-indigo-dark {
@@ -17222,7 +17252,7 @@ h4.title-4 {
   }
 
   .md\:hover\:text-indigo-darker:hover {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .md\:hover\:text-indigo-dark:hover {
@@ -17518,7 +17548,7 @@ h4.title-4 {
   }
 
   .md\:focus\:text-indigo-darker:focus {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .md\:focus\:text-indigo-dark:focus {
@@ -18249,7 +18279,7 @@ h4.title-4 {
   }
 
   .lg\:bg-indigo-darker {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .lg\:bg-indigo-dark {
@@ -18545,7 +18575,7 @@ h4.title-4 {
   }
 
   .lg\:hover\:bg-indigo-darker:hover {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .lg\:hover\:bg-indigo-dark:hover {
@@ -18841,7 +18871,7 @@ h4.title-4 {
   }
 
   .lg\:focus\:bg-indigo-darker:focus {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .lg\:focus\:bg-indigo-dark:focus {
@@ -19201,7 +19231,7 @@ h4.title-4 {
   }
 
   .lg\:border-indigo-darker {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .lg\:border-indigo-dark {
@@ -19497,7 +19527,7 @@ h4.title-4 {
   }
 
   .lg\:hover\:border-indigo-darker:hover {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .lg\:hover\:border-indigo-dark:hover {
@@ -19793,7 +19823,7 @@ h4.title-4 {
   }
 
   .lg\:focus\:border-indigo-darker:focus {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .lg\:focus\:border-indigo-dark:focus {
@@ -22616,7 +22646,7 @@ h4.title-4 {
   }
 
   .lg\:text-indigo-darker {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .lg\:text-indigo-dark {
@@ -22912,7 +22942,7 @@ h4.title-4 {
   }
 
   .lg\:hover\:text-indigo-darker:hover {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .lg\:hover\:text-indigo-dark:hover {
@@ -23208,7 +23238,7 @@ h4.title-4 {
   }
 
   .lg\:focus\:text-indigo-darker:focus {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .lg\:focus\:text-indigo-dark:focus {
@@ -23939,7 +23969,7 @@ h4.title-4 {
   }
 
   .xl\:bg-indigo-darker {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .xl\:bg-indigo-dark {
@@ -24235,7 +24265,7 @@ h4.title-4 {
   }
 
   .xl\:hover\:bg-indigo-darker:hover {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .xl\:hover\:bg-indigo-dark:hover {
@@ -24531,7 +24561,7 @@ h4.title-4 {
   }
 
   .xl\:focus\:bg-indigo-darker:focus {
-    background-color: #2f365f;
+    background-color: #3e6389;
   }
 
   .xl\:focus\:bg-indigo-dark:focus {
@@ -24891,7 +24921,7 @@ h4.title-4 {
   }
 
   .xl\:border-indigo-darker {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .xl\:border-indigo-dark {
@@ -25187,7 +25217,7 @@ h4.title-4 {
   }
 
   .xl\:hover\:border-indigo-darker:hover {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .xl\:hover\:border-indigo-dark:hover {
@@ -25483,7 +25513,7 @@ h4.title-4 {
   }
 
   .xl\:focus\:border-indigo-darker:focus {
-    border-color: #2f365f;
+    border-color: #3e6389;
   }
 
   .xl\:focus\:border-indigo-dark:focus {
@@ -28306,7 +28336,7 @@ h4.title-4 {
   }
 
   .xl\:text-indigo-darker {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .xl\:text-indigo-dark {
@@ -28602,7 +28632,7 @@ h4.title-4 {
   }
 
   .xl\:hover\:text-indigo-darker:hover {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .xl\:hover\:text-indigo-dark:hover {
@@ -28898,7 +28928,7 @@ h4.title-4 {
   }
 
   .xl\:focus\:text-indigo-darker:focus {
-    color: #2f365f;
+    color: #3e6389;
   }
 
   .xl\:focus\:text-indigo-dark:focus {

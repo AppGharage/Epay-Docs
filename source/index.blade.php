@@ -7,7 +7,7 @@
     @include('_components.navigation')
 
     <div class="container-content">
-        <div class="flex-col pt-4 mb-8 pb-4">
+        <div class="flex-col py-12 mb-8 pb-4">
             <h1 class="title-1 text-blue-darker leading-none">
                 Static sites for <br />
                 modern developers
@@ -19,11 +19,28 @@
         </div>
     </div>
 
+    <section class="flex -mb-12 justify-center">
+        @component('_components.code-editor')
+            <div class="flex items-center mb-4">
+                <p class="mr-8 text-white">1</p>
+                <div class="text-white font-light font-mono text-sm">@@extends('_layouts.master')</div>
+            </div>
+            <div class="flex items-center mb-4">
+                <p class="mr-8 text-white">2</p>
+                <div class="text-white font-light font-mono text-sm">@@section('body')</div>
+            </div>
+            <div class="flex items-center">
+                <p class="mr-8 text-white">3</p>
+                <div class="">Some line of code</div>
+            </div>
+        @endcomponent
+    </section>
+
     @include('_components.getting-started')
 
-    <section class="bg-white py-8 ">
-        <div class="flex mb-8 container-content">
-            <div class="flex-col">
+    <section class="bg-white py-16">
+        <div class="flex flex-col md:flex-row mb-12 md:mb-24 items-center container-content">
+            <div class="flex-col pr-8 pb-8 md:pb-0">
                 <h3 class="title-3 mb-4 text-blue-darker">
                     Blade templating, <br/>
                     just like your Laravel apps.
@@ -37,11 +54,29 @@
                     Jigsaw brings Blade to the static site world, so you can use the same templating engine for simple websites as you do for complex web applications.
                 </p>
             </div>
-            <div></div>
+
+            @component('_components.code-editor')
+                <div class="editor-row">
+                    <p class="line-number">1</p>
+                    <div class="line-code">@@extends('_layouts.master')</div>
+                </div>
+                <div class="editor-row">
+                    <p class="line-number">2</p>
+                    <div class="line-code">@@section('body')</div>
+                </div>
+                <div class="editor-row">
+                    <p class="line-number">3</p>
+                    <div class="line-code ml-4"><span class="text-pink">&lt;h1&gt;</span>Hello World<span class="text-pink">&lt;/h1&gt;</span></div>
+                </div>
+                <div class="editor-row">
+                    <p class="line-number">4</p>
+                    <div class="line-code">@@endsection</div>
+                </div>
+            @endcomponent
         </div>
 
-        <div class="flex container-content">
-            <div class="flex-col">
+        <div class="flex flex-col md:flex-row pt-8 md:pt-0 container-content">
+            <div class="flex-col pb-8 md:pb-0">
                 <h3 class="title-3 mb-4 text-blue-darker">
                     Use Markdown for content-driven pages.
                 </h3>
@@ -59,6 +94,25 @@
                     Learn more in the docs
                 </a>
             </div>
+
+            @component('_components.code-editor')
+                <div class="editor-row">
+                    <p class="line-number">1</p>
+                    <div class="line-code">@@extends('_layouts.master')</div>
+                </div>
+                <div class="editor-row">
+                    <p class="line-number">2</p>
+                    <div class="line-code">@@section('body')</div>
+                </div>
+                <div class="editor-row">
+                    <p class="line-number">3</p>
+                    <div class="line-code ml-4"><span class="text-pink">&lt;h1&gt;</span>Hello World<span class="text-pink">&lt;/h1&gt;</span></div>
+                </div>
+                <div class="editor-row">
+                    <p class="line-number">4</p>
+                    <div class="line-code">@@endsection</div>
+                </div>
+            @endcomponent
         </div>
     </section>
 
@@ -72,8 +126,8 @@
         </div>
     </section>
 
-    <section class="bg-blue-darker py-8">
-        <div class="text-center py-8">
+    <section class="bg-blue-darker py-16">
+        <div class="text-center">
             <h4 class="title-4 text-white font-light mb-4">
                 Ready to get started?
             </h4>
