@@ -7,9 +7,15 @@ h4 {
 }
 
 p {
+    @apply .font-normal;
+    @apply .leading-normal;
     @apply .mb-2;
     @apply .text-blue-dark;
-    @apply .text-base;
+    @apply .text-sm;
+
+    @include breakpoint(sm) {
+        @apply .text-base;
+    }
 }
 
 // headings
@@ -39,6 +45,16 @@ h3.title-3 {
 
 h4.title-4 {
     @apply .text-lg;
+
+    @include breakpoint(md) {
+        @apply .text-xl;
+    }
+}
+
+// utilities
+.lead {
+    @apply .text-lg;
+    @apply .leading-normal;
 
     @include breakpoint(md) {
         @apply .text-xl;

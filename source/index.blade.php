@@ -3,25 +3,8 @@
 @section('body')
 <div class="bg-brown-lightest border-t-4 border-purple w-full pb-6"></div>
 
-<div class="font-normal text-xl bg-brown-lightest">
-    <header class="container-content">
-        <div class="flex justify-between items-center mb-8">
-            <div class="flex flex-row items-center">
-                <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
-                    class="logo-icon rounded-lg shadow-lg mr-2 md:mr-4 w-8 sm:w-16" />
-
-                <h1 class="font-normal text-xl md:text-3xl uppercase tracking-wide text-blue-darker">Jigsaw</h1>
-            </div>
-
-            <div class="text-sm">
-                <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
-                    class="mr-4 text-blue-darker uppercase font-light no-underline">Contribute</a>
-
-                <a href="/docs/installation" title="Read the Jigsaw documentation"
-                    class="py-2 px-4 bg-purple rounded text-white uppercase font-light no-underline shadow-md">Docs</a>
-            </div>
-        </div>
-    </header>
+<main class="font-normal text-xl bg-brown-lightest">
+    @include('_components.navigation')
 
     <div class="container-content">
         <div class="flex-col pt-4 mb-8 pb-4">
@@ -30,21 +13,13 @@
                 modern developers
             </h1>
 
-            <p class="text-lg md:text-xl text-grey max-w-md mt-4 font-normal leading-normal">
+            <p class="max-w-md mt-4 text-grey lead">
                 Jigsaw is a framework for rapidly building static sites using the same modern tooling that powers your web applications.
             </p>
         </div>
     </div>
 
-    <div class="pt-8 pb-4 bg-gradient-purple">
-        <div class="container-content flex flex-col items-center">
-            <h2 class="text-white font-normal text-3xl mb-2">Getting started is easy</h2>
-            <p class="text-pink-lighter mb-4">Just make new project directory and install Jigsaw using Composer</p>
-            <code class="p-2 px-8 rounded bg-purple-darkest">
-                <pre class="text-white text-sm">$ composer global require tightenco/jigsaw</pre>
-            </code>
-        </div>
-    </div>
+    @include('_components.getting-started')
 
     <section class="bg-white py-8 ">
         <div class="flex mb-8 container-content">
@@ -89,9 +64,9 @@
 
     <section class="py-6 bg-brown-lightest">
         <div class="container-content py-6">
-            <h2 class="text-blue-darker font-normal text-2xl text-center mb-6">Compile your assets using Laravel Mix.</h2>
+            <h3 class="title-3 text-blue-darker text-center mb-6">Compile your assets using Laravel Mix.</h3>
             <p class="text-center text-blue leading-normal">
-                Jigsaw bakes in support for Laravel Mix so you can compile your CSS <br/>
+                Jigsaw bakes in support for Laravel Mix so you can compile your CSS
                 and Javascript assets the same way you're used to in Laravel.
             </p>
         </div>
@@ -113,5 +88,5 @@
             </a>
         </div>
     </section>
-</div>
+</main>
 @endsection

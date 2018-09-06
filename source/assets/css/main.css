@@ -593,9 +593,15 @@ h4 {
 }
 
 p {
+  font-weight: 400;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   color: #143154;
-  font-size: 1rem;
+  font-size: .875rem;
+}
+
+@include breakpoint(sm) {
+  @apply .text-base;
 }
 
 h1.title-1 {
@@ -624,6 +630,15 @@ h3.title-3 {
 
 h4.title-4 {
   font-size: 1.125rem;
+}
+
+@include breakpoint(md) {
+  @apply .text-xl;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 @include breakpoint(md) {
