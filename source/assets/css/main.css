@@ -598,16 +598,36 @@ p {
   font-size: 1rem;
 }
 
-h2.title-2 {
+h1.title-1 {
   font-size: 1.875rem;
 }
 
-h3.title-3 {
+@include breakpoint(md) {
+  @apply .text-4xl;
+}
+
+h2.title-2 {
   font-size: 1.5rem;
 }
 
-h4.title-4 {
+@include breakpoint(md) {
+  @apply .text-3xl;
+}
+
+h3.title-3 {
   font-size: 1.25rem;
+}
+
+@include breakpoint(md) {
+  @apply .text-2xl;
+}
+
+h4.title-4 {
+  font-size: 1.125rem;
+}
+
+@include breakpoint(md) {
+  @apply .text-xl;
 }
 
 .code-editor {
@@ -778,6 +798,18 @@ h4.title-4 {
   background: #884992;
   background: -webkit-gradient(linear, left top, right top, from(#703e84), to(#884992));
   background: linear-gradient(to right, #703e84, #884992);
+}
+
+.container-content {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@include breakpoint(lg) {
+  @apply .px-0;
 }
 
 .container {

@@ -13,14 +13,34 @@ p {
 }
 
 // headings
-h2.title-2 {
+h1.title-1 {
     @apply .text-3xl;
+
+    @include breakpoint(md) {
+        @apply .text-4xl;
+    }
+}
+
+h2.title-2 {
+    @apply .text-2xl;
+
+    @include breakpoint(md) {
+        @apply .text-3xl;
+    }
 }
 
 h3.title-3 {
-    @apply .text-2xl;
+    @apply .text-xl;
+
+    @include breakpoint(md) {
+        @apply .text-2xl;
+    }
 }
 
 h4.title-4 {
-    @apply .text-xl;
+    @apply .text-lg;
+
+    @include breakpoint(md) {
+        @apply .text-xl;
+    }
 }
