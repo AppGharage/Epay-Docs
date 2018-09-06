@@ -1,4 +1,26 @@
-@import "typography/base";
-@import "typography/headings";
-@import "typography/links";
-@import "typography/utilities";
+// Base
+h1,
+h2,
+h3,
+h4 {
+    @apply .font-normal;
+}
+
+p {
+    @apply .mb-2;
+    @apply .text-blue-dark;
+    @apply .text-base;
+}
+
+// headings
+h2.title-2 {
+    @apply .text-3xl;
+}
+
+h3.title-3 {
+    @apply .text-2xl;
+}
+
+h4.title-4 {
+    @apply .text-xl;
+}
