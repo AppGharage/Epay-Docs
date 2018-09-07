@@ -1,4 +1,4 @@
-<section class="bg-gradient-purple py-16">
+<section class="bg-gradient-purple py-16 pt-32">
     <div class="container-content flex flex-col items-center">
         <h2 class="title-2 text-white mb-2">Getting started is easy</h2>
 

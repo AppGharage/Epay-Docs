@@ -111,8 +111,8 @@ let colors = {
     'indigo-dark': '#5661b3',
     'indigo': '#6574cd',
     'indigo-light': '#7886d7',
-    'indigo-lighter': '#b2b7ff',
-    'indigo-lightest': '#e6e8ff',
+    'indigo-lighter': '#e1e6ea',
+    'indigo-lightest': '#c4d0dc',
 
     'purple-darkest': '#2D0F34',
     'purple-darker': '#6A3B81',
@@ -534,6 +534,8 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '70': '20rem',
+    '76': '25rem',
     'full': '100%',
     'screen': '100vh'
   },

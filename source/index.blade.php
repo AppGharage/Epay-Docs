@@ -25,15 +25,7 @@
 
     @include('_components.features')
 
-    <section class="py-6 bg-brown-lightest">
-        <div class="container-content py-6">
-            <h3 class="title-3 text-blue-darker text-center mb-6">Compile your assets using Laravel Mix.</h3>
-            <p class="text-center text-blue leading-normal">
-                Jigsaw bakes in support for Laravel Mix so you can compile your CSS
-                and Javascript assets the same way you're used to in Laravel.
-            </p>
-        </div>
-    </section>
+    @include('_components.compile-your-assets')
 
     <section class="bg-blue-darker py-16">
         <div class="text-center">
