@@ -19,22 +19,7 @@
         </div>
     </div>
 
-    <section class="flex -mb-12 justify-center">
-        @component('_components.code-editor')
-            <div class="flex items-center mb-4">
-                <p class="mr-8 text-white">1</p>
-                <div class="text-white font-light font-mono text-sm">@@extends('_layouts.master')</div>
-            </div>
-            <div class="flex items-center mb-4">
-                <p class="mr-8 text-white">2</p>
-                <div class="text-white font-light font-mono text-sm">@@section('body')</div>
-            </div>
-            <div class="flex items-center">
-                <p class="mr-8 text-white">3</p>
-                <div class="">Some line of code</div>
-            </div>
-        @endcomponent
-    </section>
+    @include('_components.jigsaw-is-awesome')
 
     @include('_components.getting-started')
 

@@ -30,7 +30,7 @@
 
                 <div class="editor-row">
                     <p class="line-number">3</p>
-                    <div class="line-code ml-4"><span class="text-pink">&lt;h1&gt;</span>Hello World<span class="text-pink">&lt;/h1&gt;</span></div>
+                    <div class="line-code ml-4"><span class="text-pink-dark">&lt;h1&gt;</span>Hello World<span class="text-pink-dark">&lt;/h1&gt;</span></div>
                 </div>
 
                 <div class="editor-row">
@@ -75,7 +75,7 @@
 
                 <div class="editor-row">
                     <p class="line-number">3</p>
-                    <div class="line-code ml-4">section: content</div>
+                    <div class="line-code">section: content</div>
                 </div>
 
                 <div class="editor-row">
