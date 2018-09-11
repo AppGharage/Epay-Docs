@@ -7,11 +7,13 @@
             </h3>
 
             <p class="text-blue">
-                Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend.
+                Blade is a powerful, simple, and beautiful templating language,
+                but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend.
             </p>
 
             <p class="text-blue">
-                Jigsaw brings Blade to the static site world, so you can use the same templating engine for simple websites as you do for complex web applications.
+                Jigsaw brings Blade to the static site world,
+                so you can use the same templating engine for simple websites as you do for complex web applications.
             </p>
         </div>
 
