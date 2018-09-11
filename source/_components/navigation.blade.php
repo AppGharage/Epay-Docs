@@ -2,7 +2,7 @@
     <nav class="flex justify-between items-center mb-8" aria-role="navigation">
         <div class="flex items-center">
             <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
-                class="logo-icon rounded-lg shadow border-2 border-white mr-2 sm:mr-4 w-8 sm:w-12" />
+                class="logo-icon rounded-lg shadow border-2 border-white mr-2 sm:mr-4 w-10 sm:w-12" />
 
             <h4 class="title-4 uppercase tracking-wide text-blue-darker">Jigsaw</h4>
         </div>

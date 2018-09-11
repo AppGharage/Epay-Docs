@@ -6,7 +6,7 @@
 <main class="font-normal text-xl bg-brown-lightest">
     @include('_components.navigation')
 
-    <div class="container-content pt-4 pb-12">
+    <div class="container-content pt-4 sm:pb-12">
         <div class="flex-col mb-8 pb-4">
             <h1 class="title-1 text-blue-darker leading-none">
                 Static sites for <br />
@@ -27,21 +27,6 @@
 
     @include('_components.compile-your-assets')
 
-    <section class="bg-blue-darker py-16">
-        <div class="text-center">
-            <h4 class="title-4 text-white font-light mb-4">
-                Ready to get started?
-            </h4>
-
-            <p class="text-teal-light font-light mb-8 leading-normal">
-                Check out our installation instructions and you'll be <br/>
-                up and running in no time.
-            </p>
-
-            <a href="{{ $page->asset_prefix }}/docs/installation/" class="py-4 px-6 text-grey-darker no-underline tracking-wide uppercase rounded-lg text-sm bg-grey-lightest shadow-lg">
-                Build your site
-            </a>
-        </div>
-    </section>
+    @include('_components.build-your-site')
 </main>
 @endsection
