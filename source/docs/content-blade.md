@@ -152,7 +152,7 @@ For example, you can create a custom `@datetime($timestamp)` directive to format
 ```
 return [
     'datetime' => function ($timestamp) {
-        return '<?php echo date("l, F j, Y", ' . $expression . '); ?>';
+        return '<?php echo date("l, F j, Y", ' . $timestamp . '); ?>';
     }
 ];
 ```
@@ -167,7 +167,7 @@ Alternatively, the `blade.php` file receives a variable named `$bladeCompiler`, 
 /** @var \Illuminate\View\Compilers\BladeCompiler $bladeCompiler */
 
 $bladeCompiler->directive('datetime', function ($timestamp) {
-    return '<?php echo date("l, F j, Y", ' . $expression . '); ?>';
+    return '<?php echo date("l, F j, Y", ' . $timestamp . '); ?>';
 });
 
 $bladeCompiler->component('_components.alert');
