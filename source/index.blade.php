@@ -6,8 +6,8 @@
 <main class="font-normal text-xl bg-brown-lightest">
     @include('_components.navigation')
 
-    <div class="container-content">
-        <div class="flex-col py-12 mb-8 pb-4">
+    <div class="container-content pt-4 pb-12">
+        <div class="flex-col mb-8 pb-4">
             <h1 class="title-1 text-blue-darker leading-none">
                 Static sites for <br />
                 modern developers
