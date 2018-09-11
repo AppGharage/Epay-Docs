@@ -28,17 +28,9 @@
         <link rel="stylesheet" href="{{ $page->asset_prefix }}/assets/css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     </head>
-    <body class="min-h-screenfont-sans">
+    <body class="min-h-screen font-sans">
 
         @yield('body')
-
-        <footer class="bg-blue-darkest text-center py-8 text-sm text-white flex justify-center items-center">
-            <p class="text-teal-light font-light text-sm mb-0">A project by
-                <a href="https://tighten.co"
-                    title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js"
-                    class="text-white no-underline">Tighten</a>
-            </p>
-        </footer>
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
         <script type="text/javascript">
