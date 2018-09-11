@@ -61,6 +61,9 @@
         style="background:url('/assets/img/browser-illustration.svg') no-repeat; background-size: cover;">
 
         <h4 class="title-4 text-grey">Jigsaw is awesome!</h4>
-        <p class="text-grey text-base">Contact us at <a href="mailto:hello@tighten.co?subject='Hello from Jigsaw'" class="text-blue-lighter">hello@tighten.co</a>.</p>
+        <p class="text-grey text-base">
+            Contact us at
+            <a href="mailto:hello@tighten.co?subject='Hello from Jigsaw'" class="text-blue-lighter">hello@tighten.co</a>
+        </p>
     </div>
 </section>
