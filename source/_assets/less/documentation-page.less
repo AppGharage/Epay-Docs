@@ -1,28 +1,24 @@
 .documentation-page {
-    padding-bottom: @spacer-4;
-
     h2 {
-        margin-bottom: @spacer-4;
-        font-size: @font-size-jumbo;
-        font-weight: @font-weight-medium;
+        @apply .my-4;
+        @apply .font-normal;
+        @apply .text-3xl;
 
         + p {
-            margin-top: @spacer-6;
+            @apply .mt-6;
         }
     }
 
     h3 {
-        margin-top: @spacer-7;
-        margin-bottom: @spacer-4;
-        font-size: @font-size-xlarge;
-        font-weight: @font-weight-medium;
+        @apply .font-normal;
+        @apply .my-4;
+        @apply .text-2xl;
     }
 
     h4 {
         font-size: 1.5rem;
         font-weight: 300;
-        margin-bottom: -.2em;
-        color: @color-brand-primary;
+        margin-bottom: -0.2em;
 
         a {
             font-weight: 300;
@@ -34,52 +30,51 @@
     }
 
     p {
-        margin-top: @spacer-2;
-        margin-bottom: @spacer-4;
-    }
-
-    a {
-        .link-brand;
+        @apply .my-2;
     }
 
     blockquote {
-        margin-top: @spacer-4;
-        margin-bottom: @spacer-4;
-        padding: @spacer-1 @spacer-4;
-        color: @text-dark-soft;
-        border-left: .25rem solid @color-gray-light;
+        @apply .border-grey-light;
+        @apply .border-l-2;
+        @apply .my-3;
+        @apply .px-8;
+        @apply .py-4;
+        @apply .text-grey;
+
         > p {
             margin: 0;
         }
     }
 
     pre + blockquote {
-        margin-top: @spacer-6;
+        @apply .mt-6;
     }
 
     code {
-        display: inline-block;
-        padding-left: @spacer-1;
-        padding-right: @spacer-1;
-        font-size: @font-size-small;
-        background-color: @color-gray-lighter;
+        @apply .bg-grey-lighter;
+        @apply .inline;
+        @apply .px-2;
+        @apply .text-sm;
     }
 
     pre {
-        margin-bottom: @spacer-4;
-        padding: @spacer-2 @spacer-4;
-        line-height: 1.75;
-        background-color: @color-gray-warm;
+        @apply .bg-grey-light;
+        @apply .leading-loose;
+        @apply .mb-4;
+        @apply .px-4;
+        @apply .py-2;
+
         > code {
-            display: inline;
-            padding: 0;
-            background: none;
+            @apply .bg-transparent;
+            @apply .inline;
+            @apply .p-0;
         }
     }
 
-    ol, ul {
-        margin-bottom: 1rem;
-        padding-left: 2rem;
+    ol,
+    ul {
+        @apply .mb-1;
+        @apply .pl-2;
     }
 
     ol {
@@ -91,16 +86,16 @@
     }
 
     li {
-        margin-bottom: @spacer-2;
+        @apply .mb-2;
     }
 
     img {
-        max-width: 100%;
+        @apply .max-w-full;
     }
 
     hr {
-        border: none;
-        border-bottom: 1px solid #ddd;
-        margin: @spacer-6 0;
+        @apply .border-b;
+        @apply .border-grey-darker;
+        @apply .my-6;
     }
 }
