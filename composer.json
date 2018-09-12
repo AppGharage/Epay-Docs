@@ -1,7 +1,7 @@
 {
     "name": "tightenco/jigsaw-site",
     "require": {
-        "tightenco/jigsaw": "^1.0",
+        "tightenco/jigsaw": "^1.2",
         "samdark/sitemap": "^2.2"
     },
     "autoload": {
