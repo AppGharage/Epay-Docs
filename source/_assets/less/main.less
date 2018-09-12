@@ -5,6 +5,20 @@
 @import 'typography';
 @import 'files';
 
+pre {
+    @apply .bg-grey-lighter;
+    @apply .my-4;
+    @apply .p-4;
+    @apply .rounded;
+}
+
+code {
+    @apply .bg-grey-lighter;
+    @apply .py-1;
+    @apply .px-2;
+    @apply .text-blue-darker;
+}
+
 // backgrounds
 .bg-gradient-purple {
     background: #884992;
@@ -16,13 +30,13 @@
     background: rgba(45, 15, 52, 0.5);
 }
 
-// code editor
 .container-content {
     @apply .max-w-xl;
     @apply .mx-auto;
     @apply .px-6;
 }
 
+// code editor
 .example-row {
     @apply .flex;
     @apply .flex-col;
