@@ -8,7 +8,7 @@
 
     <input type="text" class="w-2/3 outline-none border border-indigo-lighter p-2 rounded" />
 
-    <div class="w-1/5 hidden xl:flex items-center justify-end">
+    <div class="w-1/5 hidden xl:flex items-center pl-8">
         <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
             class="mr-4 text-blue-darker">
             <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
