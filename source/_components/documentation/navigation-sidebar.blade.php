@@ -1,4 +1,4 @@
-<nav class="flex flex-col p-4">
+<nav class="hidden md:flex flex-col p-4">
     <a class="text-blue-darker mb-3" href="{{ $page->asset_prefix }}/docs/installation/">Installation</a>
     <a class="text-blue-darker mb-3 ml-4" href="{{ $page->asset_prefix }}/docs/upgrading/">Upgrading</a>
     <a class="text-blue-darker mb-3" href="{{ $page->asset_prefix }}/docs/building-and-previewing/">Building &amp; Previewing</a>
