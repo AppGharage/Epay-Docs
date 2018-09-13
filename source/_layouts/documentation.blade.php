@@ -6,7 +6,7 @@
 <div class="flex min-h-screen bg-grey-lighter justify-center pt-8">
     @include('_components.documentation.navigation-sidebar')
 
-    <div class="bg-white rounded-lg shadow max-w-lg w-full mb-16 p-8 documentation-page">
+    <div class="bg-white rounded-lg max-w-lg w-full mb-16 p-8 documentation-page">
         @yield('documentation_content')
     </div>
 
