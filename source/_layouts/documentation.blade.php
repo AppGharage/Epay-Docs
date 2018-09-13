@@ -7,7 +7,7 @@
     <div class="flex py-2 px-3 lg:px-0 w-full lg:w-4/5 max-w-3xl md:mx-auto">
         @include('_components.documentation.navigation-sidebar')
 
-        <div class="bg-white rounded-lg max-w-lg w-full mb-16 p-8 documentation-page">
+        <div class="bg-white rounded-lg max-w-lg w-full mb-16 px-4 md:px-8 py-2 md:py-4 documentation-page">
             @yield('documentation_content')
         </div>
 

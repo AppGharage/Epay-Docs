@@ -1,42 +1,34 @@
 .documentation-page {
-    h2 {
-        @apply .my-4;
-        @apply .font-normal;
-        @apply .text-3xl;
+    @apply .font-normal;
 
-        + p {
-            @apply .mt-6;
-        }
+    h1 {
+        @apply .text-4xl;
+    }
+
+    h2 {
+        @apply .text-3xl;
     }
 
     h3 {
-        @apply .font-normal;
-        @apply .my-4;
-        @apply .text-2xl;
+        @apply .text-xl;
     }
 
     h4 {
-        font-size: 1.5rem;
-        font-weight: 300;
-        margin-bottom: -0.2em;
-
-        a {
-            font-weight: 300;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
+        @apply .text-lg;
     }
 
-    p {
-        @apply .my-2;
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply .my-4;
+        @apply .text-blue-darker;
     }
 
     blockquote {
         @apply .border-grey-light;
-        @apply .border-l-2;
-        @apply .my-3;
+        @apply .border-l-4;
+        @apply .my-4;
         @apply .px-8;
         @apply .py-4;
         @apply .text-grey;
@@ -50,19 +42,38 @@
         @apply .mt-6;
     }
 
+    hr {
+        @apply .border;
+        @apply .border-grey-light;
+        @apply .my-6;
+    }
+
     code {
         @apply .bg-grey-lighter;
         @apply .inline;
         @apply .px-2;
+        @apply .py-1;
+        @apply .text-blue-docs-dark;
         @apply .text-sm;
     }
 
+    a {
+        @apply .text-blue-docs-lighter;
+    }
+
+    p {
+        @apply .my-2;
+        @apply .text-blue-docs-dark;
+        @apply .text-base;
+    }
+
     pre {
-        @apply .bg-grey-light;
+        @apply .bg-grey-code;
         @apply .leading-loose;
         @apply .mb-4;
         @apply .px-4;
         @apply .py-2;
+        @apply .rounded;
 
         > code {
             @apply .bg-transparent;
@@ -91,11 +102,5 @@
 
     img {
         @apply .max-w-full;
-    }
-
-    hr {
-        @apply .border-b;
-        @apply .border-grey-darker;
-        @apply .my-6;
     }
 }
