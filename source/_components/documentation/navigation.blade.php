@@ -1,11 +1,11 @@
 <header class="container-content">
     <nav class="flex items-center py-2" aria-role="navigation">
-        <div class="flex items-center">
+        <a href="/" class="flex items-center" title="Jigsaw by Tighten">
             <img src="{{ $page->asset_prefix }}/assets/img/logo-grey.svg" alt="Jigsaw logo"
                 class="rounded-lg mr-2 sm:mr-4 w-8 sm:w-10" />
 
             <h4 class="title-4 uppercase tracking-wide text-blue-darker">Jigsaw</h4>
-        </div>
+        </a>
 
         <input type="text" class="w-64 outline-none" />
 
