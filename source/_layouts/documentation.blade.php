@@ -3,11 +3,11 @@
 @section('body')
 @include('_components.documentation.navigation')
 
-<div class="bg-grey-lighter pt-4 md:pt-8">
-    <div class="flex py-2 px-3 lg:px-0 w-full lg:w-4/5 max-w-3xl md:mx-auto">
+<div class="bg-brown-lightest pt-4 md:pt-8">
+    <div class="flex py-2 px-3 lg:px-0 w-full xl:w-4/5 max-w-3xl md:mx-auto">
         @include('_components.documentation.navigation-sidebar')
 
-        <div class="bg-white rounded-lg max-w-lg w-full mb-16 px-4 md:px-8 py-2 md:py-4 documentation-page">
+        <div class="bg-white rounded-lg w-full mb-16 px-4 md:px-8 py-2 md:py-4 documentation-page">
             @yield('documentation_content')
         </div>
 

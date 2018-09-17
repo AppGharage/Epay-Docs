@@ -1,6 +1,6 @@
 <nav class="flex items-center py-2 px-3 lg:px-0 w-full lg:w-4/5 max-w-3xl md:mx-auto" aria-role="navigation">
     <a href="/" class="flex items-center md:w-1/5" title="Jigsaw by Tighten">
-        <img src="{{ $page->asset_prefix }}/assets/img/logo-grey.svg" alt="Jigsaw logo"
+        <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
             class="rounded-lg w-8 md:w-10 mr-2 md:mr-4" />
 
         <h4 class="hidden sm:inline-block mr-4 title-4 uppercase tracking-wide text-blue-darker">Jigsaw</h4>
