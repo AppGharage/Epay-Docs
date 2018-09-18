@@ -3,7 +3,7 @@
 @section('body')
 @include('_components.documentation.navigation')
 
-<div class="bg-brown-lightest pt-4 md:pt-8">
+<div class="bg-brown-lightest min-h-screen pt-4 md:pt-8">
     <div class="flex py-2 px-3 lg:px-0 w-full xl:w-4/5 max-w-3xl md:mx-auto">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
