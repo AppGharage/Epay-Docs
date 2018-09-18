@@ -17,7 +17,7 @@
         <p class="text-sm text-blue-docs-dark">
             A project by
             <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
-                class="text-blue-docs-lighter">Tighten</a>
+                class="text-purple">Tighten</a>
         </p>
     </div>
 </nav>

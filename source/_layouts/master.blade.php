@@ -30,7 +30,9 @@
     </head>
     <body class="min-h-screen font-sans">
 
-        @yield('body')
+        <main id="vue-app">
+            @yield('body')
+        </main>
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
         <script type="text/javascript">
@@ -40,6 +42,6 @@
                 inputSelector: '#docsearch'
             });
         </script>
-
+        @yield('scripts')
     </body>
 </html>

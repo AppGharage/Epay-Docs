@@ -2,7 +2,8 @@
     "name": "tightenco/jigsaw-site",
     "require": {
         "tightenco/jigsaw": "^1.2",
-        "samdark/sitemap": "^2.2"
+        "samdark/sitemap": "^2.2",
+        "symfony/dom-crawler": "^4.1.4"
     },
     "autoload": {
         "psr-4": {
