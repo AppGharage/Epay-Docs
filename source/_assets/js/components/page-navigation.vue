@@ -1,8 +1,9 @@
 <template>
-    <div>
+    <div class="w-1/3 pl-6 hidden xl:flex">
         <nav class="flex flex-col" v-if="headings.length">
-            <p class="text-grey-dark">On this page</p>
-            <a :href="'#' + heading.id" :key="heading.id" v-for="heading in headings">{{ heading.textContent }}</a>
+            <p class="text-sm uppercase text-grey-dark mb-6">On this page</p>
+            <a :href="'#' + heading.id" :key="heading.id" class="text-blue-darker text-sm mb-4"
+                v-for="heading in headings">{{ heading.textContent }}</a>
         </nav>
     </div>
 </template>
