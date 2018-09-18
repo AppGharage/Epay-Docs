@@ -1,9 +1,11 @@
 let Vue = require('vue');
 import PageNavigation from './components/page-navigation';
+import DocsNavigation from './components/docs-navigation';
+
 new Vue({
     el: '#vue-app',
 
-    components: { PageNavigation },
+    components: { PageNavigation, DocsNavigation },
 
     data() {
         return {
