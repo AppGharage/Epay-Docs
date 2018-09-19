@@ -7,7 +7,7 @@
     <div class="flex py-2 px-3 container-content lg:px-0">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
-        <div class="bg-white rounded-lg w-full mb-12 px-4 py-2 documentation-page md:py-4 md:px-8 lg:max-w-md" v-pre>
+        <div class="bg-white rounded-lg w-full mb-12 px-4 py-2 documentation-page md:py-4 md:px-6 lg:max-w-md" v-pre>
             @yield('documentation_content')
         </div>
 
