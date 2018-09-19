@@ -5,6 +5,7 @@
 @import 'typography';
 @import 'files';
 @import 'documentation-page';
+@import 'code-editor';
 
 // backgrounds
 .bg-gradient-purple {
@@ -23,54 +24,9 @@
     @apply .px-6;
 }
 
-// code editor
-.example-row {
-    @apply .flex;
-    @apply .flex-col;
-    @apply .items-center;
-    @apply .mb-12;
-    @apply .pt-8;
-}
-
-.editor-row {
-    @apply .flex;
-    @apply .items-center;
-    @apply .mb-4;
-}
-
-.line-number {
-    @apply .font-light;
-    @apply .font-mono;
-    @apply .hidden;
-    @apply .mb-0;
-    @apply .mr-6;
-    @apply .text-xs;
-    @apply .text-grey-lightest;
-    @apply .w-4;
-}
-
-.line-code {
-    @apply .font-light;
-    @apply .font-mono;
-    @apply .text-xs;
-    @apply .text-white;
-}
-
 // responsive styles
-@screen md {
-    .example-row {
-        @apply .flex-row;
-        @apply .mb-24;
-        @apply .pt-0;
-    }
-}
-
 @screen lg {
     .container-content {
         @apply .px-0;
-    }
-
-    .line-number {
-        @apply .block;
     }
 }
