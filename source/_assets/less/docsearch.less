@@ -1,25 +1,3 @@
-@color-primary: @color-brand-primary;
-
-@color-border-dark: @color-primary;
-@color-border-light: @color-gray-light;
-
-@color-highlight-text: @color-primary;
-
-@color-hover-text: @color-gray;
-@color-hover-bg: @color-gray-lighter;
-
-@color-left-column: @color-gray;
-@color-left-column-bg: @color-gray-lighter;
-
-@color-right-column-light: @color-gray;
-@color-right-column-dark: @color-gray-dark;
-@color-right-column-bg: @color-gray-lightest;
-
-@breakpoint-medium: 768px;
-@breakpoint-wide: 992px;
-
-@search-width-medium: 250px;
-@search-width-wide: 350px;
 
 /**
  * Docsearch field
@@ -31,19 +9,23 @@
 }
 
 .docsearch__input {
-    border: 1px solid @color-gray-light;
-    color: @color-primary;
-    display: inline-block;
+    // w-full lg:max-w-md pl-4 outline-none border border-indigo-lighter p-2 rounded
+    @apply .text-blue-darker;
+    @apply .border;
+    @apply .border-indigo-lighter;
+    @apply .w-full;
+    @apply .pl-4;
+    @apply .p-2;
+    @apply .rounded;
+    @apply .outline-none;
+
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.3;
-    margin-top: 2px;
-    padding: 0.45em 2.1em 0.48em 0.8em;
-    width: @search-width-medium;
 }
 
 .docsearch__input:focus {
-    border: 1px solid @color-border-dark;
+    @apply .border-grey;
     outline: none;
 }
 
@@ -65,22 +47,23 @@
 
 /* Search results dropdown */
 .aa-dropdown-menu {
-    background-color: @color-right-column-bg;
-    border: 1px solid @color-border-dark;
-    border-top: none;
+    @apply .bg-grey-lightest;
+    @apply .border;
+    @apply .border-grey;
+
     font-size: .85rem;
     line-height: 1.3;
     margin: 0;
     text-align: left;
-    width: @search-width-medium;
 }
 
 /* Each result */
 .algolia-docsearch-suggestion {
-    color: @color-right-column-light;
+    @apply .border;
+    @apply .border-grey-light;
+    @apply .text-purple;
     cursor: pointer;
     overflow: hidden;
-    border-top: 1px solid @color-border-light;
 
     .aa-suggestion:first-of-type & {
         border-top: none;
@@ -88,13 +71,14 @@
 }
 
 .algolia-docsearch-suggestion--content {
-    border-top: 1px solid @color-border-light;
+    @apply .border-grey-light;
+    @apply .border-t;
     padding: 10px 13px 7px 13px;
     width: 100%;
 
     .algolia-docsearch-suggestion__main &,
-    .algolia-docsearch-suggestion__secondary &, {
-        border-top: 0;
+    .algolia-docsearch-suggestion__secondary {
+        @apply .border-t-0;
     }
 }
 
@@ -113,7 +97,7 @@
 
 /* Result title */
 .algolia-docsearch-suggestion--title {
-    color: @color-right-column-dark;
+    @apply .text-grey-dark;
     font-weight: 600;
     margin: 0 0 2px 0;
 }
@@ -125,20 +109,21 @@
 
 /* Text from search box is highlighed inline in each result */
 .algolia-docsearch-suggestion--highlight {
+    @apply .text-purple;
+
     margin: 0;
-    color: @color-highlight-text;
     background: none;
     font-weight: 600;
 }
 
 /* Selected result */
 .aa-cursor .algolia-docsearch-suggestion--content {
-    color: @color-hover-text;
-    background: @color-hover-bg;
+    @apply .bg-grey-light;
+    @apply .text-purple;
 }
 
 .aa-cursor .algolia-docsearch-suggestion--title {
-    color: @color-primary;
+    @apply .text-blue-darker;
 }
 
 /* Main category headers, unused */
@@ -148,11 +133,12 @@
 
 /* Footer with Algolia logo*/
 .algolia-docsearch-footer {
-    border-top: 1px solid @color-border-light;
+    @apply .border-grey-lighter;
+    @apply .border-t;
+    @apply .text-grey-light;
     text-align: right;
     font-size: .8em;
     padding: 4px 8px 3px 0;
-    color: lighten(@color-gray, 5%);
     .algolia-docsearch-footer--logo {
         display: inline-block !important;
         width: 45px;
@@ -168,7 +154,7 @@
 }
 
 /* Medium breakpoint: Screen is big enough to display the text snippets */
-@media (min-width: @breakpoint-medium) {
+@screen md {
     .algolia-docsearch-suggestion--content {
         display: table-cell;
         margin: 6px 10px 3px 10px;
@@ -186,10 +172,10 @@
 }
 
 /* Wide breakpoint: Screen is big enough to display results in two columns */
-@media (min-width: @breakpoint-wide) {
+@screen lg {
     .aa-input,
     .aa-dropdown-menu {
-        width: @search-width-wide;
+        @apply .max-w-md;
     }
 
     .algolia-docsearch-suggestion {
@@ -202,9 +188,10 @@
     }
 
     .algolia-docsearch-suggestion--subcategory-column {
-        background: @color-left-column-bg;
-        border-right: 1px solid @color-border-light;
-        color: @color-left-column;
+        @apply .bg-grey-lighter;
+        @apply .border-grey-light;
+        @apply .border-r;
+        @apply .text-blue-darker;
         display: table-cell;
         font-size: .8em;
         max-width: 115px;
@@ -230,7 +217,7 @@
     }
 
     .aa-cursor .algolia-docsearch-suggestion--subcategory-column {
-        background: darken(@color-hover-bg, 3%);
+        @apply .bg-grey-light;
         cursor: pointer;
     }
 }

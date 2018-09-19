@@ -33,15 +33,6 @@
         <main id="vue-app">
             @yield('body')
         </main>
-
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
-        <script type="text/javascript">
-            docsearch({
-                apiKey: '57a7f5b1e4e0a44c7e2f8e96abcbf674',
-                indexName: 'jigsaw',
-                inputSelector: '#docsearch'
-            });
-        </script>
         @yield('scripts')
     </body>
 </html>

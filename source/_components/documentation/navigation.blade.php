@@ -6,7 +6,7 @@
         <h4 class="hidden lg:inline-block mr-4 title-4 uppercase tracking-wide text-blue-darker">Jigsaw</h4>
     </a>
 
-    <input type="text" class="w-full lg:max-w-md pl-4 outline-none border border-indigo-lighter p-2 rounded" />
+    <input id="docsearch" type="text" class="" />
 
     <div class="w-1/3 hidden lg:flex items-center pl-8">
         <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
