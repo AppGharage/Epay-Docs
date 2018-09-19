@@ -122,7 +122,7 @@ let colors = {
     'purple-darkest': '#2D0F34',
     'purple-darker': '#6A3B81',
     'purple-dark': '#794acf',
-    'purple': '#64387D',
+    'purple': '#96539f',
     'purple-light': '#a779e9',
     'purple-lighter': '#854891',
     'purple-lightest': '#f3ebff',
@@ -201,6 +201,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'proxima-nova',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
