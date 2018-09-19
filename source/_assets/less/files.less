@@ -2,7 +2,8 @@
     @apply .bg-white;
     @apply .border;
     @apply .border-grey-files;
-    @apply .my-6;
+    @apply .mt-6;
+    @apply .mb-10;
     @apply .p-8;
     @apply .rounded;
     @apply .text-sm;
@@ -44,7 +45,7 @@
     }
 
     .folder {
-        color: #45658a;
+        @apply .text-purple;
         line-height: 1;
         padding: 12px 0 0 28px;
 
@@ -67,7 +68,6 @@
                 position: absolute;
                 width: 40px;
             }
-            @apply .text-blue-docs-lighter;
         }
 
         &.focus {
