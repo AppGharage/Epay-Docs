@@ -31,6 +31,8 @@
     <body class="min-h-screen font-sans">
 
         <main id="vue-app">
+            <div class="w-full bg-brown-lightest border-t-4 border-purple"></div>
+
             @yield('body')
         </main>
         @yield('scripts')

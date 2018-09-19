@@ -1,9 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-<div class="w-full bg-brown-lightest border-t-4 border-purple pb-6"></div>
-
-<div class="font-normal text-xl bg-brown-lightest">
+<div class="pt-6 font-normal text-xl bg-brown-lightest">
     @include('_components.navigation')
 
     <div class="container-content pt-4 sm:pb-12">
