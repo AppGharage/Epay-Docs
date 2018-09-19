@@ -1,31 +1,75 @@
-@import "base";
-@import "colors";
-@import "typography";
-@import "z-index";
-@import "grid";
-@import "flex";
-@import "images";
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
 
-// Components
-@import "forms";
-@import "panel";
-@import "list-group";
-@import "buttons";
-@import "navbar";
-@import "svg-icon";
-@import "nav-list";
-@import "documentation-page";
-@import "code-editor";
-@import "docsearch";
-@import "files";
-@import "logo";
+@import 'typography';
+@import 'files';
 
-// Utilities
-@import "backgrounds";
-@import "layout";
-@import "spacing";
-@import "borders";
-@import "utilities";
-@import "responsive-utilities";
-@import "transitions";
-@import "animations";
+// backgrounds
+.bg-gradient-purple {
+    background: #884992;
+    background: -webkit-linear-gradient(to right, #703e84, #884992);
+    background: linear-gradient(to right, #703e84, #884992);
+}
+
+.bg-opaque-purple {
+    background: rgba(45, 15, 52, 0.5);
+}
+
+// code editor
+.container-content {
+    @apply .max-w-xl;
+    @apply .mx-auto;
+    @apply .px-6;
+}
+
+.example-row {
+    @apply .flex;
+    @apply .flex-col;
+    @apply .items-center;
+    @apply .mb-12;
+    @apply .pt-8;
+}
+
+.editor-row {
+    @apply .flex;
+    @apply .items-center;
+    @apply .mb-4;
+}
+
+.line-number {
+    @apply .font-light;
+    @apply .font-mono;
+    @apply .hidden;
+    @apply .mb-0;
+    @apply .mr-6;
+    @apply .text-xs;
+    @apply .text-grey-lightest;
+    @apply .w-4;
+}
+
+.line-code {
+    @apply .font-light;
+    @apply .font-mono;
+    @apply .text-xs;
+    @apply .text-white;
+}
+
+// responsive styles
+@screen md {
+    .example-row {
+        @apply .flex-row;
+        @apply .mb-24;
+        @apply .pt-0;
+    }
+}
+
+@screen lg {
+    .container-content {
+        @apply .px-0;
+    }
+
+    .line-number {
+        @apply .block;
+    }
+}
