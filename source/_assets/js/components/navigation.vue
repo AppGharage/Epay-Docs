@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:block w-full lg:w-1/3 mb-8 lg:mb-0" :class="{ hidden: ! visible }">
+    <div class="w-full mb-8 lg:block lg:w-1/3 lg:mb-0" :class="{ hidden: ! visible }">
 
         <nav class="nav-list" role="navigation">
             <navigation-item :key="key" v-for="(url, key) in navigation" :item="url">{{ key }}</navigation-item>

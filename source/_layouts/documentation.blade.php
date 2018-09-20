@@ -1,28 +1,29 @@
 @extends('_layouts.master')
 
 @section('body')
-<nav class="flex items-center py-2 container-content" aria-role="navigation">
-    <a href="/" class="flex items-center mr-3 lg:mr-0 lg:w-1/3" title="Jigsaw by Tighten">
+<nav class="flex items-center justify-center py-2 container-content" aria-role="navigation">
+    <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
         <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
             class="rounded-lg w-8 mr-3" />
 
-        <h4 class="hidden lg:inline-block mr-4 title-4 uppercase tracking-wide text-blue-darker">Jigsaw</h4>
+        <h4 class="hidden mr-4 title-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">Jigsaw</h4>
     </a>
 
     <input id="docsearch" type="text" class="" />
 
-    <div class="w-1/3 hidden lg:flex items-center pl-8">
+    <div class="w-1/3 hidden items-center pl-3 lg:flex lg:pl-8">
         <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
             class="mr-4 text-blue-darker">
             <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
         </a>
 
-        <p class="text-sm text-blue-docs-dark">
+        <p class="text-sm text-blue-docs-dark mb-0">
             A project by
             <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
                 class="text-purple">Tighten</a>
         </p>
     </div>
+
     <navigation-toggle></navigation-toggle>
 </nav>
 
