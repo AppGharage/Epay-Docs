@@ -6,7 +6,7 @@
         <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
             class="rounded-lg w-8 mr-3" />
 
-        <h4 class="hidden mr-4 title-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">Jigsaw</h4>
+        <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">Jigsaw</h4>
     </a>
 
     <input id="docsearch" type="text" class="" />

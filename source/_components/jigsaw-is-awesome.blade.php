@@ -60,7 +60,7 @@
 
     <div class="hidden md:flex flex-col w-2/3 h-70 lg:h-76 -ml-10 pt-10 -mt-12 rounded-lg justify-center items-center shadow-lg z-50"
         style="background:url('/assets/img/browser-illustration.svg') no-repeat; background-size: cover;">
-        <h4 class="title-4 text-grey">Jigsaw is awesome!</h4>
+        <h4 class="text-grey">Jigsaw is awesome!</h4>
 
         <p class="text-grey text-base">
             Contact us at
