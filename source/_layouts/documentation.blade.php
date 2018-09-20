@@ -1,10 +1,10 @@
 @extends('_layouts.master')
 
 @section('body')
-<nav class="flex items-center py-2 px-3 container-content" aria-role="navigation">
-    <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
+<nav class="flex items-center py-2 container-content" aria-role="navigation">
+    <a href="/" class="flex items-center mr-3 lg:mr-0 lg:w-1/3" title="Jigsaw by Tighten">
         <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
-            class="rounded-lg w-8 md:w-10 mr-2 md:mr-4" />
+            class="rounded-lg w-8 mr-3" />
 
         <h4 class="hidden lg:inline-block mr-4 title-4 uppercase tracking-wide text-blue-darker">Jigsaw</h4>
     </a>
@@ -23,13 +23,14 @@
                 class="text-purple">Tighten</a>
         </p>
     </div>
+    <navigation-toggle></navigation-toggle>
 </nav>
 
 <div class="bg-brown-lightest min-h-screen pt-4 md:pt-8">
-    <div class="flex py-2 px-3 container-content lg:px-0">
+    <div class="flex flex-col lg:flex-row py-2 container-content">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
-        <div class="bg-white rounded-lg w-full mb-12 px-4 py-2 documentation-page md:py-4 md:px-6 lg:max-w-md" v-pre>
+        <div class="bg-white rounded-lg w-full mb-12 px-4 py-2 documentation-page" v-pre>
             @yield('documentation_content')
         </div>
 
