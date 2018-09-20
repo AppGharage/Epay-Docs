@@ -30,7 +30,7 @@
     <div class="flex flex-col lg:flex-row py-2 container-content">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
-        <div class="bg-white rounded-lg w-full mb-12 px-4 py-2 documentation-page" v-pre>
+        <div class="bg-white rounded-lg w-full max-w-md mb-12 px-4 py-2 documentation-page" v-pre>
             @yield('documentation_content')
         </div>
 

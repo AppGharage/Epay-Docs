@@ -19,16 +19,10 @@ new Vue({
         }
     },
 
-    methods: {
-        addAnchorsToHeadings(){
-            document.querySelectorAll('h3').forEach((heading) => {
-                heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
-                this.pageHeadings.push(heading);
-            });
-        }
-    },
-
     mounted() {
-       this.addAnchorsToHeadings();
+        document.querySelectorAll('h3').forEach((heading) => {
+            heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
+            this.pageHeadings.push(heading);
+        });
     }
 });
