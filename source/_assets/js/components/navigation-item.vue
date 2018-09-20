@@ -28,7 +28,7 @@ export default {
     methods: {
         isActive(url) {
             return window.location.href.indexOf(url) > -1;
-        }
+        },
     },
 }
 </script>

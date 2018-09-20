@@ -12,6 +12,7 @@ import NavigationItem from './navigation-item.vue';
 
 export default {
     components: { NavigationItem },
+
     props: {
         navigationLinks: String,
     },
@@ -32,6 +33,6 @@ export default {
         this.$root.$on('menu-toggle', data => {
             this.visible = data;
         });
-    }
+    },
 }
 </script>

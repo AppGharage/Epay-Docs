@@ -24,5 +24,5 @@ new Vue({
             heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
             this.pageHeadings.push(heading);
         });
-    }
+    },
 });
