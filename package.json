@@ -24,9 +24,5 @@
     "vue": "^2.5.17",
     "webpack-watch": "^0.2.0",
     "yargs": "^4.6.0"
-  },
-  "dependencies": {
-    "normalize.css": "^3.0.3",
-    "suitcss-base": "^1.0.2"
   }
 }
