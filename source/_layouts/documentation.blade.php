@@ -30,14 +30,14 @@
     <div class="flex flex-col lg:flex-row py-2 container-content">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
-        <div class="bg-white rounded-lg w-full max-w-md mb-12 px-4 py-2 documentation-page" v-pre>
+        <div class="bg-white rounded-lg w-full max-w-md mb-12 mx-auto px-4 py-2 documentation-page" v-pre>
             @yield('documentation_content')
         </div>
 
-
         <docs-navigation :headings="pageHeadings"></docs-navigation>
     </div>
-    <footer class="flex text-center py-8 text-sm justify-center items-center">
+
+    <footer class="flex text-center py-6 text-sm justify-center items-center">
         <p class="text-blue-darker font-light text-sm mb-0">A project by
             <a href="https://tighten.co"
                 title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js"
