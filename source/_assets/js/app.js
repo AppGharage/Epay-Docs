@@ -22,6 +22,7 @@ new Vue({
     mounted() {
         document.querySelectorAll('h3').forEach((heading) => {
             heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
+
             this.pageHeadings.push(heading);
         });
     },

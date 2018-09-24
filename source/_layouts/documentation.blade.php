@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-<header class="w-full bg-white shadow-lg">
+<header class="w-full bg-white absolute z-10 shadow-md">
     <nav class="flex items-center justify-center py-4 container-content" aria-role="navigation">
         <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
             <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
@@ -37,7 +37,7 @@
 </header>
 
 
-<div class="bg-brown-lightest min-h-screen pt-4 md:pt-8">
+<div class="bg-brown-lightest min-h-screen pt-32">
     <div class="flex flex-col lg:flex-row py-2 container-content">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
