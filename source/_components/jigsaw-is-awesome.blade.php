@@ -36,18 +36,14 @@
             <div class="editor-row">
                 <p class="line-number">8</p>
                 <div class="line-code ml-4">
-                    <span class="text-pink-dark">&lt;h1&gt;</span>
-                        @{{ $page->title }}
-                    <span class="text-pink-dark">&lt;/h1&gt;</span>
+                    <span class="text-pink-dark">&lt;h1&gt;</span>@{{ $page->title }}<span class="text-pink-dark">&lt;/h1&gt;</span>
                 </div>
             </div>
 
             <div class="editor-row">
                 <p class="line-number">9</p>
                 <div class="line-code ml-4">
-                    <span class="text-pink-dark">&lt;p&gt;</span>
-                        Contact us at @{{ $page->contact_email }}
-                    <span class="text-pink-dark">&lt;/p&gt;</span>
+                    <span class="text-pink-dark">&lt;p&gt;</span>Contact us at @{{ $page->contact_email }}<span class="text-pink-dark">&lt;/p&gt;</span>
                 </div>
             </div>
 
