@@ -4,7 +4,7 @@
 <nav class="flex items-center justify-center py-4 container-content" aria-role="navigation">
     <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
         <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
-            class="rounded-lg w-8 mr-3" />
+            class="rounded-lg w-8 mr-4" />
 
         <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">
             Jigsaw
@@ -13,7 +13,8 @@
     </a>
 
     <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey-code xl:max-w-lg lg:-mx-3">
-        <img src="/assets/img/icon-search.svg" class="h-4 ">
+        <img src="/assets/img/icon-search.svg" class="h-4">
+
         <input id="docsearch" type="text" placeholder="Search documentation..." />
     </div>
 
@@ -37,7 +38,7 @@
     <div class="flex flex-col lg:flex-row py-2 container-content">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
-        <div class="bg-white rounded-lg w-full max-w-md mb-12 mx-auto px-6 py-4 documentation-page xl:max-w-lg" v-pre>
+        <div class="bg-white rounded-lg w-full max-w-md mb-10 mx-auto px-6 py-4 documentation-page xl:max-w-lg" v-pre>
             @yield('documentation_content')
         </div>
 

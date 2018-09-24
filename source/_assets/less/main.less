@@ -15,12 +15,18 @@
 }
 
 .container-content {
-    @apply .max-w-2xl;
+    @apply .max-w-3xl;
     @apply .mx-auto;
-    @apply .px-6;
+    @apply .px-4;
 }
 
 // responsive styles
+@screen md {
+    .container-content {
+        @apply .px-6;
+    }
+}
+
 @screen xl {
     .container-content {
         @apply .px-0;
