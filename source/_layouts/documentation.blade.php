@@ -12,7 +12,8 @@
         </h4>
     </a>
 
-    <div class="w-full max-w-md px-6 border-2 border-indigo-lighter rounded bg-grey-code xl:max-w-lg lg:-mx-3">
+    <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey-code xl:max-w-lg lg:-mx-3">
+        <img src="/assets/img/icon-search.svg" class="h-4 ">
         <input id="docsearch" type="text" placeholder="Search documentation..." />
     </div>
 
