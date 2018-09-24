@@ -1,38 +1,41 @@
 @extends('_layouts.master')
 
 @section('body')
-<nav class="flex items-center justify-center py-4 container-content" aria-role="navigation">
-    <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
-        <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
-            class="rounded-lg w-8 mr-4" />
+<header class="w-full bg-white shadow-lg">
+    <nav class="flex items-center justify-center py-4 container-content" aria-role="navigation">
+        <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
+            <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
+                class="rounded-lg w-8 mr-4" />
 
-        <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">
-            Jigsaw
-            <span class="hidden text-blue-docs-light lowercase text-base align-top lg:inline-block">docs</span>
-        </h4>
-    </a>
-
-    <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey-code xl:max-w-lg lg:-mx-3">
-        <img src="/assets/img/icon-search.svg" class="h-4">
-
-        <input id="docsearch" type="text" placeholder="Search documentation..." />
-    </div>
-
-    <div class="w-1/3 hidden items-center pl-3 lg:flex lg:pl-8">
-        <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
-            class="mr-4 text-blue-darker">
-            <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
+            <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">
+                Jigsaw
+                <span class="hidden text-blue-docs-light lowercase text-base align-top lg:inline-block">docs</span>
+            </h4>
         </a>
 
-        <p class="text-sm text-blue-docs-dark mb-0">
-            A project by
-            <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
-                class="text-purple">Tighten</a>
-        </p>
-    </div>
+        <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey-code xl:max-w-lg lg:-mx-3">
+            <img src="/assets/img/icon-search.svg" class="h-4">
 
-    <navigation-toggle></navigation-toggle>
-</nav>
+            <input id="docsearch" type="text" placeholder="Search documentation..." />
+        </div>
+
+        <div class="w-1/3 hidden items-center pl-3 lg:flex lg:pl-8">
+            <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
+                class="mr-4 text-blue-darker">
+                <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
+            </a>
+
+            <p class="text-sm text-blue-docs-dark mb-0">
+                A project by
+                <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
+                    class="text-purple">Tighten</a>
+            </p>
+        </div>
+
+        <navigation-toggle></navigation-toggle>
+    </nav>
+</header>
+
 
 <div class="bg-brown-lightest min-h-screen pt-4 md:pt-8">
     <div class="flex flex-col lg:flex-row py-2 container-content">
