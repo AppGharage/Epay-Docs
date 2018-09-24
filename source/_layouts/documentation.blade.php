@@ -12,7 +12,9 @@
         </h4>
     </a>
 
-    <input id="docsearch" type="text" placeholder="Search documentation..." />
+    <div class="w-full max-w-md px-6 border-2 border-indigo-lighter rounded bg-grey-code xl:max-w-lg lg:-mx-3">
+        <input id="docsearch" type="text" placeholder="Search documentation..." />
+    </div>
 
     <div class="w-1/3 hidden items-center pl-3 lg:flex lg:pl-8">
         <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
@@ -34,7 +36,7 @@
     <div class="flex flex-col lg:flex-row py-2 container-content">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
-        <div class="bg-white rounded-lg w-full max-w-md mb-12 mx-auto px-6 py-4 documentation-page" v-pre>
+        <div class="bg-white rounded-lg w-full max-w-md mb-12 mx-auto px-6 py-4 documentation-page xl:max-w-lg" v-pre>
             @yield('documentation_content')
         </div>
 
