@@ -8,14 +8,19 @@
 }
 
 .ds-input {
-    @apply .text-blue-darker;
+    @apply .bg-grey-code;
     @apply .border;
     @apply .border-indigo-lighter;
-    @apply .w-full;
+    @apply .outline-none;
     @apply .p-2;
     @apply .pl-4;
     @apply .rounded;
-    @apply .outline-none;
+    @apply .text-blue-docs-dark;
+    @apply .w-full;
+}
+
+.ds-input::placeholder {
+    @apply .text-blue-docs-dark;
 }
 
 .docsearch__icon {

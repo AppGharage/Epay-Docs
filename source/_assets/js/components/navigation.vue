@@ -1,6 +1,6 @@
 <template>
     <div class="w-full mb-8 lg:block lg:w-1/3 lg:mb-0" :class="{ hidden: ! visible }">
-
+        <p class="text-sm uppercase tracking-wide text-blue-docs-light mb-6">Concepts</p>
         <nav class="nav-list" role="navigation">
             <navigation-item :key="key" v-for="(url, key) in navigation" :item="url">{{ key }}</navigation-item>
         </nav>

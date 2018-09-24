@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-<nav class="flex items-center justify-center py-2 container-content" aria-role="navigation">
+<nav class="flex items-center justify-center py-4 container-content" aria-role="navigation">
     <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
         <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
             class="rounded-lg w-8 mr-3" />
@@ -9,7 +9,7 @@
         <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">Jigsaw</h4>
     </a>
 
-    <input id="docsearch" type="text" class="" />
+    <input id="docsearch" type="text" placeholder="Search documentation..." />
 
     <div class="w-1/3 hidden items-center pl-3 lg:flex lg:pl-8">
         <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
@@ -31,7 +31,7 @@
     <div class="flex flex-col lg:flex-row py-2 container-content">
         <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
 
-        <div class="bg-white rounded-lg w-full max-w-md mb-12 mx-auto px-4 py-2 documentation-page" v-pre>
+        <div class="bg-white rounded-lg w-full max-w-md mb-12 mx-auto px-6 py-4 documentation-page" v-pre>
             @yield('documentation_content')
         </div>
 

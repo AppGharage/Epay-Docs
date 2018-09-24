@@ -49,7 +49,6 @@
 
     li {
         @apply .mb-3;
-
         > ul {
             @apply .pl-4;
         }
@@ -61,7 +60,7 @@
 
     ol,
     ul {
-        @apply .mb-1;
+        @apply .my-4;
         @apply .pl-2;
     }
 
@@ -91,6 +90,24 @@
     }
 
     ul {
-        list-style-image: url('/assets/img/icon-arrow.svg');
+        > li {
+            @apply .list-reset;
+            @apply .leading-loose;
+            @apply .mb-2;
+            @apply .ml-4;
+        }
+
+        > li::before {
+            @apply .absolute;
+            @apply .h-4;
+            @apply .-ml-6;
+            @apply .mt-1;
+            @apply .w-4;
+            @apply .bg-center;
+            @apply .bg-cover;
+
+            content: '';
+            background-image: url('/assets/img/icon-arrow.svg');
+        }
     }
 }
