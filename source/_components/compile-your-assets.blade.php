@@ -3,7 +3,8 @@
         <h3 class="text-blue-darker text-center mb-6">Compile your assets using Laravel Mix.</h3>
 
         <p class="max-w-md mx-auto text-center text-blue leading-normal mb-12">
-            Jigsaw bakes in support for Laravel Mix so you can compile your CSS and Javascript assets the same way you're used to in Laravel.
+            Jigsaw bakes in support for Laravel Mix so you can compile your CSS <br/>
+            and Javascript assets the same way you're used to in Laravel.
         </p>
 
         <div class="flex w-full md:max-w-lg mx-auto">

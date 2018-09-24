@@ -5,8 +5,8 @@
         </h4>
 
         <p class="text-teal-light font-light mb-8 leading-normal">
-            Check out our installation instructions <br/>
-            and you'll be up and running in no time.
+            Check out our installation instructions and you'll be <br/>
+            up and running in no time.
         </p>
 
         <a href="{{ $page->asset_prefix }}/docs/installation/" title="Start building your site with Jigsaw"

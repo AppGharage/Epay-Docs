@@ -6,9 +6,9 @@
         <nav class="flex justify-between items-center mb-8" aria-role="navigation">
             <div class="flex items-center">
                 <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
-                    class="logo-icon rounded-lg shadow border-2 border-white mr-2 sm:mr-4 w-10 sm:w-12" />
+                    class="logo-icon rounded-lg shadow border-4 border-white mr-2 sm:mr-4 w-10 sm:w-12 sm:border-2" />
 
-                <h4 class="uppercase tracking-wide text-blue-darker">Jigsaw</h4>
+                <h4 class="uppercase tracking-wide text-blue-darker text-lg md:text-2xl">Jigsaw</h4>
             </div>
 
             <div class="text-sm tracking-wide">
@@ -20,20 +20,21 @@
                 </a>
 
                 <a href="/docs/installation" title="Read the Jigsaw documentation"
-                    class="py-2 px-4 md:py-3 md:px-4 bg-purple rounded text-white uppercase font-light shadow-md">Docs</a>
+                    class="py-2 px-4 md:py-3 md:px-4 bg-purple rounded text-white uppercase font-hairline shadow-md">Docs</a>
             </div>
         </nav>
     </header>
 
-    <div class="container-content pt-4 sm:pb-12">
+    <div class="container-content pt-8 sm:pb-12">
         <div class="flex-col mb-8 pb-4">
-            <h1 class="text-blue-darker leading-none">
+            <h1 class="text-5xl text-blue-darker leading-none">
                 Static sites for <br />
                 modern developers
             </h1>
 
             <p class="max-w-md mt-4 text-grey lead">
-                Jigsaw is a framework for rapidly building static sites using the same modern tooling that powers your web applications.
+                Jigsaw is a framework for rapidly building static sites using the <br>
+                same modern tooling that powers your web applications.
             </p>
         </div>
     </div>
