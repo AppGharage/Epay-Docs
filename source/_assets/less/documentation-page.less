@@ -27,6 +27,7 @@
         @apply .py-1;
         @apply .text-blue-docs-dark;
         @apply .text-sm;
+        @apply .w-4/5;
     }
 
     h1,
@@ -94,23 +95,23 @@
 
     ul {
         > li {
-            @apply .list-reset;
             @apply .leading-loose;
+            @apply .list-reset;
             @apply .mb-2;
             @apply .ml-4;
         }
 
         > li::before {
             @apply .absolute;
+            @apply .bg-center;
+            @apply .bg-cover;
             @apply .h-4;
             @apply .-ml-6;
             @apply .mt-1;
             @apply .w-4;
-            @apply .bg-center;
-            @apply .bg-cover;
 
-            content: '';
             background-image: url('/assets/img/icon-arrow.svg');
+            content: '';
         }
     }
 }
