@@ -5,7 +5,7 @@ section: documentation_content
 
 ## Upgrading
 
-#### From v0.6.4
+### From v0.6.4
 
 Site variables defined in `config.php`, as well as variables defined in the YAML front matter of a page, are now accessible under the `$page` object, rather than by referencing the variable name itself. Blade templates that include variables need to be updated so that all variables are prefixed with `$page->`.
 
@@ -39,7 +39,7 @@ title: "Jigsaw is awesome!"
 
 ---
 
-#### From pre-v1.0 `dev-master` versions
+### From pre-v1.0 `dev-master` versions
 
 If you used the collections feature from a pre-1.0 development version of Jigsaw, there have been several changes that will require you to update your code. Specifically:
 
