@@ -9,11 +9,11 @@
 
             <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">
                 Jigsaw
-                <span class="hidden text-blue-docs-light lowercase text-base align-top lg:inline-block">docs</span>
+                <span class="hidden text-blue-light lowercase text-base align-top lg:inline-block">docs</span>
             </h4>
         </a>
 
-        <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey-code xl:max-w-lg lg:-mx-3">
+        <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey xl:max-w-lg lg:-mx-3">
             <img src="/assets/img/icon-search.svg" class="h-4">
 
             <input id="docsearch" type="text" placeholder="Search documentation..." />
@@ -25,7 +25,7 @@
                 <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
             </a>
 
-            <p class="text-sm text-blue-docs-dark mb-0">
+            <p class="text-sm text-blue-dark mb-0">
                 A project by
                 <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
                     class="text-purple">Tighten</a>
