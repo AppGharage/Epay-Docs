@@ -122,7 +122,7 @@ let colors = {
 
     'purple-darkest': '#2D0F34',
     'purple-darker': '#6A3B81',
-    'purple-dark': '#794acf',
+    'purple-dark': '#773580',
     'purple': '#96539f',
     'purple-light': '#a779e9',
     'purple-lighter': '#854891',

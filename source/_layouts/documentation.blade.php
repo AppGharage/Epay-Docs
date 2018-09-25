@@ -21,7 +21,7 @@
 
         <div class="w-1/3 hidden items-center pl-3 lg:flex lg:pl-8">
             <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
-                class="mr-4 text-blue-darker">
+                class="mr-6 text-blue-darker">
                 <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
             </a>
 
