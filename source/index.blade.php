@@ -27,7 +27,7 @@
 
     <div class="container-content pt-8 sm:pb-12">
         <div class="flex-col mb-8 pb-4">
-            <h1 class="text-5xl text-blue-darker leading-none">
+            <h1 class="text-4xl md:text-5xl text-blue-darker leading-none">
                 Static sites for <br />
                 modern developers
             </h1>
