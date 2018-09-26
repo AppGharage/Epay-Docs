@@ -25,15 +25,15 @@
         </nav>
     </header>
 
-    <div class="container-content pt-8 sm:pb-12">
+    <div class="container-content py-8">
         <div class="flex-col mb-8 pb-4">
             <h1 class="text-4xl md:text-5xl text-blue-darker leading-none">
                 Static sites for <br />
                 modern developers
             </h1>
 
-            <p class="max-w-md mt-4 text-grey lead">
-                Jigsaw is a framework for rapidly building static sites using the <br>
+            <p class="max-w-md mt-4 text-grey-dark lead">
+                Jigsaw is a framework for rapidly building static sites using the <br class="hidden sm:block">
                 same modern tooling that powers your web applications.
             </p>
         </div>

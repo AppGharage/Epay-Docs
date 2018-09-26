@@ -1,5 +1,5 @@
 <section class="bg-white py-12 md:py-16">
-    <div class="example-row container-content">
+    <div class="example-row container-content mb-8 sm:mb-16">
         <div class="flex-col md:w-3/5 pr-8 pb-8 md:pb-0">
             <h3 class="mb-4 text-blue-darker">
                 Blade templating, <br/>
