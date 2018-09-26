@@ -38,7 +38,6 @@
         @apply .text-blue-darker;
     }
 
-
     hr {
         @apply .border;
         @apply .border-grey-light;
@@ -82,7 +81,7 @@
         @apply .py-2;
         @apply .rounded;
 
-        max-width: 43em;
+        max-width: 43em; // prevent code snippets from breaking width
 
         > code {
             @apply .bg-transparent;
@@ -90,6 +89,7 @@
             @apply .p-0;
         }
     }
+
     pre + blockquote {
         @apply .mt-6;
     }

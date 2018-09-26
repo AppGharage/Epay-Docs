@@ -1,5 +1,5 @@
 <template>
-    <div class="w-1/3 pl-6 hidden lg:flex">
+    <div class="hidden w-1/3 pl-6 lg:flex">
         <nav role="aside" class="flex flex-col" v-if="headings.length">
             <p class="mb-6 text-sm uppercase font-light tracking-wide text-blue-light">On this page</p>
 

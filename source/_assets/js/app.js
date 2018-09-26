@@ -8,7 +8,7 @@ new Vue({
     el: '#vue-app',
 
     components: {
-        DocsNavigation ,
+        DocsNavigation,
         Navigation,
         NavigationToggle
     },

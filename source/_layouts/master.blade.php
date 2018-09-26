@@ -21,6 +21,7 @@
         <link rel="icon" type="image/png" href="{{ $page->asset_prefix }}/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="{{ $page->asset_prefix }}/manifest.json">
         <link rel="mask-icon" href="{{ $page->asset_prefix }}/safari-pinned-tab.svg" color="#309e74">
+
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
