@@ -1,7 +1,6 @@
 /build_local/
+/build_staging/
 /build_production/
 /node_modules/
 /vendor/
-/source/assets/css/
-/source/assets/js/
-/source/assets/mix-manifest.json
+.DS_Store
