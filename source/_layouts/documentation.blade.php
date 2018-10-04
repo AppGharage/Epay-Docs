@@ -39,13 +39,13 @@
 
 <div class="bg-brown-lightest min-h-screen pt-32">
     <div class="flex flex-col lg:flex-row py-2 container-content">
-        <navigation navigation-links="{{ $page->docsNavigation }}"></navigation>
+        <navigation navigation-links="{{ $page->navigation }}"></navigation>
 
         <div class="bg-white rounded-lg w-full max-w-md mb-10 mx-auto px-6 py-4 documentation-page xl:max-w-lg" v-pre>
             @yield('documentation_content')
         </div>
 
-        <docs-navigation :headings="pageHeadings"></docs-navigation>
+        <navigation-docs :headings="pageHeadings"></navigation-docs>
     </div>
 
     <footer class="flex text-center py-6 text-sm justify-center items-center">

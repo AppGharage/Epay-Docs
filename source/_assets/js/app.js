@@ -1,6 +1,6 @@
 let Vue = require('vue');
 
-import DocsNavigation from './components/navigation-docs.vue';
+import NavigationDocs from './components/navigation-docs.vue';
 import NavigationToggle from './components/navigation-toggle.vue';
 import Navigation from './components/navigation.vue';
 
@@ -8,7 +8,7 @@ new Vue({
     el: '#vue-app',
 
     components: {
-        DocsNavigation,
+        NavigationDocs,
         Navigation,
         NavigationToggle
     },
@@ -22,7 +22,6 @@ new Vue({
     mounted() {
         document.querySelectorAll('h3').forEach((heading) => {
             heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
-
             this.pageHeadings.push(heading);
         });
     },

@@ -3,7 +3,11 @@
         <p class="text-sm uppercase font-light tracking-wide text-blue-light mb-6">Concepts</p>
 
         <nav class="nav-list" role="navigation">
-            <navigation-item :key="key" v-for="(url, key) in navigation" :item="url">{{ key }}</navigation-item>
+            <navigation-item
+                v-for="(url, key) in navigation"
+                :key="key"
+                :item="url">{{ key }}
+            </navigation-item>
         </nav>
     </div>
 </template>
@@ -31,8 +35,8 @@ export default {
     },
 
     mounted() {
-        this.$root.$on('menu-toggle', data => {
-            this.visible = data;
+        this.$root.$on('menu-toggle', visible => {
+            this.visible = visible;
         });
     },
 }
