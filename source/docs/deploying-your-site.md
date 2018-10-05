@@ -44,10 +44,7 @@ To deploy a site to Netlify, first create a `netlify.toml` file with the followi
 
 command = "npm run production"
 publish = "build_production"
-
-[build.environment]
-
-PHP_VERSION = "7.2"
+environment = { PHP_VERSION = "7.2" }
 ```
 
 Push this file to your repository.
