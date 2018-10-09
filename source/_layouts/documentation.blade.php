@@ -45,7 +45,7 @@
             @yield('documentation_content')
         </div>
 
-        <navigation-docs :headings="pageHeadings"></navigation-docs>
+        <navigation-on-page :headings="pageHeadings"></navigation-on-page>
     </div>
 
     <footer class="flex text-center py-6 text-sm justify-center items-center">

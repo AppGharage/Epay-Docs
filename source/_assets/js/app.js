@@ -1,6 +1,6 @@
 let Vue = require('vue');
 
-import NavigationDocs from './components/navigation-docs.vue';
+import NavigationOnPage from './components/navigation-on-page.vue';
 import NavigationToggle from './components/navigation-toggle.vue';
 import Navigation from './components/navigation.vue';
 
@@ -8,8 +8,8 @@ new Vue({
     el: '#vue-app',
 
     components: {
-        NavigationDocs,
         Navigation,
+        NavigationOnPage,
         NavigationToggle
     },
 
