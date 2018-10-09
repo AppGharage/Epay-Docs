@@ -4,7 +4,8 @@ let tailwindcss = require("tailwindcss");
 require("laravel-mix-purgecss");
 
 mix.disableSuccessNotifications();
-mix.setPublicPath("source/assets");
+mix.setPublicPath("source/assets/build");
+
 mix.webpackConfig({
   plugins: [
     build.jigsaw,
