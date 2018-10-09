@@ -19,17 +19,12 @@ export default {
     components: { NavigationItem },
 
     props: {
-        navigationLinks: String,
-    },
-
-    computed: {
-        navigation() {
-            return JSON.parse(this.navigationLinks);
-        }
+        links: Object,
     },
 
     data() {
         return {
+            navigation: this.links,
             visible: false,
         }
     },

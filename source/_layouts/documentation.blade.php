@@ -4,7 +4,7 @@
 <header class="w-full bg-white absolute z-10 shadow-md">
     <nav class="flex items-center justify-center py-4 container-content" aria-role="navigation">
         <a href="/" class="flex items-center lg:w-1/3" title="Jigsaw by Tighten">
-            <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
+            <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
                 class="rounded-lg w-8 mr-4" />
 
             <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">
@@ -39,7 +39,7 @@
 
 <div class="bg-brown-lightest min-h-screen pt-32">
     <div class="flex flex-col lg:flex-row py-2 container-content">
-        <navigation navigation-links="{{ $page->navigation }}"></navigation>
+        <navigation :links='@json($page->navigation)'></navigation>
 
         <div class="bg-white rounded-lg w-full max-w-md mb-10 mx-auto px-6 py-4 documentation-page xl:max-w-lg" v-pre>
             @yield('documentation_content')

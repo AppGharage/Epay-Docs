@@ -8,7 +8,7 @@
 
         <a href="https://builtwithjigsaw.com" title="Showcase of websites built with Jigsaw"
             class="mx-auto py-4 px-6 text-grey-darker no-underline tracking-wide uppercase rounded-lg text-sm bg-grey-lightest shadow-lg">
-            Visit Built With Jigsaw
+            Built With Jigsaw
         </a>
     </div>
 </section>

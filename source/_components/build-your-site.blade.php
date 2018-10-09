@@ -9,7 +9,7 @@
             up and running in no time.
         </p>
 
-        <a href="{{ $page->asset_prefix }}/docs/installation/" title="Start building your site with Jigsaw"
+        <a href="/docs/installation/" title="Start building your site with Jigsaw"
             class="py-4 px-6 text-grey-darker no-underline tracking-wide uppercase rounded-lg text-sm bg-grey-lightest shadow-lg">
             Build your site
         </a>

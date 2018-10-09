@@ -1520,7 +1520,7 @@ p {
 }
 
 .bg-purple-lighter {
-  background-color: #854891;
+  background-color: rgba(45, 15, 52, .5);
 }
 
 .bg-purple-lightest {
@@ -1816,7 +1816,7 @@ p {
 }
 
 .hover\:bg-purple-lighter:hover {
-  background-color: #854891;
+  background-color: rgba(45, 15, 52, .5);
 }
 
 .hover\:bg-purple-lightest:hover {
@@ -2112,7 +2112,7 @@ p {
 }
 
 .focus\:bg-purple-lighter:focus {
-  background-color: #854891;
+  background-color: rgba(45, 15, 52, .5);
 }
 
 .focus\:bg-purple-lightest:focus {
@@ -2480,7 +2480,7 @@ p {
 }
 
 .border-purple-lighter {
-  border-color: #854891;
+  border-color: rgba(45, 15, 52, .5);
 }
 
 .border-purple-lightest {
@@ -2776,7 +2776,7 @@ p {
 }
 
 .hover\:border-purple-lighter:hover {
-  border-color: #854891;
+  border-color: rgba(45, 15, 52, .5);
 }
 
 .hover\:border-purple-lightest:hover {
@@ -3072,7 +3072,7 @@ p {
 }
 
 .focus\:border-purple-lighter:focus {
-  border-color: #854891;
+  border-color: rgba(45, 15, 52, .5);
 }
 
 .focus\:border-purple-lightest:focus {
@@ -5927,7 +5927,7 @@ p {
 }
 
 .text-purple-lighter {
-  color: #854891;
+  color: rgba(45, 15, 52, .5);
 }
 
 .text-purple-lightest {
@@ -6223,7 +6223,7 @@ p {
 }
 
 .hover\:text-purple-lighter:hover {
-  color: #854891;
+  color: rgba(45, 15, 52, .5);
 }
 
 .hover\:text-purple-lightest:hover {
@@ -6519,7 +6519,7 @@ p {
 }
 
 .focus\:text-purple-lighter:focus {
-  color: #854891;
+  color: rgba(45, 15, 52, .5);
 }
 
 .focus\:text-purple-lightest:focus {
@@ -7253,7 +7253,7 @@ p {
   }
 
   .sm\:bg-purple-lighter {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .sm\:bg-purple-lightest {
@@ -7549,7 +7549,7 @@ p {
   }
 
   .sm\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .sm\:hover\:bg-purple-lightest:hover {
@@ -7845,7 +7845,7 @@ p {
   }
 
   .sm\:focus\:bg-purple-lighter:focus {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .sm\:focus\:bg-purple-lightest:focus {
@@ -8205,7 +8205,7 @@ p {
   }
 
   .sm\:border-purple-lighter {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .sm\:border-purple-lightest {
@@ -8501,7 +8501,7 @@ p {
   }
 
   .sm\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .sm\:hover\:border-purple-lightest:hover {
@@ -8797,7 +8797,7 @@ p {
   }
 
   .sm\:focus\:border-purple-lighter:focus {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .sm\:focus\:border-purple-lightest:focus {
@@ -11636,7 +11636,7 @@ p {
   }
 
   .sm\:text-purple-lighter {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .sm\:text-purple-lightest {
@@ -11932,7 +11932,7 @@ p {
   }
 
   .sm\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .sm\:hover\:text-purple-lightest:hover {
@@ -12228,7 +12228,7 @@ p {
   }
 
   .sm\:focus\:text-purple-lighter:focus {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .sm\:focus\:text-purple-lightest:focus {
@@ -12963,7 +12963,7 @@ p {
   }
 
   .md\:bg-purple-lighter {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .md\:bg-purple-lightest {
@@ -13259,7 +13259,7 @@ p {
   }
 
   .md\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .md\:hover\:bg-purple-lightest:hover {
@@ -13555,7 +13555,7 @@ p {
   }
 
   .md\:focus\:bg-purple-lighter:focus {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .md\:focus\:bg-purple-lightest:focus {
@@ -13915,7 +13915,7 @@ p {
   }
 
   .md\:border-purple-lighter {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .md\:border-purple-lightest {
@@ -14211,7 +14211,7 @@ p {
   }
 
   .md\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .md\:hover\:border-purple-lightest:hover {
@@ -14507,7 +14507,7 @@ p {
   }
 
   .md\:focus\:border-purple-lighter:focus {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .md\:focus\:border-purple-lightest:focus {
@@ -17346,7 +17346,7 @@ p {
   }
 
   .md\:text-purple-lighter {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .md\:text-purple-lightest {
@@ -17642,7 +17642,7 @@ p {
   }
 
   .md\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .md\:hover\:text-purple-lightest:hover {
@@ -17938,7 +17938,7 @@ p {
   }
 
   .md\:focus\:text-purple-lighter:focus {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .md\:focus\:text-purple-lightest:focus {
@@ -18673,7 +18673,7 @@ p {
   }
 
   .lg\:bg-purple-lighter {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .lg\:bg-purple-lightest {
@@ -18969,7 +18969,7 @@ p {
   }
 
   .lg\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .lg\:hover\:bg-purple-lightest:hover {
@@ -19265,7 +19265,7 @@ p {
   }
 
   .lg\:focus\:bg-purple-lighter:focus {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .lg\:focus\:bg-purple-lightest:focus {
@@ -19625,7 +19625,7 @@ p {
   }
 
   .lg\:border-purple-lighter {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .lg\:border-purple-lightest {
@@ -19921,7 +19921,7 @@ p {
   }
 
   .lg\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .lg\:hover\:border-purple-lightest:hover {
@@ -20217,7 +20217,7 @@ p {
   }
 
   .lg\:focus\:border-purple-lighter:focus {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .lg\:focus\:border-purple-lightest:focus {
@@ -23056,7 +23056,7 @@ p {
   }
 
   .lg\:text-purple-lighter {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .lg\:text-purple-lightest {
@@ -23352,7 +23352,7 @@ p {
   }
 
   .lg\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .lg\:hover\:text-purple-lightest:hover {
@@ -23648,7 +23648,7 @@ p {
   }
 
   .lg\:focus\:text-purple-lighter:focus {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .lg\:focus\:text-purple-lightest:focus {
@@ -24383,7 +24383,7 @@ p {
   }
 
   .xl\:bg-purple-lighter {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .xl\:bg-purple-lightest {
@@ -24679,7 +24679,7 @@ p {
   }
 
   .xl\:hover\:bg-purple-lighter:hover {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .xl\:hover\:bg-purple-lightest:hover {
@@ -24975,7 +24975,7 @@ p {
   }
 
   .xl\:focus\:bg-purple-lighter:focus {
-    background-color: #854891;
+    background-color: rgba(45, 15, 52, .5);
   }
 
   .xl\:focus\:bg-purple-lightest:focus {
@@ -25335,7 +25335,7 @@ p {
   }
 
   .xl\:border-purple-lighter {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .xl\:border-purple-lightest {
@@ -25631,7 +25631,7 @@ p {
   }
 
   .xl\:hover\:border-purple-lighter:hover {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .xl\:hover\:border-purple-lightest:hover {
@@ -25927,7 +25927,7 @@ p {
   }
 
   .xl\:focus\:border-purple-lighter:focus {
-    border-color: #854891;
+    border-color: rgba(45, 15, 52, .5);
   }
 
   .xl\:focus\:border-purple-lightest:focus {
@@ -28766,7 +28766,7 @@ p {
   }
 
   .xl\:text-purple-lighter {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .xl\:text-purple-lightest {
@@ -29062,7 +29062,7 @@ p {
   }
 
   .xl\:hover\:text-purple-lighter:hover {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .xl\:hover\:text-purple-lightest:hover {
@@ -29358,7 +29358,7 @@ p {
   }
 
   .xl\:focus\:text-purple-lighter:focus {
-    color: #854891;
+    color: rgba(45, 15, 52, .5);
   }
 
   .xl\:focus\:text-purple-lightest:focus {

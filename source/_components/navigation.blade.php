@@ -1,7 +1,7 @@
 <header class="container-content">
     <nav class="flex justify-between items-center mb-8" aria-role="navigation">
         <div class="flex items-center">
-            <img src="{{ $page->asset_prefix }}/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
+            <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
                 class="logo-icon rounded-lg shadow border-4 border-white mr-2 sm:mr-4 w-10 sm:w-12 sm:border-2" />
 
             <h4 class="uppercase tracking-wide text-blue-darker text-lg md:text-2xl">Jigsaw</h4>

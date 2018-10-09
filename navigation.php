@@ -16,6 +16,11 @@ return [
         'children' => [
             'Blade Templates & Partials' => [
                 'root' => '/docs/content-blade',
+                'children' => [
+                    'Upgrading' => [
+                        'root' => '/docs/upgrading',
+                    ],
+                ],
             ],
             'Markdown' => [
                 'root' => '/docs/content-markdown',
