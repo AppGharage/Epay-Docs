@@ -19,6 +19,8 @@
         <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
         <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/assets/img/jigsaw-logo.png">
+
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#309e74">
         <meta name="msapplication-TileColor" content="#da532c">
