@@ -1,8 +1,9 @@
 <section class="py-16 bg-brown-lightest">
     <div class="container-content py-6">
-        <h3 class="title-3 text-blue-darker text-center mb-6">Compile your assets using Laravel Mix.</h3>
+        <h3 class="text-blue-darker text-center mb-6">Compile your assets using Laravel Mix.</h3>
+
         <p class="max-w-md mx-auto text-center text-blue leading-normal mb-12">
-            Jigsaw bakes in support for Laravel Mix so you can compile your CSS
+            Jigsaw bakes in support for Laravel Mix so you can compile your CSS <br class="hidden md:block"/>
             and Javascript assets the same way you're used to in Laravel.
         </p>
 

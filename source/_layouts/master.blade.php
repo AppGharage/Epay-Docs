@@ -29,26 +29,13 @@
 
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     </head>
-    <body class="min-h-screenfont-sans">
+    <body class="min-h-screen font-sans">
 
-        @yield('body')
+        <main id="vue-app">
+            <div class="w-full bg-brown-lightest border-t-4 border-purple"></div>
 
-        <footer class="bg-blue-darkest text-center py-8 text-sm text-white flex justify-center items-center">
-            <p class="text-teal-light font-light text-sm mb-0">A project by
-                <a href="https://tighten.co"
-                    title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js"
-                    class="text-white no-underline">Tighten</a>
-            </p>
-        </footer>
-
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
-        <script type="text/javascript">
-            docsearch({
-                apiKey: '57a7f5b1e4e0a44c7e2f8e96abcbf674',
-                indexName: 'jigsaw',
-                inputSelector: '#docsearch'
-            });
-        </script>
-
+            @yield('body')
+        </main>
+        @yield('scripts')
     </body>
 </html>

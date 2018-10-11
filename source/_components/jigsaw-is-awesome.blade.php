@@ -36,18 +36,14 @@
             <div class="editor-row">
                 <p class="line-number">8</p>
                 <div class="line-code ml-4">
-                    <span class="text-pink-dark">&lt;h1&gt;</span>
-                        @{{ $page->title }}
-                    <span class="text-pink-dark">&lt;/h1&gt;</span>
+                    <span class="text-pink-dark">&lt;h1&gt;</span>@{{ $page->title }}<span class="text-pink-dark">&lt;/h1&gt;</span>
                 </div>
             </div>
 
             <div class="editor-row">
                 <p class="line-number">9</p>
                 <div class="line-code ml-4">
-                    <span class="text-pink-dark">&lt;p&gt;</span>
-                        Contact us at @{{ $page->contact_email }}
-                    <span class="text-pink-dark">&lt;/p&gt;</span>
+                    <span class="text-pink-dark">&lt;p&gt;</span>Contact us at @{{ $page->contact_email }}<span class="text-pink-dark">&lt;/p&gt;</span>
                 </div>
             </div>
 
@@ -57,11 +53,12 @@
             </div>
         @endcomponent
     </div>
+
     <div class="hidden md:flex flex-col w-2/3 h-70 lg:h-76 -ml-10 pt-10 -mt-12 rounded-lg justify-center items-center shadow-lg z-50"
         style="background:url('/assets/img/browser-illustration.svg') no-repeat; background-size: cover;">
+        <h4 class="text-grey-dark">Jigsaw is awesome!</h4>
 
-        <h4 class="title-4 text-grey">Jigsaw is awesome!</h4>
-        <p class="text-grey text-base">
+        <p class="text-grey-dark text-base">
             Contact us at
             <a href="mailto:hello@tighten.co?subject='Hello from Jigsaw'" class="text-blue-lighter">hello@tighten.co</a>
         </p>

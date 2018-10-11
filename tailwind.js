@@ -52,7 +52,7 @@ let colors = {
     'grey-darkest': '#364349',
     'grey-darker': '#596a73',
     'grey-dark': '#70818a',
-    'grey': '#687584',
+    'grey': '#f2f5f8',
     'grey-light': '#dae4e9',
     'grey-lighter': '#f3f7f9',
     'grey-lightest': '#fafcfc',
@@ -100,26 +100,26 @@ let colors = {
 
     'blue-darkest': '#0A2440',
     'blue-darker': '#0F2F53',
-    'blue-dark': '#143154',
+    'blue-dark': '#45658a',
     'blue': '#3C6492',
-    'blue-light': '#3490dc',
+    'blue-light': '#6c88a9',
     'blue-lighter': '#2D81DF',
     'blue-lightest': '#eff8ff',
 
     'indigo-darkest': '#191e38',
     'indigo-darker': '#3E6389',
-    'indigo-dark': '#5661b3',
+    'indigo-dark': '#143154',
     'indigo': '#6574cd',
     'indigo-light': '#7886d7',
     'indigo-lighter': '#e1e6ea',
     'indigo-lightest': '#c4d0dc',
 
     'purple-darkest': '#2D0F34',
-    'purple-darker': '#6A3B81',
-    'purple-dark': '#794acf',
-    'purple': '#64387D',
+    'purple-darker': '#562b61',
+    'purple-dark': '#773580',
+    'purple': '#96539f',
     'purple-light': '#a779e9',
-    'purple-lighter': '#854891',
+    'purple-lighter': '#cbabf8',
     'purple-lightest': '#f3ebff',
 
     'pink-darkest': '#45051e',
@@ -196,6 +196,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'proxima-nova',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -261,6 +262,7 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '12rem',
   },
 
 
@@ -304,6 +306,7 @@ module.exports = {
   */
 
   leading: {
+    '0': .5,
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,

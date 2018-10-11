@@ -1,22 +1,19 @@
 <section class="bg-white py-12 md:py-16">
-    <div class="example-row container-content">
+    <div class="example-row container-content mb-8 sm:mb-16">
         <div class="flex-col md:w-3/5 pr-8 pb-8 md:pb-0">
-            <h3 class="title-3 mb-4 text-blue-darker">
+            <h3 class="mb-4 text-blue-darker">
                 Blade templating, <br/>
                 just like your Laravel apps.
             </h3>
 
             <p class="text-blue">
-                Blade is a powerful, simple, and beautiful templating language,
-                but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend.
+                Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend.
             </p>
 
             <p class="text-blue">
-                Jigsaw brings Blade to the static site world,
-                so you can use the same templating engine for simple websites as you do for complex web applications.
+                Jigsaw brings Blade to the static site world, so you can use the same templating engine for simple websites as you do for complex web applications.
             </p>
         </div>
-
 
         <div class="w-full md:w-1/2">
             @component('_components.code-editor')
@@ -45,7 +42,7 @@
 
     <div class="example-row container-content">
         <div class="flex-col md:w-3/5 pr-8 pb-8 md:pb-0">
-            <h3 class="title-3 mb-4 text-blue-darker">
+            <h3 class="mb-4 text-blue-darker">
                 Use Markdown for content-driven pages.
             </h3>
 

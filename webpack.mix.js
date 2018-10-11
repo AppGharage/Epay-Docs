@@ -14,7 +14,7 @@ mix.webpackConfig({
   ]
 });
 
-mix
+mix.js('source/_assets/js/app.js', 'js/')
   .less("source/_assets/less/main.less", "css/")
   .options({
     proceslessUrls: false,

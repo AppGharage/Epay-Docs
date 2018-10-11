@@ -1,0 +1,44 @@
+.editor-row {
+    @apply .flex;
+    @apply .items-center;
+    @apply .mb-4;
+}
+
+.example-row {
+    @apply .flex;
+    @apply .flex-col;
+    @apply .items-center;
+    @apply .pt-8;
+}
+
+.line-code {
+    @apply .font-light;
+    @apply .font-mono;
+    @apply .text-xs;
+    @apply .text-white;
+}
+
+.line-number {
+    @apply .font-light;
+    @apply .font-mono;
+    @apply .hidden;
+    @apply .mb-0;
+    @apply .mr-6;
+    @apply .text-grey-lightest;
+    @apply .text-xs;
+    @apply .w-4;
+}
+
+// responsive styles
+@screen md {
+    .example-row {
+        @apply .flex-row;
+        @apply .pt-0;
+    }
+}
+
+@screen lg {
+    .line-number {
+        @apply .block;
+    }
+}

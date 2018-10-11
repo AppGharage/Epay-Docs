@@ -1,4 +1,4 @@
-<div class="bg-blue-dark rounded-lg shadow-lg">
+<div class="bg-indigo-dark rounded-lg shadow-lg">
     <div class="flex">
         <div class="flex flex-1 max-w-25 lg:bg-indigo-darker rounded-l-lg pt-4 pl-2 pr-8"></div>
 

@@ -1,9 +1,11 @@
 @tailwind preflight;
 @tailwind components;
-@tailwind utilities;
 
 @import 'typography';
 @import 'files';
+@import 'documentation-page';
+@import 'code-editor';
+@import 'docsearch';
 
 // backgrounds
 .bg-gradient-purple {
@@ -12,64 +14,17 @@
     background: linear-gradient(to right, #703e84, #884992);
 }
 
-.bg-opaque-purple {
-    background: rgba(45, 15, 52, 0.5);
-}
-
-// code editor
 .container-content {
-    @apply .max-w-xl;
+    @apply .max-w-3xl;
     @apply .mx-auto;
-    @apply .px-6;
-}
-
-.example-row {
-    @apply .flex;
-    @apply .flex-col;
-    @apply .items-center;
-    @apply .mb-12;
-    @apply .pt-8;
-}
-
-.editor-row {
-    @apply .flex;
-    @apply .items-center;
-    @apply .mb-4;
-}
-
-.line-number {
-    @apply .font-light;
-    @apply .font-mono;
-    @apply .hidden;
-    @apply .mb-0;
-    @apply .mr-6;
-    @apply .text-xs;
-    @apply .text-grey-lightest;
-    @apply .w-4;
-}
-
-.line-code {
-    @apply .font-light;
-    @apply .font-mono;
-    @apply .text-xs;
-    @apply .text-white;
+    @apply .px-4;
 }
 
 // responsive styles
-@screen md {
-    .example-row {
-        @apply .flex-row;
-        @apply .mb-24;
-        @apply .pt-0;
-    }
-}
-
-@screen lg {
+@screen sm {
     .container-content {
-        @apply .px-0;
-    }
-
-    .line-number {
-        @apply .block;
+        @apply .px-6;
     }
 }
+
+@tailwind utilities;
