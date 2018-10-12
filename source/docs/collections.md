@@ -128,6 +128,22 @@ For example, to create a list of the titles for all your blog posts, you can ite
 </ul>
 ```
 
+For example, assuming that all posts have on their YAML front matter the property `author`, to filter all posts from a particular author, you can filter the collection of `$posts` and generate a new collection:
+
+> _author_posts.blade.php_
+```
+<?php 
+$authorPosts = $posts->filter(function ($value, $key) use ($page) {
+    return $value->author == $page->author;
+}); ?>
+@if ($authorPosts->count() > 0)
+<ul>
+@foreach ($authorPosts as $post)
+    <li>{{ $post->title }}</li>
+@endforeach
+</ul>
+@endif
+```
 ### Collection Metadata
 
 In addition to the [metadata](/docs/page-metadata/) available for every page, such as `getPath()`, `getUrl()`, and `getFilename()`, collection items have access to a few additional functions:
