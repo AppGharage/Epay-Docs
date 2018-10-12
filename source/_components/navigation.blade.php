@@ -4,7 +4,7 @@
             <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
                 class="logo-icon rounded-lg shadow border-4 border-white mr-2 sm:mr-4 w-10 sm:w-12 sm:border-2" />
 
-            <h4 class="uppercase tracking-wide text-blue-darker text-lg md:text-2xl">Jigsaw</h4>
+            <h1 class="uppercase tracking-wide text-blue-darker text-lg md:text-2xl">Jigsaw</h1>
         </div>
 
         <div class="text-sm tracking-wide">

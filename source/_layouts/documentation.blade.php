@@ -7,10 +7,10 @@
             <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
                 class="rounded-lg w-8 mr-4" />
 
-            <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">
+            <h1 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker text-lg lg:text-2xl lg:ml-0 lg:inline-block">
                 Jigsaw
-                <span class="hidden text-blue-light lowercase text-base align-top lg:inline-block">docs</span>
-            </h4>
+                <span class="hidden text-blue lowercase text-base align-top lg:inline-block">docs</span>
+            </h1>
         </a>
 
         <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey xl:max-w-lg lg:-mx-3">
