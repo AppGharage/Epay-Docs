@@ -56,7 +56,7 @@
 
             <a href="/docs/installation" title="Read the Jigsaw documentation"
                 class="text-purple text-base no-underline">
-                Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1">
+                Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
             </a>
         </div>
 

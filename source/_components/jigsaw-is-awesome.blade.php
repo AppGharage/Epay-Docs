@@ -9,7 +9,7 @@
             <div class="editor-row">
                 <p class="line-number">2</p>
                 <div class="line-code">
-                    <span class="text-pink-dark">title</span>: <span class="text-yellow">"Jigsaw is awesome!"</span>
+                    <span class="text-pink">title</span>: <span class="text-yellow">"Jigsaw is awesome!"</span>
                 </div>
             </div>
 
@@ -36,14 +36,14 @@
             <div class="editor-row">
                 <p class="line-number">8</p>
                 <div class="line-code ml-4">
-                    <span class="text-pink-dark">&lt;h1&gt;</span>@{{ $page->title }}<span class="text-pink-dark">&lt;/h1&gt;</span>
+                    <span class="text-pink">&lt;h1&gt;</span>@{{ $page->title }}<span class="text-pink">&lt;/h1&gt;</span>
                 </div>
             </div>
 
             <div class="editor-row">
                 <p class="line-number">9</p>
                 <div class="line-code ml-4">
-                    <span class="text-pink-dark">&lt;p&gt;</span>Contact us at @{{ $page->contact_email }}<span class="text-pink-dark">&lt;/p&gt;</span>
+                    <span class="text-pink">&lt;p&gt;</span>Contact us at @{{ $page->contact_email }}<span class="text-pink">&lt;/p&gt;</span>
                 </div>
             </div>
 
@@ -56,9 +56,9 @@
 
     <div class="hidden md:flex flex-col w-2/3 h-70 lg:h-76 -ml-10 pt-10 -mt-12 rounded-lg justify-center items-center shadow-lg z-50"
         style="background:url('/assets/img/browser-illustration.svg') no-repeat; background-size: cover;">
-        <h4 class="text-grey-dark">Jigsaw is awesome!</h4>
+        <h1 class="text-grey-darker">Jigsaw is awesome!</h1>
 
-        <p class="text-grey-dark text-base">
+        <p class="text-grey-darker text-base">
             Contact us at
             <a href="mailto:hello@tighten.co?subject='Hello from Jigsaw'" class="text-blue-lighter">hello@tighten.co</a>
         </p>
