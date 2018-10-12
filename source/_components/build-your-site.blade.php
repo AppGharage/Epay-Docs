@@ -5,7 +5,7 @@
         </h4>
 
         <p class="text-teal-light font-light mb-8 leading-normal">
-            Check out our installation instructions and you'll be <br/>
+            Check out our installation instructions and you'll be <br class="hidden sm:block"/>
             up and running in no time.
         </p>
 

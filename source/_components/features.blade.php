@@ -89,7 +89,7 @@
 
                 <div class="editor-row">
                     <p class="line-number">6</p>
-                    <div class="line-code"># Hellow World!</div>
+                    <div class="line-code"># Hello World!</div>
                 </div>
 
                 <div class="editor-row">
