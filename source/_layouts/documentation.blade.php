@@ -7,10 +7,10 @@
             <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
                 class="rounded-lg w-8 mr-4" />
 
-            <h4 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker lg:ml-0 lg:inline-block">
+            <h1 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker text-lg lg:text-2xl lg:ml-0 lg:inline-block">
                 Jigsaw
-                <span class="hidden text-blue-light lowercase text-base align-top lg:inline-block">docs</span>
-            </h4>
+                <span class="hidden text-blue lowercase text-base align-top lg:inline-block">docs</span>
+            </h1>
         </a>
 
         <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey xl:max-w-lg lg:-mx-3">
@@ -48,12 +48,14 @@
         <navigation-on-page :headings="pageHeadings"></navigation-on-page>
     </div>
 
-    <footer class="flex text-center py-6 text-sm justify-center items-center">
-        <p class="text-blue-darker font-light text-sm mb-0">A project by
-            <a href="https://tighten.co"
-                title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js"
-                class="text-purple no-underline font-normal">Tighten</a>
-        </p>
+    <footer class="text-center py-8 flex justify-center items-center">
+        <p class="m-0 text-blue-darker text-sm font-light pr-1">Brought to you by the lovely humans at </p>
+
+        <a href="https://tighten.co" class="text-sm text-purple no-underline pr-2"
+            title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js">Tighten</a>
+
+        <a href="https://github.com/tightenco/jigsaw" class="text-sm border-l border-blue-darker pl-3 text-purple no-underline"
+            title="Jigsaw on GitHub">Issues/Feature Requests</a>
     </footer>
 </div>
 @endsection

@@ -8,11 +8,11 @@
         </p>
 
         <div class="flex w-full md:max-w-lg mx-auto">
-            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter rounded-l-lg" src="/assets/img/sass-logo.svg">
-            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter" src="/assets/img/coffee-script-logo.svg">
-            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter" src="/assets/img/browserify-logo.svg">
-            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter" src="/assets/img/babel-logo.svg">
-            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-indigo-lighter rounded-r-lg" src="/assets/img/less-logo.svg">
+            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter rounded-l-lg" src="/assets/img/sass-logo.svg" alt="Sass logo">
+            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter" src="/assets/img/coffee-script-logo.svg" alt="CoffeeScript logo">
+            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter" src="/assets/img/browserify-logo.svg" alt="Browserify logo">
+            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-r-0 border-indigo-lighter" src="/assets/img/babel-logo.svg" alt="Babel logo">
+            <img class="w-1/5 p-3 sm:p-4 md:p-6 bg-white border border-indigo-lighter rounded-r-lg" src="/assets/img/less-logo.svg" alt="Less Css logo">
         </div>
     </div>
 </section>
