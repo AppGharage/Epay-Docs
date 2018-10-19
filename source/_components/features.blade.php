@@ -56,7 +56,7 @@
 
             <a href="/docs/installation" title="Read the Jigsaw documentation"
                 class="text-purple text-base no-underline">
-                Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1">
+                Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
             </a>
         </div>
 
@@ -89,7 +89,7 @@
 
                 <div class="editor-row">
                     <p class="line-number">6</p>
-                    <div class="line-code"># Hellow World!</div>
+                    <div class="line-code"># Hello World!</div>
                 </div>
 
                 <div class="editor-row">
