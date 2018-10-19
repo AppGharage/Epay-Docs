@@ -5,7 +5,7 @@
             <slot></slot>
         </a>
 
-        <ul v-if="item.children" class="list-reset my-4 ext-sm">
+        <ul v-if="item.children" class="list-reset my-4 text-sm">
             <li :key="key" v-for="(child, key) in item.children" class="mb-4 ml-4">
                 <a :href="child.root" class="text-blue-dark"
                 :class="{ 'text-purple font-medium': isActive(child.root) }">
