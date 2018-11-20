@@ -44,11 +44,9 @@ To extend a layout, create a template that specifies which layout to extend in a
 @extends('_layouts.master')
 
 @section('contents')
-
-<div>
-    <p>The contents of my amazing homepage.</p>
-</div>
-
+    <div>
+        <p>The contents of my amazing homepage.</p>
+    </div>
 @endsection
 ```
 
