@@ -103,7 +103,7 @@ This post is *profoundly* interesting.
 ```
 @extends('_layouts.master')
 
-@section('content')
+@section('body')
     <h1>{{ $page->title }}</h1>
     <p>By {{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
 
@@ -145,7 +145,7 @@ In addition to the [metadata](/docs/page-metadata/) available for every page, su
 ```
 @extends('_layouts.master')
 
-@section('content')
+@section('body')
     <h1>{{ $page->title }}</h1>
 
     @yield('content')
