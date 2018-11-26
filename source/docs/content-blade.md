@@ -25,7 +25,7 @@ A basic master layout could look like this:
             My Amazing Site
         </header>
 
-        @yield('contents')
+        @yield('content')
 
         <footer>
             <p>©2016 Awesome Co</p>
@@ -43,7 +43,7 @@ To extend a layout, create a template that specifies which layout to extend in a
 ```
 @extends('_layouts.master')
 
-@section('contents')
+@section('content')
 
 <div>
     <p>The contents of my amazing homepage.</p>
@@ -67,7 +67,7 @@ To include a template inside of another template, use the `@include` directive:
     <body>
         @include('_partials.header')
 
-        @yield('contents')
+        @yield('content')
 
         @include('_partials.footer')
     </body>
@@ -85,7 +85,7 @@ You can pass data to a partial by passing an associative array as a second param
     <body>
         @include('_partials.header', ['page_title' => 'My Amazing Site'])
 
-        @yield('contents')
+        @yield('content')
 
         @include('_partials.footer')
     </body>
