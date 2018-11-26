@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jigsaw – Static Sites for Laravel Developers</title>
 
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="shortcut icon" href="/favicons/favicon.ico">
         <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="/css/main.css">
@@ -92,6 +92,17 @@
 <blockquote>
 <p>Check out the NPM script we use to deploy this site <a href="https://github.com/tightenco/jigsaw-site/blob/master/package.json#L12">here</a>.</p>
 </blockquote>
+<h3>Using Netlify</h3>
+<p><a href="https://www.netlify.com/">Netlify</a> is a service that provides free static site hosting and continuous deployment that can be configured to play nice with any static site generator.</p>
+<p>To deploy a site to Netlify, first create a <code>netlify.toml</code> file with the following configuration:</p>
+<pre><code class="language-toml">[build]
+
+command = "npm run production"
+publish = "build_production"
+environment = { PHP_VERSION = "7.2" }</code></pre>
+<p>Push this file to your repository.</p>
+<p>Then <a href="https://app.netlify.com/start">connect your repository to the Netlify app</a> to setup continuous deployment.</p>
+<p>You can skip the build and deploy settings because Netlify will read the <code>netlify.toml</code> file we created earlier.</p>
 <h3>Using Amazon S3</h3>
 <p><a href="https://aws.amazon.com/s3/">Amazon S3</a> is a very affordable service for hosting static assets. You might have used it in the past for hosting things like images, user uploads, or PDFs in your web applications.</p>
 <p>What you might not have known is that Amazon S3 also has first class support for hosting static sites, like your Jigsaw projects.</p>

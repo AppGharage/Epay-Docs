@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jigsaw – Static Sites for Laravel Developers</title>
 
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="shortcut icon" href="/favicons/favicon.ico">
         <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="/css/main.css">
@@ -86,7 +86,7 @@
             My Amazing Site
         &lt;/header&gt;
 
-        @yield('contents')
+        @yield('content')
 
         &lt;footer&gt;
             &lt;p&gt;©2016 Awesome Co&lt;/p&gt;
@@ -98,12 +98,10 @@
 <p>To extend a layout, create a template that specifies which layout to extend in an <code>@extends</code> directive, and which section(s) to populate using the <code>@section</code> directive:</p>
 <pre><code>@extends('_layouts.master')
 
-@section('contents')
-
-&lt;div&gt;
-    &lt;p&gt;The contents of my amazing homepage.&lt;/p&gt;
-&lt;/div&gt;
-
+@section('content')
+    &lt;div&gt;
+        &lt;p&gt;The contents of my amazing homepage.&lt;/p&gt;
+    &lt;/div&gt;
 @endsection</code></pre>
 <p>Layouts and partials are referenced relative to the <code>source</code> directory using <em>dot notation</em>, where each dot represents a directory separator in the file name and the <code>.blade.php</code> extension omitted.</p>
 <h3>Partials</h3>
@@ -116,7 +114,7 @@
     &lt;body&gt;
         @include('_partials.header')
 
-        @yield('contents')
+        @yield('content')
 
         @include('_partials.footer')
     &lt;/body&gt;
@@ -130,7 +128,7 @@
     &lt;body&gt;
         @include('_partials.header', ['page_title' =&gt; 'My Amazing Site'])
 
-        @yield('contents')
+        @yield('content')
 
         @include('_partials.footer')
     &lt;/body&gt;
@@ -179,7 +177,7 @@
 </blockquote>
 <pre><code>return [
     'datetime' =&gt; function ($timestamp) {
-        return '&lt;?php echo date("l, F j, Y", ' . $expression . '); ?&gt;';
+        return '&lt;?php echo date("l, F j, Y", ' . $timestamp . '); ?&gt;';
     }
 ];</code></pre>
 <p>Alternatively, the <code>blade.php</code> file receives a variable named <code>$bladeCompiler</code>, which exposes an instance of <code>\Illuminate\View\Compilers\BladeCompiler</code>. With this, you can create custom Blade directives, <a href="https://laravel.com/docs/5.6/blade#components-and-slots">aliased components</a>, named <code>@include</code> statements, or other extended Blade control structures:</p>
@@ -191,7 +189,7 @@
 /** @var \Illuminate\View\Compilers\BladeCompiler $bladeCompiler */
 
 $bladeCompiler-&gt;directive('datetime', function ($timestamp) {
-    return '&lt;?php echo date("l, F j, Y", ' . $expression . '); ?&gt;';
+    return '&lt;?php echo date("l, F j, Y", ' . $timestamp . '); ?&gt;';
 });
 
 $bladeCompiler-&gt;component('_components.alert');

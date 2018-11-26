@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jigsaw – Static Sites for Laravel Developers</title>
 
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="shortcut icon" href="/favicons/favicon.ico">
         <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="/css/main.css">
@@ -154,10 +154,12 @@ This post is *profoundly* interesting.</code></pre>
 </blockquote>
 <pre><code>@extends('_layouts.master')
 
-&lt;h1&gt;{{ $page-&gt;title }}&lt;/h1&gt;
-&lt;p&gt;By {{ $page-&gt;author }} • {{ date('F j, Y', $page-&gt;date) }}&lt;/p&gt;
+@section('body')
+    &lt;h1&gt;{{ $page-&gt;title }}&lt;/h1&gt;
+    &lt;p&gt;By {{ $page-&gt;author }} • {{ date('F j, Y', $page-&gt;date) }}&lt;/p&gt;
 
-@yield('content')</code></pre>
+    @yield('content')
+@endsection</code></pre>
 <h3>Accessing Collection Items</h3>
 <p>In any Blade template, you have access to each of your collections using a variable with the collection's name. This variable references an object that contains all the elements in your collection, and can be iterated over to
 access individual collection items. The collection variable also behaves as if it were an <a href="https://laravel.com/docs/5.6/collections">Illuminate Collection</a> in Laravel, meaning you have access to all of Laravel's standard collection methods like <code>count()</code>, <code>filter()</code>, and <code>where()</code>.</p>
@@ -172,7 +174,22 @@ access individual collection items. The collection variable also behaves as if i
     &lt;li&gt;{{ $post-&gt;title }}&lt;/li&gt;
 @endforeach
 &lt;/ul&gt;</code></pre>
+<p>For example, assuming that all posts have on their YAML front matter the property <code>author</code>, to filter all posts from a particular author, you can filter the collection of <code>$posts</code> and generate a new collection:</p>
+<blockquote>
+<p>_author<em>posts.blade.php</em></p>
+<pre><code>&lt;?php 
+$authorPosts = $posts-&gt;filter(function ($value, $key) use ($page) {
+return $value-&gt;author == $page-&gt;author;
+}); ?&gt;
+@if ($authorPosts-&gt;count() &gt; 0)
+&lt;ul&gt;
+@foreach ($authorPosts as $post)
+&lt;li&gt;{{ $post-&gt;title }}&lt;/li&gt;
+@endforeach
+&lt;/ul&gt;
+@endif</code></pre>
 <h3>Collection Metadata</h3>
+</blockquote>
 <p>In addition to the <a href="/docs/page-metadata/">metadata</a> available for every page, such as <code>getPath()</code>, <code>getUrl()</code>, and <code>getFilename()</code>, collection items have access to a few additional functions:</p>
 <ul>
 <li><code>getContent()</code> returns the main content of the collection item, i.e. the body of the Markdown file (currently, <code>getContent()</code> is available for Markdown files only)</li>
@@ -186,15 +203,17 @@ access individual collection items. The collection variable also behaves as if i
 </blockquote>
 <pre><code>@extends('_layouts.master')
 
-&lt;h1&gt;{{ $page-&gt;title }}&lt;/h1&gt;
+@section('body')
+    &lt;h1&gt;{{ $page-&gt;title }}&lt;/h1&gt;
 
-@yield('content')
+    @yield('content')
 
-@if ($page-&gt;getNext())
-    &lt;p&gt;Read my next post:
-        &lt;a href="{{ $page-&gt;getNext()-&gt;getPath() }}"&gt;{{ $page-&gt;getNext()-&gt;title }}&lt;/a&gt;
-    &lt;/p&gt;
-@endif</code></pre>        </div>
+    @if ($page-&gt;getNext())
+        &lt;p&gt;Read my next post:
+            &lt;a href="{{ $page-&gt;getNext()-&gt;getPath() }}"&gt;{{ $page-&gt;getNext()-&gt;title }}&lt;/a&gt;
+        &lt;/p&gt;
+    @endif
+@endsection</code></pre>        </div>
     </div>
 </div>
         </div>
