@@ -103,10 +103,12 @@ This post is *profoundly* interesting.
 ```
 @extends('_layouts.master')
 
-<h1>{{ $page->title }}</h1>
-<p>By {{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
+@section('body')
+    <h1>{{ $page->title }}</h1>
+    <p>By {{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
 
-@yield('content')
+    @yield('content')
+@endsection
 ```
 
 ### Accessing Collection Items
@@ -159,13 +161,15 @@ In addition to the [metadata](/docs/page-metadata/) available for every page, su
 ```
 @extends('_layouts.master')
 
-<h1>{{ $page->title }}</h1>
+@section('body')
+    <h1>{{ $page->title }}</h1>
 
-@yield('content')
+    @yield('content')
 
-@if ($page->getNext())
-    <p>Read my next post:
-        <a href="{{ $page->getNext()->getPath() }}">{{ $page->getNext()->title }}</a>
-    </p>
-@endif
+    @if ($page->getNext())
+        <p>Read my next post:
+            <a href="{{ $page->getNext()->getPath() }}">{{ $page->getNext()->title }}</a>
+        </p>
+    @endif
+@endsection
 ```
