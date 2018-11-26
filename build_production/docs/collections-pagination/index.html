@@ -6,23 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jigsaw – Static Sites for Laravel Developers</title>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#309e74">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
         <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="/css/main.css">
@@ -102,19 +88,33 @@ pagination:
 </blockquote>
 <p>Once the <code>pagination</code> has been defined in the header, the template will have access to a special <code>$pagination</code> variable, which has several attributes:</p>
 <ul>
-<li><code>$pagination-&gt;items</code> contains an array of collection items for the current page</li>
-<li><code>$pagination-&gt;currentPage</code> contains the page number of the current page</li>
-<li><code>$pagination-&gt;totalPages</code> contains the total number of pages</li>
+<li>
+<p><code>$pagination-&gt;items</code> contains an array of collection items for the current page</p>
+</li>
+<li>
+<p><code>$pagination-&gt;currentPage</code> contains the page number of the current page</p>
+</li>
+<li>
+<p><code>$pagination-&gt;totalPages</code> contains the total number of pages</p>
+</li>
 <li>
 <p><code>$pagination-&gt;pages</code> contains an array of paths to each page</p>
 <blockquote>
 <p>Note that the <code>pages</code> are indexed by their page number, i.e. they are 1-based. So you can refer to the paths of a page by the page number, i.e. <code>$pagination-&gt;page[1]</code> will return the path to the first page.</p>
 </blockquote>
 </li>
-<li><code>$pagination-&gt;first</code> contains the path to the first page (the same as <code>$pagination-&gt;path[1]</code>)</li>
-<li><code>$pagination-&gt;last</code> contains the path to the last page</li>
-<li><code>$pagination-&gt;next</code> contains the path to the next page</li>
-<li><code>$pagination-&gt;previous</code> contains the path to the previous page</li>
+<li>
+<p><code>$pagination-&gt;first</code> contains the path to the first page (the same as <code>$pagination-&gt;path[1]</code>)</p>
+</li>
+<li>
+<p><code>$pagination-&gt;last</code> contains the path to the last page</p>
+</li>
+<li>
+<p><code>$pagination-&gt;next</code> contains the path to the next page</p>
+</li>
+<li>
+<p><code>$pagination-&gt;previous</code> contains the path to the previous page</p>
+</li>
 </ul>
 <p>Using these <code>$pagination</code> attributes, you can build a set of pagination buttons and links:</p>
 <pre><code>@if ($previous = $pagination-&gt;previous)
