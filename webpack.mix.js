@@ -19,7 +19,12 @@ mix.js('source/_assets/js/app.js', 'js/')
     .options({
         postCss: [tailwindcss("tailwind.js")]
     })
-    .purgeCss()
+    .purgeCss({
+        enabled: true,
+        extensions: ['html', 'js', 'php', 'md', 'vue'],
+        folders: ['source'],
+        whitelistPatterns: [/language/, /hljs/, /algolia/, /docsearch/, /ds-/],
+    })
     .version();
 
 if (! mix.inProduction()) {
