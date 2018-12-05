@@ -13,10 +13,10 @@
             </h1>
         </a>
 
-        <div class="w-full flex items-center max-w-md px-2 border-2 border-indigo-lighter rounded bg-grey xl:max-w-lg lg:-mx-3">
-            <img src="/assets/img/icon-search.svg" class="h-4">
+        <div class="w-full flex items-center max-w-md border-2 border-indigo-lighter rounded bg-grey xl:max-w-lg lg:-mx-3">
+            <img src="/assets/img/icon-search.svg" class="absolute z-10 h-4 ml-2">
 
-            <input id="docsearch" type="text" placeholder="Search documentation..." />
+            <input id="docsearch" type="text" class="pl-8 pr-2" placeholder="Search documentation..." />
         </div>
 
         <div class="w-1/3 hidden items-center pl-3 lg:flex lg:pl-8">

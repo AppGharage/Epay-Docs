@@ -30,6 +30,8 @@
         <link rel="stylesheet" type="text/css" href="{{ mix('css/main.css', 'assets/build') }}">
 
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     </head>
     <body class="min-h-screen font-sans">
 
