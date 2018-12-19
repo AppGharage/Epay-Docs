@@ -54,9 +54,11 @@
         @endcomponent
     </div>
 
-    <div class="hidden md:flex flex-col w-2/3 h-70 lg:h-76 -ml-10 pt-10 -mt-12 rounded-lg justify-center items-center shadow-lg select-none z-50"
-        style="background:url('/assets/img/browser-illustration.svg') no-repeat; background-size: cover;">
-        <h1 class="text-grey-darker">Jigsaw is awesome!</h1>
+    <div
+        class="hidden md:flex flex-col w-2/3 h-70 lg:h-76 -ml-10 pt-10 -mt-12 rounded-lg justify-center items-center shadow-lg select-none z-50"
+        style="background:url('/assets/img/browser-illustration.svg') no-repeat; background-size: cover;"
+    >
+        <h1 class="text-grey-darker text-3xl lg:text-4xl">Jigsaw is awesome!</h1>
 
         <p class="text-grey-darker text-base">
             Contact us at

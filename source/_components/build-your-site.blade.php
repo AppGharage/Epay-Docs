@@ -1,17 +1,12 @@
-<section class="bg-blue-darker py-16">
-    <div class="text-center px-2 sm:px-0">
-        <h4 class="text-white font-light mb-4">
-            Ready to get started?
-        </h4>
+<section class="flex flex-col items-center bg-blue-darker text-center px-4 py-16">
+    <h4 class="text-white font-light text-3xl mb-6">Ready to get started?</h4>
 
-        <p class="text-teal-light font-light mb-8 leading-normal">
-            Check out our installation instructions and you'll be <br class="hidden sm:block"/>
-            up and running in no time.
-        </p>
+    <p class="text-teal-light text-lg font-light mb-10 leading-normal">
+        Check out our installation instructions and you'll be up and running in no time.
+    </p>
 
-        <a href="/docs/installation/" title="Start building your site with Jigsaw"
-            class="py-4 px-6 text-grey-darker no-underline tracking-wide uppercase rounded-lg text-sm bg-grey-lightest shadow-lg">
-            Build your site
-        </a>
-    </div>
+    <a href="/docs/installation/" title="Start building your site with Jigsaw"
+        class="hover:bg-grey-light text-grey-darker hover:text-purple-dark no-underline tracking-wide uppercase rounded-lg text-sm bg-grey-lightest shadow-md hover:shadow-lg py-4 px-6">
+        Build your site
+    </a>
 </section>
