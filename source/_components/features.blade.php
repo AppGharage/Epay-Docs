@@ -1,5 +1,5 @@
 <section class="flex flex-col items-center bg-white py-12 md:py-16">
-    <div class="flex flex-col md:flex-row items-center container-content mb-8">
+    <div class="flex flex-col md:flex-row items-center container-content mb-8 px-4 sm:px-6">
         <div class="flex-col md:w-1/2 md:pr-10 lg:pr-20 pb-8 md:pb-0">
             <h3 class="mb-5 text-blue-darker">
                 Blade templating, just like your Laravel apps.
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col md:flex-row items-center container-content mt-6">
+    <div class="flex flex-col md:flex-row items-center container-content mt-6 px-4 sm:px-6">
         <div class="flex-col md:w-1/2 md:pr-10 lg:pr-20 pb-8 md:pb-0">
             <h3 class="mb-5 text-blue-darker">
                 Use Markdown for content-driven pages.

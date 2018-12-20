@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center bg-brown-lightest text-center px-4 py-16">
+<section class="flex flex-col items-center bg-brown-lightest text-center px-4 sm:px-6 py-16">
     <h3 class="text-blue-darker text-center text-3xl mb-6">Compile your assets using Laravel Mix.</h3>
 
     <p class="max-w-md mx-auto text-center text-blue text-lg leading-normal mb-12">

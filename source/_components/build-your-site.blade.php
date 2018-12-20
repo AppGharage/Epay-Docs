@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center bg-blue-darker text-center px-4 py-16">
+<section class="flex flex-col items-center bg-blue-darker text-center px-4 sm:px-6 py-16">
     <h4 class="text-white font-light text-3xl mb-6">Ready to get started?</h4>
 
     <p class="text-teal-light text-lg font-light mb-10 leading-normal">
