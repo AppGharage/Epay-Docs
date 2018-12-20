@@ -1,4 +1,4 @@
-<header class="container-content">
+<header class="container-content px-4">
     <nav class="flex justify-between items-center mb-8" aria-role="navigation">
         <div class="flex items-center">
             <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"

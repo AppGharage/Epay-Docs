@@ -1,4 +1,4 @@
-<section class="flex -mb-32 justify-center container-content">
+<section class="flex -mb-32 justify-center container-content px-4">
     <div class="flex flex-col w-full md:w-4/5 lg:w-2/3">
         @component('_components.code-editor')
             <div class="editor-row">

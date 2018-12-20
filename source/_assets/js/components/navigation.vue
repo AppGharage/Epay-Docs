@@ -1,7 +1,5 @@
 <template>
-    <div class="w-full mx-auto mb-8 max-w-md lg:block lg:w-1/3 lg:mb-0" :class="{ hidden: ! visible }">
-        <p class="text-sm uppercase font-light tracking-wide text-blue mb-6">Concepts</p>
-
+    <div class="flex-1 lg:block border-b lg:border-b-0 pt-8 md:pt-1 pl-6 md:pl-0 pr-6 pb-2 mb-6" :class="{ hidden: ! visible }">
         <nav class="nav-list" role="navigation">
             <navigation-item
                 v-for="(url, key) in navigation"

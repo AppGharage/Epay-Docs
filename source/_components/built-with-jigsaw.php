@@ -1,5 +1,5 @@
 <section class="flex flex-col items-center bg-gradient-purple text-center px-4 py-16">
-    <h2 class="text-white text-3xl mb-6">Need inspiration?</h2>
+    <h2 class="text-white text-3xl font-normal mb-6">Need inspiration?</h2>
 
     <p class="text-pink-lighter text-lg mb-8">Browse websites built with Jigsaw, find articles, or get featured.</p>
 
