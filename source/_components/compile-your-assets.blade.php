@@ -6,13 +6,13 @@
         and Javascript assets the same way you're used to in Laravel.
     </p>
 
-    <div class="flex flex-wrap max-w-xs sm:max-w-xl px-8">
+    <div class="flex flex-wrap max-w-xs sm:max-w-xl h-32 px-8 py-3">
         <img class="w-1/2 sm:w-1/4 p-3 sm:p-4 md:p-6 sm:bg-white sm:border sm:border-r-0 border-indigo-lighter rounded-l-lg" src="/assets/img/less-logo.svg" alt="Less logo">
 
-        <div class="w-1/2 sm:w-1/4 flex flex-col items-center p-3 sm:p-4 md:p-6 sm:bg-white sm:border sm:border-r-0 border-indigo-lighter">
-            <img class="w-1/3 mt-2" src="/assets/img/tailwind-logo.svg" alt="Tailwind logo">
+        <div class="w-1/2 sm:w-1/4 flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 sm:bg-white sm:border sm:border-r-0 border-indigo-lighter">
+            <img class="w-1/3" src="/assets/img/tailwind-logo.svg" alt="Tailwind logo">
 
-            <p class="text-lg lg:text-2xl text-blue-darker font-semibold pt-2 mb-0">Tailwind CSS</p>
+            <p class="text-base lg:text-lg text-blue-darker font-semibold pt-2 mb-0">Tailwind CSS</p>
         </div>
 
         <img class="w-1/2 sm:w-1/4 p-3 sm:p-4 md:p-6 sm:bg-white sm:border sm:border-r-0 border-indigo-lighter" src="/assets/img/webpack-logo.svg" alt="Webpack logo">
