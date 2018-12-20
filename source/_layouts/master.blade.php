@@ -33,10 +33,10 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     </head>
-    <body class="min-h-screen font-sans">
 
+    <body class="min-h-screen font-sans">
         <main id="vue-app">
-            <div class="w-full bg-brown-lightest border-t-4 border-purple"></div>
+            <div class="w-full bg-brown-lightest border-t-5 border-purple"></div>
 
             @yield('body')
         </main>

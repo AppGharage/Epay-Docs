@@ -1,4 +1,4 @@
-<header class="container-content">
+<header class="container-content px-4">
     <nav class="flex justify-between items-center mb-8" aria-role="navigation">
         <div class="flex items-center">
             <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
@@ -7,16 +7,16 @@
             <h1 class="uppercase tracking-wide text-blue-darker text-lg md:text-2xl">Jigsaw</h1>
         </div>
 
-        <div class="text-sm tracking-wide">
+        <div class="tracking-wide flex items-center">
             <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
-                class="mr-4 text-blue-darker uppercase font-light">
+                class="mr-4 block text-sm text-blue-darker uppercase font-light">
                 <span class="hidden md:inline-block">Contribute</span>
 
                 <img src="/assets/img/GitHub.svg" alt="GitHub alien logo" class="md:hidden -mb-1">
             </a>
 
             <a href="/docs/installation" title="Read the Jigsaw documentation"
-                class="py-2 px-4 md:py-3 md:px-4 bg-purple rounded text-white uppercase font-hairline shadow-md">Docs</a>
+                class="block text-sm py-2 px-4 md:py-3 md:px-4 bg-purple rounded text-white uppercase font-hairline shadow-md">Docs</a>
         </div>
     </nav>
 </header>
