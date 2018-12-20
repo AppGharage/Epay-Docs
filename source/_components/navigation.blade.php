@@ -9,14 +9,14 @@
 
         <div class="tracking-wide flex items-center">
             <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub"
-                class="mr-4 block text-sm text-blue-darker uppercase font-light">
-                <span class="hidden md:inline-block">Contribute</span>
+                class="mr-4 block text-sm text-blue-darker hover:text-purple-darker uppercase font-medium">
+                <span class="hidden md:inline-block hover:underline">Contribute</span>
 
                 <img src="/assets/img/GitHub.svg" alt="GitHub alien logo" class="md:hidden -mb-1">
             </a>
 
             <a href="/docs/installation" title="Read the Jigsaw documentation"
-                class="block text-sm py-2 px-4 md:py-3 md:px-4 bg-purple rounded text-white uppercase font-hairline shadow-md">Docs</a>
+                class="block text-sm py-2 px-4 md:py-3 md:px-4 bg-purple hover:bg-purple-dark rounded text-white uppercase font-medium shadow-md">Docs</a>
         </div>
     </nav>
 </header>
