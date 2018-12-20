@@ -19,7 +19,7 @@ First, create a new directory for your site:
 $ mkdir my-site
 ```
 
-### 2. Install Jigsaw via Composer:
+### 2. Install Jigsaw via Composer
 
 Next, navigate to your new project directory and install Jigsaw using Composer:
 
@@ -40,7 +40,7 @@ $ ./vendor/bin/jigsaw init
 
 ---
 
-### Directory structure
+### Directory Structure
 
 By default, Jigsaw gives you the following directory structure:
 
@@ -90,7 +90,6 @@ At the root of the directory, Jigsaw provides a `config.php` file where you can 
 Next, learn about [building and previewing your site](/docs/building-and-previewing).
 
 ---
+<div class="pt-3"></div>
 
-> Why are there two `assets` directories in `/source`, one prefixed with an underscore? <br>Find out in the [Compiling Assets](/docs/compiling-assets) section.
-
----
+> Why are there two `assets` directories in `/source`, one prefixed with an underscore? Find out in the [Compiling Assets](/docs/compiling-assets) section.
