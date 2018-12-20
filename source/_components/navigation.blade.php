@@ -1,10 +1,10 @@
-<header class="container-content px-4">
+<header class="container-content px-4 sm:px-6">
     <nav class="flex justify-between items-center mb-8" aria-role="navigation">
         <div class="flex items-center">
             <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo"
-                class="logo-icon rounded-lg shadow border-4 border-white mr-2 sm:mr-4 w-10 sm:w-12 sm:border-2" />
+                class="logo-icon rounded-lg shadow border-2 border-white mr-2 sm:mr-3 w-10 sm:w-11" />
 
-            <h1 class="uppercase tracking-wide text-blue-darker text-lg md:text-2xl">Jigsaw</h1>
+            <h1 class="uppercase tracking-wide text-blue-darker text-xl sm:text-2xl font-normal">Jigsaw</h1>
         </div>
 
         <div class="tracking-wide flex items-center">

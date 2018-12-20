@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-1 lg:block border-b lg:border-b-0 pt-8 md:pt-1 pl-6 md:pl-0 pr-6 pb-2 mb-6" :class="{ hidden: ! visible }">
+    <div class="flex-1 lg:block md:border-b lg:border-b-0 pt-8 md:pt-1 pl-6 md:pl-0 pr-6 pb-2 mb-4 md:mb-6" :class="{ hidden: ! visible }">
         <nav class="nav-list" role="navigation">
             <navigation-item
                 v-for="(url, key) in navigation"

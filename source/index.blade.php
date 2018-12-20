@@ -4,7 +4,7 @@
 <div class="pt-6 font-normal text-xl bg-brown-lightest">
     @include('_components.navigation')
 
-    <div class="container-content px-4 py-4 sm:py-8">
+    <div class="container-content px-4 sm:px-6 py-4 sm:py-8">
         <div class="flex-col mb-0 sm:mb-8 pb-4">
             <h1 class="text-4xl md:text-5xl text-blue-darker leading-none">
                 Static sites for <br />

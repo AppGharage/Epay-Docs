@@ -3,10 +3,10 @@
 @section('body')
 <header class="w-full bg-white absolute z-10 shadow-md px-4 md:px-6">
     <nav class="flex items-center max-w-3xl mx-auto py-4" aria-role="navigation">
-        <a class="flex lg:flex-1 items-center" href="/" title="Jigsaw by Tighten">
-            <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo" class="w-8 mr-4" />
+        <a class="flex flex-no-shrink lg:flex-1 items-center mr-1" href="/" title="Jigsaw by Tighten">
+            <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo" class="w-10 lg:w-11 mr-3 shadow border-2 border-white rounded-lg" />
 
-            <h1 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker text-lg lg:text-2xl lg:ml-0 lg:inline-block">
+            <h1 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker text-lg lg:text-2xl font-normal lg:ml-0 lg:inline-block">
                 Jigsaw
             </h1>
         </a>
