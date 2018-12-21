@@ -52,6 +52,7 @@ You can also install a starter template that was created by a third party. Third
 ./vendor/bin/jigsaw init tightenco/jigsaw-netlify-template
 ```
 
+---
 
 ### Creating your Own Starter Template
 
@@ -66,9 +67,9 @@ When a user installs your template using the `init` command, Jigsaw will run the
 
 You can, however, customize the `init` process to gain full control over how a template is installed, by adding an `init.php` file to the root of the starter template. There are two ways to configure this init.php file:
 
-#### 1. Return an array of `init` settings
+#### 1. Return an array of `init` settings {.pt-4}
 
-init.php can return an array, with the following keys (all optional):
+The `init.php` file can return an array, with the following keys (all optional):
 
 - `delete`: a file, or an array of files, that should be deleted from the base install
 - `ignore`: a file, or an array of files, that should be ignored from the starter template when installing
@@ -100,7 +101,7 @@ return [
 - The `vendor`, `node_modules`, and `build_*` directories are never copied from a starter template, if they are present.
 - If a `commands` key is not specified in this array, the default commands will be run. If one or more `commands` are specified, only the `commands` you specify (and not the defaults) will be run. If `commands` is an empty array, no shell commands whatsoever (including the defaults) will be run.
 
-#### 2. Call methods on the `$init` variable
+#### 2. Call methods on the `$init` variable {.pt-4}
 
 For more fine-grained control, instead of returning a settings array in `init.php`, you can access the installer directly using the `$init` variable, and build your installation process using a fluent API. Available methods include:
 
@@ -114,9 +115,11 @@ For more fine-grained control, instead of returning a settings array in `init.ph
 - `ask()`: Ask the user an open-ended or multiple-choice question
 - `output()`, `info()`, `error()`, `comment()`: Write output to the console
 
-> `delete()`, `ignore()`, and `copy()` support `*` as a wildcard character.
+> _`delete()`, `ignore()`, and `copy()` support `*` as a wildcard character._
 
-With these commands, you can create more complex template installers. For example:
+<div class="pb-4"></div>
+
+Using these commands, you can create more complex template installers. For example:
 
 > _init.php_
 
@@ -152,6 +155,8 @@ $init->output('Finishing installation...')
 ```
 
 ---
+
+<div class="pt-2"></div>
 
 > If you've created a starter template that you'd like to share, tell us on Twitter at [@tightenco](https://twitter.com/tightenco) or open an issue in the [Jigsaw docs repo](https://github.com/tightenco/jigsaw-site/issues). Very soon, we'll be adding a showcase of well-crafted templates created by the community, and we'd love to feature yours!
 
