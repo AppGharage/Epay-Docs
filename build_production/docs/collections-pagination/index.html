@@ -6,70 +6,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jigsaw – Static Sites for Laravel Developers</title>
 
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-        <link rel="shortcut icon" href="/favicons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/assets/img/jigsaw-logo.png">
+
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#309e74">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="https://use.typekit.net/fac7rzg.css">
+
+        <link rel="stylesheet" type="text/css" href="/assets/build/css/main.css?id=85ef9ab599ad278a7a54">
+
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     </head>
-    <body class="border-t-3 border-primary full-height flex-col">
-        <div class="flex-fit">
-            <nav class="navbar navbar-brand">
-    <div class="container">
-        <div class="navbar-content">
-            <div>
-                <a class="link-plain text-xxl flex-y-center" href="/">
-                    <img src="/img/jigsaw-logo.svg" alt="Jigsaw logo" class="logo-icon" width="65">
-                    <img src="/img/jigsaw-type.svg" alt="Jigsaw logo" class="logo-type" width="130">
-                </a>
-            </div>
-            <div class="docsearch navbar-buttons">
-                <input id="docsearch" class="docsearch__input" type="text" name="docsearch" value=""/>
-                <span class="docsearch__icon"></span>
-            </div>
+
+    <body class="min-h-screen font-sans">
+        <main id="vue-app">
+            <div class="w-full bg-brown-lightest border-t-5 border-purple"></div>
+
+            <header class="w-full bg-white absolute z-10 shadow-md px-4 md:px-6">
+    <nav class="flex items-center max-w-3xl mx-auto py-4" aria-role="navigation">
+        <a class="flex flex-no-shrink lg:flex-1 items-center mr-1" href="/" title="Jigsaw by Tighten">
+            <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo" class="w-10 lg:w-11 mr-3 shadow border-2 border-white rounded-lg" />
+
+            <h1 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker text-lg lg:text-2xl font-normal lg:ml-0 lg:inline-block">
+                Jigsaw
+            </h1>
+        </a>
+
+        <div class="w-full flex items-center lg:max-w-md xl:max-w-lg border-2 border-indigo-lighter rounded bg-grey">
+            <img src="/assets/img/icon-search.svg" class="absolute z-10 h-4 ml-2">
+
+            <input id="docsearch" type="text" class="pl-8 pr-2 py-2 bg-grey" placeholder="Search documentation..." />
         </div>
-    </div>
-</nav>
 
-<div class="container m-xs-b-6">
-    <div class="row">
-        <div class="col-md-3 m-xs-b-6">
-            <nav class="nav-list">
-                <a class="nav-list-item" href="/docs/installation/">Installation</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/upgrading/">Upgrading</a>
-                <a class="nav-list-item" href="/docs/building-and-previewing/">Building &amp; Previewing</a>
-                <a class="nav-list-item" href="/docs/compiling-assets/">Compiling Assets</a>
+        <div class="hidden lg:flex lg:flex-1 items-center">
+            <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub" class="flex mr-3 text-blue-darker pl-8">
+                <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
+            </a>
 
-                <a class="nav-list-item" href="/docs/content/">Creating Your Site's Content</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/content-blade/">Blade Templates &amp; Partials</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/content-markdown/">Markdown</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/content-other-file-types/">Other File Types</a>
-
-                <a class="nav-list-item" href="/docs/site-variables/">Site Variables</a>
-                <a class="nav-list-item" href="/docs/helper-methods/">Helper Methods</a>
-                <a class="nav-list-item" href="/docs/page-metadata/">Page Metadata</a>
-                <a class="nav-list-item" href="/docs/environments/">Environments</a>
-
-                <a class="nav-list-item" href="/docs/collections/">Collections</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-extending-parent-templates/">Extending Parent Templates</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-paths/">Paths</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-sorting/">Sorting</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-pagination/">Pagination</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-variables-and-functions/">Variables &amp; Helper Functions</a>
-                <a class="nav-list-item nav-list-item--sub" href="/docs/collections-remote-collections/">Remote Collections</a>
-
-                <a class="nav-list-item" href="/docs/pretty-urls/">Pretty URLs</a>
-                <a class="nav-list-item" href="/docs/custom-404-page/">Custom 404 Page</a>
-                <a class="nav-list-item" href="/docs/event-listeners/">Event Listeners</a>
-                <a class="nav-list-item" href="/docs/deploying-your-site/">Deploying Your Site</a>
-            </nav>
-            <p class="p-xs-x-1 p-xs-y-4 text-dark-soft">
-                <small>Brought to you by <a href="https://tighten.co" class="link-tighten">Tighten</a></small>
+            <p class="text-sm text-blue-dark mb-0 leading-tight">
+                A project by
+                <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
+                    class="text-purple">Tighten</a>
             </p>
         </div>
-        <div class="col-md-9 documentation-page">
+
+        <navigation-toggle></navigation-toggle>
+    </nav>
+</header>
+
+<div class="bg-brown-lightest min-h-screen pt-16 md:pt-24 lg:pt-32 px-0 md:px-6">
+    <div class="flex flex-col lg:flex-row justify-center max-w-3xl mx-auto">
+        <navigation :links='{"Installation":{"root":"\/docs\/installation","children":{"Using a Starter Template":{"root":"\/docs\/starter-templates"}}},"Building \u0026 Previewing":{"root":"\/docs\/building-and-previewing"},"Compiling Assets":{"root":"\/docs\/compiling-assets"},"Creating your Site\u0027s Content":{"root":"\/docs\/content","children":{"Blade Templates \u0026 Partials":{"root":"\/docs\/content-blade"},"Markdown":{"root":"\/docs\/content-markdown"},"Other File Types":{"root":"\/docs\/content-other-file-types"}}},"Site Variables":{"root":"\/docs\/site-variables"},"Helper Methods":{"root":"\/docs\/helper-methods"},"Page Metadata":{"root":"\/docs\/page-metadata"},"Collections":{"root":"\/docs\/collections","children":{"Extending Parent Templates":{"root":"\/docs\/collections-extending-parent-templates"},"Paths":{"root":"\/docs\/collections-paths"},"Sorting":{"root":"\/docs\/collections-sorting"},"Pagination":{"root":"\/docs\/collections-pagination"},"Variables and Functions":{"root":"\/docs\/collections-variables-and-functions"},"Remote Collections":{"root":"\/docs\/collections-remote-collections"}}},"Pretty Urls":{"root":"\/docs\/pretty-urls"},"Custom 404 Page":{"root":"\/docs\/custom-404-page"},"Event Listeners":{"root":"\/docs\/event-listeners"},"Deploying Your Site":{"root":"\/docs\/deploying-your-site"}}'></navigation>
+
+        <div class="markdown bg-white w-full lg:max-w-md xl:max-w-lg md:mb-6 lg:mb-10 px-6 xl:px-10 pt-4 pb-8 font-normal sm:shadow md:rounded-lg" v-pre>
             <h4><a href="/docs/collections">Collections</a></h4>
 <h2>Pagination</h2>
 <p>You can create a Blade template that displays your collection items in a paginated format by including a <code>pagination</code> key in the template's YAML front matter. The pagination header should include the <code>collection</code> name and the <code>perPage</code> count:</p>
@@ -143,21 +150,28 @@ pagination:
     &lt;p class="text-sm"&gt;by {{ $post-&gt;author }} • {{ date('F j, Y', $post-&gt;date) }}&lt;/p&gt;
     &lt;div&gt;{!! $post-&gt;getContent() !!}&lt;/div&gt;
 @endforeach</code></pre>        </div>
+
+        <navigation-on-page :headings="pageHeadings"></navigation-on-page>
     </div>
+
+    <footer class="py-8 flex flex-col sm:flex-row justify-center items-center text-center">
+        <p class="text-grey-dark font-normal text-xs sm:text-sm my-1">Brought to you by the lovely humans at
+            <a href="https://tighten.co" class="text-purple hover:text-purple-darker font-normal no-underline sm:pr-4" title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js">Tighten</a>
+        </p>
+
+        <a href="https://github.com/tightenco/jigsaw" class="sm:border-l border-purple-light sm:pl-4 text-purple text-xs sm:text-sm hover:text-purple-darker font-normal no-underline my-1"
+            title="Jigsaw on GitHub">Issues/Feature Requests</a>
+    </footer>
 </div>
-        </div>
-        <footer class="bg-dark text-center p-xs-y-6 p-xs-x-4 text-light-muted text-sm">
-            <p>&copy; 2018 <a href="https://tighten.co" class="link-light-muted">Tighten</a></p>
-        </footer>
-
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
-        <script type="text/javascript">
-            docsearch({
-                apiKey: '57a7f5b1e4e0a44c7e2f8e96abcbf674',
-                indexName: 'jigsaw',
-                inputSelector: '#docsearch'
-            });
-        </script>
-
+        </main>
+            <script src="/assets/build/js/app.js?id=a97c7fb182eb81c54ca4"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript">
+        docsearch({
+            apiKey: '57a7f5b1e4e0a44c7e2f8e96abcbf674',
+            indexName: 'jigsaw',
+            inputSelector: '#docsearch'
+        });
+    </script>
     </body>
 </html>
