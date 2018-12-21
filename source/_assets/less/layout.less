@@ -1,13 +1,17 @@
-.constrain {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 33rem;
+.bg-gradient-purple {
+    background: #884992;
+    background: -webkit-linear-gradient(to right, #703e84, #884992);
+    background: linear-gradient(to right, #703e84, #884992);
 }
 
-.constrain-sm {
-    max-width: 26rem;
+.container-content {
+    @apply .max-w-3xl;
+    @apply .mx-auto;
+    @apply .px-4;
 }
 
-.constrain-lg {
-    max-width: 40rem;
+@screen sm {
+    .container-content {
+        @apply .px-4;
+    }
 }

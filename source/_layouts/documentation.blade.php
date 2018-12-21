@@ -1,62 +1,68 @@
 @extends('_layouts.master')
 
 @section('body')
-<nav class="navbar navbar-brand">
-    <div class="container">
-        <div class="navbar-content">
-            <div>
-                <a class="link-plain text-xxl flex-y-center" href="{{ $page->asset_prefix }}/">
-                    <img src="{{ $page->asset_prefix }}/img/jigsaw-logo.svg" alt="Jigsaw logo" class="logo-icon" width="65">
-                    <img src="{{ $page->asset_prefix }}/img/jigsaw-type.svg" alt="Jigsaw logo" class="logo-type" width="130">
-                </a>
-            </div>
-            <div class="docsearch navbar-buttons">
-                <input id="docsearch" class="docsearch__input" type="text" name="docsearch" value=""/>
-                <span class="docsearch__icon"></span>
-            </div>
+<header class="w-full bg-white absolute z-10 shadow-md px-4 md:px-6">
+    <nav class="flex items-center max-w-3xl mx-auto py-4" aria-role="navigation">
+        <a class="flex flex-no-shrink lg:flex-1 items-center mr-1" href="/" title="Jigsaw by Tighten">
+            <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo" class="w-10 lg:w-11 mr-3 shadow border-2 border-white rounded-lg" />
+
+            <h1 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker text-lg lg:text-2xl font-normal lg:ml-0 lg:inline-block">
+                Jigsaw
+            </h1>
+        </a>
+
+        <div class="w-full flex items-center lg:max-w-md xl:max-w-lg border-2 border-indigo-lighter rounded bg-grey">
+            <img src="/assets/img/icon-search.svg" class="absolute z-10 h-4 ml-2">
+
+            <input id="docsearch" type="text" class="pl-8 pr-2 py-2 bg-grey" placeholder="Search documentation..." />
         </div>
-    </div>
-</nav>
 
-<div class="container m-xs-b-6">
-    <div class="row">
-        <div class="col-md-3 m-xs-b-6">
-            <nav class="nav-list">
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/installation/">Installation</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/upgrading/">Upgrading</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/building-and-previewing/">Building &amp; Previewing</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/compiling-assets/">Compiling Assets</a>
+        <div class="hidden lg:flex lg:flex-1 items-center">
+            <a href="https://github.com/tightenco/jigsaw" title="Contribute to Jigsaw on GitHub" class="flex mr-3 text-blue-darker pl-8">
+                <img src="/assets/img/GitHub.svg" alt="GitHub alien logo">
+            </a>
 
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/content/">Creating Your Site's Content</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/content-blade/">Blade Templates &amp; Partials</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/content-markdown/">Markdown</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/content-other-file-types/">Other File Types</a>
-
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/site-variables/">Site Variables</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/helper-methods/">Helper Methods</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/page-metadata/">Page Metadata</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/environments/">Environments</a>
-
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/collections/">Collections</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-extending-parent-templates/">Extending Parent Templates</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-paths/">Paths</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-sorting/">Sorting</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-pagination/">Pagination</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-variables-and-functions/">Variables &amp; Helper Functions</a>
-                <a class="nav-list-item nav-list-item--sub" href="{{ $page->asset_prefix }}/docs/collections-remote-collections/">Remote Collections</a>
-
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/pretty-urls/">Pretty URLs</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/custom-404-page/">Custom 404 Page</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/event-listeners/">Event Listeners</a>
-                <a class="nav-list-item" href="{{ $page->asset_prefix }}/docs/deploying-your-site/">Deploying Your Site</a>
-            </nav>
-            <p class="p-xs-x-1 p-xs-y-4 text-dark-soft">
-                <small>Brought to you by <a href="https://tighten.co" class="link-tighten">Tighten</a></small>
+            <p class="text-sm text-blue-dark mb-0 leading-tight">
+                A project by
+                <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
+                    class="text-purple">Tighten</a>
             </p>
         </div>
-        <div class="col-md-9 documentation-page">
+
+        <navigation-toggle></navigation-toggle>
+    </nav>
+</header>
+
+<div class="bg-brown-lightest min-h-screen pt-16 md:pt-24 lg:pt-32 px-0 md:px-6">
+    <div class="flex flex-col lg:flex-row justify-center max-w-3xl mx-auto">
+        <navigation :links='@json($page->navigation)'></navigation>
+
+        <div class="markdown bg-white w-full lg:max-w-md xl:max-w-lg md:mb-6 lg:mb-10 px-6 xl:px-10 pt-4 pb-8 font-normal sm:shadow md:rounded-lg" v-pre>
             @yield('documentation_content')
         </div>
+
+        <navigation-on-page :headings="pageHeadings"></navigation-on-page>
     </div>
+
+    <footer class="py-8 flex flex-col sm:flex-row justify-center items-center text-center">
+        <p class="text-grey-dark font-normal text-xs sm:text-sm my-1">Brought to you by the lovely humans at
+            <a href="https://tighten.co" class="text-purple hover:text-purple-darker font-normal no-underline sm:pr-4" title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js">Tighten</a>
+        </p>
+
+        <a href="https://github.com/tightenco/jigsaw" class="sm:border-l border-purple-light sm:pl-4 text-purple text-xs sm:text-sm hover:text-purple-darker font-normal no-underline my-1"
+            title="Jigsaw on GitHub">Issues/Feature Requests</a>
+    </footer>
 </div>
+@endsection
+
+@section('scripts')
+    <script src="{{ mix('js/app.js', 'assets/build') }}"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript">
+        docsearch({
+            apiKey: '57a7f5b1e4e0a44c7e2f8e96abcbf674',
+            indexName: 'jigsaw',
+            inputSelector: '#docsearch'
+        });
+    </script>
 @endsection

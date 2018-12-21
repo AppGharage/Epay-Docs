@@ -5,32 +5,21 @@ permalink: 404.html
 @extends('_layouts.master')
 
 @section('body')
-<nav class="navbar navbar-brand">
-    <div class="container">
-        <div class="navbar-content">
-            <div>
-                <a class="link-plain text-xxl flex-y-center" href="{{ $page->asset_prefix }}/">
-                    <img src="{{ $page->asset_prefix }}/img/jigsaw-logo.svg" alt="Jigsaw logo" class="logo-icon" width="65">
-                    <img src="{{ $page->asset_prefix }}/img/jigsaw-type.svg" alt="Jigsaw logo" class="logo-type" width="130">
-                </a>
-            </div>
-            <div class="docsearch navbar-buttons">
-                <input id="docsearch" class="docsearch__input" type="text" name="docsearch" value=""/>
-                <span class="docsearch__icon"></span>
-            </div>
-        </div>
-    </div>
-</nav>
+<div class="min-h-screen pt-6 font-normal text-xl bg-brown-lightest">
+    @include('_components.navigation')
 
-<div class="container m-xs-b-6 documentation-page">
-    <div class="row">
-        <div class="col-xs-12 p-xs-y-8 text-center">
-            <h2>Something went wrong...</h2>
-            <h4 class="m-xs-y-2">
-                We couldn't find the page you were looking for.<br/>
-                Try using the search box above.
-            </h4>
+    <div class="flex py-32 max-w-xl mx-auto justify-around">
+        <img src="/assets/img/404.svg" alt="404 Jigsaw">
+
+        <div>
+            <h1 class="text-6xl font-bold text-blue-darker leading-0 mb-12">404</h1>
+            <h1 class="text-5xl font-bold text-blue-darker mb-6">Page not found</h1>
+            <p class="text-grey-dark text-lg mb-6">The page you requested could not be found</p>
+
+            <a href="/" title="Jigsaw by Tighten" class="bg-purple-dark py-2 px-6 text-sm rounded-lg uppercase text-white shadow">Go to home</a>
         </div>
     </div>
 </div>
+
+@include('_components.footer')
 @endsection

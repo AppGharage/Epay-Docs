@@ -15,7 +15,7 @@ Using the default site structure, `/build_local` will look like this:
 
 <div class="files">
     <div class="folder folder--open focus">build_local
-        <div class="folder folder--open focus">assets
+        <div class="folder folder--open">assets
             <div class="folder folder--open">build
                 <div class="folder folder--open">css
                     <div class="file">main.css</div>
