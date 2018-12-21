@@ -1,7 +1,12 @@
 <?php
 
 return [
-    'Installation' => ['root' => '/docs/installation'],
+    'Installation' => [
+        'root' => '/docs/installation',
+        'children' => [
+            'Using a Starter Template' => ['root' => '/docs/starter-templates'],
+        ],
+    ],
     'Building & Previewing' => ['root' => '/docs/building-and-previewing'],
     'Compiling Assets' => ['root' => '/docs/compiling-assets'],
     'Creating your Site\'s Content' => [
