@@ -38,6 +38,18 @@ Finally, from your project directory, run Jigsaw's `init` command to scaffold th
 $ ./vendor/bin/jigsaw init
 ```
 
+Alternatively, get up and running quickly by using a [preset template](/docs/preset-templates), which starts you off with a fully-configured, professionally-designed site, ready for you to customize with your content. You can use one of Jigsaw's built-in templates for a blog or an open source documentation site, or [use a third-party template](/docs/preset-templates).
+
+```
+$ ./vendor/bin/jigsaw init blog
+```
+
+or
+
+```
+$ ./vendor/bin/jigsaw init docs
+```
+
 ---
 
 ### Directory Structure
