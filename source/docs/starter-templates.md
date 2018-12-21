@@ -66,13 +66,13 @@ When a user installs your template using the `init` command, Jigsaw will run the
 
 You can, however, customize the `init` process to gain full control over how a template is installed, by adding an `init.php` file to the root of the starter template. There are two ways to configure this init.php file:
 
-#### Return an array of `init` settings
+#### 1. Return an array of `init` settings
 
 init.php can return an array, with the following keys (all optional):
 
-- delete: a file, or an array of files, that should be deleted from the base install
-- ignore: a file, or an array of files, that should be ignored from the starter template when installing
-- commands: a shell command, or an array of commands, that should be run after the template files have been copied to the project
+- `delete`: a file, or an array of files, that should be deleted from the base install
+- `ignore`: a file, or an array of files, that should be ignored from the starter template when installing
+- `commands`: a shell command, or an array of commands, that should be run after the template files have been copied to the project
 
 For example:
 
@@ -100,7 +100,7 @@ return [
 - The `vendor`, `node_modules`, and `build_*` directories are never copied from a starter template, if they are present.
 - If a `commands` key is not specified in this array, the default commands will be run. If one or more `commands` are specified, only the `commands` you specify (and not the defaults) will be run. If `commands` is an empty array, no shell commands whatsoever (including the defaults) will be run.
 
-#### Call methods on the `$init` variable
+#### 2. Call methods on the `$init` variable
 
 For more fine-grained control, instead of returning a settings array in `init.php`, you can access the installer directly using the `$init` variable, and build your installation process using a fluent API. Available methods include:
 
@@ -157,7 +157,7 @@ $init->output('Finishing installation...')
 
 ---
 
-### Handling Existing Site Data when Running `init`
+### Handling Existing Site Data
 
 When running `jigsaw init`, the command will check to see if you have already run `init` before, and have started creating your Jigsaw site. If so, you'll be prompted to either archive your existing site before initializing the new one (which will move all existing files to an `archived` directory), or delete your existing site and begin fresh:
 
