@@ -37,10 +37,21 @@ The `blog` template also includes:
 - A sidebar navigation menu
 - A search bar powered by [Algolia DocSearch](https://community.algolia.com/docsearch/), and instructions on how to get started with their free indexing service
 
-![Screenshot of Jigsaw blog starter template](/assets/img/template-blog.png) {.border .shadow .rounded}
+---
 
-![Screenshot of Jigsaw docs starter template](/assets/img/template-docs.png) {.border .shadow .rounded}
+<a class="block pt-6" href="http://jigsaw-blog-staging.tighten.co/" target="_blank">
+    ![Screenshot of Jigsaw blog starter template](/assets/img/template-blog.png) {.border .shadow .rounded}
+</a>
 
+<a href="http://jigsaw-blog-staging.tighten.co/" target="_blank">View a preview of the blog template</a>
+
+---
+
+<a class="block pt-6" href="http://jigsaw-docs-staging.tighten.co/" target="_blank">
+    ![Screenshot of Jigsaw docs starter template](/assets/img/template-docs.png) {.border .shadow .rounded}
+</a>
+
+<a href="http://jigsaw-docs-staging.tighten.co/" target="_blank">View a preview of the docs template</a>
 
 ---
 
