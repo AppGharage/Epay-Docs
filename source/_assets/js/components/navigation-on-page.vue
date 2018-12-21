@@ -4,7 +4,7 @@
             <p class="mb-6 text-sm uppercase font-light tracking-wide text-blue">On this page</p>
 
             <a v-for="heading in headings"
-                class="mb-4 text-blue-darker hover:text-purple text-sm font-normal"
+                class="mb-4 text-blue-darker hover:text-purple text-sm font-normal leading-normal"
                 :href="'#' + heading.id"
                 :key="heading.id"
             >{{ heading.textContent }}</a>

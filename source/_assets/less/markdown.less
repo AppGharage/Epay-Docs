@@ -82,6 +82,7 @@
 
     li {
         @apply .mb-3;
+
         > ul {
             @apply .pl-4;
         }
@@ -130,10 +131,11 @@
 
     ul {
         > li {
-            @apply .leading-loose;
+            @apply .leading-normal;
             @apply .list-reset;
             @apply .mb-2;
             @apply .ml-4;
+            @apply .pb-2;
         }
 
         > li::before {
@@ -142,7 +144,7 @@
             @apply .bg-cover;
             @apply .h-4;
             @apply .-ml-6;
-            @apply .mt-2;
+            @apply .mt-1;
             @apply .w-4;
 
             background-image: url('/assets/img/icon-arrow.svg');
