@@ -1361,10 +1361,6 @@ p {
   padding-left: .5rem;
 }
 
-.pt-3 {
-  padding-top: .75rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1451,6 +1447,10 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.text-grey-darkest {
+  color: #364349;
 }
 
 .text-grey-darker {
@@ -1563,10 +1563,6 @@ p {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.lowercase {
-  text-transform: lowercase;
 }
 
 .capitalize {

@@ -7,11 +7,11 @@ return [
         'root' => '/docs/payment',
         'children' => [
             'Payment Pages' => ['root' => '/docs/payment-pages'],
-            'Integration' => ['root' => '/docs/payment-integrations']
+            'Integrating APIs' => ['root' => '/docs/payment-integrations']
         ],
     ],
-    'Transfer / Disburse Payments' => ['root' => '/docs/site-variables'],
-    'Webhooks' => ['root' => '/docs/helper-methods'],
-    'Account Management' => ['root' => '/docs/pretty-urls'],
+    'Transfer / Disburse Payments' => ['root' => '/docs/transfers'],
+    'Webhooks' => ['root' => '/docs/webhooks'],
+    'Account Management' => ['root' => '/docs/account-management'],
     'API Reference' => ['root' => '/docs/api-reference']
 ];

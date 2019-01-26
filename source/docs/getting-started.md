@@ -50,5 +50,5 @@ Our well designed and beautiful checkout pages allows you to accept payments for
 
 -------
 
-Next, learn about [Accepting Payments on your website or mobile application](/docs/payment).
+Next, learn about [Accepting Payments in your application](/docs/payment).
 

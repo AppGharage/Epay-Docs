@@ -9,7 +9,9 @@ Here you’ll find detailed information about our APIs – what they’re for, h
 In order to start using Epay’s APIs to receive and/or disburse payments, you would need to have an Epay Account and 
 also create an Integration. Head over to our [Signup page](https://epaygh.com/register) to create a new Epay account.
 
-> Kindly note that your `email` and `telephone` will be verified before you get access to your account.
+> Kindly note that your `email` and `telephone` will be verified.
+
+-------
 
 ### Overview
 The Epay API is organized around REST. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication and verbs.
@@ -26,44 +28,105 @@ To help you get oriented with Epay’s API and what it can help you do, let’s 
 - All API endpoints are versioned
 - All Charge API allow payments from only our payment methods
 
+
+#### API Resources
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
     <thead>
         <tr>
-        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">First</th>
-        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Last</th>
-        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Last</th>
-        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Handle</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Resource Name</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Endpoint Url</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Description</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Last Updated</th>
         </tr>
     </thead>
     <tbody class="align-baseline">
         <tr>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">Mark</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">border-collapse: collapse;</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">@mdo</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">Otto</td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Authentication
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                /v1/token
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This endpoint allows to retrieve a token <br> 
+                which will be used to authenticate or gets <br>
+                you access to all protected API Resources <br>or endpoints. <br><br>
+                <b>All tokens expire after 1 hour</b> 
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+                25th Jan. 2019
+            </td>
+        </tr>
+         <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Charges
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                /v1/charge
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This single endpoint allows you to charge both <br> 
+                mobile money accounts and Credit Cards into  <br>
+                your Epay wallet. <br><br>
+                <b>All tokens expire after 1 hour</b> 
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+                25th Jan. 2019
+            </td>
         </tr>
         <tr>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">Jacob</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">border-collapse: collapse;</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">@fat</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">Otto</td>
+         <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Customers
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                /v1/customers
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This endpoint allows to retrieve a token <br> 
+                which will be used to authenticate or gets <br>
+                you access to all protected API Resources <br>or endpoints. <br><br>
+                <b>All tokens expire after 1 hour</b> 
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+                25th Jan. 2019
+            </td>
         </tr>
-        <tr>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">Larry</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">border-collapse: collapse;</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">border-collapse: collapse;</td>
-        <td class="p-2 border-t border-grey-light font-mono text-xs text-purple-dark whitespace-no-wrap">Otto</td>
+         <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Transactions
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                /v1/transactions
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This endpoint allows to retrieve a token <br> 
+                which will be used to authenticate or gets <br>
+                you access to all protected API Resources <br>or endpoints. <br><br>
+                <b>All tokens expire after 1 hour</b> 
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+                25th Jan. 2019
+            </td>
         </tr>
     </tbody>
     </table>
 </div>
 
+----------
 
 ### Authentication
 
+----------
+
 ### Charge 
 
+----------
+
 ### Customers
+
+----------
 
 ### Transactions

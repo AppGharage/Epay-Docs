@@ -31,7 +31,7 @@
                     <p class="line-number">2</p>
                     <div class="line-code ml-4">
                         <span class="text-pink">"url": </span>
-                        <span class="text-yellow"> "http://localhost:8000/api/v1/token", </span>
+                        <span class="text-yellow"> "https://epaygh.com/api/v1/charge", </span>
                     </div>
                 </div>
 
