@@ -3,11 +3,11 @@
 @section('body')
 <header class="w-full bg-white absolute z-10 shadow-md px-4 md:px-6">
     <nav class="flex items-center max-w-3xl mx-auto py-4" aria-role="navigation">
-        <a class="flex flex-no-shrink lg:flex-1 items-center mr-1" href="/" title="Jigsaw by Tighten">
-            <img src="/assets/img/jigsaw-logo.svg" alt="Jigsaw logo" class="w-10 lg:w-11 mr-3 shadow border-2 border-white rounded-lg" />
+        <a class="flex flex-no-shrink lg:flex-1 items-center mr-1" href="/" title="Epay Docs">
+            <img src="/assets/img/epay-fav.png" alt="Jigsaw logo" class="w-10 lg:w-11 mr-3 shadow border-2 border-white rounded-lg" />
 
             <h1 class="hidden mr-4 ml-4 uppercase tracking-wide text-blue-darker text-lg lg:text-2xl font-normal lg:ml-0 lg:inline-block">
-                Jigsaw
+                Epay Docs
             </h1>
         </a>
 
@@ -23,9 +23,9 @@
             </a>
 
             <p class="text-sm text-blue-dark mb-0 leading-tight">
-                A project by
-                <a href="https://tighten.co" title="Tighten | Product Development for Web + Mobile"
-                    class="text-purple">Tighten</a>
+                Documentation for
+                <a href="https://epaygh.com" title="Epay Docs | Secure, Global and Instant Payments for Africa"
+                    class="text-purple">Epay</a>
             </p>
         </div>
 
@@ -45,12 +45,12 @@
     </div>
 
     <footer class="py-8 flex flex-col sm:flex-row justify-center items-center text-center">
-        <p class="text-grey-dark font-normal text-xs sm:text-sm my-1">Brought to you by the lovely humans at
-            <a href="https://tighten.co" class="text-purple hover:text-purple-darker font-normal no-underline sm:pr-4" title="Tighten | Product Development for Web + Mobile | Laravel + Vue.js">Tighten</a>
+        <p class="text-grey-dark font-normal text-xs sm:text-sm my-1">Documentation website for
+            <a href="https://epaygh.com" class="text-purple hover:text-purple-darker font-normal no-underline sm:pr-4" title="Epay Docs | Secure, Global and Instant Payments for Africa">Epay</a>
         </p>
 
-        <a href="https://github.com/tightenco/jigsaw" class="sm:border-l border-purple-light sm:pl-4 text-purple text-xs sm:text-sm hover:text-purple-darker font-normal no-underline my-1"
-            title="Jigsaw on GitHub">Issues/Feature Requests</a>
+        <a href="https://github.com/AppGharage/Epay-Docs" class="sm:border-l border-purple-light sm:pl-4 text-purple text-xs sm:text-sm hover:text-purple-darker font-normal no-underline my-1"
+            title="Epay on GitHub">Issues/Feature Requests</a>
     </footer>
 </div>
 @endsection

@@ -955,6 +955,10 @@ p {
   background-color: #f2f5f8;
 }
 
+.bg-grey-lighter {
+  background-color: #f3f7f9;
+}
+
 .bg-grey-lightest {
   background-color: #fafcfc;
 }
@@ -989,6 +993,10 @@ p {
 
 .hover\:bg-blue-dark:hover {
   background-color: #45658a;
+}
+
+.border-grey-light {
+  border-color: #dae4e9;
 }
 
 .border-white {
@@ -1034,6 +1042,10 @@ p {
 
 .border-t-5 {
   border-top-width: 5px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .block {
@@ -1094,6 +1106,10 @@ p {
 
 .font-sans {
   font-family: proxima-nova, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.font-mono {
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .font-light {
@@ -1267,6 +1283,18 @@ p {
   margin-bottom: -8rem;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.scrolling-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+.p-2 {
+  padding: .5rem;
+}
+
 .px-0 {
   padding-left: 0;
   padding-right: 0;
@@ -1417,6 +1445,10 @@ p {
   fill: currentColor;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1560,8 +1592,16 @@ p {
           user-select: none;
 }
 
+.align-baseline {
+  vertical-align: baseline;
+}
+
 .visible {
   visibility: visible;
+}
+
+.whitespace-no-wrap {
+  white-space: nowrap;
 }
 
 .w-4 {

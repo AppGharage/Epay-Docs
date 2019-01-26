@@ -4,7 +4,7 @@
 
         <p class="text-white text-lg mb-10">Follow our Quick Setup Guide to integrate Epay in your website or mobile app in minutes.</p>
 
-        <a href="/docs/installation/" title="Start building your site with Jigsaw"
+        <a href="/docs/quick-setup/" title="Integrate Epay into your app now!"
             class="hover:bg-grey-light text-grey-darker hover:text-purple-dark no-underline tracking-wide uppercase rounded-lg text-sm bg-grey-lightest shadow-md hover:shadow-lg py-4 px-6">
             Follow Quick Setup Guide
         </a>
