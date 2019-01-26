@@ -21,22 +21,84 @@
             @component('_components.code-editor')
                 <div class="editor-row">
                     <p class="line-number">1</p>
-                    <div class="line-code">@@extends('_layouts.master')</div>
+                    <div class="line-code">
+                        <span class="text-pink">var <span class="text-yellow">settings</span> = {</span>    
+                    </div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">2</p>
-                    <div class="line-code">@@section('body')</div>
+                    <div class="line-code ml-4">
+                        <span class="text-pink">"url": </span>
+                        <span class="text-yellow"> "http://localhost:8000/api/v1/token", </span>
+                    </div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">3</p>
-                    <div class="line-code ml-4"><span class="text-pink-dark">&lt;h1&gt;</span>Hello World<span class="text-pink-dark">&lt;/h1&gt;</span></div>
+                    <div class="line-code ml-4">
+                        <span class="text-pink">"method":</span>     
+                        <span class="text-yellow">"POST",</span> 
+                    </div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">4</p>
-                    <div class="line-code">@@endsection</div>
+                    <div class="line-code ml-4">
+                        <span class="text-pink">"timeout":</span> 
+                        <span class="text-yellow">0,</span>
+                    </div>
+                </div>
+
+                <div class="editor-row">
+                    <p class="line-number">5</p>
+                    <div class="line-code ml-4"> 
+                        <span class="text-pink">"headers": </span>
+                        <span class="text-yellow">{"Content-Type": "application/json"},</span>
+                    </div>
+                </div>
+
+                <div class="editor-row">
+                    <p class="line-number">6</p>
+                    <div class="line-code ml-6"> 
+                        <span class="text-pink">"data": </span>
+                        <span class="text-yellow">
+                            "{\t\n\t\"reference\" : \"EP-68JNSAS56\",\n\t\"amount\" : 1.00,\n\t\"payment_method\" : 
+                            \"card\",\n\t\"customer_name\": \"Akosua Manu\",\n\t\"customer_email\" : 
+                            \"akosua@gmail.com\",\n\t\"customer_telephone\" : \"054*******\",\n}",
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="editor-row">
+                    <p class="line-number">7</p>
+                    <div class="line-code">
+                        <span class="text-pink">};</span>
+                    </div>
+                </div>
+
+
+                <div class="editor-row">
+                    <p class="line-number">8</p>
+                    <div class="line-code">
+                        <span class="text-pink">$.ajax(<span class="text-yellow">settings</span>).done(function (<span class="text-yellow">response</span>) {</span>
+                    </div>
+                </div>
+
+
+                <div class="editor-row">
+                    <p class="line-number">9</p>
+                    <div class="line-code ml-4">
+                        <span class="text-pink">console.log(<span class="text-yellow">response</span>);</span>
+                    </div>
+                </div>
+
+                <div class="editor-row">
+                    <p class="line-number">10</p>
+                    <div class="line-code">
+                        <span class="text-pink">});</span>
+                    </div>
                 </div>
             @endcomponent
         </div>
