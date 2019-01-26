@@ -1,6 +1,6 @@
-![](source/assets/img/jigsaw-hero.png)
+![](source/assets/img/epay-fav.png)
 
-# Jigsaw Site and Docs
+# Epay Documentation Website
 
 ## Basic Setup
 
