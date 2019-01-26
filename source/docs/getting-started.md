@@ -44,9 +44,11 @@ Our well designed and beautiful checkout pages allows you to accept payments for
 
 ### Transfer Payments
 
-* Head to the tranfers tab on your Dashboard Navigation
+* Head to the transfers tab on your Dashboard Navigation
 * Click on the New Transfer button located at the top right corner of your page .
 * Choose your withdrawal method and get your money
 
-Next, learn about [building and previewing your site](/docs/building-and-previewing).
+-------
+
+Next, learn about [Accepting Payments on your website or mobile application](/docs/payment).
 
