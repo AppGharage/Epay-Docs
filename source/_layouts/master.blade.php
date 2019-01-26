@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jigsaw – Static Sites for Laravel Developers</title>
+        <title>Epay Docs | Secure, Global and Instant Payments for Africa</title>
 
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -19,7 +19,7 @@
         <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
         <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="/assets/img/jigsaw-logo.png">
+        <link rel="icon" type="image/png" href="/assets/img/epay-fav.png">
 
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#309e74">

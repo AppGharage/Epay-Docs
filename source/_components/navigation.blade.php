@@ -8,7 +8,7 @@
         </div>
 
         <div class="tracking-wide flex items-center">
-            <a href="https://github.com/tightenco/jigsaw" title="Contribute to Epay Documentation on GitHub"
+            <a href="https://github.com/AppGharage/Epay-Docs" target="_blank" title="Contribute to Epay Documentation on GitHub"
                 class="mr-4 block text-sm text-blue-dark hover:text-blue-lighter uppercase font-medium">
                 <span class="hidden md:inline-block hover:underline">Contribute</span>
 

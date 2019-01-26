@@ -3,6 +3,6 @@
         <a href="https://epaygh.com" class="text-white hover:text-blue-lighter font-normal no-underline sm:pr-4" title="Epay | Secure, Global and Instant Payments fro Africa">Epay</a>
     </p>
 
-    <a href="https://github.com/tightenco/jigsaw" class="sm:border-l border-teal-light sm:pl-4 text-white text-xs sm:text-sm hover:text-blue-lighter font-normal no-underline my-1"
-        title="Jigsaw on GitHub">Issues/Feature Requests</a>
+    <a href="https://github.com/AppGharage/Epay-Docs" class="sm:border-l border-teal-light sm:pl-4 text-white text-xs sm:text-sm hover:text-blue-lighter font-normal no-underline my-1"
+        title="Epay on GitHub">Issues/Feature Requests</a>
 </footer>
