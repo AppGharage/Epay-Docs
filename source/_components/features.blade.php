@@ -155,23 +155,23 @@
         <div class="w-full md:w-1/2">
             @component('_components.code-editor')
                 <div class="editor-row">
-                    <p class="line-number">1</p>
-                    <div class="line-code">@@extends('_layouts.master')</div>
+                    <p class="line-number"></p>
+                    <div class="line-code">Authentication Endpoint: https://epaygh.com/api/v1/token</div>
                 </div>
 
                 <div class="editor-row">
-                    <p class="line-number">2</p>
-                    <div class="line-code">@@section('body')</div>
+                    <p class="line-number"></p>
+                    <div class="line-code">Charge Endpoint : https://epaygh.com/api/v1/charge</div>
                 </div>
 
                 <div class="editor-row">
-                    <p class="line-number">3</p>
-                    <div class="line-code ml-4"><span class="text-pink-dark">&lt;h1&gt;</span>Hello World<span class="text-pink-dark">&lt;/h1&gt;</span></div>
+                    <p class="line-number"></p>
+                    <div class="line-code">Customers Endpoint : https://epaygh.com/api/v1/customers</div>
                 </div>
 
                 <div class="editor-row">
-                    <p class="line-number">4</p>
-                    <div class="line-code">@@endsection</div>
+                    <p class="line-number"></p>
+                    <div class="line-code">Transactions Endpoint : https://epaygh.com/api/v1/transactions</div>
                 </div>
             @endcomponent
         </div>
