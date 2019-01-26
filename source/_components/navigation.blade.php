@@ -15,7 +15,7 @@
                 <img src="/assets/img/GitHub.svg" alt="GitHub alien logo" class="md:hidden -mb-1">
             </a>
 
-            <a href="/docs/installation" title="Read the Epay documentation"
+            <a href="/docs/quick-setup" title="Read the Epay documentation"
                 class="block text-sm py-2 px-4 md:py-3 md:px-4 bg-blue hover:bg-blue-dark rounded text-white uppercase font-medium shadow-md">Docs</a>
         </div>
     </nav>

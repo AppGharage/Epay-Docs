@@ -117,7 +117,7 @@
                 Not a Developer? Although an Epay integration requires you to either be, or hire, a developer, you have many alternatives.
                 Using our pre-built checkout page known as Payment Pages, you can securely, gloably and instantly accept payments without writing code or having a website.
                 <br class="hidden sm:block"><br class="hidden sm:block">
-                A Payment Page represented by a link, allows a business accept paymets across all Social Media Platforms and even through text / Emails easily.
+                A Payment Page represented by a link, allows a business accept payments across all Social Media Platforms and even through text / Emails easily.
             </p>
 
             <a href="/docs/installation" title="Read Epay documentation"
