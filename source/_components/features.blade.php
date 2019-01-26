@@ -2,12 +2,19 @@
     <div class="flex flex-col md:flex-row items-center container-content mb-8 px-4 sm:px-6">
         <div class="flex-col md:w-1/2 md:pr-10 lg:pr-20 pb-8 md:pb-0">
             <h3 class="mb-5 text-blue-darker">
-                Blade templating, just like your Laravel apps.
+            Accept or Disburse Payments on any platform
             </h3>
 
-            <p class="text-blue mb-0">
-                Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend. Jigsaw brings Blade to the static site world, so you can use the same templating engine for simple websites as you do for complex web applications.
+            <p class="text-blue">
+                Collect payments easily and securely on mobile, web or your Online Shop.
+                With our libraries, Plugins and APIs you can build applications in any language or platform and easily charge
+                your customers.
             </p>
+
+            <a href="/docs/installation" title="Read Epay documentation"
+                class="text-blue hover:text-blue-darker text-base no-underline hover:underline">
+                Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
+            </a>
         </div>
 
         <div class="w-full md:w-1/2">
@@ -35,18 +42,50 @@
         </div>
     </div>
 
-    <div class="flex flex-col md:flex-row items-center container-content mt-6 px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row items-center container-content mt-6 px-4 sm:px-6 py-12 py-12">
         <div class="flex-col md:w-1/2 md:pr-10 lg:pr-20 pb-8 md:pb-0">
             <h3 class="mb-5 text-blue-darker">
-                Use Markdown for content-driven pages.
+                Accept payments through Social Media
             </h3>
 
             <p class="text-blue">
-                Markdown is a fantastic writing format for things like articles, blog posts, or documentation pages. Jigsaw makes it painless to create a layout in Blade, and fill it with content written in Markdown.
+                Although an Epay integration requires you to either be, or hire, a developer, you have many alternatives.
+                Using our pre-built checkout page known as Payment Pages, you can securely, gloably and instantly accept payments without writing code or having a website.
+                A Payment Page represented by a link, which allows a business to easily share on all Social Media Platforms and even through text / Emails.
             </p>
 
-            <a href="/docs/installation" title="Read the Jigsaw documentation"
-                class="text-purple hover:text-purple-darker text-base no-underline hover:underline">
+            <a href="/docs/installation" title="Read Epay documentation"
+                class="text-blue hover:text-blue-darker text-base no-underline hover:underline">
+                Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
+            </a>
+        </div>
+
+        <div class="w-full md:w-1/2">
+            @component('_components.code-editor')
+
+                <div class="editor-row">
+                    <p class="line-number"> </p>
+                    <div class="line-code">Link: https://epaygh.com/pay/st-sponsorship-demo-app-security</div>
+                </div>
+            @endcomponent
+        </div>
+    </div>
+
+
+    <div class="flex flex-col md:flex-row items-center container-content mt-6 px-4 sm:px-6">
+        <div class="flex-col md:w-1/2 md:pr-10 lg:pr-20 pb-8 md:pb-0">
+            <h3 class="mb-5 text-blue-darker">
+            Full API Reference
+            </h3>
+
+            <p class="text-blue">
+                Collect payments easily and securely on mobile, web or your Online Shop.
+                With our libraries, Plugins and APIs you can build applications in any language or platform and easily charge
+                your customers.
+            </p>
+
+            <a href="/docs/installation" title="Read Epay Full API Reference"
+                class="text-blue hover:text-blue-darker text-base no-underline hover:underline">
                 Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
             </a>
         </div>
@@ -55,37 +94,22 @@
             @component('_components.code-editor')
                 <div class="editor-row">
                     <p class="line-number">1</p>
-                    <div class="line-code">---</div>
+                    <div class="line-code">@@extends('_layouts.master')</div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">2</p>
-                    <div class="line-code">extends: layouts.post</div>
+                    <div class="line-code">@@section('body')</div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">3</p>
-                    <div class="line-code">section: content</div>
+                    <div class="line-code ml-4"><span class="text-pink-dark">&lt;h1&gt;</span>Hello World<span class="text-pink-dark">&lt;/h1&gt;</span></div>
                 </div>
 
                 <div class="editor-row">
                     <p class="line-number">4</p>
-                    <div class="line-code">---</div>
-                </div>
-
-                <div class="editor-row">
-                    <p class="line-number">5</p>
-                    <div class="line-code"></div>
-                </div>
-
-                <div class="editor-row">
-                    <p class="line-number">6</p>
-                    <div class="line-code"># Hello World!</div>
-                </div>
-
-                <div class="editor-row">
-                    <p class="line-number">7</p>
-                    <div class="line-code">Welcome to the future.</div>
+                    <div class="line-code">@@endsection</div>
                 </div>
             @endcomponent
         </div>
