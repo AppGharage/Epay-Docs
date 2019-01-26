@@ -63,9 +63,11 @@
                     <div class="line-code ml-6"> 
                         <span class="text-pink">"data": </span>
                         <span class="text-yellow">
-                            "{\t\n\t\"reference\" : \"EP-68JNSAS56\",\n\t\"amount\" : 1.00,\n\t\"payment_method\" : 
-                            \"card\",\n\t\"customer_name\": \"Akosua Manu\",\n\t\"customer_email\" : 
-                            \"akosua@gmail.com\",\n\t\"customer_telephone\" : \"054*******\",\n}",
+                            "{\t\n\t\"reference\" : \"EP-68JNSAS56\",<br class="hidden sm:block">
+                                \n\t\"amount\" : 1.00, 
+                              \n\t\"payment_method\" : \"card\",\n\t\"customer_name\": \"Akosua Manu\",<br>
+                              \n\t\"customer_email\" : \"akosua@gmail.com\",<br>
+                              \n\t\"customer_telephone\" : \"054*******\",\n}",
                         </span>
                     </div>
                 </div>
