@@ -7,8 +7,9 @@
 
             <p class="text-blue">
                 Collect payments easily and securely on mobile, web or your Online Shop.
-                With our libraries, Plugins and APIs you can build applications in any language or platform and easily charge
-                your customers.
+                With our libraries, Plugins and APIs you can build applications in any language or platform.
+                A Single API allows you to charge both Credit Cards and Mobile Money wallets.
+                All payments are instantly deposited into your Epay wallet. 
             </p>
 
             <a href="/docs/installation" title="Read Epay documentation"
@@ -113,9 +114,10 @@
             </h3>
 
             <p class="text-blue">
-                Although an Epay integration requires you to either be, or hire, a developer, you have many alternatives.
+                Not a Developer? Although an Epay integration requires you to either be, or hire, a developer, you have many alternatives.
                 Using our pre-built checkout page known as Payment Pages, you can securely, gloably and instantly accept payments without writing code or having a website.
-                A Payment Page represented by a link, which allows a business to easily share on all Social Media Platforms and even through text / Emails.
+                <br class="hidden sm:block"><br class="hidden sm:block">
+                A Payment Page represented by a link, allows a business accept paymets across all Social Media Platforms and even through text / Emails easily.
             </p>
 
             <a href="/docs/installation" title="Read Epay documentation"
@@ -143,9 +145,7 @@
             </h3>
 
             <p class="text-blue">
-                Collect payments easily and securely on mobile, web or your Online Shop.
-                With our libraries, Plugins and APIs you can build applications in any language or platform and easily charge
-                your customers.
+                Get familiar with our APIs. We've tried to make it as easy as possible to get up and running with an Epay integration.
             </p>
 
             <a href="/docs/installation" title="Read Epay Full API Reference"
