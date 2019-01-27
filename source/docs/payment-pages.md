@@ -3,12 +3,12 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
-#### [Accept Payments](/docs/payments)
+#### Payment Pages
 ## Blade Templates & Partials
 
 One of the biggest benefits of a templating language is the ability to create reusable layouts and partials. Jigsaw gives you access to all the templating features and control structures of Blade that are available in Laravel 5.6 (learn more about Blade layouts in the [official Blade documentation](https://laravel.com/docs/5.6/blade)).
 
-### Defining a Layout
+### How to Create a payment page
 
 Layouts themselves are just basic Blade templates that have one or more `@yield` calls where child templates can render their contents.
 
