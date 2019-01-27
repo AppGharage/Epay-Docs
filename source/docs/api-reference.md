@@ -120,11 +120,478 @@ To help you get oriented with Epay’s API and what it can help you do, let’s 
 
 ----------
 ### Authentication
+Once you have created an Epay account, you need to call **/v1/token** to obtain an access token. This access token grants you access to all protected resources. To get your access token you will need a **merchant_key, app_id** and **app_secret**. You will need to first create an Integration on your dashboard to get your **app_id** and **app_secret**. Your **merchant_key** can be located on your **dashboard under Settings**.
 
+
+> The **access_token** would grant access to the protected resources, each generated access_token **expires in 3600 seconds (1hr)**.
+
+
+#### Endpoint Details
+<div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
+    <table class="w-full text-left table-collapse">
+        <tbody class="align-baseline">
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                    Endpoint Url
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">        
+                    https://epaygh.com/api/v1/token
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                    Method
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                POST
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+#### Headers
+<div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
+    <table class="w-full text-left table-collapse">
+        <tbody class="align-baseline">
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                   Content-type
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">        
+                    application/json
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                    Accept
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                application/json
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+#### Request Body Parameters
+
+<div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
+    <table class="w-full text-left table-collapse">
+    <thead>
+        <tr>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Parameter</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Field Type</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Required</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Description</th>
+        </tr>
+    </thead>
+    <tbody class="align-baseline">
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Merchant_key
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is a unique key related to your <br>
+                epay account and can be found on your <br>
+                dashboard under settings section.<br>
+                <b>This key carries many privileges, so 
+                <br>be sure to keep them secure</b> 
+            </td>
+        </tr>
+         <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                App_id
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is a unique ID related to your <br>
+                integration and can also be found on <br>
+                your dashboard under integration section.<br>
+                <b>This key carries many privileges, so 
+                <br>be sure to keep them secure</b> 
+            </td>
+        </tr>
+        <tr>
+         <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                App_Secret
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is a unique key related to your <br>
+                integration and can also be found on <br>
+                your dashboard under settings section.<br>  
+                <b>This key carries many privileges, so 
+                <br>be sure to keep them secure</b> 
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+
+#### Example Request Body
+```
+{	
+	"merchant_key" : "AWDFEv7eTFrzCSIY",
+	"app_id" : "5c654089bcd30",
+	"app_secret": "ASDSDCGKj9IWtkM2hNIgPDHbvvEPb67X"
+}
+```
+
+#### Example Response
+```
+{
+    "success": true,
+    "message": "Verification Successful",
+    "data": {
+        "access_token": "eUJGUmR2a0RxQ0hESlhCTVl6VVlyYndNWDJhYlZwQDS=5c4af8b9a3681",
+        "expires_at": "2019-01-25 12:53:29"
+    }
+}
+```
+
+#### Example Error Responses
+```
+{
+    "success": false,
+    "message": "We couldn't verify your identity!"
+}
+{
+    "success": false,
+    "message": "Not a valid API request with missing parameters"
+}
+{
+    "success": false,
+    "message": "Your identity couldn't be validated!"
+}
+
+```
 ----------
 
 ### Charge 
+The chief premise of this endpoint is to provide a single endpoint that allows you to charge your customers mobile money wallet or credit card. Charges are identified by a unique, random ID called **reference**. All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**.
 
+This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer <access_token>**
+
+> We process all transactions **asynchronously**. Hence you would have to **set your callback/webhook url** on your dashboard under the settings section to receive the status of every posted transaction or **call out the retrieve a transaction endpoint to** verify status of the transaction.
+
+
+#### Enpoint Details
+<div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
+    <table class="w-full text-left table-collapse">
+        <tbody class="align-baseline">
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                   Endpoint Url
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">        
+                    https://epaygh.com/api/v1/charge
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                   Method
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                POST
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+#### Headers
+<div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
+    <table class="w-full text-left table-collapse">
+        <tbody class="align-baseline">
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                   Content-Type
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">        
+                    application/json
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                   Accept
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                application/json
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                   Authorization
+                </td>
+                <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">        
+                    Bearer <access_token>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+#### Request Body Parameters
+<div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
+    <table class="w-full text-left table-collapse">
+    <thead>
+        <tr>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Parameter</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Field Type</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Required</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Description</th>
+        </tr>
+    </thead>
+    <tbody class="align-baseline">
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Reference
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">            
+                This is a unique ID that represents <br>the transaction.
+            </td>
+        </tr>
+         <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Amount
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                Float
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                The amount you wish to charge the customer.<br>
+                <b>Amount must be of type float. <br> Eg; 1.00 or 50.00</b>
+            </td>
+        </tr>
+        <tr>
+         <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Customer_Name
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is the name of the customer <br>you are charging.
+            </td>
+        </tr>
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Customer_Email
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is the email<br> of the customer <br>you are charging.
+            </td>
+        </tr>
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Customer_Telephone
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is the telephone <br>number of the  customer <br>you are charging.
+            </td>
+        </tr>
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Payment_Description
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               No
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is the description of <br>the payment.
+            </td>
+        </tr>
+    </tbody>
+    </table>
+        <h4>Parameters to Charge Mobile Money Wallet</h4>
+ <table class="w-full text-left table-collapse">
+ <thead>
+        <tr>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Parameter</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Field Type</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Required</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Description</th>
+        </tr>
+    </thead>
+ <tbody>
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Mobile_wallet_number
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes, for only <br>mobile money <br>charges
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+               This is the number of the <br> mobile money wallet you <br>wish to charge.
+            </td>
+        </tr>
+          <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                payment_method
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes, for only<br> mobile money <br>charges
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+               This is the network of the <br> mobile money wallet you <br>wish to charge.
+            </td>
+        </tr>
+          <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Mobile_wallet_number
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes, for only <br>mobile money <br>charges
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+               This is how you wish to <br> charge the customer and <br>must be set to  ‘momo’.
+            </td>
+        </tr>
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Voucher
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes, for only <br>vodafone mobile <br> money wallets
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+               This is the voucher the  <br> user generates to authorize <br>the payment..
+            </td>
+        </tr>
+         </tbody>
+    </table>
+    <h4>Parameters to Charge Credit Cards (returns a url to redirect to)</h4>
+ <table class="w-full text-left table-collapse">
+ <thead>
+        <tr>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Parameter</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Field Type</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Required</th>
+        <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lighter">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                Payment_method
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               Yes, for only <br>credit card <br>charges
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+               This is how you wish to  <br> charge the customer and  <br>must be set to  ‘card’
+            </td>
+        </tr>
+</div>
+
+#### Example Request Body ( Mobile money)
+```
+
+{	
+	"reference" : "EP-2JBH23JJBJBJ",
+	"amount" : 1.00,
+	"payment_method" : "momo",
+	"customer_name": "Akosua Manu",
+	"customer_email" : "akosuamanu@gmail.com",
+	"customer_telephone" : "054**********",
+	"mobile_wallet_number" : "054**********",
+	"mobile_wallet_network":"mtn",
+	"payment_description": "A test payment"
+}
+```
+
+#### Example Response (Mobile money)
+```
+
+{
+    "success": true,
+    "message": "A payment request has been sent to the mobile wallet. 
+    Please Approve Payment.",
+    "data": {
+        "customer": {
+            "id": 37,
+            "name": "Akosua Manu",
+            "email": "akosuamanu@gmail.com",
+            "telephone": "054**********",
+            "created_at": "2019-01-22 16:15:32",
+            "updated_at": "2019-01-22 16:15:32"
+        },
+        "transaction": {
+            "reference": "EP-2JBH23JJBJBJ",
+            "payment_method": "momo",
+            "description": "A test payment",
+            "amount": 1.00,
+            "mobile_wallet_number": "054**********",
+            "mobile_wallet_network": "mtn"
+        }
+    }
+}
+```
 ----------
 
 ### Customers
