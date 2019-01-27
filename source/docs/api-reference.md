@@ -115,8 +115,10 @@ To help you get oriented with Epay’s API and what it can help you do, let’s 
     </table>
 </div>
 
-----------
 
+> Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth.
+
+----------
 ### Authentication
 
 ----------
