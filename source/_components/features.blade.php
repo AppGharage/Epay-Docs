@@ -12,7 +12,7 @@
                 All payments are instantly deposited into your Epay wallet. 
             </p>
 
-            <a href="/docs/installation" title="Read Epay documentation"
+            <a href="/docs/payment" title="Read Epay documentation"
                 class="text-blue hover:text-blue-darker text-base no-underline hover:underline">
                 Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
             </a>
@@ -120,7 +120,7 @@
                 A Payment Page represented by a link, allows a business accept payments across all Social Media Platforms and even through text / Emails easily.
             </p>
 
-            <a href="/docs/installation" title="Read Epay documentation"
+            <a href="/docs/payment-pages" title="Read Epay documentation"
                 class="text-blue hover:text-blue-darker text-base no-underline hover:underline">
                 Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
             </a>
@@ -148,7 +148,7 @@
                 Get familiar with our APIs. We've tried to make it as easy as possible to get up and running with an Epay integration.
             </p>
 
-            <a href="/docs/installation" title="Read Epay Full API Reference"
+            <a href="/docs/api-reference" title="Read Epay Full API Reference"
                 class="text-blue hover:text-blue-darker text-base no-underline hover:underline">
                 Learn more in the docs <img src="/assets/img/icon-arrow.svg" class="w-4 -mb-1" alt="Learn more in the documentation">
             </a>
