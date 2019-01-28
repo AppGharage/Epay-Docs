@@ -16,7 +16,7 @@ also create an Integration. Head over to our [Signup page](https://epaygh.com/re
 -------
 
 ### Overview
-The Epay API is organized around REST. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication and verbs.
+The Epay API is organized around `REST`. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication and verbs.
 
 Once registered, log into your account and head over to your settings sections on your dashboard to generate a Merchant Key. This Key should be kept confidential, as it would grant to access to all protected API Resources as well as direct incoming funds to your Epay Wallet.
 
@@ -32,7 +32,7 @@ To help you get oriented with Epay’s API and what it can help you do, let’s 
 
 <br>
 
-#### API Resources
+**API Resources**
 
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
@@ -152,7 +152,7 @@ The API by default returns almost the same content structure when a call fails. 
 
 ----------
 
-### Authentication
+### Generate API Access Token
 
 Once you have created an Epay account, you need to call **/v1/token** to obtain an access token. This access token grants you access to all protected resources. To get your access token you will need a **merchant_key, app_id** and **app_secret**. 
 
@@ -164,8 +164,7 @@ Once you have created an Epay account, you need to call **/v1/token** to obtain 
 
 <br>
 
-#### Endpoint Details
-
+**Endpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -190,8 +189,7 @@ Once you have created an Epay account, you need to call **/v1/token** to obtain 
 </div>
 
 
-#### Request Headers
-
+**Request Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -214,13 +212,11 @@ Once you have created an Epay account, you need to call **/v1/token** to obtain 
         </tbody>
     </table>
 </div>
-<br>
-
 
 > Your **API keys carry many privileges**, so be sure to **keep them secure!** **Do not share your API keys** in publicly accessible areas such as GitHub, client-side code, and so forth.
 
 
-#### Request Body Parameters
+**Request Body Parameters**
 
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
@@ -292,23 +288,27 @@ Once you have created an Epay account, you need to call **/v1/token** to obtain 
     </table>
 </div>
 
+<br>
 
-#### Example Request Body
+
 ```
+
+//Example Request Body
+
 {	
 	"merchant_key" : "AWDFEv7eTFrzCSIY",
 	"app_id" : "5c654089bcd30",
 	"app_secret": "ASDSDCGKj9IWtkM2hNIgPDHbvvEPb67X"
 }
-```
 
-#### Example Success Response
-```
+//Example Success Response
+
 {
     "success": true,
     "message": "Verification Successful",
     "data": {
-        "access_token": "eUJGUmR2a0RxQ0hESlhCTVl6VVlyYndNWDJhYlZwQDS=5c4af8b9a3681",
+        "access_token": "eUJGUmR2a0RxQ0hESlhCTVl6VVly
+                        YndNWDJhYlZwQDS=5c4af8b9a3681",
         "expires_at": "2019-01-25 12:53:29"
     }
 }
@@ -320,13 +320,13 @@ Once you have created an Epay account, you need to call **/v1/token** to obtain 
 ### Charge 
 The chief premise of this endpoint is to provide a single endpoint that allows you to charge your customers mobile money wallet or credit card. Charges are identified by a unique, random ID called **reference**. 
 
-All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**. This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer <access_token>**
+All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**. This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer {access_token}**
 
 > We process all transactions **asynchronously**. Hence you would have to **set your callback/webhook url** on your dashboard under the settings section to receive the status of every posted transaction or **call out the retrieve a transaction endpoint to** verify status of the transaction.
 
 <br>
 
-#### Enpoint Details
+**Enpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -351,7 +351,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 </div>
 
 
-#### Request Headers
+**Request Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -384,7 +384,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 </div>
 
 
-#### Request Body Parameters
+**Request Body Parameters**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
     <thead>
@@ -558,8 +558,9 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 </table>
 </div>
 
-#### Example Request Body ( Mobile money)
 ```
+
+//Example Request Body ( Mobile money)
 
 {	
 	"reference" : "EP-2JBH23JJBJBJ",
@@ -572,10 +573,9 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 	"mobile_wallet_network":"mtn",
 	"payment_description": "A test payment"
 }
-```
 
-#### Example Success Response (Mobile money)
-```
+
+//Example Success Response (Mobile money)
 
 {
     "success": true,
@@ -633,8 +633,8 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 </table>
 </div>
 
-#### Example Request Body (Credit Card)
 ```
+//Example Request Body (Credit Card)
 
 {	
 	"reference" : "EP-HBSABSDKKAS",
@@ -645,10 +645,9 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 	"customer_telephone" : "054**********",
 	"payment_description": "A sample payment"
 }
-```
 
-#### Example Success Response (Credit Card)
-```
+//Example Success Response (Credit Card)
+
 {
     "success": true,
     "message": "Redirect to url provided to complete payment",
@@ -676,7 +675,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 
 ------------
 
-### List of Customers
+### Customers
 
 The chief premise of this endpoint is to allow you list all customers created under your Epay Account. Kindly take note that this is a protected resource.
 
@@ -684,7 +683,7 @@ The chief premise of this endpoint is to allow you list all customers created un
 
 <br>
 
-#### Endpoint Details
+**Endpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -708,7 +707,7 @@ The chief premise of this endpoint is to allow you list all customers created un
     </table>
 </div>
 
-#### Request Headers
+**Request Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -734,8 +733,9 @@ The chief premise of this endpoint is to allow you list all customers created un
 
 <br>
 
-#### Example Response
 ```
+//Example Response
+
 {
     "success": true,
     "message": "Customers retrieved Successfully",
@@ -823,14 +823,14 @@ The chief premise of this endpoint is to allow you list all customers created un
 
 <br>
 
-### Create a new Customer
+### Create New Customer
 The chief premise of this endpoint is to allow you to create a customer under your Epay Account. 
 
 > Kindly take note that this is a protected resource.
 
 <br>
 
-#### Endpoint Details
+**Endpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -854,7 +854,7 @@ The chief premise of this endpoint is to allow you to create a customer under yo
     </table>
 </div>
 
-#### Request Headers
+**Request Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -888,7 +888,7 @@ The chief premise of this endpoint is to allow you to create a customer under yo
 
 <br>
 
-#### Request Body Parameters
+**Request Body Parameters**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
     <thead>
@@ -946,17 +946,18 @@ The chief premise of this endpoint is to allow you to create a customer under yo
 
 <br>
 
-#### Example Request Body
+#### 
 ```
+//Example Request Body
+
 {	
 	"name" : "My Name",
 	"email" : "myname@gmail.com",
 	"telephone": "024************"
 }
-```
 
-#### Example Success Response
-```
+
+//Example Success Response
 
 {
     "success": true,
@@ -978,14 +979,14 @@ The chief premise of this endpoint is to allow you to create a customer under yo
 
 <br>
 
-### Retrieve a Customer
+### Retrieve Customer
 The chief premise of this endpoint is to allow you to retrieve a single customer data as well as all transactions of the customer. 
 
 > Kindly take note that this is a protected resource.
 
 <br>
 
-#### Endpoint Details
+**Endpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -1010,7 +1011,7 @@ The chief premise of this endpoint is to allow you to retrieve a single customer
 </div>
 
 
-#### Headers
+**Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -1044,8 +1045,9 @@ The chief premise of this endpoint is to allow you to retrieve a single customer
 
 <br>
 
-#### Example Response Body
 ```
+//Example Response Body
+
 {
     "success": true,
     "message": "Transactions retrieved Successfully",
@@ -1123,17 +1125,18 @@ The chief premise of this endpoint is to allow you to retrieve a single customer
     }
 }
 ```
+<br>
 
 ----------
 
-### Retrieve a Transaction / Check Transaction Status
+### Retrieve Transaction / Check Transaction Status
 The chief premise of this endpoint is to allow you to retrieve the details of a transaction and can be as well used to check the status of a transaction. 
 
 > Kindly take note that this is a protected resource.
 
 <br>
 
-#### Endpoint Details
+**Endpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -1158,7 +1161,7 @@ The chief premise of this endpoint is to allow you to retrieve the details of a 
 </div>
 
 
-#### Request Headers
+**Request Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -1192,8 +1195,10 @@ The chief premise of this endpoint is to allow you to retrieve the details of a 
 
 <br>
 
-#### Example Response Body
 ```
+
+//Example Response Body
+
 {
     "success": true,
     "message": "Transactions retrieved Successfully",
@@ -1213,14 +1218,14 @@ The chief premise of this endpoint is to allow you to retrieve the details of a 
 }
 ```
 
-### List of Transactions
+### Transactions
 The chief premise of this endpoint is to allow you list all transactions under your Epay Account. Kindly take note that this is a protected resource.
 
 > The response returns a paginated list of transactions
 
 <br>
 
-#### Endpoint Details
+**Endpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -1244,7 +1249,7 @@ The chief premise of this endpoint is to allow you list all transactions under y
     </table>
 </div>
 
-#### Request Headers
+**Request Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
