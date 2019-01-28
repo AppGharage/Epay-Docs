@@ -16,7 +16,7 @@ also create an Integration. Head over to our [Signup page](https://epaygh.com/re
 -------
 
 ### Overview
-The Epay API is organized around REST. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication and verbs.
+The Epay API is organized around `REST`. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication and verbs.
 
 Once registered, log into your account and head over to your settings sections on your dashboard to generate a Merchant Key. This Key should be kept confidential, as it would grant to access to all protected API Resources as well as direct incoming funds to your Epay Wallet.
 
@@ -320,7 +320,7 @@ Once you have created an Epay account, you need to call **/v1/token** to obtain 
 ### Charge 
 The chief premise of this endpoint is to provide a single endpoint that allows you to charge your customers mobile money wallet or credit card. Charges are identified by a unique, random ID called **reference**. 
 
-All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**. This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer <access_token>**
+All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**. This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer {access_token}**
 
 > We process all transactions **asynchronously**. Hence you would have to **set your callback/webhook url** on your dashboard under the settings section to receive the status of every posted transaction or **call out the retrieve a transaction endpoint to** verify status of the transaction.
 
