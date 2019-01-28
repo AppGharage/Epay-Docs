@@ -4,7 +4,7 @@ section: documentation_content
 ---
 
 ## Quick Setup 
-Try the Epay API in seconds. Create your first integration, authenticate your API, charge your customers and more by following the steps below.
+Try the Epay API in minutes. Create your first integration, generate API access token, charge a customer and more by following the steps below.
 
 In order to start using Epay’s APIs to receive and/or disburse payments, you would need to have an Epay Account and 
 also create an Integration. Head over to our [Signup page](https://epaygh.com/register) to create a new Epay account.
@@ -15,7 +15,7 @@ also create an Integration. Head over to our [Signup page](https://epaygh.com/re
 
 ### 1. Create Integration
 To be able to use our APIs you will first need to create an Integration. The integration you create gives you an **app_id** and **app_scret**
-to get access to all protected resources. 
+to generate an API access token. 
 
 To create an Integration;
 - Head over to your Dashboard
@@ -25,8 +25,10 @@ To create an Integration;
 
 <br>
 
-### 2. [Get API Access Token](/docs/api-reference/#authentication)
+### 2. [Generate API Access Token](/docs/api-reference/#authentication)
 Submit a `POST` request to `https://epaygh.com/v1/token` to obtain an access token. This access token grants you access to all protected resources. To get your access token you will need a **merchant_key, app_id** and **app_secret**. 
+
+The generated access_token **expires in 3600 seconds (1hr)**.
 
 **Example Request Body**
 ```
@@ -44,8 +46,10 @@ With a single API endpoint you can charge your customers Mobile money wallets or
 
 The `Charge Endpoint` is a Protected Resource hence, you need to pass your access token through the Authorization header, that is, `Authorization : Bearer {access_token}`
 
-**Example Request Body (Mobile Money)**
+**Example Request Body**
 ```
+//Momo Charge Request Body
+
 {	
 	"reference" : "EP-2JBH23JJBJBJ",
 	"amount" : 1.00,
@@ -57,9 +61,10 @@ The `Charge Endpoint` is a Protected Resource hence, you need to pass your acces
 	"mobile_wallet_network":"mtn",
 	"payment_description": "A test payment"
 }
-```
-**Example Request Body (Credit Card)**
-```
+
+
+
+//Credit Card Charge Request Body
 
 {	
 	"reference" : "EP-HBSABSDKKAS",
