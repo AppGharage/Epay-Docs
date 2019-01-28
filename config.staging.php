@@ -2,5 +2,5 @@
 
 return [
     'production' => true,
-    'baseUrl' => 'http://jigsaw-staging.tighten.co'
+    'baseUrl' => 'https://epay-docs.netlify.com'
 ];
