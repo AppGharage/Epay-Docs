@@ -23,8 +23,8 @@ Epay makes it easier for you to securely accept online payments (both local and 
 
 Below are the payment channels available on Epay;
 
-* `Bank Tranfers` : Epay allows you to transfer funds from your epay wallet into your Bank account directly. You can also   make funds settle directly into your Bank account by setting it up. This is how;
-* `Mobile Money(MOMO)` : Recieve and transfer funds into your Mobile money
+* `Bank Transfers` : Epay allows you to transfer funds from your epay wallet into your Bank account directly. You can also   make funds settle directly into your Bank account by setting it up.
+* `Mobile Money(MOMO)` : Recieve and transfer funds into your Mobile money wallet
 * `Card Payment` : Pay using your card (Visa and Master Card)
 
 
