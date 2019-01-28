@@ -1,6 +1,4 @@
-@extends('_layouts.master')
-
-@section('body')
+<?php $__env->startSection('body'); ?>
 <header class="w-full bg-white absolute z-10 shadow-md px-4 md:px-6">
     <nav class="flex items-center max-w-3xl mx-auto py-4" aria-role="navigation">
         <a class="flex flex-no-shrink lg:flex-1 items-center mr-1" href="/" title="Epay Docs">
@@ -35,10 +33,10 @@
 
 <div class="bg-brown-lightest min-h-screen pt-16 md:pt-24 lg:pt-32 px-0 md:px-6">
     <div class="flex flex-col lg:flex-row justify-center max-w-3xl mx-auto">
-        <navigation :links='@json($page->navigation)'></navigation>
+        <navigation :links='<?php echo json_encode($page->navigation, 15, 512) ?>'></navigation>
 
         <div class="markdown bg-white w-full lg:max-w-md xl:max-w-lg md:mb-6 lg:mb-10 px-6 xl:px-10 pt-4 pb-8 font-normal sm:shadow md:rounded-lg" v-pre>
-            @yield('documentation_content')
+            <?php echo $__env->yieldContent('documentation_content'); ?>
         </div>
 
         <navigation-on-page :headings="pageHeadings"></navigation-on-page>
@@ -53,16 +51,18 @@
             title="Epay on GitHub">Issues/Feature Requests</a>
     </footer>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('scripts')
-    <script src="{{ mix('js/app.js', 'assets/build') }}"></script>
+<?php $__env->startSection('scripts'); ?>
+    <script src="<?php echo e(mix('js/app.js', 'assets/build')); ?>"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script type="text/javascript">
         docsearch({
             apiKey: '57a7f5b1e4e0a44c7e2f8e96abcbf674',
-            indexName: 'epay',
+            indexName: 'jigsaw',
             inputSelector: '#docsearch'
         });
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('_layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
