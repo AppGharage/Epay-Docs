@@ -6,16 +6,14 @@ section: documentation_content
 ## Quick Setup 
 Try the Epay API in minutes. Create your first integration, generate API access token, charge a customer and more by following the steps below.
 
-In order to start using Epay’s APIs to receive and/or disburse payments, you would need to have an Epay Account and 
-also create an Integration. Head over to our [Signup page](https://epaygh.com/register) to create a new Epay account.
+In order to start using Epay’s APIs to receive and/or disburse payments, you would need to have an Epay Account. Head over to our [Signup page](https://epaygh.com/register) to create a new Epay account.
 
 > Kindly note that your `email` and `telephone` will be verified before you get access to your account.
 
 ---
 
 ### 1. Create Integration
-To be able to use our APIs you will first need to create an Integration. The integration you create gives you an **app_id** and **app_scret**
-to generate an API access token. 
+To be able to use our APIs you will first need to create an Integration. The integration you create gives you an **app_id** and **app_secret** to generate an API access token. 
 
 To create an Integration;
 - Head over to your Dashboard
@@ -44,7 +42,7 @@ The generated access_token **expires in 3600 seconds (1hr)**.
 ### 3. [Charge a Customer](/docs/api-reference/#charge)
 With a single API endpoint you can charge your customers Mobile money wallets or Credit card. To charge a customer, submit a `POST` request to `https://epaygh.com/v1/charge`. 
 
-The `Charge Endpoint` is a Protected Resource hence, you need to pass your access token through the Authorization header, that is, `Authorization : Bearer {access_token}`
+The `Charge Endpoint` is a Protected Resource hence, you need to pass your access token through the Authorization header, that is, `Authorization : Bearer {access_token}`.
 
 **Example Request Body**
 ```
@@ -80,9 +78,9 @@ The `Charge Endpoint` is a Protected Resource hence, you need to pass your acces
 <br>
 
 ### 4. [Check Transaction Status](/docs/api-reference/#retrieve-a-transaction-/-check-transaction-status)
-We process all transactions `asynchronously`. Hence you would have to `set your callback/webhook url` on your dashboard under the settings section to receive the status of every posted transaction or `call out the retrieve a transaction endpoint to` verify status of the transaction. 
+We process all transactions `asynchronously`. Hence you would have to `set your callback/webhook url` on your dashboard under the settings section to receive the status of every posted transaction or `call out the retrieve a transaction endpoint to` verify status of the transaction. To check the transaction status with the [Retrieve Transaction Endpoint](/docs/api-reference/#retrieve-a-transaction-/-check-transaction-status), submit a **GET** request to `https://epaygh.com/api/ v1/transactions/{reference}` with the `reference` of the charge as a `query parameter`. 
 
-To verify the transaction status with the [Retrieve a transaction endpoint](/docs/api-reference/#retrieve-a-transaction-/-check-transaction-status), submit a **GET** request to `https://epaygh.com/api/v1/transactions/{reference}` with the `reference` of the charge as a `query parameter`
+The `Check Transaction Status Endpoint` is a Protected Resource hence, you need to pass your access token through the Authorization header, that is, `Authorization : Bearer {access_token}`.
 
 **Example Webhook Notification**
 ```json
@@ -119,5 +117,9 @@ To Transfer money out of your Epay wallet;
 - Click on the `New Transfer` button located at the top right corner of your page .
 - Fill and submit the form choosing your preferred withdrawal destination.
 
+
+-------
+
+Next, learn more about [How to get Started with Epay](/docs/getting-started/).
 
 
