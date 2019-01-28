@@ -61,7 +61,7 @@
     <script type="text/javascript">
         docsearch({
             apiKey: '57a7f5b1e4e0a44c7e2f8e96abcbf674',
-            indexName: 'jigsaw',
+            indexName: 'epay',
             inputSelector: '#docsearch'
         });
     </script>
