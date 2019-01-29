@@ -83,6 +83,25 @@ Creating a webhook endpoint on your server is not different from creating any pa
 }
 ```
 
+> Tip
+Always return a 200 status code from the webhook endpoint as shown below
+
+**Handling a Webhook Notification**
+
+Below is a sample code tro allow you handle a webhook notification written in 🇵🇭P
+
+```
+<?php
+
+//Retrieve the request's body and parse it as JSON
+$request = @file_get_contents('php://input');
+$request_body = json_decode($request); 
+
+//Do something with $request_body with example notification body shown above
+
+//Respond with 200
+http_response_code(200); //PHP 5.4 or greater
+```
 
 
 
