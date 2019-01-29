@@ -22,25 +22,27 @@ For WordPress websites which uses the WooCommerce e-commerce plugin, Epay offers
 
 
 A Customer would have to grow through these steps to make a transaction successful or to authorize payments.
-### Using MTN Mobile Money (momo)
-    1. Dial *170#
-    2. Select option 7) Wallet
-    3. Select 3) My Approvals
-    4. Enter your MOMO pin to retrieve your pending approval list
-    5. Choose a pending transaction
-    6.Choose option 1 to approve
-    7. Confirm the transaction.
 
-### Using Vodafone
-    1. Dial *110#
-    2. Choose Option 6 to generate your payment Voucher
-    3. You will recieve an SMS with a 6 digit Voucher Code
-    4. Enter the Voucher Code in the voucher code input
-    5. Initiate Payment by tapping the Pay button 
+**Using MTN Mobile Money (momo)**
+    * Dial *170#
+    * Select option 7) Wallet
+    * Select 3) My Approvals
+    * Enter your MOMO pin to retrieve your pending approval list
+    * Choose a pending transaction
+    * Choose option 1 to approve
+    * Confirm the transaction.
 
-### Tigo 
-    1. Dial 5015# to approve your transaction.
-    2. Select the transaction to approve and click on send.
-    3. Select YES to confirm your payment.
+**Using Vodafone**
+    * Dial *110#
+    * Choose Option 6 to generate your payment Voucher
+    * You will recieve an SMS with a 6 digit Voucher Code
+    * Enter the Voucher Code in the voucher code input
+    * Initiate Payment by tapping the Pay button 
 
-Next, learn about [Managing you accounts](/docs/account-management).
+**Tigo**
+    * Dial *5015# to approve your transaction.
+    * Select the transaction to approve and click on send.
+    * Select YES to confirm your payment.
+  
+
+Next, learn about [Managing your accounts](/docs/account-management).
