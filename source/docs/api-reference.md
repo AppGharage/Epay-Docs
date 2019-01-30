@@ -18,7 +18,7 @@ also create an Integration. Head over to our [Signup page](https://epaygh.com/re
 ### Overview
 The Epay API is organized around `REST`. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication and verbs.
 
-Once registered, log into your account and head over to your settings sections on your dashboard to generate a Merchant Key. This Key should be kept confidential, as it would grant to access to all protected API Resources as well as direct incoming funds to your Epay Wallet.
+Once registered, log into your account and head over to your settings sections on your dashboard to generate a Merchant Key. This Key should be kept confidential, as it would grant you access to all protected API Resources as well as direct incoming funds to your Epay Wallet.
 
 To help you get oriented with Epay’s API and what it can help you do, let’s start by defining some basics:
 - The endpoints listed are to be applied to the base Url https://epaygh.com/api

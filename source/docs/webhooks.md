@@ -5,9 +5,10 @@ section: documentation_content
 
 ## Webhooks 
 
-Use webhooks to get notified about payment events that happen in your Epay account.Epay serves as a webhook-driven checkout-as-a-service. With our webhook driven platform, you get notified via your webhook URL or endpoint whenever a new payment comes through in real time and you only need to worry about how to respond when a payment is successful or not.
 
-**What is a Webhook**?
+### What is a Webhook?
+
+Use webhooks to get notified about payment events that happen in your Epay account. Epay serves as a webhook-driven checkout-as-a-service. With our webhook driven platform, you get notified via your webhook URL or endpoint whenever a new payment comes through in real time and you only need to worry about how to respond when a payment is successful or not.
 
     A WebHook is an HTTP callback: an HTTP POST that occurs when something 
     happens; a simple event-notification via HTTP POST. A web application 
@@ -17,7 +18,7 @@ Epay sends webhooks events that notify your application any time a payment event
 
 In Epay you can setup webhooks that would let us notify you anytime events.
 
-** Use cases of Webhooks **
+### Use cases of Webhooks 
 
 You might use webhooks based on these sample actions you want to perform.
 
@@ -28,7 +29,7 @@ You might use webhooks based on these sample actions you want to perform.
 
 Before you can recieve webhook notifications, you need to register a webhook url under your **settings** navigation's tab. When an event such as a successful payment or a failed payment occurs, you are notified via your webhook URL.
 
-** Using Webhooks as an integration **      
+### Using Webhooks as an integration      
 
 Webhooks can be used for all kinds of payment methods, card, account, USSD, and Ghana Mobile money. Integrating Epay into your app or website can begin as far as you have an Account, requiring only three steps;
 
@@ -37,12 +38,12 @@ Webhooks can be used for all kinds of payment methods, card, account, USSD, and 
 * **Receive and Handle Webhook Notifications** to confirm payment transactions and fulfill purchases        
 
 
-**Configure your webhook**
+### Configure your webhook 
 
 Webhooks are configured in the Dashboad's Settings Navigation section. Add your Webhook endpoint/URL for receiving webhooks.You can enter any URL as the endpoint or destination for recieving notifications. However, this should be a dedicated page on your server that is setup to receive webhook notifications. Example Url is: https://pay.epay.com              
 
 
-**Connect your payment page**           
+### Connect your payment page         
 
 You can simply connect your payment page to your application or website by hiding the link of the payment page behind a pay button so your customers get redirected to the payment page when they click on the pay button.
 
@@ -51,7 +52,7 @@ You can simply connect your payment page to your application or website by hidin
 ```
 > You may also choose to use an iframe to load the payment page when a user clicks on the pay button.
 
-**Recieving a Webhook Notification
+### Receiving a Webhook Notification
 
 Creating a webhook endpoint on your server is not different from creating any page on your website. With PHP, you might create a new **.php** file on your server as well as in any other language; with a framework like Laravel, you would add a new route with the desired URL. Webhook Data is sent as JSON in a post Request body. The full notification details are included and can be used directly after, parsing the JSON.
 
