@@ -1,7 +1,7 @@
 <section class="flex flex-col items-center bg-blue-lighter text-center px-4 sm:px-6 py-16">
     <h2 class="text-white text-3xl font-normal mb-6">Need inspiration?</h2>
 
-    <p class="text-white text-lg mb-8">Browse examples applications built with Epay</p>
+    <p class="text-white text-lg mb-8">Browse example applications built with Epay</p>
 
     <a href="https://epay-demo.herokuapp.com/" title="Built with Epay">
         <img class="mb-6" src="/assets/img/browsers-illustration.svg" alt="Built with Epay" />
