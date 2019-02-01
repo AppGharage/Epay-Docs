@@ -14,5 +14,13 @@ return [
     'Webhooks' => ['root' => '/docs/webhooks'],
     'Libraries / Plugins' => ['root' => '/docs/libraries'],
     'Account Management' => ['root' => '/docs/account-management'],
-    'API Reference' => ['root' => '/docs/api-reference']
+    'API Reference' => [
+        'root' => '/docs/api-reference',
+        'children' => [
+            'Generate a Token' => ['root' => '/docs/generate-token'],
+            'Charge' => ['root' => '/docs/charge'],
+            'Customer' => ['root' => '/docs/customer'],
+            'Transaction' => ['root' => '/docs/transaction']
+        ],
+    ]
 ];

@@ -87,7 +87,7 @@ Creating a webhook endpoint on your server is not different from creating any pa
 > Tip
 Always return a 200 status code from the webhook endpoint as shown below
 
-**Handling a Webhook Notification**
+### Handling a Webhook Notification
 
 Below is a sample code tro allow you handle a webhook notification written in 🇵🇭P
 
