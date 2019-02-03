@@ -12,6 +12,15 @@ return [
     ],
     'Transfer / Disburse Payments' => ['root' => '/docs/transfers'],
     'Webhooks' => ['root' => '/docs/webhooks'],
+    'Libraries / Plugins' => ['root' => '/docs/libraries'],
     'Account Management' => ['root' => '/docs/account-management'],
-    'API Reference' => ['root' => '/docs/api-reference']
+    'API Overview' => [
+        'root' => '/docs/api-reference',
+        'children' => [
+            'API Authentication' => ['root' => '/docs/api-reference-authentication'],
+            'Charge' => ['root' => '/docs/api-reference-charge'],
+            'Customers' => ['root' => '/docs/api-reference-customer'],
+            'Transactions' => ['root' => '/docs/api-reference-transaction']
+        ],
+    ]
 ];
