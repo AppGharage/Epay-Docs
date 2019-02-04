@@ -23,7 +23,7 @@ To create an Integration;
 
 <br>
 
-### 2. [Generate API Access Token](/docs/api-reference/#authentication)
+### 2. [Generate API Access Token](/docs/api-reference-authentication)
 Submit a `POST` request to `https://epaygh.com/v1/token` to obtain an access token. This access token grants you access to all protected resources. To get your access token you will need a **merchant_key, app_id** and **app_secret**. 
 
 The generated access_token **expires in 3600 seconds (1hr)**.
@@ -39,7 +39,7 @@ The generated access_token **expires in 3600 seconds (1hr)**.
 
 <br>
 
-### 3. [Charge a Customer](/docs/api-reference/#charge)
+### 3. [Charge a Customer](/docs/api-reference-charge)
 With a single API endpoint you can charge your customers Mobile money wallets or Credit card. To charge a customer, submit a `POST` request to `https://epaygh.com/v1/charge`. 
 
 The `Charge Endpoint` is a Protected Resource hence, you need to pass your access token through the Authorization header, that is, `Authorization : Bearer {access_token}`.
@@ -77,8 +77,8 @@ The `Charge Endpoint` is a Protected Resource hence, you need to pass your acces
 
 <br>
 
-### 4. [Check Transaction Status](/docs/api-reference/#retrieve-a-transaction-/-check-transaction-status)
-We process all transactions `asynchronously`. Hence, you would have to `set your callback/webhook url` on your dashboard under the settings section to receive the status of every posted transaction or `call out the retrieve a transaction endpoint to` verify status of the transaction. To check the transaction status with the [Retrieve Transaction Endpoint](/docs/api-reference/#retrieve-a-transaction-/-check-transaction-status), submit a **GET** request to `https://epaygh.com/api/ v1/transactions/{reference}` with the `reference` of the charge as a `query parameter`. 
+### 4. [Check Transaction Status](/docs/api-reference-transaction)
+We process all transactions `asynchronously`. Hence you would have to `set your callback/webhook url` on your dashboard under the settings section to receive the status of every posted transaction or `call out the retrieve a transaction endpoint to` verify status of the transaction. To check the transaction status with the [Retrieve Transaction Endpoint](/docs/api-reference/#retrieve-a-transaction-/-check-transaction-status), submit a **GET** request to `https://epaygh.com/api/ v1/transactions/{reference}` with the `reference` of the charge as a `query parameter`. 
 
 The `Check Transaction Status Endpoint` is a Protected Resource hence, you need to pass your access token through the Authorization header, that is, `Authorization : Bearer {access_token}`.
 

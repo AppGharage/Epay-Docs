@@ -2,14 +2,12 @@
 extends: _layouts.documentation
 section: documentation_content
 ---
+#### [API Overview](/docs/api-reference)
 
 ## Customers
-
 The chief premise of this endpoint is to allow you list all customers created under your Epay Account. Kindly take note that this is a protected resource.
 
 > The response returns a paginated list of customers
-
-<br>
 
 ### Endpoint Details
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">

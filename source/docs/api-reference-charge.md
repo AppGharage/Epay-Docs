@@ -2,8 +2,9 @@
 extends: _layouts.documentation
 section: documentation_content
 ---
+#### [API Overview](/docs/api-reference)
 
-## Charge 
+## Charge a Customer
 The chief premise of this endpoint is to provide a single endpoint that allows you to charge your customers mobile money wallet or credit card. Charges are identified by a unique, random ID called **reference**. 
 
 All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**. This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer {access_token}**
@@ -12,7 +13,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
 
 <br>
 
-### Enpoint Details
+**Enpoint Details**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -36,8 +37,9 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
     </table>
 </div>
 
+<br>
 
-### Request Headers
+**Request Headers**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -69,8 +71,9 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
     </table>
 </div>
 
+<br>
 
-### Request Body Parameters
+**Request Body Parameters**
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
     <thead>
@@ -171,9 +174,9 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
     </tbody>
 </table>
 
-<br>
+<br><hr>
 
- <h4>Parameters to Charge Mobile Money Wallet</h4><br>
+<h3>Charging a Mobile Money Wallet</h3><br>
  
 <table class="w-full text-left table-collapse">
  <thead>
@@ -244,6 +247,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
     </tbody>
 </table>
 </div>
+<br>
 
 ```
 
@@ -288,10 +292,13 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
     }
 }
 ```
-<br>
 
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
-<h4>Parameters to Charge Credit Cards (returns a url to redirect to)</h4><br>
+
+<br><hr>
+
+<h3>Charging a Credit Card (returns a url to redirect to)</h3><br>
+
 <table class="w-full text-left table-collapse">
     <thead>
         <tr>
@@ -357,3 +364,6 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
     }
 }
 ```
+
+----------
+Next, learn more about how to [Know your customers on Epay](/docs/api-reference-customer).

@@ -14,13 +14,13 @@ return [
     'Webhooks' => ['root' => '/docs/webhooks'],
     'Libraries / Plugins' => ['root' => '/docs/libraries'],
     'Account Management' => ['root' => '/docs/account-management'],
-    'API Reference' => [
+    'API Overview' => [
         'root' => '/docs/api-reference',
         'children' => [
-            'Generate a Token' => ['root' => '/docs/generate-token'],
-            'Charge' => ['root' => '/docs/charge'],
-            'Customer' => ['root' => '/docs/customer'],
-            'Transaction' => ['root' => '/docs/transaction']
+            'API Authentication' => ['root' => '/docs/api-reference-authentication'],
+            'Charge' => ['root' => '/docs/api-reference-charge'],
+            'Customers' => ['root' => '/docs/api-reference-customer'],
+            'Transactions' => ['root' => '/docs/api-reference-transaction']
         ],
     ]
 ];
