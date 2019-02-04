@@ -9,7 +9,7 @@ section: documentation_content
 Using our very simple checkout designs, you get your funds. Before you create a payment page, let's see how it works.
 
 ### How it works
-Payment pages are the pages you create to charge a customer. It is easy to setup and start recieving funds if you are not a developer or don't own a website. You can create as many pages as you wish. For a business with multiple products, you can create a page for each product. All you need to do is to share the preview link of those pages.
+Payment pages are the pages you create to charge a customer. It is easy to setup and start receiving funds if you are not a developer or don't own a website. You can create as many pages as you wish. For a business with multiple products, you can create a page for each product. All you need to do is to share the preview link of those pages.
 
 #### Example Product pages you can create
 > **NB** These are not the only ways, you can use it.

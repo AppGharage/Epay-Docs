@@ -16,7 +16,7 @@ Use webhooks to get notified about payment events that happen in your Epay accou
 
 Epay sends webhooks events that notify your application any time a payment event happens in your account. This is very useful for events - like getting paid via mobile money or USSD where the transaction is completed outside your application - Recurring billing where an API call is not needed for subsequent billings.
 
-In Epay you can setup webhooks that would let us notify you anytime events.
+With Epay you can setup webhooks that would let us notify you anytime events - A user on a subscription is charged, a customer completes a payment, we update a pending payment to successful- happen in your account.
 
 ### Use cases of Webhooks 
 
@@ -40,7 +40,7 @@ Webhooks can be used for all kinds of payment methods, card, account, USSD, and 
 
 ### Configure your webhook 
 
-Webhooks are configured in the Dashboad's Settings Navigation section. Add your Webhook endpoint/URL for receiving webhooks.You can enter any URL as the endpoint or destination for recieving notifications. However, this should be a dedicated page on your server that is setup to receive webhook notifications. Example Url is: https://pay.epay.com              
+Webhooks are configured in the Dashboard's Settings Navigation section. Add your Webhook endpoint / URL for receiving webhooks. You can enter any URL as the endpoint or destination for receiving notifications. However, this should be a dedicated page on your server that is setup to receive webhook notifications. Example Url is: https://pay.epay.com              
 
 
 ### Connect your payment page         
@@ -56,7 +56,7 @@ You can simply connect your payment page to your application or website by hidin
 
 Creating a webhook endpoint on your server is not different from creating any page on your website. With PHP, you might create a new **.php** file on your server as well as in any other language; with a framework like Laravel, you would add a new route with the desired URL. Webhook Data is sent as JSON in a post Request body. The full notification details are included and can be used directly after, parsing the JSON.
 
-> If you are using Rails, Django, Laravel or another web Framework, your site might automatically check that every post request contains a CSRF token. This is an important security feature. However, this security measure might also prevent your site from processing legitimate webhooks. You will need to exempt the webhooks route from CSRF protection.
+> If you are using Rails, Django, Laravel or another web Framework, your site might automatically check that, every post request contains a CSRF token. This is an important security feature. However, this security measure might also prevent your site from processing legitimate webhooks. You will need to exempt the webhooks route from CSRF protection.
 
 **Sample Webhook Notification**
 
@@ -89,7 +89,7 @@ Always return a 200 status code from the webhook endpoint as shown below
 
 ### Handling a Webhook Notification
 
-Below is a sample code tro allow you handle a webhook notification written in 🇵🇭P
+Below is a sample code tro allow you handle a webhook notification written in PHP
 
 ```
 <?php
