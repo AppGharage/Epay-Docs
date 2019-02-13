@@ -5,7 +5,7 @@ section: documentation_content
 
 ## Transfers
 
-> Use you Epay dashboard as you wish.
+> Use your Epay dashboard as you wish.
 
 To transfer funds from your Epay account is very simple.
 
