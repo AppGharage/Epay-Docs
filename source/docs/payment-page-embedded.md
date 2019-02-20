@@ -20,8 +20,9 @@ Follow this steps to successfully collect payments from your customers easily:
             
     <script src="https://epaygh.com/js/inline.js"></script>
     ```
-- Change the default value of payment page to your payment page
+- Change the default value of `data-payment_page` to your payment page url
 - Collect your payments
+- Recieve Payment Notifications and updates via [your webhook url](https://epaygh.com/settings)
 
 > This will generate a button where the script is placed on your website. Remember to replace parameters with your own parameters.
 
