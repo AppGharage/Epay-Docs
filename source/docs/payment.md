@@ -10,6 +10,7 @@ section: documentation_content
 All methods or ways you can use Epay, in order to start accepting payments are:
 
 - [Payment Pages](/docs/payment-pages)
+- [Embedded Payment Pages](/docs/payment-page-embedded)
 - [Integrating our APIs in your application](/docs/content-markdown)
 
 ### Mobile Money payment approval procedures

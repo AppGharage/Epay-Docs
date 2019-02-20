@@ -30,4 +30,4 @@ Payment pages are the pages you create to charge a customer. It is easy to setup
 
 -------
 
-Next, learn about [Integrating APIs](/docs/payment-integrations).
+Next, learn about [Embedded Payment Pages](/docs/payment-page-embedded).

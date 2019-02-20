@@ -7,6 +7,7 @@ return [
         'root' => '/docs/payment',
         'children' => [
             'Payment Pages' => ['root' => '/docs/payment-pages'],
+            'Embedded Payment Pages' => ['root' => '/docs/payment-page-embedded'],
             'Integrating APIs' => ['root' => '/docs/payment-integrations']
         ],
     ],
