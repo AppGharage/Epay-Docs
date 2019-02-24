@@ -18,7 +18,7 @@ For WordPress websites which uses the WooCommerce e-commerce plugin, Epay offers
 * Install and activate the plugin.
 
 <img src="/assets/img/install.jpg"class="logo-icon rounded-md shadow border-2 border-white"/>
-* Still in the WordPress admin dashboard, go to the **WooCommerce plugin settings**, and then to the Payment tab.
+* Still in the WordPress admin dashboard, go to the **WooCommerce plugin settings**, and then to the Payments tab.
 
 <img src="/assets/img/pay.jpg"class="logo-icon rounded-md shadow border-2 border-white"/>
 * If the plugin is correctly installed, there should be an **Epay payment** option among the payment gateways listed at the bottom of the page. However, it would not be enabled. Enabling it should look this way.
