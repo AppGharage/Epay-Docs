@@ -30,7 +30,9 @@ For WordPress websites which uses the WooCommerce e-commerce plugin, Epay offers
 <img src="/assets/img/details.jpg"class="logo-icon rounded-md shadow border-2 border-white"/>
 * Epay should now be listed as an enabled payment gateway, and your customers would see the option to pay using Mobile money at checkout pages on your site.
 
- `Once you click on pay on the checkout page, you would get an approval message to approve your transaction. You can learn more on how to make these approval depending on your network [here](/docs/payment).`
+<img src="/assets/img/enabled.jpg"class="logo-icon rounded-md shadow border-2 border-white"/>
+
+ `Once you click on pay on the checkout page, you would get an approval message to approve your transaction. You can learn more on how to make these approval depending on your network`[here](/docs/payment).
 
 
 
