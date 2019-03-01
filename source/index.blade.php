@@ -8,11 +8,11 @@
         <div class="flex-col mb-0 sm:mb-8 pb-4">
             <h1 class="text-4xl md:text-5xl text-blue-darker leading-none">
                 The next Generation <br />
-                Payments Platform
+                Payments Service
             </h1>
 
             <p class="max-w-md mt-4 text-grey-dark lead">
-                Epay is a payments platform designed to allow African Businesses, Accept / Disburse payments.<br class="hidden sm:block">
+                Epay is a payments service designed to allow African Businesses, Accept / Disburse payments.<br class="hidden sm:block">
                 Accept Credit Cards and / or Mobile Money on your website or mobile app in minutes!
             </p>
         </div>

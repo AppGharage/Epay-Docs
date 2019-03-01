@@ -14,7 +14,6 @@ return [
     'Transfer / Disburse Payments' => ['root' => '/docs/transfers'],
     'Webhooks' => ['root' => '/docs/webhooks'],
     'Libraries / Plugins' => ['root' => '/docs/libraries'],
-    'Account Management' => ['root' => '/docs/account-management'],
     'API Overview' => [
         'root' => '/docs/api-reference',
         'children' => [
