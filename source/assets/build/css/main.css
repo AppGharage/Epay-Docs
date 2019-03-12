@@ -1252,6 +1252,10 @@ p {
   padding: .5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-0 {
   padding-left: 0;
   padding-right: 0;

@@ -8,7 +8,8 @@ return [
         'children' => [
             'Payment Pages' => ['root' => '/docs/payment-pages'],
             'Embedded Payment Pages' => ['root' => '/docs/payment-page-embedded'],
-            'Integrating APIs' => ['root' => '/docs/payment-integrations']
+            'Integrating APIs' => ['root' => '/docs/payment-integrations'],
+            'Supported Currencies' => ['root' =>'/docs/supported-currencies']
         ],
     ],
     'Transfer / Disburse Payments' => ['root' => '/docs/transfers'],
