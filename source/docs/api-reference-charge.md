@@ -115,6 +115,21 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
             </td>
         </tr>
         <tr>
+            <td class="p-2 border-t border-grey-light bg-grey-lighter font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                currency
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+                String
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-purple-dark whitespace-no-wrap">
+               No
+            </td>
+            <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+                This is the currency code.<br>The default is GHS.
+                See <br>[supported currencies](/docs/supported-currencies)
+            </td>
+        </tr>
+        <tr>
          <tr>
             <td class="p-2 border-t border-grey-light bg-grey-lighter font-mono text-sm text-grey-darkest whitespace-no-wrap">
                 customer_name
