@@ -24,23 +24,143 @@ section: documentation_content
                 ALL
             </td>
         </tr>
-         <tr>
+        <tr>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-               East Caribbean Dollar
+           Armenian Dram
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+            AMD
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+            Australian Dollar
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">  
+              AUD
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Angolan Kwanza
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+            AOA
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Aruban Florin
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+           AWG
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Algerian Dinar
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-               XCD
+            DZD
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Argentine Peso
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            ARS
             </td>
         </tr>
          <tr>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-               Euro
+           Azerbaijani Manat
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-               EUR
+            AZN
             </td>
         </tr>
-         <tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Afghan Afghani
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            AFN
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Bangladeshi Taka
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            BDT
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Brazilian Real
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            BRL
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Belarusian Ruble
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+           BYR
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Bolivian Boliviano
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+          BOB
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Bulgarian Lev
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+           BGN
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Bahraini Dinar
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+            BHD
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Belize Dollar
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            BZD
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Botswana Pula
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            BWP
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Burundi Franc
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            BIF
+            </td>
+        </tr>
+          <tr>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
                Barbadian Dollar
             </td>
@@ -66,6 +186,62 @@ section: documentation_content
         </tr>
         <tr>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Bahamian Dollar
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+            "BSD
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Bosnia And Herzegovina Konvertibilna Marka
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+            BAM
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Cape Verdean Escudo
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+            CVE
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Chinese Yuan
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+          CNY
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          CFP Franc
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            XPF
+            </td>
+        </tr>
+          <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Costa Rican Colon
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+           CRC
+            </td>
+        </tr>
+          <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Czech Koruna
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+           CZK
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
              Central African CFA Franc
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">  
@@ -78,6 +254,134 @@ section: documentation_content
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">  
             CUP
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Cayman Islands Dollar
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            KYD
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Colombian Peso
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            COP
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Canadian Dollar
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+           CAD
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Chilean Peso
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+           CLP
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Congolese Franc
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            CDF
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Cambodian Riel
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            KHR
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Comorian Franc
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            KMF
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Croatian Kuna
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            HRK
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Djiboutian Franc
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            DJF
+            </td>
+        </tr>     
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Dominican Peso
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+           DOP
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Danish Krone
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            DKK
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Egyptian Pound
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+           EGP
+            </td>
+        </tr>
+        <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+          Ethiopian Birr
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+            ETB
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+           Eritrean Nakfa
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
+            ERN
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+               East Caribbean Dollar
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+               XCD
+            </td>
+        </tr>
+         <tr>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
+               Euro
+            </td>
+            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
+               EUR
             </td>
         </tr>
          <tr>
@@ -126,14 +430,6 @@ section: documentation_content
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">  
               JMD  
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-            Australian Dollar
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">  
-              AUD
             </td>
         </tr>
         <tr>
@@ -230,70 +526,6 @@ section: documentation_content
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
             TZS
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Armenian Dram
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-            AMD
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Bahamian Dollar
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-            "BSD
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Bosnia And Herzegovina Konvertibilna Marka
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-            BAM
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Cape Verdean Escudo
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-            CVE
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Chinese Yuan
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-          CNY
-            </td>
-        </tr>
-          <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Costa Rican Colon
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-           CRC
-            </td>
-        </tr>
-          <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Czech Koruna
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-           CZK
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Eritrean Nakfa
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-            ERN
             </td>
         </tr>
         <tr>
@@ -430,78 +662,6 @@ section: documentation_content
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
            SYP
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Angolan Kwanza
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-            AOA
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Aruban Florin
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-           AWG
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Bahraini Dinar
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap"> 
-            BHD
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Belize Dollar
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            BZD
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Botswana Pula
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            BWP
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Burundi Franc
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            BIF
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Cayman Islands Dollar
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            KYD
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Colombian Peso
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            COP
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Danish Krone
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            DKK
             </td>
         </tr>
          <tr>
@@ -678,86 +838,6 @@ section: documentation_content
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
             VEF
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Algerian Dinar
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            DZD
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Argentine Peso
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            ARS
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-           Azerbaijani Manat
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            AZN
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Belarusian Ruble
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-           BYR
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Bolivian Boliviano
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-          BOB
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Bulgarian Lev
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-           BGN
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Canadian Dollar
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-           CAD
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Chilean Peso
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-           CLP
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Congolese Franc
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            CDF
-            </td>
-        </tr>
-         <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Dominican Peso
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-           DOP
             </td>
         </tr>
         <tr>
@@ -958,86 +1038,6 @@ section: documentation_content
             </td>
             <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
             YER
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Afghan Afghani
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            AFN
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Bangladeshi Taka
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            BDT
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Brazilian Real
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            BRL
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Cambodian Riel
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            KHR
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Comorian Franc
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            KMF
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Croatian Kuna
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            HRK
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Djiboutian Franc
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            DJF
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Egyptian Pound
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-           EGP
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          Ethiopian Birr
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            ETB
-            </td>
-        </tr>
-        <tr>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-          CFP Franc
-            </td>
-            <td class="p-4 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
-            XPF
             </td>
         </tr>
         <tr>
