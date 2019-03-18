@@ -30,7 +30,7 @@ For WordPress websites which uses the WooCommerce e-commerce plugin, Epay offers
 
 * Still on the woocommerce plugin settings, go to the **General tab** to specify a currency you want to accept payments in.
  <img src="/assets/img/general.jpg"class="logo-icon rounded-md shadow border-2 border-white"/>
-Head to the currency section to specify a currency you want to accept payments in.
+Head to the currency section and choose from the options.
  <img src="/assets/img/currency.png"class="logo-icon rounded-md shadow border-2 border-white"/>
 
 * Epay should now be listed as an enabled payment gateway, and your customers would see the option to pay using Mobile money at checkout pages on your site.
