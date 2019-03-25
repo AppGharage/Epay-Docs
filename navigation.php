@@ -9,8 +9,8 @@ return [
             'Payment Pages' => ['root' => '/docs/payment-pages'],
             'Embedded Payment Pages' => ['root' => '/docs/payment-page-embedded'],
             'Integrating APIs' => ['root' => '/docs/payment-integrations'],
-            'Supported Currencies' => ['root' =>'/docs/supported-currencies'],
-            'Bank Deposit' => ['root' =>'/docs/bank-deposit']
+            'Bank Deposit' => ['root' =>'/docs/bank-deposit'],
+            'Supported Currencies' => ['root' =>'/docs/supported-currencies']     
         ],
     ],
     'Transfer / Disburse Payments' => ['root' => '/docs/transfers'],
