@@ -16,7 +16,7 @@ You can fund your Epay wallet by making a cash deposit at the Bank.
 - **Account Number**: 9040003293577
 - **Branch**: Stanbic Heights 
 
-> After, Send us a copy of the deposit receipt and Epay account name via email at **info@epaygh.com** or WhatsApp **0508220167**.
+> After, Send us a copy of the deposit receipt and Epay account name via email at **info@epaygh.com** or WhatsApp **0508220167**+.
 
 -------
 
