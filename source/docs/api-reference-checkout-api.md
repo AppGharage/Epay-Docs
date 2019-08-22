@@ -11,7 +11,7 @@ The chief premise of this endpoint is to provide a single endpoint that allows y
 
 All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**. This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer {access_token}**
 
-> We process all transactions **asynchronously**. Hence you would have to **set your callback/webhook url** on your dashboard under the settings section to receive the status of every posted transaction or **call out the retrieve a transaction endpoint to** verify status of the transaction.
+> We process all transactions **asynchronously**. Hence you would have to **set your callback/webhook url** on your dashboard under the settings section to receive the status of every posted transaction or **call out the retrieve a transaction endpoint to** verify status of the transaction and redirect your user to **https://epaygh.com/checkout/{token}**.
 
 <br>
 
