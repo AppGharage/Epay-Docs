@@ -219,7 +219,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
         </tr>
           <tr>
             <td class="p-2 border-t border-grey-light bg-grey-lighter font-mono text-sm text-grey-darkest whitespace-no-wrap">
-                payment_method
+                mobile_wallet_network
             </td>
             <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
                 String
@@ -228,12 +228,12 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
                Yes, for only<br> mobile money <br>charges
             </td>
             <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-               This is the network of the <br> mobile money wallet you <br>wish to charge.
+               This is how you wish to <br> charge the customer and <br>must be set to  ‘momo’.
             </td>
         </tr>
           <tr>
             <td class="p-2 border-t border-grey-light bg-grey-lighter font-mono text-sm text-grey-darkest whitespace-no-wrap">
-                mobile_wallet_number
+                payment_method
             </td>
             <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
                 String
@@ -242,7 +242,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
                Yes, for only <br>mobile money <br>charges
             </td>
             <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-               This is how you wish to <br> charge the customer and <br>must be set to  ‘momo’.
+               This is the network of the <br> mobile money wallet you <br>wish to charge.
             </td>
         </tr>
         <tr>
