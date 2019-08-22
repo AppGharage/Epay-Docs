@@ -20,6 +20,7 @@ return [
         'children' => [
             'API Authentication' => ['root' => '/docs/api-reference-authentication'],
             'Charge' => ['root' => '/docs/api-reference-charge'],
+            'Hosted Checkout' => ['root' => '/docs/api-reference-checkout-api'],
             'Customers' => ['root' => '/docs/api-reference-customer'],
             'Transactions' => ['root' => '/docs/api-reference-transaction']
         ],
