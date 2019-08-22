@@ -5,13 +5,15 @@ section: documentation_content
 
 #### [API Overview](/docs/api-reference)
 
-## Checkout-Api
+## Checkout
 
-The chief premise of this endpoint is to provide a single endpoint that allows you to charge your customers mobile money wallet or credit card. Charges are identified by a unique, random ID called **reference**.
+The chief premise of this endpoint is to provide a single endpoint and a user interface that allows you to charge your customers mobile money wallet or credit card.
 
-All payments are instantly deposited into your Epay wallet. The amount taken from your customer is deposited with **zero percent (0%) charge**. This is a protected route hence you need to pass your access token through the Authorization header, that is, **Authorization : Bearer {access_token}**
+Charges are identified by a unique, random but unique ID's called **reference**. Kindly take note that this is a protected resource.
 
-> We process all transactions **asynchronously**. Hence you would have to **set your callback/webhook url** on your dashboard under the settings section to receive the status of every posted transaction or **call out the retrieve a transaction endpoint to** verify status of the transaction and redirect your user to **https://epaygh.com/checkout/{token}**.
+> We process all transactions **asynchronously**. Hence you would have to **set your callback/webhook url** on your dashboard under the settings section to receive the status of every posted transaction or **call out the retrieve a transaction endpoint to** verify status of the transaction.
+
+**Note:** After calling this endpoint, you are to redirect the user to **https://epaygh.com/checkout/{token}** where the **{token}** is the token in this api Response.
 
 <br>
 
