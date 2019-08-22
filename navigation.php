@@ -9,7 +9,7 @@ return [
             'Payment Pages' => ['root' => '/docs/payment-pages'],
             'Embedded Payment Pages' => ['root' => '/docs/payment-page-embedded'],
             'Integrating APIs' => ['root' => '/docs/payment-integrations'],
-            'Supported Currencies' => ['root' =>'/docs/supported-currencies']
+            'Supported Currencies' => ['root' =>'/docs/supported-currencies']     
         ],
     ],
     'Transfer / Disburse Payments' => ['root' => '/docs/transfers'],
@@ -20,6 +20,7 @@ return [
         'children' => [
             'API Authentication' => ['root' => '/docs/api-reference-authentication'],
             'Charge' => ['root' => '/docs/api-reference-charge'],
+            'Hosted Checkout' => ['root' => '/docs/api-reference-checkout-api'],
             'Customers' => ['root' => '/docs/api-reference-customer'],
             'Transactions' => ['root' => '/docs/api-reference-transaction']
         ],

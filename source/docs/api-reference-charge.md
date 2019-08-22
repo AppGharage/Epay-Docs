@@ -125,9 +125,9 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
                No
             </td>
             <td class="p-2 border-t border-grey-light font-mono text-sm text-grey-darkest whitespace-no-wrap">
-                This is the currency code.<br>The default is GHS.
-                See <br>[supported currencies](/docs/supported-currencies)
-            </td>
+                This is the currency code.<br>The default is GHS. <br> 
+                See our [supported currencies](https://docs.epaygh.com/docs/supported-currencies/)
+            </td>    
         </tr>
         <tr>
          <tr>
@@ -219,7 +219,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
         </tr>
           <tr>
             <td class="p-2 border-t border-grey-light bg-grey-lighter font-mono text-sm text-grey-darkest whitespace-no-wrap">
-                payment_method
+                mobile_wallet_network
             </td>
             <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
                 String
@@ -233,7 +233,7 @@ All payments are instantly deposited into your Epay wallet. The amount taken fro
         </tr>
           <tr>
             <td class="p-2 border-t border-grey-light bg-grey-lighter font-mono text-sm text-grey-darkest whitespace-no-wrap">
-                mobile_wallet_network
+                payment_method
             </td>
             <td class="p-2 border-t border-grey-light font-mono text-sm text-blue-lighter whitespace-no-wrap">
                 String

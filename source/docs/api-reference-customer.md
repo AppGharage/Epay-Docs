@@ -2,14 +2,17 @@
 extends: _layouts.documentation
 section: documentation_content
 ---
+
 #### [API Overview](/docs/api-reference)
 
 ## Customers
+
 The chief premise of this endpoint is to allow you list all customers created under your Epay Account. Kindly take note that this is a protected resource.
 
 > The response returns a paginated list of customers
 
 ### Endpoint Details
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -34,6 +37,7 @@ The chief premise of this endpoint is to allow you list all customers created un
 </div>
 
 ### Request Headers
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -150,13 +154,15 @@ The chief premise of this endpoint is to allow you list all customers created un
 <br>
 
 ### Create New Customer
-The chief premise of this endpoint is to allow you to create a customer under your Epay Account. 
+
+The chief premise of this endpoint is to allow you to create a customer under your Epay Account.
 
 > Kindly take note that this is a protected resource.
 
 <br>
 
 **Endpoint Details**
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -181,6 +187,7 @@ The chief premise of this endpoint is to allow you to create a customer under yo
 </div>
 
 **Request Headers**
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -215,6 +222,7 @@ The chief premise of this endpoint is to allow you to create a customer under yo
 <br>
 
 **Request Body Parameters**
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
     <thead>
@@ -272,11 +280,12 @@ The chief premise of this endpoint is to allow you to create a customer under yo
 
 <br>
 
-#### 
+####
+
 ```
 //Example Request Body
 
-{	
+{
 	"name" : "My Name",
 	"email" : "myname@gmail.com",
 	"telephone": "024************"
@@ -306,13 +315,15 @@ The chief premise of this endpoint is to allow you to create a customer under yo
 <br>
 
 ### Retrieve Customer
-The chief premise of this endpoint is to allow you to retrieve a single customer data as well as all transactions of the customer. 
+
+The chief premise of this endpoint is to allow you to retrieve a single customer data as well as all transactions of the customer.
 
 > Kindly take note that this is a protected resource.
 
 <br>
 
 **Endpoint Details**
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -336,8 +347,8 @@ The chief premise of this endpoint is to allow you to retrieve a single customer
     </table>
 </div>
 
-
 **Headers**
+
 <div class="overflow-y-auto scrollbar-w-2 scrollbar-track-grey-lighter scrollbar-thumb-rounded scrollbar-thumb-grey scrolling-touch">
     <table class="w-full text-left table-collapse">
         <tbody class="align-baseline">
@@ -451,7 +462,9 @@ The chief premise of this endpoint is to allow you to retrieve a single customer
     }
 }
 ```
+
 <br>
 
-----------
+---
 
+Next, learn more about how to [Know your customers on Epay](/docs/api-reference-transaction).

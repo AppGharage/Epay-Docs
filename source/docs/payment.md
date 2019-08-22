@@ -12,12 +12,14 @@ All methods or ways you can use Epay, in order to start accepting payments are:
 - [Payment Pages](/docs/payment-pages)
 - [Embedded Payment Pages](/docs/payment-page-embedded)
 - [Integrating our APIs in your application](/docs/content-markdown)
+- [Bank Deposit](/docs/bank-deposit)
+  
 
 ### Mobile Money payment approval procedures
 
 **Using MTN Mobile Money (momo)**
     * Dial *170#
-    * Select option 7) Wallet
+    * Select option 6) Wallet
     * Select 3) My Approvals
     * Enter your MOMO pin to retrieve your pending approval list
     * Choose a pending transaction

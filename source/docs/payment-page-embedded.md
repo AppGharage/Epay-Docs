@@ -24,10 +24,10 @@ Follow this steps to successfully collect payments from your customers easily:
 - Collect your payments
 - Recieve Payment Notifications and updates via [your webhook url](https://epaygh.com/settings)
 
-> This will generate a button where the script is placed on your website. Remember to replace parameters with your own parameters.
+> This will generate a button where the script is placed on your website. Remember to replace parameters with your own parameters.You can also change the style of your button by targetting this class `epay-pay-button`.
 
 ### How it works
-When the button is clicked, our secure payment modal will be popped up for your user to enter his/her details followed by payment details. 
+When the button is clicked, our secure payment modal will be popped up for your user to enter his/her details followed by payment details.
 
 -------
 
